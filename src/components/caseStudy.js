@@ -19,13 +19,23 @@ const CaseStudy = styled(Box)`
     }
 `;
 
+const Title = styled(Heading02)`
+    position: relative;
+    margin-top: -75px;
+    background-color: #ffffff;
+    left: -32px;
+    padding-top: 15px;
+    padding-left: 32px;
+    border-top-right-radius: 8px;
+`;
+
 const _CaseStudy = (props) => {
     return (
         <Box as="article" width={[1, 1/3 ]} px={[3, 4]} mt={[0, props.marginTop]} mb={[5, 0]}>
             <CaseStudy>
                 <img src="https://placehold.it/500x300/FFEE93/FFEE93" alt={`${props.title}`} />
                 <Box px={4} pb={4}>
-                    <Heading02 mb={`0px`}>{props.title}</Heading02>
+                    <Title mb={`0px`}>{props.title}</Title>
                     <Heading03 mt={`5px`} color={ACCENT}>Case Study</Heading03>
                     <Text tight>{props.intro}</Text>
                     <Button>Read Case Study</Button>

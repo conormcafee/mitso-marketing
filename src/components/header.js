@@ -9,7 +9,7 @@ import Button from "../components/button";
 
 const _Header = () => (
 	<Header>
-		<Flex flexWrap={['wrap', 'nowrap']}>
+		<Flex flexWrap={['wrap', 'nowrap']} alignItems="center">
 			<Box width={[1 , 1/3]} px={[3, 4]}>
 				<Link to="/">
 					<img src={Logo} alt="MiTSO Marketing Logo" />

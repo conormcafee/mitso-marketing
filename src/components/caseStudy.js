@@ -2,6 +2,7 @@ import React from "react";
 import {Box} from "@rebass/grid";
 import styled from "styled-components";
 import {Heading02, Heading03, Text} from "../components/global/typography";
+import {ACCENT} from "../variables";
 import Button from "../components/button";
 
 const CaseStudy = styled(Box)`
@@ -20,12 +21,12 @@ const CaseStudy = styled(Box)`
 
 const _CaseStudy = (props) => {
     return (
-        <Box width={[1, 1/3 ]} px={[3, 4]} mt={[0, props.marginTop]} mb={[5, 0]}>
+        <Box as="article" width={[1, 1/3 ]} px={[3, 4]} mt={[0, props.marginTop]} mb={[5, 0]}>
             <CaseStudy>
-                <img src="https://placehold.it/500x300" alt={`${props.title}`} />
+                <img src="https://placehold.it/500x300/FFEE93/FFEE93" alt={`${props.title}`} />
                 <Box px={4} pb={4}>
-                    <Heading02>{props.title}</Heading02>
-                    <Heading03>Case Study</Heading03>
+                    <Heading02 mb={`0px`}>{props.title}</Heading02>
+                    <Heading03 mt={`5px`} color={ACCENT}>Case Study</Heading03>
                     <Text tight>{props.intro}</Text>
                     <Button>Read Case Study</Button>
                 </Box>

@@ -31,25 +31,25 @@ const MoreCaseStudies = styled(Flex)`
 const _CaseStudies = (props) => {
     return (
         <React.Fragment>
-            <CaseStudies flexWrap={['wrap', 'nowrap']} my={6}>
+            <CaseStudies as="section" flexWrap={['wrap', 'nowrap']} my={6}>
                 {props.data.map((study, index) => ( 
                     <CaseStudy key={index} {...study} marginTop={index !== 0 && index + 4} />
                 ))}
                 <Circle src={CircleOptB} alt="Circle Page Styling" />
             </CaseStudies>
 
-            {props.moreCaseStudies && <MoreCaseStudies flexWrap={['wrap', 'nowrap']} mb={6}>
+            {props.moreCaseStudies && <MoreCaseStudies as="section" flexWrap={['wrap', 'nowrap']} mb={6}>
                 <Box width={[1, 1/3]} px={[3,4]} mb={[4, 0]}>
                     <Flex flexWrap="wrap">
                         {[0, 1, 2].map(index => (
-                            <Box width={1/3} mb={4} px={[2,3]}>
-                                <SmallLogo key={index} src="https://placehold.it/200x200" alt="Logo" />
+                            <Box key={index} width={1/3} mb={4} px={[2,3]}>
+                                <SmallLogo key={index} src="https://placehold.it/200x200/FFEE93/FFEE93" alt="Logo" />
                             </Box>
                         ))}
 
                         {[3, 4, 5].map(index => (
-                            <Box width={1/3} px={[2,3]}>
-                                <SmallLogo key={index} src="https://placehold.it/200x200" alt="Logo" />
+                            <Box key={index} width={1/3} px={[2,3]}>
+                                <SmallLogo key={index} src="https://placehold.it/200x200/FFEE93/FFEE93" alt="Logo" />
                             </Box>
                         ))}
                     </Flex>
@@ -58,14 +58,14 @@ const _CaseStudies = (props) => {
                 <Box width={[1, 1/3]} px={[3,4]} mb={[4, 0]}>
                     <Flex flexWrap="wrap">
                         {[0, 1, 2].map(index => (
-                            <Box width={1/3} mb={4} px={[2,3]}>
-                                <SmallLogo key={index} src="https://placehold.it/200x200" alt="Logo" />
+                            <Box key={index} width={1/3} mb={4} px={[2,3]}>
+                                <SmallLogo key={index} src="https://placehold.it/200x200/FFEE93/FFEE93" alt="Logo" />
                             </Box>
                         ))}
 
                         {[3, 4, 5].map(index => (
-                            <Box width={1/3} px={[2,3]}>
-                                <SmallLogo key={index} src="https://placehold.it/200x200" alt="Logo" />
+                            <Box key={index} width={1/3} px={[2,3]}>
+                                <SmallLogo key={index} src="https://placehold.it/200x200/FFEE93/FFEE93" alt="Logo" />
                             </Box>
                         ))}
                     </Flex>

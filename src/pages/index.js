@@ -7,12 +7,13 @@ import {Heading01, Heading02, Heading03, Text} from "../components/global/typogr
 import Button from "../components/button/index";
 import Tagline from "../components/tagline";
 import CaseStudies from "../components/caseStudies";
+import WorkWithMitso from "../components/workWithMitso";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     
-	<Flex>
+	<Flex as="section">
 		<Box px={[3, 4]} mb={6}>
 			<Heading01>We deliver smart, tailored and targeted communications to help your business thrive</Heading01>
 			<Button>Work with MiTSO Marketing</Button>
@@ -21,13 +22,14 @@ const IndexPage = () => (
 
 	{/* Who WE Are */}
 
-	<Flex flexWrap={['wrap', 'nowrap']} pb={6}>
-		<Flex width={[1, 1/3]} px={[3, 4]} mb={3} flexDirection="column" alignItems="flex-start" justifyContent="flex-end">
-			<Heading02>Who We Are</Heading02>
+	<Flex as="section" flexWrap={['wrap', 'nowrap']} pb={6}>
+		
+		<Flex as="aside" width={[1, 1/3]} px={[3, 4]} mb={3} flexDirection="column" alignItems="flex-start" justifyContent="flex-end">
+			<Heading02 mb={`0px`}>Who We Are</Heading02>
 			<Button>Learn More</Button>
 		</Flex>
 
-		<Flex width={[1, 2/3]} flexWrap="wrap">
+		<Flex as="article" width={[1, 2/3]} flexWrap="wrap">
 				{WHO_WE_ARE.slice(0, 2).map((block, index) => (
 					<Box width={[1, 1/2]} px={[3, 4]} key={index}>
 						<Heading03>{block.title}</Heading03>
@@ -51,6 +53,10 @@ const IndexPage = () => (
 	{/* Case Studies */}
 
 	<CaseStudies data={CASE_STUDIES} moreCaseStudies />
+
+	{/* Work with Mitso */}
+
+	<WorkWithMitso />
 
   </Layout>
 )

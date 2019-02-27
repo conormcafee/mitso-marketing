@@ -10,11 +10,21 @@ const Btn = styled.button`
     padding-bottom: 15px;
     padding-left: 30px;
     border-radius: 25px;
-    background: ${ACCENT};
-    border: 2px solid ${ACCENT};
+    background-color: ${ACCENT};
+    border: 2px solid transparent;
     font-family: ${FONT_BOLD};
     color: #ffffff;
+    box-shadow: 0px 2px 1px 0px #66C9A8;
     appearance: none;
+    transition: 
+        background-color 150ms ease-in-out, 
+        box-shadow 150ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #66C9A8;
+        box-shadow: -1px 3px 0px 0px #56ad90;
+    }
 `;
 
 class Button extends React.Component {

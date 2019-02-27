@@ -22,7 +22,7 @@ const Text = styled.span`
 
 const Tagline = (props) => {
     return (    
-        <TagLine mb={4} width={2/3}>
+        <TagLine as="section" mb={4} width={2/3}>
             <Flex p={[3, 4]} justifyContent="space-between">
                 {props.data.map((item, index) => (
                     <Item key={index}>

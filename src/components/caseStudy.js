@@ -22,7 +22,7 @@ const _CaseStudy = (props) => {
     return (
         <Box width={[1, 1/3 ]} px={[3, 4]} mt={[0, props.marginTop]} mb={[5, 0]}>
             <CaseStudy>
-                <img src="http://placehold.it/500x300" alt={`${props.title}`} />
+                <img src="https://placehold.it/500x300" alt={`${props.title}`} />
                 <Box px={4} pb={4}>
                     <Heading02>{props.title}</Heading02>
                     <Heading03>Case Study</Heading03>

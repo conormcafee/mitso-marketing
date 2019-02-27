@@ -23,6 +23,11 @@ const SmallLogo = styled.img`
     border-radius: 100%;
 `;
 
+const MoreCaseStudies = styled(Flex)`
+    position: relative;
+    z-index: 1;
+`;
+
 const _CaseStudies = (props) => {
     return (
         <React.Fragment>
@@ -33,7 +38,7 @@ const _CaseStudies = (props) => {
                 <Circle src={CircleOptB} alt="Circle Page Styling" />
             </CaseStudies>
 
-            {props.moreCaseStudies && <Flex flexWrap={['wrap', 'nowrap']} mb={6}>
+            {props.moreCaseStudies && <MoreCaseStudies flexWrap={['wrap', 'nowrap']} mb={6}>
                 <Box width={[1, 1/3]} px={[3,4]} mb={[4, 0]}>
                     <Flex flexWrap="wrap">
                         {[0, 1, 2].map(index => (
@@ -71,7 +76,7 @@ const _CaseStudies = (props) => {
                     <Text tight>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam malesuada libero, quis sodales lorem faucibus sit a</Text>
                     <Button>All Case Studies</Button>
                 </Box>
-            </Flex>}
+            </MoreCaseStudies>}
         </React.Fragment>
     )
 }

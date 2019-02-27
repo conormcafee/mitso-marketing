@@ -15,14 +15,17 @@ const Btn = styled.button`
     font-family: ${FONT_BOLD};
     color: #ffffff;
     box-shadow: 0px 2px 1px 0px #66C9A8;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
     appearance: none;
     transition: 
         background-color 150ms ease-in-out, 
-        box-shadow 150ms ease-in-out;
+        box-shadow 150ms ease-in-out,
+        text-shadow 150ms ease-in-out;
 
     &:hover {
         cursor: pointer;
         background-color: #66C9A8;
+        text-shadow: 1px 1px 1px #56ad90;
         box-shadow: -1px 3px 0px 0px #56ad90;
     }
 `;

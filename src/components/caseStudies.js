@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {Flex, Box} from "@rebass/grid";
 import CaseStudy from "./caseStudy";
 import CircleOptB from "../images/backgrounds/circle-option-b.svg";
-import {Heading03, Text} from "../components/global/typography";
 import Button from "../components/button";
 
 const CaseStudies = styled(Flex)`
@@ -72,8 +71,8 @@ const _CaseStudies = (props) => {
                 </Box>
                 
                 <Box width={[1, 1/3]} px={[3,4]}>
-                    <Heading03>Others We've Worked With</Heading03>
-                    <Text tight>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam malesuada libero, quis sodales lorem faucibus sit a</Text>
+                    <h3>Others We've Worked With</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam malesuada libero, quis sodales lorem faucibus sit a</p>
                     <Button>All Case Studies</Button>
                 </Box>
             </MoreCaseStudies>}

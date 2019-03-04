@@ -1,8 +1,7 @@
 import React from "react";
 import {Box} from "@rebass/grid";
 import styled from "styled-components";
-import {Heading02, Heading03, Text} from "../components/global/typography";
-import {ACCENT} from "../variables";
+// import {ACCENT} from "../variables";
 import Button from "../components/button";
 
 const CaseStudy = styled(Box)`
@@ -19,9 +18,10 @@ const CaseStudy = styled(Box)`
     }
 `;
 
-const Title = styled(Heading02)`
+const Title = styled.h2`
     position: relative;
     margin-top: -75px;
+    margin-bottom: 0;
     background-color: #ffffff;
     left: -32px;
     padding-top: 15px;
@@ -36,8 +36,8 @@ const _CaseStudy = (props) => {
                 <img src="https://placehold.it/500x300/FFEE93/FFEE93" alt={`${props.title}`} />
                 <Box px={4} pb={4}>
                     <Title mb={`0px`}>{props.title}</Title>
-                    <Heading03 mt={`5px`} color={ACCENT}>Case Study</Heading03>
-                    <Text tight>{props.intro}</Text>
+                    <h3>Case Study</h3>
+                    <p>{props.intro}</p>
                     <Button>Read Case Study</Button>
                 </Box>
             </CaseStudy>

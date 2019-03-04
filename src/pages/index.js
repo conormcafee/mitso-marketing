@@ -1,46 +1,102 @@
 import React from "react"
+import styled from "styled-components";
 import {Flex, Box} from "@rebass/grid";
 import SEO from "../components/seo";
 import Layout from "../components/layout"
-import {Heading01, Heading02, Heading03, Text} from "../components/global/typography";
 
 import Button from "../components/button/index";
 import Tagline from "../components/tagline";
 import CaseStudies from "../components/caseStudies";
 import WorkWithMitso from "../components/workWithMitso";
 
+import { graphql, StaticQuery } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
+
+import Hero_Circle from "../images/backgrounds/hero-circle.svg";
+
+import {WHO_WE_ARE, TAG_LINE, CASE_STUDIES} from "../data";
+
+const Intro = styled(Flex)`
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+`;
+
+const Hero = styled(Box)`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translate(150px, -40px);
+`;
+
+const HeroBG = styled.img`
+	position: absolute;
+`;
+
+const HeroImg = styled(BackgroundImage)`
+	height: 600px;
+	width: 600px;
+	border-radius: 100%;
+	border: 20px solid #ffffff;
+	position: relative;
+	z-index: 1;
+`;
+
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    
-	<Flex as="section">
-		<Box px={[3, 4]} mb={6}>
-			<Heading01>We deliver smart, tailored and targeted communications to help your business thrive</Heading01>
-			<Button>Work with MiTSO Marketing</Button>
-		</Box>
-	</Flex>
+	<StaticQuery query={graphql`
+      query {
+        desktop: file(relativePath: { eq: "pexels-photo-914931.jpg" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 4160) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `}render={data => {
+			const imageData = data.desktop.childImageSharp.fluid
+			return (
+			<Layout>
+				<SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+				
+			<Intro as="section">
+				<Box px={[3, 4]} mb={6}>
+					<h1>We deliver smart, tailored and targeted communications to help your business thrive</h1>
+					<Button>Work with MiTSO Marketing</Button>
+				</Box>
+
+				<Hero>
+					<HeroBG src={Hero_Circle} />
+					<HeroImg 
+						Tag="section"
+						fluid={imageData}
+						backgroundColor={`#040e18`}
+					/>
+				</Hero>
+	</Intro>
 
 	{/* Who WE Are */}
 
 	<Flex as="section" flexWrap={['wrap', 'nowrap']} pb={6}>
 		
 		<Flex as="aside" width={[1, 1/3]} px={[3, 4]} mb={3} flexDirection="column" alignItems="flex-start" justifyContent="flex-end">
-			<Heading02 mb={`0px`}>Who We Are</Heading02>
+			<WhoWeAreHeading>Who We Are</WhoWeAreHeading>
 			<Button>Learn More</Button>
 		</Flex>
 
 		<Flex as="article" width={[1, 2/3]} flexWrap="wrap">
 				{WHO_WE_ARE.slice(0, 2).map((block, index) => (
 					<Box width={[1, 1/2]} px={[3, 4]} key={index}>
-						<Heading03>{block.title}</Heading03>
-						<Text tight>{block.text}</Text>
+						<h3>{block.title}</h3>
+						<p>{block.text}</p>
 					</Box>
 				))}
 	
 				{WHO_WE_ARE.slice(2, 4).map((block, index) => (
 					<Box width={[1, 1/2]} px={[3, 4]} mt={3} key={index}>
-						<Heading03>{block.title}</Heading03>
-						<Text tight>{block.text}</Text>
+						<h3>{block.title}</h3>
+						<p>{block.text}</p>
 					</Box>
 				))}
 		</Flex>
@@ -59,49 +115,11 @@ const IndexPage = () => (
 	<WorkWithMitso />
 
   </Layout>
+	)}} />
 )
 
 export default IndexPage
 
-const WHO_WE_ARE = [
-	{
-		title: "We Plan",
-		text: "We believe a strategic approach is essential and we work with you to develop sales and marketing strategies which help to focus your investment in the right way."
-	},
-
-	{
-		title: "We Brand",
-		text: "We love simple and impactful branding and we work with our clients to create a unique brand identity that stands the test of time."
-	},
-
-	{
-		title: "We Promote",
-		text: "We specialise in all areas of marketing from building innovative digital campaigns through to managing exciting events."
-	},
-
-	{
-		title: "We Review",
-		text: "We know how to reach - all to. We know that time and money is precious, which is why we consistently review and improve our campaigns and performance."
-	}
-];
-
-const TAG_LINE = ["We Plan", "We Brand", "We Promote", "We Review"];
-
-const CASE_STUDIES = [
-	{
-		title: "Obelisk",
-		url: "/",
-		intro: "Vestibulum sit amet orci ac massa mattis maximus in ornare lorem. Vivamus tempus porttitor efficitur. Vestibulum lacinia porttitor dapibus."
-	},
-	{
-		title: "E Stars",
-		url: "/",
-		intro: "Vestibulum sit amet orci ac massa mattis maximus in ornare lorem. Vivamus tempus porttitor efficitur. Vestibulum lacinia porttitor dapibus."
-	},
-	{
-		title: "Lawlor's of Naas",
-		url: "/",
-		intro: "Vestibulum sit amet orci ac massa mattis maximus in ornare lorem. Vivamus tempus porttitor efficitur. Vestibulum lacinia porttitor dapibus."
-	},
-];
-
+const WhoWeAreHeading = styled.h2`
+	margin-bottom: 0px;
+`; 

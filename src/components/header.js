@@ -49,6 +49,8 @@ const Header = styled.header`
 	margin-bottom: 1.45rem;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	position: relative;
+	z-index: 1;
 `;
 
 const NavList = styled.ol`
@@ -56,6 +58,7 @@ const NavList = styled.ol`
 	align-items: center;
 	justify-content: flex-end;
 	font-family: ${FONT_BOLD};
+	font-weight: 900;
 
 	list-style: none;
 	padding-left: 0;

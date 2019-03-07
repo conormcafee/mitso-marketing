@@ -34,7 +34,7 @@ export const CASE_STUDIES = [
 		intro: "Vestibulum sit amet orci ac massa mattis maximus in ornare lorem. Vivamus tempus porttitor efficitur. Vestibulum lacinia porttitor dapibus."
 	},
 	{
-		title: "Lawlor's of Naas",
+		title: "Ailin Traynor",
 		url: "/",
 		intro: "Vestibulum sit amet orci ac massa mattis maximus in ornare lorem. Vivamus tempus porttitor efficitur. Vestibulum lacinia porttitor dapibus."
 	},

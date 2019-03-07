@@ -4,7 +4,8 @@ import { GlobalStyle } from "../components/globalStyles";
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby";
 
-import Header from "./header"
+import Header from "./header";
+import Footer from "./footer";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -19,10 +20,13 @@ const Layout = ({ children }) => (
     `}
     render={data => (
     	<React.Fragment>
-        	<Normalize />
-          <GlobalStyle />
+      		<Normalize />
+          	<GlobalStyle />
         	<Header siteTitle={data.site.siteMetadata.title} />
-        	<main>{children}</main>
+			<main>
+				{children}
+			</main>
+          	<Footer />
       	</React.Fragment>
     )}
   />

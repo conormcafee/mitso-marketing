@@ -47,4 +47,30 @@ export const GlobalStyle = createGlobalStyle`
         margin-top: 1em;
         margin-bottom: 1em;
     }
+
+    figure {
+        margin: 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        font-family: ${FONT_LIGHT};
+        line-height: 1.75;
+        color: ${BASE};
+    }
+
+    address {
+        font-style: normal;
+    }
+
+    address p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 `

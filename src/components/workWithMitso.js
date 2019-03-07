@@ -2,7 +2,6 @@ import React from "react";
 import {Flex, Box} from "@rebass/grid";
 import styled from "styled-components";
 import {ACCENT} from "../variables";
-import {Heading03, Heading04, Text} from "../components/global/typography";
 import Button from "../components/button";
 
 import Icon01 from "../images/icons/web-design.svg";
@@ -22,6 +21,14 @@ const WorkBox = styled(Flex)`
     box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
 `;
 
+const Title = styled.h4`
+    margin-bottom: 0;
+`;
+
+const SubText = styled.p`
+    margin-top: 0; 
+`;
+
 const Icon = styled.img`
     height: 75px;
     width: 75px;
@@ -34,8 +41,8 @@ const Service = (props) => {
                 <Icon src={props.icon} alt={`${props.title} Icon`} />
             </Box>
             <Box width={3/4}>
-                <Heading04 mb={`0px`}>{props.title}</Heading04>
-                <Text mt={`5px`}>Find Out More</Text>
+                <Title>{props.title}</Title>
+                <SubText>Find Out More</SubText>
             </Box>
         </Flex>
     )
@@ -47,7 +54,7 @@ const _WorkWithMitso = () => {
             <Flex py={5} flexWrap={['wrap', 'nowrap']} alignItems="center">
                 <Box width={[1, 1/3]} px={[3, 4]} mb={[5, 0]}>
                     <WorkBox p={4} flexDirection="column" alignItems="center" justifyContent="center">
-                        <Heading03>Work with MiTSO</Heading03>
+                        <h3>Work with MiTSO</h3>
                         <Button>Start Project</Button>
                     </WorkBox>
                 </Box>

@@ -8,6 +8,7 @@ import Button from "../components/button/index";
 import Tagline from "../components/tagline";
 import CaseStudies from "../components/caseStudies";
 import WorkWithMitso from "../components/workWithMitso";
+import Thoughts from "../components/thoughts";
 
 import { graphql, StaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
@@ -113,6 +114,10 @@ const IndexPage = () => (
 	{/* Work with Mitso */}
 
 	<WorkWithMitso />
+
+	{/* Thoughts */}
+
+	<Thoughts />
 
   </Layout>
 	)}} />

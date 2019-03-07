@@ -23,11 +23,9 @@ const Layout = ({ children }) => (
       		<Normalize />
           	<GlobalStyle />
         	<Header siteTitle={data.site.siteMetadata.title} />
-			<main>
-				{children}
-			</main>
-          	<Footer />
-      	</React.Fragment>
+			<main>{children}</main>
+        	<Footer />
+    	</React.Fragment>
     )}
   />
 )

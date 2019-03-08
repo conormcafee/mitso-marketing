@@ -31,9 +31,9 @@ const Title = styled.h2`
 
 const _CaseStudy = (props) => {
     return (
-        <Box as="article" width={[1, 1/3 ]} px={[3, 4]} mt={[0, props.marginTop]} mb={[5, 0]}>
+        <Box as="article" width={[1, 1, 1/2, 1/3 ]} px={[3, 4]} mt={[0, props.marginTop]} mb={[5, 0]}>
             <CaseStudy>
-                <img src="https://placehold.it/500x300/FFEE93/FFEE93" alt={`${props.title}`} />
+                <img src="https://placehold.it/900x450/FFEE93/FFEE93" alt={`${props.title}`} />
                 <Box px={4} pb={4}>
                     <Title mb={`0px`}>{props.title}</Title>
                     <h3>Case Study</h3>

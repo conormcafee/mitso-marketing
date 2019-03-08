@@ -3,6 +3,7 @@ import {Flex, Box} from "@rebass/grid";
 import styled from "styled-components";
 import {ACCENT} from "../variables";
 import Button from "../components/button";
+import Container from "../components/container"
 
 import Icon01 from "../images/icons/web-design.svg";
 import Icon02 from "../images/icons/digital-marketing.svg";
@@ -36,7 +37,7 @@ const Icon = styled.img`
 
 const Service = (props) => {
     return (
-        <Flex width={1/2} mt={props.index > 1 ? 4 : 0} alignItems="center">
+        <Flex width={[1, 1/2]} mt={[props.index >= 1 ? 4 : 0, props.index > 1 ? 4 : 0]} alignItems="center">
             <Box width={1/4} mr={1}>
                 <Icon src={props.icon} alt={`${props.title} Icon`} />
             </Box>
@@ -51,22 +52,24 @@ const Service = (props) => {
 const _WorkWithMitso = () => {
     return (
         <WorkWithMitso>
-            <Flex py={5} flexWrap={['wrap', 'nowrap']} alignItems="center">
-                <Box width={[1, 1/3]} px={[3, 4]} mb={[5, 0]}>
-                    <WorkBox p={4} flexDirection="column" alignItems="center" justifyContent="center">
-                        <h3>Work with MiTSO</h3>
-                        <Button>Start Project</Button>
-                    </WorkBox>
-                </Box>
+            <Container>
+                <Flex py={5} flexWrap={['wrap', 'wrap', 'nowrap']} alignItems="center">
+                    <Box width={[1, 1, 1/3]} px={[3, 4]} mb={[5, 5, 0]}>
+                        <WorkBox p={4} flexDirection="column" alignItems="center" justifyContent="center">
+                            <h3>Work with MiTSO</h3>
+                            <Button>Start Project</Button>
+                        </WorkBox>
+                    </Box>
 
-                <Box width={[1, 2/3]} px={[3, 4]}>
-                    <WorkBox p={4} flexWrap="wrap">
-                        {SERVICES.map((service, index) => (
-                            <Service key={index} index={index} {...service} />
-                        ))}    
-                    </WorkBox>
-                </Box>
-            </Flex>
+                    <Box width={[1, 1, 2/3]} px={[3, 4]}>
+                        <WorkBox p={4} flexWrap="wrap">
+                            {SERVICES.map((service, index) => (
+                                <Service key={index} index={index} {...service} />
+                            ))}    
+                        </WorkBox>
+                    </Box>
+                </Flex>
+            </Container>
         </WorkWithMitso>
     )
 }

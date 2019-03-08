@@ -12,9 +12,13 @@ const GlobalHeading = css`
 export const GlobalStyle = createGlobalStyle`
     h1 {
         ${GlobalHeading}
-        font-size: 50px;
+        font-size: 40px;
         line-height: 1.2;
         max-width: 600px;
+
+        @media only screen and (min-width: 40em) {
+            font-size: 50px;
+        }
     }
 
     h2 {

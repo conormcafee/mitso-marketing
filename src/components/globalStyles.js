@@ -10,6 +10,10 @@ const GlobalHeading = css`
 `;
 
 export const GlobalStyle = createGlobalStyle`
+    body {
+        overflow-x: hidden;
+    }
+
     h1 {
         ${GlobalHeading}
         font-size: 40px;
@@ -76,5 +80,17 @@ export const GlobalStyle = createGlobalStyle`
     address p {
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    button {
+        appearance: none;
+        
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none;
+        }
     }
 `

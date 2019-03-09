@@ -24,24 +24,23 @@ const Intro = styled(Flex)`
 	position: relative;
 `;
 
-const Hero = styled(Box)`
-	display: none;
-	
-	@media only screen and (min-width: 768px) {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		transform: translate(150px, -40px);
-	}
+const Hero = styled.div`
+	position: relative;
 `;
 
-const HeroBG = styled.img`
+const HeroCircle = styled.img`
 	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 700px;
+	width: 700px;
 `;
 
 const HeroImg = styled(BackgroundImage)`
-	height: 600px;
-	width: 600px;
+	height: 500px;
+	width: 500px;
 	border-radius: 100%;
 	border: 20px solid #ffffff;
 	position: relative;
@@ -66,21 +65,18 @@ const IndexPage = () => (
 		<Layout>
 			<SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 			<Container>
-				<Intro as="section">
+				<Intro as="section" alignItems={'center'} justifyContent={'space-between'}>
 					
 					<Box px={[3, 4]} mb={6}>
 						<h1>We deliver smart, tailored and targeted communications to help your business thrive</h1>
 						<Button>Work with MiTSO</Button>
 					</Box>
-
+					
 					<Hero>
-						<HeroBG src={Hero_Circle} />
-						<HeroImg 
-							Tag="section"
-							fluid={imageData}
-							backgroundColor={`#040e18`}
-						/>
+						<HeroCircle src={Hero_Circle} alt="MiTSO Marketing" />
+						<HeroImg Tag="div" fluid={imageData} backgroundColor={`#040e18`} />
 					</Hero>
+
 				</Intro>
 			</Container>
 

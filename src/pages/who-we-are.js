@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 
 import HowWeWork from "../components/howWeWork";
 import MitsoCircle from "../images/backgrounds/mitso-circle.svg";
+import WorkWithMitso from "../components/workWithMitso";
 
 import Maeve from "../images/maeve.jpg";
 import Roisin from "../images/roisin.jpg";
@@ -54,7 +55,7 @@ const WhoWeAre = () => (
             </Box>
         </Wrapper>
 
-        <Team flexWrap={['wrap', 'wrap', 'nowrap']}>
+        <Team flexWrap={['wrap', 'wrap', 'nowrap']} mb={6}>
             {team.map((member, index) => (
                 <Box key={index} width={[1, 1, 1/3]} px={[3, 4]}>
                     <img src={member.img} alt={`${member.name}`} />
@@ -64,6 +65,8 @@ const WhoWeAre = () => (
             ))}
         </Team>
     </Container>
+
+    <WorkWithMitso />
   </Layout>
 )
 

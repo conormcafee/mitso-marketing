@@ -1,17 +1,19 @@
 import React from "react"
-import styled from "styled-components";
-import {Flex, Box} from "@rebass/grid";
-import Container from "../components/container";
+import styled from "styled-components"
+import {Flex, Box} from "@rebass/grid"
+import Container from "../components/container"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import HowWeWork from "../components/howWeWork";
-import MitsoCircle from "../images/backgrounds/mitso-circle.svg";
-import WorkWithMitso from "../components/workWithMitso";
+import HowWeWork from "../components/howWeWork"
+import MitsoCircle from "../images/backgrounds/mitso-circle.svg"
+import WorkWithMitso from "../components/workWithMitso"
 
-import Maeve from "../images/maeve.jpg";
-import Roisin from "../images/roisin.jpg";
+import Team from "../components/team";
+
+import Maeve from "../images/maeve.jpg"
+import Roisin from "../images/roisin.jpg"
 
 const Wrapper = styled(Flex)`
     position: relative;
@@ -23,11 +25,6 @@ const Wrapper = styled(Flex)`
         transform: translate(-50%, 50%);
         max-height: 600px;
     }
-`;
-
-const Team = styled(Flex)`
-    position: relative;
-    z-index: 1;
 `;
 
 
@@ -55,15 +52,8 @@ const WhoWeAre = () => (
             </Box>
         </Wrapper>
 
-        <Team flexWrap={['wrap', 'wrap', 'nowrap']} mb={6}>
-            {team.map((member, index) => (
-                <Box key={index} width={[1, 1, 1/3]} px={[3, 4]}>
-                    <img src={member.img} alt={`${member.name}`} />
-                    <h3>{member.name}</h3>
-                    <p>{member.what}</p>
-                </Box>
-            ))}
-        </Team>
+        <Team team={team} />
+        
     </Container>
 
     <WorkWithMitso />

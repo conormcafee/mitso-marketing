@@ -21,11 +21,11 @@ const Layout = ({ children }) => (
     render={data => (
     	<React.Fragment>
       		<Normalize />
-          	<GlobalStyle />
+         	<GlobalStyle />
         	<Header siteTitle={data.site.siteMetadata.title} />
-			<main>
-				{children}
-			</main>
+          	<main>
+           		{children}
+          	</main>
           	<Footer />
       	</React.Fragment>
     )}

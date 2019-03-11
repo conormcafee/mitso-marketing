@@ -4,108 +4,6 @@ import {Flex, Box} from "@rebass/grid";
 import {BLACK, SECONDARY, ACCENT} from "../variables";
 import QUOTE from "../images/icons/quote.svg";
 
-const Wrapper = styled(Box)`
-    background: ${BLACK};
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    position: relative;
-
-    &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -250px;
-        bottom: 0;
-        height: 100%;
-        width: 250px;
-        background: ${BLACK};
-    }
-`;
-
-const Title = styled.h2`
-    color: #ffffff;
-    margin-bottom: 0;
-
-    span {
-        color: ${SECONDARY};
-        margin-left: 5px;
-    }
-    @media only screen and (min-width: 1000px) {
-        transform: translateX(250px);
-    }
-`;
-
-const SubTitle = styled.h3`
-    color: #ffffff;
-    margin-top: 0;
-`;
-
-const Text = styled.p`
-    color: #ffffff;
-`;
-
-const QuoteWrapper = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-`;
-
-const Img = styled.img`
-    transform: translate(-50px, -50px);
-`;
-
-const ContentWrapper = styled(Flex)`
-    overflow: hidden;
-
-    @media only screen and (min-width: 1000px) {
-        transform: translateX(250px);
-    }
-`;
-
-const Content = styled(Box)`
-    position: relative;
-    z-index: 1;
-    flex: 1;
-    min-width: 250px;
-    opacity: ${props => props.active ? `1` : `0`};
-    transform: translateX(${props => props.active && props.index === 0 ? `0%` : (props.active && props.index === 1 ? `-100%` : (props.active && props.index === 2 ? `-200%` : `-300%`))});
-    transition: transform 500ms ease-in-out, opacity 150ms ease-in-out;
-
-    @media only screen and (min-width: 500px) {
-        min-width: 400px;
-    }
-`;
-
-const Nav = styled.ol`
-    position: relative;
-    z-index: 1;
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    align-items: center;
-
-    @media only screen and (min-width: 1000px) {
-        transform: translateX(250px);
-    }
-`;
-
-const Button = styled.button`
-    font-size: 0;
-    color: ${SECONDARY};
-    background-color: ${props => props.active ? `${ACCENT}` : `${SECONDARY}`};
-    border: 4px solid ${SECONDARY};
-    border-radius: 24px;
-    height: 24px;
-    width: 24px;
-    margin-left: 10px;
-    transition: background-color 150ms ease-in-out;
-
-    &:hover {
-        background-color: ${ACCENT};
-    }
-`;
-
 class HowWeWork extends React.Component {
     constructor(props) {
         super(props);
@@ -118,31 +16,117 @@ class HowWeWork extends React.Component {
 
     render() {
         return (
-            <Wrapper width={[1, 1, 2/3 ]} p={4}>
-                <QuoteWrapper>
-                    <Img src={QUOTE} alt="Quote" />
-                </QuoteWrapper>
+            <Box width={[1, 1, 2/3 ]} px={[3, 4]}>
+                <Wrapper>
+                    <QuoteWrapper>
+                        <Img src={QUOTE} alt="Quote" />
+                    </QuoteWrapper>
 
-                <Title>How We Work<span>.</span></Title>
+                    <Title>How We Work<span>.</span></Title>
 
-                <ContentWrapper>
-                    {data.map((item, index) => (
-                        <Content key={index} index={index} active={this.state.index === index}>
-                            <Text>{item.text}</Text>
-                            <SubTitle>{item.title}</SubTitle>
-                        </Content>
-                    ))}
-                </ContentWrapper>
+                    <ContentWrapper>
+                        {data.map((item, index) => (
+                            <Content key={index} index={index} active={this.state.index === index}>
+                                <Text>{item.text}</Text>
+                                <SubTitle>{item.title}</SubTitle>
+                            </Content>
+                        ))}
+                    </ContentWrapper>
 
-                <Nav>
-                    {data.map((item, index) => (<li key={index}><Button active={this.state.index === index}onClick={() => this.toggleStatus(index)}type="button">{item.title}</Button></li>))}
-                </Nav>
-            </Wrapper>
+                    <Nav>
+                        {data.map((item, index) => (<li key={index}><Button active={this.state.index === index}onClick={() => this.toggleStatus(index)}type="button">{item.title}</Button></li>))}
+                    </Nav>
+                </Wrapper>
+            </Box>
         )
     }
 }
 
 export default HowWeWork;
+
+const Wrapper = styled.div`
+    background: ${SECONDARY};
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 32px
+`;
+
+const Title = styled.h2`
+    color: ${BLACK};
+    margin-top: 0;
+    margin-bottom: 0;
+
+    span {
+        color: ${BLACK};
+        margin-left: 5px;
+    }
+`;
+
+const SubTitle = styled.h3`
+    color: ${BLACK};
+    margin-top: 0;
+`;
+
+const Text = styled.p`
+    color: ${BLACK};
+`;
+
+const QuoteWrapper = styled.div`
+    position: relative;
+`;
+
+const Img = styled.img`
+    position: absolute;
+    top: -75px;
+    right: -50px;
+    opacity: 0.4;
+    height: 450px;
+`;
+
+const ContentWrapper = styled(Flex)`
+    overflow: hidden;
+`;
+
+const Content = styled(Box)`
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    min-width: 250px;
+    opacity: ${props => props.active ? `1` : `0`};
+    transform: translateX(${props => props.active && props.index === 0 ? `0%` : (props.active && props.index === 1 ? `-100%` : (props.active && props.index === 2 ? `-200%` : `-300%`))});
+    transition: transform 500ms ease-in-out, opacity 150ms ease-in-out;
+
+    @media only screen and (min-width: 768px) {
+        min-width: 350px;
+    }
+`;
+
+const Nav = styled.ol`
+    position: relative;
+    z-index: 1;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+`;
+
+const Button = styled.button`
+    font-size: 0;
+    color: ${SECONDARY};
+    background-color: ${props => props.active ? `${ACCENT}` : `${BLACK}`};
+    border: 4px solid ${BLACK};
+    border-radius: 24px;
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    transition: background-color 150ms ease-in-out;
+
+    &:hover {
+        background-color: ${ACCENT};
+    }
+`;
 
 const data = [
     {

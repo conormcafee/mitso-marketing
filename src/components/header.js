@@ -54,8 +54,8 @@ export default _Header
 
 const NAV_DATA = [
 	{ label: "Who We Are", url: "/who-we-are", type: 'link' },
-	{ label: "Thoughts", url: "/", type: 'link' },
 	{ label: "What We Offer", url: "/", type: 'link' },
+	{ label: "Thoughts", url: "/", type: 'link' },
 	{ label: "Case Studies", url: "/", type: 'link' },
 	{ label: "Work with MiTSO", url: "/", type: 'button' }
 ]

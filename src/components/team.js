@@ -27,7 +27,14 @@ class Team extends React.Component {
 
         return (
             <React.Fragment>
-                <Flex as="section" mt={[5, 5, 5, 6]} pb={6}>
+                
+                <Container>
+                    <Box px={[3,4]} mt={[3, 3, 3, 6]}>
+                        <h2>Meet our Team.</h2>
+                    </Box>
+                </Container>
+
+                <Flex as="section" pb={6}>
                     <Container>
                         <Wrapper flexWrap={'wrap'}>
                             {team.map((member, index) => (

@@ -1,39 +1,37 @@
 import React from "react"
-import { Normalize } from 'styled-normalize';
-import { GlobalStyle } from "../components/globalStyles";
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby";
-
+import { Normalize } from 'styled-normalize'
+import { GlobalStyle } from "../components/globalStyles"
+import { StaticQuery, graphql } from "gatsby"
 import Header from "./header";
 import Footer from "./footer";
+import { ThemeProvider } from "styled-components"
+import theme from "../theme"
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-    	<React.Fragment>
-      		<Normalize />
-         	<GlobalStyle />
-        	<Header siteTitle={data.site.siteMetadata.title} />
-          	<main>
-           		{children}
-          	</main>
-          	<Footer />
-      	</React.Fragment>
-    )}
-  />
+		<StaticQuery
+    		query={graphql`
+      			query SiteTitleQuery {
+        			site {
+          				siteMetadata {
+            				title
+          				}
+        			}
+      			}
+			`}
+			render={data => (
+				<ThemeProvider theme={theme}>
+					<React.Fragment>
+						<Normalize />
+						<GlobalStyle />
+						<main>
+							<Header siteTitle={data.site.siteMetadata.title} />
+							{children}
+						</main>
+						<Footer />
+					</React.Fragment>
+				</ThemeProvider>
+			)}
+		/>
 )
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout

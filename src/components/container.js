@@ -1,5 +1,15 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
+
+const _Container = (props) => {
+    return (
+        <Container className={props.className}>
+            {props.children}
+        </Container>
+    )
+}
+
+export default _Container
 
 const Container = styled.div`
     position: relative;
@@ -12,14 +22,4 @@ const Container = styled.div`
         box-sizing: border-box;
     }
 }
-`;
-
-const _Container = (props) => {
-    return (
-        <Container className={props.className}>
-            {props.children}
-        </Container>
-    )
-}
-
-export default _Container
+`

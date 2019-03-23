@@ -7,11 +7,11 @@ import CloseIcon from "../images/icons/close.svg"
 const TeamMemberModal = (props) => {
     return (
         <Overlay>
-            <Member>
-                <ImageWrapper width={1/2}>
+            <Member flexWrap={['wrap', 'wrap', 'nowrap']}>
+                <ImageWrapper width={[1, 1, 1/2]}>
                     <Image style={{ backgroundImage: `url(${props.member.img})`}}></Image>
                 </ImageWrapper>
-                <Bio width={1/2} p={[3,4]}>
+                <Bio width={[1, 1, 1/2]} p={[3,4]}>
                     <Close onClick={props.closeModal}>
                         <img src={CloseIcon} alt="Close Modal" />
                     </Close>
@@ -54,6 +54,10 @@ const Member = styled(Flex)`
 
 const ImageWrapper = styled(Box)`
     position: relative;
+    
+    @media only screen and (max-width: 51.9375em) {
+        height: 200px;
+    }
 `
 
 const Image = styled.div`
@@ -73,10 +77,15 @@ const Bio = styled(Box)`
 
 const Close = styled.button`
     position: absolute;
-    top: 32px;
-    right: 32px;
+    top: 16px;
+    right: 16px;
     background: transparent;
     border: none;
+
+    @media only screen and (min-width: 52em) {
+        top: 32px;
+        right: 32px;
+    }
 `
 
 const Name = styled.h3`

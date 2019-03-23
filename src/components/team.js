@@ -6,22 +6,33 @@ import {ACCENT, BLACK, FONT_BOLD} from "../variables";
 
 import LinkedIn from "../images/icons/linkedin.svg";
 import Maeve from "../images/maeve.jpg"
-// import Roisin from "../images/roisin.jpg"
+import Roisin from "../images/roisin.jpg"
 // import Ciara from "../images/ciara.jpg"
 
 import TeamMemberModal from "../components/teamMemberModal";
 
+const initialState = {
+    activeTeamMember: null,
+    imageSwap: null
+}
+
 class Team extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            activeTeamMember: 0
-        }
+        this.state = {...initialState}
     }
 
     readMore = (index) => this.setState({ activeTeamMember: index === this.state.activeTeamMember ? null : index})
 
     closeModal = () => this.setState({ activeTeamMember: null })
+
+    swapImageIn = (index) => this.setState({ imageSwap: index })
+
+    swapImageOut = () => this.setState({ imageSwap: null })
+
+    componentDidUnmount() {
+        this.setState({ ...initialState })
+    }
 
     render() {
 
@@ -34,13 +45,18 @@ class Team extends React.Component {
                     </Box>
                 </Container>
 
-                <Flex as="section" pb={6}>
+                <Flex as="section">
                     <Container>
                         <Wrapper flexWrap={'wrap'}>
                             {team.map((member, index) => (
-                                <Box key={index} width={[1, 1/3]} px={[3, 4]} mt={index !== 0 ? [6, 6, 0] : [0]}>
+                                <Box key={index} width={[1, 1/2, 1/2, 1/3]} px={[3, 4]} mb={[5, 5, 5, 6]}>
                                     <Member>
-                                        <Photo src={member.img} alt={`${member.name}`} />
+                                        <Photo 
+                                            onMouseOver={() => this.swapImageIn(index)} 
+                                            onMouseOut={() => this.swapImageOut()} 
+                                            src={this.state.imageSwap === null ? member.img : this.state.imageSwap === index ? member.imgSwap : member.img} 
+                                            alt={`${member.name}`} 
+                                        />
                                         <Box py={[2,3]} px={[3,4]}>
                                             <Name>{member.name}</Name>
                                             <p>{member.what}</p>
@@ -125,6 +141,7 @@ const Button = styled.button`
 const team = [
     {
         img: Maeve,
+        imgSwap: Roisin,
         linkedin: "https://www.linkedin.com/in/maeve-finnegan",
         name: "Maeve Finnegan",
         what: "I develop strong relationships with each and every client and work with my team to help smash your business goals.",
@@ -135,6 +152,7 @@ const team = [
     },
     {
         img: Maeve,
+        imgSwap: Roisin,
         linkedin: "https://www.linkedin.com/in/roisin-watters",
         name: "Roisin Watters",
         what: "I work with clients to plan, develop and implement effective marketing communication campaigns.",
@@ -145,6 +163,7 @@ const team = [
     },
     {
         img: Maeve,
+        imgSwap: Roisin,
         linkedin: "https://www.linkedin.com/in/ciara-boylan/",
         name: "Ciara Boylan",
         what: "I assist the team with enhancing clients’ marketing campaigns. Alongside this, I am creating a digital strategy for MiTSO including the development of our new website. ",

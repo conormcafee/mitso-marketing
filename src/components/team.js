@@ -5,9 +5,13 @@ import Container from "../components/container";
 import {ACCENT, BLACK, FONT_BOLD} from "../variables";
 
 import LinkedIn from "../images/icons/linkedin.svg";
-import Maeve from "../images/maeve.jpg"
-import Roisin from "../images/roisin.jpg"
-// import Ciara from "../images/ciara.jpg"
+
+import Maeve from "../images/team/maeve-standard.jpg"
+import MaeveHover from "../images/team/maeve-hover.jpg"
+import Roisin from "../images/team/roisin-standard.jpg"
+import RoisinHover from "../images/team/roisin-hover.jpg"
+import Ciara from "../images/team/ciara-standard.jpg"
+import CiaraHover from "../images/team/ciara-hover.jpg"
 
 import TeamMemberModal from "../components/teamMemberModal";
 
@@ -29,10 +33,6 @@ class Team extends React.Component {
     swapImageIn = (index) => this.setState({ imageSwap: index })
 
     swapImageOut = () => this.setState({ imageSwap: null })
-
-    componentDidUnmount() {
-        this.setState({ ...initialState })
-    }
 
     render() {
 
@@ -141,7 +141,7 @@ const Button = styled.button`
 const team = [
     {
         img: Maeve,
-        imgSwap: Roisin,
+        imgSwap: MaeveHover,
         linkedin: "https://www.linkedin.com/in/maeve-finnegan",
         name: "Maeve Finnegan",
         what: "I develop strong relationships with each and every client and work with my team to help smash your business goals.",
@@ -151,8 +151,8 @@ const team = [
         psst: "What you might not know is the Maeve toured the world as a professional dancer with “Riverdance - The Show” for 4 years."
     },
     {
-        img: Maeve,
-        imgSwap: Roisin,
+        img: Roisin,
+        imgSwap: RoisinHover,
         linkedin: "https://www.linkedin.com/in/roisin-watters",
         name: "Roisin Watters",
         what: "I work with clients to plan, develop and implement effective marketing communication campaigns.",
@@ -162,8 +162,8 @@ const team = [
         psst: null
     },
     {
-        img: Maeve,
-        imgSwap: Roisin,
+        img: Ciara,
+        imgSwap: CiaraHover,
         linkedin: "https://www.linkedin.com/in/ciara-boylan/",
         name: "Ciara Boylan",
         what: "I assist the team with enhancing clients’ marketing campaigns. Alongside this, I am creating a digital strategy for MiTSO including the development of our new website. ",

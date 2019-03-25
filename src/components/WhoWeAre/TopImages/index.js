@@ -3,58 +3,65 @@ import {Flex,Box} from "@rebass/grid"
 import styled from "styled-components"
 import {ACCENT, WHITE} from "../../../variables"
 
+import Office01 from "../../../images/office/office-02.jpg"
+import Office03 from "../../../images/office/office-03.jpg"
+import Office04 from "../../../images/office/office-04.jpg"
+import Office05 from "../../../images/office/office-05.jpg"
+import Office06 from "../../../images/office/office-06.jpg"
+import Office08 from "../../../images/office/office-08.jpg"
+
 const TopImages = () => (
     <Flex as="section" mb={[3,3,3,6]} flexWrap={['wrap', 'wrap', 'nowrap']}>
         <Flex width={[1/2, 1/2, 1/3]} flexWrap="wrap">
-            <Box py={2} px={2} width={1/2}>
+            <Box py={3} px={3} width={1/2}>
                 <TopImage ar={2}>
-                    <Image bg={ACCENT} />
+                    <Image bg={ACCENT} style={{ backgroundImage: `url(${Office01})`}} />
                 </TopImage>
             </Box>
 
-            <Box py={2} px={2} width={1/2}>
+            <Box py={3} px={3} width={1/2}>
                 <TopImage ar={2}>
-                    <Image bg={WHITE} />
+                    <Image bg={WHITE} noBs />
                 </TopImage>
             </Box>
 
-            <Box py={2} px={2} width={1}>
+            <Box py={3} px={3} width={1}>
                 <TopImage ar={3}>
-                    <Image bg={ACCENT} />
+                    <Image bg={ACCENT} style={{ backgroundImage: `url(${Office03})`}} />
                 </TopImage>
             </Box>
         </Flex>
 
         <Flex width={[1/2, 1/2, 1/3]} flexWrap="wrap" alignItems="center">
-            <Box py={2} px={2} width={1/2} alignSelf="stretch">
+            <Box py={3} px={3} width={1/2} alignSelf="stretch">
                 <TopImage ar={1}>
-                    <Image bg={ACCENT} />
+                    <Image bg={ACCENT} style={{ backgroundImage: `url(${Office04})`}} />
                 </TopImage>
             </Box>
 
-            <Box py={2} px={2} width={1/2} alignSelf="stretch">
+            <Box py={3} px={3} width={1/2} alignSelf="stretch">
                 <TopImage ar={1}>
-                    <Image bg={ACCENT} push />
+                    <Image bg={ACCENT} push style={{ backgroundImage: `url(${Office05})`}} />
                 </TopImage>
             </Box>
         </Flex>
 
         <LastGroup width={[1, 1, 1/3]} flexWrap="wrap">
-            <Box py={2} px={2} width={1}>
+            <Box py={3} px={3} width={1}>
                 <TopImage ar={3}>
-                    <Image bg={ACCENT} />
+                    <Image bg={ACCENT} style={{ backgroundImage: `url(${Office06})`}} />
                 </TopImage>
             </Box>
 
-            <Box py={2} px={2} width={1/2}>
+            <Box py={3} px={3} width={1/2}>
                 <TopImage ar={2}>
-                    <Image bg={WHITE} />
+                    <Image bg={WHITE} noBs />
                 </TopImage>
             </Box>
 
-            <Box py={2} px={2} width={1/2}>
+            <Box py={3} px={3} width={1/2}>
                 <TopImage ar={2}>
-                    <Image bg={ACCENT} />
+                    <Image bg={ACCENT} style={{ backgroundImage: `url(${Office08})`}} />
                 </TopImage>
             </Box>
         </LastGroup>
@@ -75,11 +82,14 @@ const Image = styled(Box)`
     left: 0;
     right: 0;
     bottom: 0;
-    background: ${props => props.bg};
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: -4px 6px 4px 0 ${props => props.noBs ? `rgba(0, 0, 0, 0)` : `rgba(0, 0, 0, 0.1)`};
 
     @media only screen and (min-width: 40em) {
-        border: 10px solid ${WHITE};
-        transform: ${props => props.push ? `translateY(50px)` : `translateY(0px)`};
+        transform: ${props => props.push ? `translateY(75px)` : `translateY(0px)`};
     }
 `
 

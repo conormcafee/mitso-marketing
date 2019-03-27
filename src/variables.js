@@ -5,6 +5,7 @@ export const SECONDARY = '#FFEE93';
 
 export const BASE = '#8D8D92';
 export const BLACK = '#3A405A';
+export const WHITE = '#ffffff';
 
 export const FONT_BOLD = `'Nunito', sans-serif`;
 export const FONT_LIGHT = `'Lato', sans-serif`;

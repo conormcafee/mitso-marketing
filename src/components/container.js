@@ -1,18 +1,5 @@
-import React from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-    position: relative;
-
-    @media only screen and (min-width: 1400px) {
-        max-width: 1400px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-    }
-}
-`;
+import React from "react"
+import styled from "styled-components"
 
 const _Container = (props) => {
     return (
@@ -23,3 +10,17 @@ const _Container = (props) => {
 }
 
 export default _Container
+
+const Container = styled.div`
+    position: relative;
+    z-index: 1;
+
+    @media only screen and (min-width: 1200px) {
+        max-width: 1250px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+}
+`

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import {Flex, Box} from "@rebass/grid";
-import {BLACK, SECONDARY, ACCENT} from "../variables";
-import QUOTE from "../images/icons/quote.svg";
+import {BLACK, SECONDARY, ACCENT} from "../../../variables";
+import QUOTE from "../../../images/icons/quote.svg";
 
 class HowWeWork extends React.Component {
     constructor(props) {
@@ -16,7 +16,7 @@ class HowWeWork extends React.Component {
 
     render() {
         return (
-            <Box width={[1, 1, 2/3 ]} px={[3, 4]}>
+            <Box width={[1, 1/2, 1/2, 2/3 ]} px={[3, 4]}>
                 <Wrapper>
                     <QuoteWrapper>
                         <Img src={QUOTE} alt="Quote" />

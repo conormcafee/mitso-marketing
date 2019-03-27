@@ -2,56 +2,84 @@ import React from "react";
 import styled from "styled-components";
 import {Flex, Box} from "@rebass/grid";
 import Container from "../components/container";
-import {ACCENT, SECONDARY, BLACK, FONT_BOLD} from "../variables";
+import {ACCENT, BLACK, FONT_BOLD} from "../variables";
 
 import LinkedIn from "../images/icons/linkedin.svg";
-import Maeve from "../images/maeve.jpg"
-import Roisin from "../images/roisin.jpg"
-import Ciara from "../images/ciara.jpg"
+
+import Maeve from "../images/team/maeve-standard.jpg"
+import MaeveHover from "../images/team/maeve-hover.jpg"
+import Roisin from "../images/team/roisin-standard.jpg"
+import RoisinHover from "../images/team/roisin-hover.jpg"
+import Ciara from "../images/team/ciara-standard.jpg"
+import CiaraHover from "../images/team/ciara-hover.jpg"
+
+import MitsoCircle from "../images/backgrounds/mitso-circle.svg";
 
 import TeamMemberModal from "../components/teamMemberModal";
+
+const initialState = {
+    activeTeamMember: null,
+    imageSwap: null
+}
 
 class Team extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            activeTeamMember: null
-        }
+        this.state = {...initialState}
     }
 
     readMore = (index) => this.setState({ activeTeamMember: index === this.state.activeTeamMember ? null : index})
 
-    closeModal = () => this.setState({ activeTeamMember: null } , () => console.log("Clicked"))
+    closeModal = () => this.setState({ activeTeamMember: null })
+
+    swapImageIn = (index) => this.setState({ imageSwap: index })
+
+    swapImageOut = () => this.setState({ imageSwap: null })
 
     render() {
 
         return (
             <React.Fragment>
-                <Background as="section" mt={6} py={6}>
+                
+                <TeamWrapper mt={6}>
                     <Container>
-                        <Wrapper flexWrap={'wrap'}>
-                            {team.map((member, index) => (
-                                <Box key={index} width={[1, 1/3]} px={[3, 4]} mt={index !== 0 ? [6, 6, 0] : [0]}>
-                                    <Member>
-                                        <div>
-                                            <Header>
-                                                <Photo src={member.img} alt={`${member.name}`} />
-                                                <Name>{member.name}</Name>
-                                            </Header>
-                                            
-                                            <p>{member.what}</p>
-                                        </div>
-
-                                        <Footer>
-                                            <a href={member.linkedin} title={`Connect with ${member.name} on LinkedIn`} alt={`Connect with ${member.name} on LinkedIn`}><LinkedInIcon src={LinkedIn} alt="LinkedIn" /></a>
-                                            <Button onClick={() => this.readMore(index)}>Read More</Button>
-                                        </Footer>
-                                    </Member>
-                                </Box>
-                            ))}
-                        </Wrapper>
+                        <Box pt={[3,4]} px={[3,4]} mt={[3, 3, 3]}>
+                            <h2>Meet our Team.</h2>
+                        </Box>
                     </Container>
-                </Background>
+
+                    <Flex>
+                        <Container>
+                            <Wrapper flexWrap={'wrap'}>
+                                {team.map((member, index) => (
+                                    <Box key={index} width={[1, 1/2, 1/2, 1/3]} px={[3, 4]} mb={[5, 5, 5, 6]} mt={[index === 1 ? 5 : 0]}>
+                                        <Member>
+                                            <Photo 
+                                                onClick={() => this.readMore(index)}
+                                                onMouseOver={() => this.swapImageIn(index)} 
+                                                onMouseOut={() => this.swapImageOut()} 
+                                                src={this.state.imageSwap === null ? member.img : this.state.imageSwap === index ? member.imgSwap : member.img} 
+                                                alt={`${member.name}`} 
+                                            />
+                                            <Box onClick={() => this.readMore(index)} py={[2,3]} px={[3,4]}>
+                                                <Name>{member.name}</Name>
+                                                <p>{member.what}</p>
+                                            </Box>   
+                                            
+                                            <Footer as="footer" py={[2,3]} px={[3,4]}>
+                                                <a href={member.linkedin} title={`Connect with ${member.name} on LinkedIn`} alt={`Connect with ${member.name} on LinkedIn`}><LinkedInIcon src={LinkedIn} alt="LinkedIn" /></a>
+                                                <Button onClick={() => this.readMore(index)}>Read More</Button>
+                                            </Footer>
+                                        </Member>
+                                    </Box>
+                                ))}
+                            </Wrapper>
+                        </Container>
+                    </Flex>
+                    
+                    <Circle src={MitsoCircle} alt="MiTSO" />
+
+                </TeamWrapper>
 
                 {this.state.activeTeamMember !== null &&
                     <TeamMemberModal 
@@ -66,74 +94,75 @@ class Team extends React.Component {
 
 export default Team
 
-const Background = styled(Flex)`
-    background: ${BLACK};
+const TeamWrapper = styled(Box)`
+    background: #f6f6f6;
+    position: relative;
+    overflow: hidden;
 `
 
 const Wrapper = styled(Flex)`
     position: relative;
-`;
+`
 
 const Member = styled.figure`
     background: white;
-    border: 1px solid #cccccc;
-    border-radius: 8px;
-    box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    height: 100%;
+    box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-`;
+    overflow: hidden;
 
-const Header = styled.header`
-    display: flex;
-    align-items: center;
-`;
+    &:hover {
+        cursor: pointer;
+    }
+`
 
 const LinkedInIcon = styled.img`
     height: 20px;
     width: 20px;
-`;
+`
 
 const Photo = styled.img`
-   height: 100px;
-   width: 100px;
-   border-radius: 100%;
+   width: 100%;
    object-fit: cover;
-   border: 5px solid ${SECONDARY};
    margin-right: 32px;
-`;
+`
 
 const Name = styled.h3`
     margin-top: 0;
     margin-bottom: 0;
-`;
+`
 
-const Footer = styled.footer`
+const Footer = styled(Box)`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #e6e6e6
-`;
+    border-top: 1px solid #e6e6e6;
+`
 
 const Button = styled.button`
     background: transparent;
     border: none;
     color: ${BLACK};
+    padding: 0;
     font-family: ${FONT_BOLD};
 
     &:hover {
-        color: ${ACCENT}
+        color: ${ACCENT};
     }
-`;
+`
+
+const Circle = styled.img`
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+`
 
 const team = [
     {
         img: Maeve,
+        imgSwap: MaeveHover,
         linkedin: "https://www.linkedin.com/in/maeve-finnegan",
         name: "Maeve Finnegan",
         what: "I develop strong relationships with each and every client and work with my team to help smash your business goals.",
@@ -144,6 +173,7 @@ const team = [
     },
     {
         img: Roisin,
+        imgSwap: RoisinHover,
         linkedin: "https://www.linkedin.com/in/roisin-watters",
         name: "Roisin Watters",
         what: "I work with clients to plan, develop and implement effective marketing communication campaigns.",
@@ -154,6 +184,7 @@ const team = [
     },
     {
         img: Ciara,
+        imgSwap: CiaraHover,
         linkedin: "https://www.linkedin.com/in/ciara-boylan/",
         name: "Ciara Boylan",
         what: "I assist the team with enhancing clients’ marketing campaigns. Alongside this, I am creating a digital strategy for MiTSO including the development of our new website. ",

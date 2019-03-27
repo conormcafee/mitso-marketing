@@ -4,63 +4,12 @@ import {Flex, Box} from "@rebass/grid";
 import Button from "../components/button";
 import {BLACK, ACCENT} from "../variables";
 import Container from "../components/container";
-
-const NavyBackground = styled(Box)`
-    background-color: ${BLACK};
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    position: relative;
-
-    @media only screen and (min-width: 40em) {
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 0;
-
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: -250px;
-            height: 100%;
-            width: 250px;
-            background: ${BLACK};
-            border-top-right-radius: 8px;
-            border-bottom-right-radius: 8px;
-        }
-    }
-`;
-
-const Thought = styled(Box)`
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-
-    figcaption {
-        padding-top: 16px;
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-bottom: 32px;
-    }
-`;
-
-const Title = styled.h3`
-    margin-bottom: 0;
-`;
-
-const Author = styled.h4`
-    margin-top: 0;
-    color: ${ACCENT}
-`;
-
 class Thoughts extends React.Component {
     render() {
         return (
             <Container>
-                <Flex flexWrap={['wrap', 'wrap', 'noWrap']} px={[3, 4]} mt={6} as="section">
-                    <Box width={[1, 1, 1/3]} mb={[5, 4, 0]} pt={4}>
+                <Flex flexWrap={['wrap', 'wrap', 'noWrap']} mt={6} as="section">
+                    <Box width={[1, 1, 1/3]} mb={[5, 4, 0]} px={[3, 4]} pt={4}>
                         <h2>Thoughts</h2>
                         <p>Take a look through our recents thoughts and ramblings.  Along with getting our thoughts out on this website, we are also active on social media.  Why don’t you give us a follow on your preferred platform</p>
                         <Button>All Thoughts</Button>
@@ -94,6 +43,53 @@ class Thoughts extends React.Component {
 }
 
 export default Thoughts
+
+const NavyBackground = styled(Box)`
+    background-color: ${BLACK};
+    border-radius: 8px;
+    position: relative;
+
+    @media only screen and (min-width: 40em) {
+        /* border-top-right-radius: 0;
+        border-bottom-left-radius: 0; */
+
+        &:after {
+            /* content: ""; */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -250px;
+            height: 100%;
+            width: 250px;
+            background: ${BLACK};
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+`
+
+const Thought = styled(Box)`
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    figcaption {
+        padding-top: 16px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 32px;
+    }
+`
+
+const Title = styled.h3`
+    margin-bottom: 0;
+`
+
+const Author = styled.h4`
+    margin-top: 0;
+    color: ${ACCENT};
+`
 
 const thoughts = [
     {

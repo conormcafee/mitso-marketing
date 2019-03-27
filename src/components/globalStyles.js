@@ -12,6 +12,7 @@ const GlobalHeading = css`
 export const GlobalStyle = createGlobalStyle`
     body {
         overflow-x: hidden;
+        background: #fdfdfd;
     }
 
     h1 {

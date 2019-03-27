@@ -37,6 +37,7 @@ const WhoWeAre = () => {
             <Team />
 
             <WorkWithMitso />
+            
         </Layout>
     )
 }

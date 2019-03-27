@@ -6,6 +6,7 @@ import Container from "../components/container";
 import {ACCENT, BLACK} from "../variables";
 
 const FooterWrapper = styled(Flex)`
+    font-size: 14px;
     border-bottom: 5px solid ${ACCENT};
 `;
 
@@ -46,7 +47,7 @@ class Footer extends React.Component {
         return (
             <FooterWrapper>
                 <Container>
-                    <Flex as="footer" flexWrap={['wrap', 'wrap', 'noWrap']} px={[3, 4]} mt={[0, 0, 6]} mb={4}>
+                    <Flex as="footer" flexWrap={['wrap', 'wrap', 'noWrap']} px={[3, 4]} mt={[0, 0, 5]} mb={4}>
                         <Box width={[1, 1, 1/3]} mt={[5, 5, 3]}>
                             <img src={Logo} alt="MiTSO Marketing" />
 

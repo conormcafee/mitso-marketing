@@ -124,12 +124,14 @@ const NavList = styled.ol`
 
 	list-style: none;
 	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 
 	a {
 		color: ${BLACK};
 		text-decoration: none;
 		transition: color 150ms ease-in-out;
-		font-size: 18px;
+		/* font-size: 14px; */
 
 		&:hover {
 			color: ${ACCENT}
@@ -147,6 +149,7 @@ const NavList = styled.ol`
 		align-items: center;
 		justify-content: flex-end;
 		margin-left: 24px;
+		transform: translateY(-8px);
 
 		li:not(:last-child) {
 			margin-right: 24px

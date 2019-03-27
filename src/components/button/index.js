@@ -7,10 +7,10 @@ const Btn = styled.button`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding-top: 15px;
-    padding-right: 30px;
-    padding-bottom: 15px;
-    padding-left: 30px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
     border-radius: 25px;
     background: rgb(156,233,207);
     background: linear-gradient(90deg, rgba(156,233,207,1) 0%, rgba(111,216,186,1) 100%);

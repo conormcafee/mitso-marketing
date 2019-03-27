@@ -6,7 +6,7 @@ import CloseIcon from "../images/icons/close.svg"
 
 const TeamMemberModal = (props) => {
     return (
-        <Overlay>
+        <Overlay onClick={props.closeModal}>
             <Member flexWrap={['wrap', 'wrap', 'nowrap']}>
                 <ImageWrapper width={[1, 1, 1/2]}>
                     <Image style={{ backgroundImage: `url(${props.member.img})`}}></Image>

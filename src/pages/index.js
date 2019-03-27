@@ -11,13 +11,16 @@ import WorkWithMitso from "../components/workWithMitso"
 import Thoughts from "../components/thoughts"
 import Hero_Circle from "../images/backgrounds/hero-circle.svg"
 import {WHO_WE_ARE, TAG_LINE, CASE_STUDIES} from "../data"
+
+import Test from "../images/backgrounds/test.jpg"
+
 class Index extends React.Component {
 	render() {
 		return (
 			<Layout>
 				<SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 				<Container>
-					<Intro as="section" alignItems={'center'} justifyContent={'space-between'}>	
+					<Intro style={{ backgroundImage: `url(${Test})` }} as="section" alignItems={'center'} justifyContent={'space-between'}>	
 						<Box px={[3, 4]} mb={6}>
 							<h1>We deliver smart, tailored and targeted communications to help your business thrive</h1>
 							<Button>Work with MiTSO</Button>
@@ -80,14 +83,14 @@ class Index extends React.Component {
 export default Index
 
 const WhoWeAreHeading = styled.h2`
-	margin-bottom: 0px;
+	margin-bottom: 16px;
 `
 
 const Intro = styled(Flex)`
-	max-width: 1400px;
-	margin-left: auto;
-	margin-right: auto;
 	position: relative;
+	background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
 `;
 
 const Hero = styled.div`

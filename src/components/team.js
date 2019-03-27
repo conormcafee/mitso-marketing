@@ -13,6 +13,8 @@ import RoisinHover from "../images/team/roisin-hover.jpg"
 import Ciara from "../images/team/ciara-standard.jpg"
 import CiaraHover from "../images/team/ciara-hover.jpg"
 
+import MitsoCircle from "../images/backgrounds/mitso-circle.svg";
+
 import TeamMemberModal from "../components/teamMemberModal";
 
 const initialState = {
@@ -39,39 +41,45 @@ class Team extends React.Component {
         return (
             <React.Fragment>
                 
-                <Container>
-                    <Box px={[3,4]} mt={[3, 3, 3, 6]}>
-                        <h2>Meet our Team.</h2>
-                    </Box>
-                </Container>
-
-                <Flex as="section">
+                <TeamWrapper mt={6}>
                     <Container>
-                        <Wrapper flexWrap={'wrap'}>
-                            {team.map((member, index) => (
-                                <Box key={index} width={[1, 1/2, 1/2, 1/3]} px={[3, 4]} mb={[5, 5, 5, 6]}>
-                                    <Member>
-                                        <Photo 
-                                            onMouseOver={() => this.swapImageIn(index)} 
-                                            onMouseOut={() => this.swapImageOut()} 
-                                            src={this.state.imageSwap === null ? member.img : this.state.imageSwap === index ? member.imgSwap : member.img} 
-                                            alt={`${member.name}`} 
-                                        />
-                                        <Box py={[2,3]} px={[3,4]}>
-                                            <Name>{member.name}</Name>
-                                            <p>{member.what}</p>
-                                        </Box>   
-                                        
-                                        <Footer as="footer" py={[2,3]} px={[3,4]}>
-                                            <a href={member.linkedin} title={`Connect with ${member.name} on LinkedIn`} alt={`Connect with ${member.name} on LinkedIn`}><LinkedInIcon src={LinkedIn} alt="LinkedIn" /></a>
-                                            <Button onClick={() => this.readMore(index)}>Read More</Button>
-                                        </Footer>
-                                    </Member>
-                                </Box>
-                            ))}
-                        </Wrapper>
+                        <Box pt={[3,4]} px={[3,4]} mt={[3, 3, 3]}>
+                            <h2>Meet our Team.</h2>
+                        </Box>
                     </Container>
-                </Flex>
+
+                    <Flex>
+                        <Container>
+                            <Wrapper flexWrap={'wrap'}>
+                                {team.map((member, index) => (
+                                    <Box key={index} width={[1, 1/2, 1/2, 1/3]} px={[3, 4]} mb={[5, 5, 5, 6]} mt={[index === 1 ? 5 : 0]}>
+                                        <Member>
+                                            <Photo 
+                                                onClick={() => this.readMore(index)}
+                                                onMouseOver={() => this.swapImageIn(index)} 
+                                                onMouseOut={() => this.swapImageOut()} 
+                                                src={this.state.imageSwap === null ? member.img : this.state.imageSwap === index ? member.imgSwap : member.img} 
+                                                alt={`${member.name}`} 
+                                            />
+                                            <Box onClick={() => this.readMore(index)} py={[2,3]} px={[3,4]}>
+                                                <Name>{member.name}</Name>
+                                                <p>{member.what}</p>
+                                            </Box>   
+                                            
+                                            <Footer as="footer" py={[2,3]} px={[3,4]}>
+                                                <a href={member.linkedin} title={`Connect with ${member.name} on LinkedIn`} alt={`Connect with ${member.name} on LinkedIn`}><LinkedInIcon src={LinkedIn} alt="LinkedIn" /></a>
+                                                <Button onClick={() => this.readMore(index)}>Read More</Button>
+                                            </Footer>
+                                        </Member>
+                                    </Box>
+                                ))}
+                            </Wrapper>
+                        </Container>
+                    </Flex>
+                    
+                    <Circle src={MitsoCircle} alt="MiTSO" />
+
+                </TeamWrapper>
 
                 {this.state.activeTeamMember !== null &&
                     <TeamMemberModal 
@@ -86,45 +94,52 @@ class Team extends React.Component {
 
 export default Team
 
+const TeamWrapper = styled(Box)`
+    background: #f6f6f6;
+    position: relative;
+    overflow: hidden;
+`
+
 const Wrapper = styled(Flex)`
     position: relative;
-`;
+`
 
 const Member = styled.figure`
     background: white;
-    border-radius: 8px;
-    border: 1px solid #e6e6e6;
-    box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
-    height: 100%;
+    box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-`;
+
+    &:hover {
+        cursor: pointer;
+    }
+`
 
 const LinkedInIcon = styled.img`
     height: 20px;
     width: 20px;
-`;
+`
 
 const Photo = styled.img`
    width: 100%;
    object-fit: cover;
    margin-right: 32px;
-`;
+`
 
 const Name = styled.h3`
     margin-top: 0;
     margin-bottom: 0;
-`;
+`
 
 const Footer = styled(Box)`
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #e6e6e6;
-`;
+`
 
 const Button = styled.button`
     background: transparent;
@@ -136,7 +151,13 @@ const Button = styled.button`
     &:hover {
         color: ${ACCENT};
     }
-`;
+`
+
+const Circle = styled.img`
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+`
 
 const team = [
     {

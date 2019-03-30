@@ -3,6 +3,7 @@ import {Flex, Box} from "@rebass/grid";
 import styled from "styled-components";
 import Container from "../components/container"
 import {BLACK, SECONDARY, FONT_BOLD} from "../variables";
+import {TAG_LINE} from "../data"
 
 const TagLine = styled(Box)`
     position: relative;
@@ -46,12 +47,12 @@ const Text = styled.span`
     color: ${props => props.yellow ? `${SECONDARY}` : `#ffffff`};
 `;
 
-const Tagline = (props) => {
+const Tagline = () => {
     return (    
         <Container>
             <TagLine as="section" mb={4} width={[1, 1, 2/3]} pb={[4, 0]}>
                 <Flex flexWrap={['wrap', 'noWrap']} p={[3, 4]} justifyContent="space-between">
-                    {props.data.map((item, index) => (
+                    {TAG_LINE.map((item, index) => (
                         <Item key={index}>
                             <Text>{item}</Text>
                             <Text yellow>.</Text>

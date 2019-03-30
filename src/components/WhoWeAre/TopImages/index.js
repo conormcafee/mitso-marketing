@@ -88,10 +88,11 @@ const Image = styled(Box)`
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 4px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    box-shadow: -4px 6px 4px 0 ${props => props.noBs ? `rgba(0, 0, 0, 0)` : `rgba(0, 0, 0, 0.05)`};
+    box-shadow: -4px 6px 4px 0 ${props => props.noBs ? `rgba(0, 0, 0, 0)` : `rgba(0, 0, 0, 0.1)`};
 `
 
 const LastGroup = styled(Flex)`

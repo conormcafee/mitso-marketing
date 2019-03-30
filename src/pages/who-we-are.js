@@ -49,6 +49,11 @@ const Title = styled.h1`
     @media only screen and (max-width: 40em) {
         font-size: 30px;
     }
+    @media only screen and (min-width: 768px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 `
 
 const AboutHeading = styled(Heading02)`

@@ -10,7 +10,7 @@ import CaseStudies from "../components/caseStudies"
 import WorkWithMitso from "../components/workWithMitso"
 import Thoughts from "../components/thoughts"
 import Hero_Circle from "../images/backgrounds/hero-circle.svg"
-import {WHO_WE_ARE, TAG_LINE, CASE_STUDIES} from "../data"
+import {WHO_WE_ARE, CASE_STUDIES} from "../data"
 
 import Test from "../images/backgrounds/test.jpg"
 
@@ -60,7 +60,7 @@ class Index extends React.Component {
 			
 				{/* Tag Line */}
 				
-				<Tagline data={TAG_LINE} />
+				<Tagline />
 
 				{/* Case Studies */}
 

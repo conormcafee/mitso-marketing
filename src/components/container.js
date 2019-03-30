@@ -15,8 +15,8 @@ const Container = styled.div`
     position: relative;
     z-index: 1;
 
-    @media only screen and (min-width: 1200px) {
-        max-width: 1250px;
+    @media only screen and (min-width: 1600px) {
+        max-width: 1600px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;

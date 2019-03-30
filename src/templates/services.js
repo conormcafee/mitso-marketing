@@ -6,9 +6,9 @@ import Container from "../components/container"
 import { graphql } from "gatsby"
 
 export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
+  data,
 }) {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
+  const { markdownRemark } = data
   const { frontmatter } = markdownRemark
   return (
     <Layout>

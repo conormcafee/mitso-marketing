@@ -1,9 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import {Flex, Box} from "@rebass/grid";
+import React from "react"
+import {StaticQuery, graphql} from "gatsby"
+import styled from "styled-components"
+import {Flex, Box} from "@rebass/grid"
 import Logo from "../images/mitso-logo.svg"
-import Container from "../components/container";
-import {ACCENT, BLACK} from "../variables";
+import Container from "../components/container"
+import {ACCENT, BLACK} from "../variables"
 
 const FooterWrapper = styled(Flex)`
     font-size: 14px;
@@ -42,49 +43,54 @@ const FooterBox = (props) => {
     )
 }
 
-class Footer extends React.Component {
-    render() {
-        return (
-            <FooterWrapper>
-                <Container>
-                    <Flex as="footer" flexWrap={['wrap', 'wrap', 'noWrap']} px={[3, 4]} mt={[0, 0, 5]} mb={4}>
-                        <Box width={[1, 1, 1/3]} mt={[5, 5, 3]}>
-                            <img src={Logo} alt="MiTSO Marketing" />
+const Footer = () => {
+    return (
+        <FooterWrapper>
+            <Container>
+                <Flex as="footer" flexWrap={['wrap', 'wrap', 'noWrap']} px={[3, 4]} mt={[0, 0, 5]} mb={4}>
+                    <Box width={[1, 1, 1/3]} mt={[5, 5, 3]}>
+                        <img src={Logo} alt="MiTSO Marketing" />
 
-                            <address>
-                                <p>Address Line 01</p>
-                                <p>Address Line 02</p>
-                                <p>Address Line 03</p>
-                                <p>Newry</p>
-                                <p>Co. Armagh</p>
+                        <address>
+                            <p>Address Line 01</p>
+                            <p>Address Line 02</p>
+                            <p>Address Line 03</p>
+                            <p>Newry</p>
+                            <p>Co. Armagh</p>
 
-                                <FooterCTA href="/">+447709128374</FooterCTA>
-                                <FooterCTA href="/">hello@mitsomarketing.com</FooterCTA>
-                            </address>
-                        </Box> 
+                            <FooterCTA href="/">+447709128374</FooterCTA>
+                            <FooterCTA href="/">hello@mitsomarketing.com</FooterCTA>
+                        </address>
+                    </Box> 
 
-                        <FooterBox 
-                            title="Quick Links"
-                            data={QUICK_LINKS}
-                        /> 
-                        
-                        <FooterBox 
-                            title="Case Studies"
-                            data={CASE_STUDIES}
-                        />
+                    <FooterBox title="Quick Links" data={QUICK_LINKS} /> 
+                    
+                    <FooterBox title="Case Studies" data={CASE_STUDIES} />
 
-                        <FooterBox 
-                            title="Services"
-                            data={SERVICES}
-                        />
-                    </Flex>
-                </Container>
-            </FooterWrapper>
-        )
-    }
+                    <FooterBox title="Services" data={SERVICES}/>
+                </Flex>
+            </Container>
+        </FooterWrapper>
+    )
 }
 
-export default Footer
+export default () => (<StaticQuery query={footerQuery} render={data=>(<Footer serivces={data} />)} />)
+
+const footerQuery = graphql`
+    query {
+        allMarkdownRemark( filter: { frontmatter: { category: { eq: "Services" }} }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        path
+                        icon
+                    }
+                }
+            }
+        }
+    }
+`
 
 const QUICK_LINKS = [
     {

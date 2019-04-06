@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>right-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services-on-Offer" transform="translate(-325.000000, -294.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Work-With">
+                <g id="Group-4" transform="translate(78.000000, 105.000000)">
+                    <g id="Group-13" transform="translate(0.000000, 64.000000)">
+                        <g id="Primary-Button" transform="translate(87.000000, 106.000000)">
+                            <g id="Group" transform="translate(31.000000, 15.000000)">
+                                <g id="right-arrow" transform="translate(129.000000, 4.000000)">
+                                    <path d="M2.04297365,17 C1.53706341,17 1.03079487,16.8075409 0.635238984,16.4204063 C-0.182386495,15.6188014 -0.214991192,14.2852557 0.562147136,13.4419082 L5.133254,8.48525577 L0.56680495,3.56295785 C-0.213199725,2.72256552 -0.184536256,1.3890199 0.630939464,0.584459683 C1.44677348,-0.220100531 2.73985426,-0.19017887 3.51985894,0.65058286 L9.43349108,7.02389662 C10.1873403,7.83658371 10.1887735,9.11656587 9.43814889,9.93183878 L3.52487505,16.3450481 C3.12251159,16.7798357 2.58399665,17 2.04297365,17 Z" id="Path"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

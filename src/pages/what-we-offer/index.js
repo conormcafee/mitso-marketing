@@ -7,7 +7,9 @@ import SEO from "../../components/seo"
 import Container from "../../components/container"
 import Button from "../../components/button"
 import test from "../../images/test-blob.svg"
-import {Heading02, Heading03} from "../../components/global/typography"
+import QuickLink from "./components/QuickLinks"
+import {Heading02} from "../../components/global/typography"
+import AbstractCircle from "../../images/backgrounds/circle-option-b.svg"
 
 const navigatePage = (page) => navigate(page)
 
@@ -52,20 +54,22 @@ const WhatWeOffer = (props) => {
             <SEO title="What We Offer" />
 
             <Container>
-                <Box px={[3,4]} mb={[4,5]}>
+                <Hero px={[3,4]} mx="auto" mb={[4,5]}>
                     <h1>What We Offer</h1>
 
                     <p>We believe that effective marketing begins with a clear strategy and a deep understanding of the customer.</p>
                     <p>From there we build an impressive brand identity, delivering creative and targeted messaging to the right customers at the right time.</p>
-                </Box>
+
+                    <Circle src={AbstractCircle} alt="Abstract Circle" />
+                </Hero>
 
                 <Flex flexWrap={['wrap']}>
                     {services.map((service, index) => (
-                        <Box width={1/4} p={[3,4]} key={index}>
-                            <QuickLink onClick={() => navigate(service.node.frontmatter.path)} p={3}>
-                                <Heading03>{service.node.frontmatter.title}</Heading03>
-                            </QuickLink>
-                        </Box>  
+                        <QuickLink 
+                            key={index}
+                            onClick={() => navigate(service.node.frontmatter.path)}
+                            title={service.node.frontmatter.title}
+                        />
                     ))}
                 </Flex>
             </Container>
@@ -102,21 +106,22 @@ const services = graphql`
     }
 `
 
-const ServiceTitle = styled(Heading02)`
-    margin-bottom: 0;
+const Hero = styled(Box)`
+    text-align: center;
+    position: relative;
+
+    h1, p {
+        margin-left: auto;
+        margin-right: auto;
+    }
 `
 
-const QuickLink = styled.button`
-    border: 1px solid #e6e6e6;
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: -2px 4px 2px 0 rgba(0, 0, 0, 0.05);
-    width: 100%;
-    background-color: #ffffff;
-    transition: background-color 150ms ease-in-out;
+const Circle = styled.img`
+    position: absolute;
+    top: 0;
+    left: 0;
+`
 
-    &:hover {
-        background-color: #f6f6f6;
-        box-shadow: 2px 4px -2px 0 rgba(0, 0, 0, 0.05);
-    }
+const ServiceTitle = styled(Heading02)`
+    margin-bottom: 0;
 `

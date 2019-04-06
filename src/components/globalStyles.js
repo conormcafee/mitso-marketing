@@ -15,6 +15,12 @@ export const GlobalStyle = createGlobalStyle`
         background: #fdfdfd;
     }
 
+    html {
+        font-family: ${FONT_LIGHT};
+        font-weight: 400;
+        line-height: 1.75;
+    }
+
     h1 {
         ${GlobalHeading}
         font-size: 40px;

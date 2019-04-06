@@ -16,7 +16,8 @@ const TopImages = () => (
     <Flex 
         as="section" 
         mx={[-2, -2, -3] }
-        mb={[3,3,3,6]} 
+        mb={[3,3,3,6]}
+        px={[3,4]} 
         flexWrap={['wrap', 'wrap', 'nowrap']}>
         <Flex width={[1/2, 1/2, 1/3]} flexWrap="wrap">
             <Box p={padding} width={1/2}>

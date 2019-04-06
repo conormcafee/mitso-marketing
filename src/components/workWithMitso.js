@@ -1,57 +1,36 @@
-import React from "react";
-import {Flex, Box} from "@rebass/grid";
-import styled from "styled-components";
-import {ACCENT} from "../variables";
-import Button from "../components/button";
+import React from "react"
+import {Link} from "gatsby"
+import {StaticQuery, graphql} from "gatsby"
+import {Flex, Box} from "@rebass/grid"
+import styled from "styled-components"
+import {ACCENT, BASE, FONT_LIGHT} from "../variables"
+import Button from "../components/button"
 import Container from "../components/container"
 
-import Icon01 from "../images/icons/web-design.svg";
-import Icon02 from "../images/icons/digital-marketing.svg";
-import Icon03 from "../images/icons/social-media.svg";
-import Icon04 from "../images/icons/visual.svg";
-import Icon05 from "../images/icons/event-management.svg";
-import Icon06 from "../images/icons/pr.svg";
+import Icon01 from "../images/icons/web-design.svg"
+// import Icon02 from "../images/icons/digital-marketing.svg"
+// import Icon03 from "../images/icons/social-media.svg"
+// import Icon04 from "../images/icons/visual.svg"
+// import Icon05 from "../images/icons/event-management.svg"
+// import Icon06 from "../images/icons/pr.svg"
 
-const WorkWithMitso = styled.section`
-    background-color: ${ACCENT};
-`;
+const Service = (props) => (
+    <Flex width={[1, 1/2]} mt={[props.index >= 1 ? 4 : 0, props.index > 1 ? 4 : 0]} alignItems="center">
+        <Box width={1/4} mr={1}>
+            <Icon src={props.icon} alt={`${props.title} Icon`} />
+        </Box>
+        <Box width={3/4}>
+            <Title>{props.title}</Title>
+            <SubText to={props.url}>Find Out More</SubText>
+        </Box>
+    </Flex>
+)
 
-const WorkBox = styled(Flex)`
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
-`;
 
-const Title = styled.h4`
-    margin-bottom: 0;
-`;
-
-const SubText = styled.p`
-    margin-top: 0; 
-`;
-
-const Icon = styled.img`
-    height: 75px;
-    width: 75px;
-`;
-
-const Service = (props) => {
+const WorkWithMitso = (props) => {
+    const services = props.data.allMarkdownRemark.edges;
     return (
-        <Flex width={[1, 1/2]} mt={[props.index >= 1 ? 4 : 0, props.index > 1 ? 4 : 0]} alignItems="center">
-            <Box width={1/4} mr={1}>
-                <Icon src={props.icon} alt={`${props.title} Icon`} />
-            </Box>
-            <Box width={3/4}>
-                <Title>{props.title}</Title>
-                <SubText>Find Out More</SubText>
-            </Box>
-        </Flex>
-    )
-}
-
-const _WorkWithMitso = () => {
-    return (
-        <WorkWithMitso>
+        <Wrapper>
             <Container>
                 <Flex py={5} flexWrap={['wrap', 'wrap', 'nowrap']} alignItems="center">
                     <Box width={[1, 1, 1/3]} px={[3, 4]} mb={[5, 5, 0]}>
@@ -63,48 +42,69 @@ const _WorkWithMitso = () => {
 
                     <Box width={[1, 1, 2/3]} px={[3, 4]}>
                         <WorkBox p={4} flexWrap="wrap">
-                            {SERVICES.map((service, index) => (
-                                <Service key={index} index={index} {...service} />
+                            {services.map((service, index) => (
+                                <Service 
+                                    key={index} 
+                                    index={index} 
+                                    title={service.node.frontmatter.title}
+                                    url={service.node.frontmatter.path}
+                                    icon={Icon01}
+                                />
                             ))}    
                         </WorkBox>
                     </Box>
                 </Flex>
             </Container>
-        </WorkWithMitso>
+        </Wrapper>
     )
 }
 
-export default _WorkWithMitso
+export default () => (<StaticQuery query={servicesQuery} render={data => (<WorkWithMitso data={data} />)} />)
 
-const SERVICES = [
-    {
-        icon: Icon01,
-        title: "Web Design",
-        url: "/"
-    },
-    {
-        icon: Icon02,
-        title: "Digital Marketing",
-        url: "/"
-    },
-    {
-        icon: Icon03,
-        title: "Social Media",
-        url: "/"
-    },
-    {
-        icon: Icon04,
-        title: "Visuals",
-        url: "/"
-    },
-    {
-        icon: Icon05,
-        title: "Event Management",
-        url: "/"
-    },
-    {
-        icon: Icon06,
-        title: "PR",
-        url: "/"
-    },
-]
+const servicesQuery = graphql`
+    query {
+        allMarkdownRemark( filter: { frontmatter: { category: { eq: "Services" }} }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        path
+                        icon
+                    }
+                }
+            }
+        }
+    }
+`        
+
+const Wrapper = styled.section`
+    background-color: ${ACCENT};
+`
+
+const WorkBox = styled(Flex)`
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
+`
+
+const Title = styled.h4`
+    margin-top: 0;
+    margin-bottom: 0;
+`
+
+const SubText = styled(Link)`
+    display: block;
+    margin-top: 5px; 
+    text-decoration: none;
+    color: ${BASE};
+    font-family: ${FONT_LIGHT};
+
+    &:hover {
+        color: ${ACCENT}
+    }
+`
+
+const Icon = styled.img`
+    height: 75px;
+    width: 75px;
+`

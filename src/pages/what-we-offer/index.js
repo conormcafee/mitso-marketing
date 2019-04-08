@@ -25,8 +25,8 @@ const Service = (props) => {
     return (
         <Flex 
             as="section"
-            flexWrap={['wrap', 'nowrap']}
-            alignItems="center" py={[5]}
+            flexWrap={['wrap', 'wrap', 'wrap', 'nowrap']}
+            alignItems="center" py={[4,5]}
         >
             <Flex 
                 width={width} px={padding} 
@@ -63,7 +63,7 @@ const WhatWeOffer = (props) => {
                     <Circle src={AbstractCircle} alt="Abstract Circle" />
                 </Hero>
 
-                <Flex flexWrap={['wrap']}>
+                <Flex flexWrap={'wrap'}>
                     {services.map((service, index) => (
                         <QuickLink 
                             key={index}

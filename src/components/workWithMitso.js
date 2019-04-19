@@ -35,7 +35,7 @@ const WorkWithMitso = (props) => {
                 <Flex py={5} flexWrap={['wrap', 'wrap', 'nowrap']} alignItems="center">
                     <Box width={[1, 1, 1/3]} px={[3, 4]} mb={[5, 5, 0]}>
                         <WorkBox p={4} flexDirection="column" alignItems="center" justifyContent="center">
-                            <h3>Work with MiTSO</h3>
+                            <h3>Like our work? Contact us today for a chat</h3>
                             <Button>Start Project</Button>
                         </WorkBox>
                     </Box>
@@ -85,6 +85,10 @@ const WorkBox = styled(Flex)`
     background-color: white;
     border-radius: 8px;
     box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
+
+    h3 {
+        text-align: center;
+    }
 `
 
 const Title = styled.h4`

@@ -32,7 +32,7 @@ const _CaseStudies = (props) => {
     return (
         <React.Fragment>
             <Container>
-                <CaseStudies as="section" flexWrap={['wrap', 'wrap', 'wrap', 'nowrap']} my={6}>
+                <CaseStudies as="section" flexWrap={['wrap', 'wrap', 'wrap', 'nowrap']} my={props.my ? props.my : 6}>
                     {props.data.map((study, index) => ( 
                         <CaseStudy key={index} {...study} marginTop={index !== 0 && index + 4} />
                     ))}

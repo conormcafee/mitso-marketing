@@ -1,12 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import RightArrow from "../../images/icons/right-arrow.svg"
-import {FONT_BOLD} from "../../variables"
+import LeftArrow from "../../images/icons/left-arrow.svg"
+import {FONT_BOLD, BLACK} from "../../variables"
 
 const Button = (props) => (
-    <Btn onClick={props.onClick}>
+    <Btn onClick={props.onClick} back={props.back}>
+        {props.reversed && <Icon src={LeftArrow} alt="Arrow to indicate button is clickable" reversed />}
         <span>{props.children}</span>
-        <Icon src={RightArrow} alt="Arrow to indicate button is clickable" />
+        {!props.reversed && <Icon src={RightArrow} alt="Arrow to indicate button is clickable" />}
     </Btn>
 )
 
@@ -21,26 +23,18 @@ const Btn = styled.button`
     padding-bottom: 16px;
     padding-left: 24px;
     border-radius: 25px;
-    background-color: rgb(111,216,186);
-    background: linear-gradient(90deg, rgba(111,216,186,1) 0%, rgba(100,208,177,1) 100%);
-    border: none;
+    background-color: ${props => !props.back ? `rgb(111,216,186)` : `transparen`};
+    background: ${props => !props.back ? `linear-gradient(90deg, rgba(111,216,186,1) 0%, rgba(100,208,177,1) 100%)` : `transparent`};
+    border: 2px solid ${props => !props.back ? `transparent` : `${BLACK}`};
     font-family: ${FONT_BOLD};
     font-weight: 900;
-    color: #ffffff;
+    color: ${props => !props.back ? `#ffffff` : `${BLACK}`};
     appearance: none;
-    transition: background 150ms ease-in-out;
-
-    img {
-        transform: scale(0);
-        width: 0px;
-        transition: 
-            transform 150ms ease-in-out,
-            width 150ms ease-in-out;
-    }
+    transition: background 150ms ease-in-out; 
 
     &:hover {
         cursor: pointer;
-        background: linear-gradient(90deg, rgba(100,208,177,1) 0%, rgba(100,208,177,1) 100%);
+        background: ${props => !props.back ? `linear-gradient(90deg, rgba(100,208,177,1) 0%, rgba(100,208,177,1) 100%)` : `transparent`};
 
         img {
             transform: scale(1);
@@ -50,5 +44,11 @@ const Btn = styled.button`
 `
 
 const Icon = styled.img`
-    margin-left: 10px;
+    width: 0px;
+    transform: scale(0);
+    margin-left: ${props => props.reversed ? `0px` : `10px`};
+    margin-right: ${props => props.reversed ? `10px` : `0px`};
+    transition: 
+        transform 150ms ease-in-out,
+        width 150ms ease-in-out;
 `

@@ -1,10 +1,27 @@
 import React from "react";
 import {Box} from "@rebass/grid";
 import styled from "styled-components";
-// import {ACCENT} from "../variables";
 import Button from "../components/button";
+import SubHeading from "../components/SubHeading"
 
-const CaseStudy = styled(Box)`
+const CaseStudy = (props) => {
+    return (
+        <Box as="article" width={[1, 1, 1/2, 1/3 ]} px={[3, 4]} mt={[0, props.marginTop]} mb={[5, 0]}>
+            <Wrapper>
+                <img src="https://placehold.it/900x600/FFEE93/FFEE93" alt={`${props.title}`} />
+                <Box px={4} pb={4}>
+                    <Title mb={`0px`}>{props.title} <SubHeading text="Case Study" /></Title>
+                    <p>{props.intro}</p>
+                    <Button>Read Case Study</Button>
+                </Box>
+            </Wrapper>
+        </Box>
+    )
+}
+
+export default CaseStudy
+
+const Wrapper = styled(Box)`
     position: relative;
     z-index: 1;
     background: #ffffff;
@@ -26,21 +43,3 @@ const Title = styled.h2`
     padding-left: 32px;
     border-top-right-radius: 8px;
 `;
-
-const _CaseStudy = (props) => {
-    return (
-        <Box as="article" width={[1, 1, 1/2, 1/3 ]} px={[3, 4]} mt={[0, props.marginTop]} mb={[5, 0]}>
-            <CaseStudy>
-                <img src="https://placehold.it/900x600/FFEE93/FFEE93" alt={`${props.title}`} />
-                <Box px={4} pb={4}>
-                    <Title mb={`0px`}>{props.title}</Title>
-                    <h3>Case Study</h3>
-                    <p>{props.intro}</p>
-                    <Button>Read Case Study</Button>
-                </Box>
-            </CaseStudy>
-        </Box>
-    )
-}
-
-export default _CaseStudy

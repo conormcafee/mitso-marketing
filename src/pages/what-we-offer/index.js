@@ -7,9 +7,8 @@ import SEO from "../../components/seo"
 import Container from "../../components/container"
 import Button from "../../components/button"
 import test from "../../images/test-blob.svg"
-import QuickLink from "./components/QuickLinks"
 import {Heading02} from "../../components/global/typography"
-import AbstractCircle from "../../images/backgrounds/circle-option-b.svg"
+import Tagline from "../../components/tagline"
 
 const navigatePage = (page) => navigate(page)
 
@@ -59,19 +58,9 @@ const WhatWeOffer = (props) => {
 
                     <p>We believe that effective marketing begins with a clear strategy and a deep understanding of the customer.</p>
                     <p>From there we build an impressive brand identity, delivering creative and targeted messaging to the right customers at the right time.</p>
-
-                    <Circle src={AbstractCircle} alt="Abstract Circle" />
+                    
+                    <Tagline centered />
                 </Hero>
-
-                <Flex flexWrap={'wrap'}>
-                    {services.map((service, index) => (
-                        <QuickLink 
-                            key={index}
-                            onClick={() => navigate(service.node.frontmatter.path)}
-                            title={service.node.frontmatter.title}
-                        />
-                    ))}
-                </Flex>
             </Container>
 
             <Flex as="section" flexDirection="column" mx="auto" css={{ maxWidth: '1200px'}}>
@@ -114,12 +103,6 @@ const Hero = styled(Box)`
         margin-left: auto;
         margin-right: auto;
     }
-`
-
-const Circle = styled.img`
-    position: absolute;
-    top: 0;
-    left: 0;
 `
 
 const ServiceTitle = styled(Heading02)`

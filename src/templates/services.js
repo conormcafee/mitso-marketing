@@ -4,7 +4,7 @@ import styled from "styled-components"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Container from "../components/container"
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 import WorkWithMitso from "../components/workWithMitso"
 
 import Button from "../components/button"
@@ -15,11 +15,18 @@ import SubHeading from "../components/SubHeading"
 
 import {CASE_STUDIES} from "../data"
 
-export default function Template({data}) {
-  const { markdownRemark } = data
+const ServicesTemplate = (props) => {
+  const getUrl = (data) => navigate(data)
+  return (
+    <Template data={props.data} getUrl={getUrl} />
+  )
+}
+
+const Template = (props) => {
+  const { markdownRemark } = props.data
   const { frontmatter } = markdownRemark
   return (
-    <Layout>
+      <Layout>
         <SEO title={frontmatter.title} />
         <Container>
             <Box px={[3,4]}>
@@ -28,7 +35,7 @@ export default function Template({data}) {
                   <Intro>{frontmatter.intro}</Intro>
                   
                   <Flex mx="auto" alignItems="center" justifyContent="space-between" my={[3,4]} css={{ maxWidth: '350px'}}>
-                    <Button reversed back>All Services</Button>
+                    <Button onClick={() => props.getUrl('/what-we-offer')} reversed back>All Services</Button>
                     <Button>Get in Touch</Button>
                   </Flex>
               </Box>
@@ -55,8 +62,8 @@ export default function Template({data}) {
         </Container>
         <WorkWithMitso />
     </Layout>
-  )
-}
+    )
+  }
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -72,6 +79,8 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default ServicesTemplate
 
 const Title = styled.h1`
   text-align: center;

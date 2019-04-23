@@ -41,8 +41,16 @@ class _Header extends React.Component {
 							{NAV_DATA.map((item, index) => (
 								<li key={index}>
 									{item.type === 'link' 
-									? <Link to={item.url}>{item.label}</Link>
-									: <MobileButton mobile={false}>{item.label}</MobileButton>
+									? 
+										<Link 
+											to={item.url} 
+											partiallyActive={true}
+											activeStyle={{ color: `${ACCENT}` }}
+										>{item.label}</Link>
+									: 
+										<MobileButton 
+											mobile={false}
+										>{item.label}</MobileButton>
 									}
 								</li>
 							))}

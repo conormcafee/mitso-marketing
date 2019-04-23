@@ -5,7 +5,7 @@ import LeftArrow from "../../images/icons/left-arrow.svg"
 import {FONT_BOLD, BLACK} from "../../variables"
 
 const Button = (props) => (
-    <Btn onClick={props.onClick} back={props.back}>
+    <Btn onClick={props.onClick} className={props.className} back={props.back}>
         {props.reversed && <Icon src={LeftArrow} alt="Arrow to indicate button is clickable" reversed />}
         <span>{props.children}</span>
         {!props.reversed && <Icon src={RightArrow} alt="Arrow to indicate button is clickable" />}

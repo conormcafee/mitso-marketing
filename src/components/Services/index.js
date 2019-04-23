@@ -41,13 +41,22 @@ const List = styled(Flex)`
 `
 
 const ListItem = styled(Box)`
-    &:nth-child(n+3) {
-        border-top: 2px solid #e6e6e6;
-    }
 
-    &:nth-child(odd) {
-        border-right: 2px solid #e6e6e6;
-    }
+    @media only screen and (max-width: 831px) {
+        :not(:first-child) {
+            border-top: 2px solid #e6e6e6;
+        }
+    } 
+
+    @media only screen and (min-width: 832px) {
+        &:nth-child(n+3) {
+            border-top: 2px solid #e6e6e6;
+        }
+
+        &:nth-child(odd) {
+            border-right: 2px solid #e6e6e6;
+        }
+    }   
 `
 
 const Icon = styled.img`

@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+<svg width="89px" height="89px" viewBox="0 0 89 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
     <title>menu</title>
     <desc>Created with Sketch.</desc>
-    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="v2" transform="translate(-408.000000, -153.000000)" fill-rule="nonzero">
-            <g id="menu" transform="translate(408.000000, 153.000000)">
-                <circle id="Oval" fill="#3A405A" cx="4.53703704" cy="30.462963" r="4.53703704"></circle>
-                <circle id="Oval" fill="#3A405A" cx="17.5" cy="30.462963" r="4.53703704"></circle>
-                <circle id="Oval" fill="#3A405A" cx="30.462963" cy="30.462963" r="4.53703704"></circle>
-                <circle id="Oval" fill="#9CE9CF" cx="4.53703704" cy="17.5" r="4.53703704"></circle>
-                <circle id="Oval" fill="#9CE9CF" cx="17.5" cy="17.5" r="4.53703704"></circle>
-                <circle id="Oval" fill="#9CE9CF" cx="30.462963" cy="17.5" r="4.53703704"></circle>
-                <circle id="Oval" fill="#3A405A" cx="4.53703704" cy="4.53703704" r="4.53703704"></circle>
-                <circle id="Oval" fill="#3A405A" cx="17.5" cy="4.53703704" r="4.53703704"></circle>
-                <circle id="Oval" fill="#3A405A" cx="30.462963" cy="4.53703704" r="4.53703704"></circle>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-36.000000, -30.000000)" fill-rule="nonzero">
+            <g id="menu" transform="translate(36.000000, 30.000000)">
+                <path d="M44.5,0 C19.9630179,0 0,19.9630179 0,44.5 C0,69.0369821 19.9630179,89 44.5,89 C69.0369821,89 89,69.0369821 89,44.5 C89,19.9630179 69.0369821,0 44.5,0 Z M44.5,85.8214286 C21.7144107,85.8214286 3.17857143,67.284 3.17857143,44.5 C3.17857143,21.716 21.7144107,3.17857143 44.5,3.17857143 C67.2855893,3.17857143 85.8214286,21.716 85.8214286,44.5 C85.8214286,67.284 67.2855893,85.8214286 44.5,85.8214286 Z" id="Shape" fill="#9CE9CF"></path>
+                <path d="M23.6071429,27 L65.3928571,27 C66.2816071,27 67,26.328 67,25.5 C67,24.672 66.2816071,24 65.3928571,24 L23.6071429,24 C22.7183929,24 22,24.672 22,25.5 C22,26.328 22.7183929,27 23.6071429,27 Z" id="Path" fill="#3A405A"></path>
+                <path d="M71.4166667,49 L17.5833333,49 C16.70775,49 16,49.672 16,50.5 C16,51.328 16.70775,52 17.5833333,52 L71.4166667,52 C72.29225,52 73,51.328 73,50.5 C73,49.672 72.29225,49 71.4166667,49 Z" id="Path" fill="#3A405A"></path>
+                <path d="M71.4166667,37 L17.5833333,37 C16.70775,37 16,37.672 16,38.5 C16,39.328 16.70775,40 17.5833333,40 L71.4166667,40 C72.29225,40 73,39.328 73,38.5 C73,37.672 72.29225,37 71.4166667,37 Z" id="Path" fill="#3A405A"></path>
+                <path d="M65.3928571,62 L23.6071429,62 C22.7183929,62 22,62.672 22,63.5 C22,64.328 22.7183929,65 23.6071429,65 L65.3928571,65 C66.2816071,65 67,64.328 67,63.5 C67,62.672 66.2816071,62 65.3928571,62 Z" id="Path" fill="#3A405A"></path>
             </g>
         </g>
     </g>

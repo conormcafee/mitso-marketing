@@ -56,8 +56,7 @@ const WhatWeOffer = (props) => {
                 <Hero px={[3,4]} mx="auto" mb={[4,5]}>
                     <h1>What We Offer</h1>
 
-                    <p>We believe that effective marketing begins with a clear strategy and a deep understanding of the customer.</p>
-                    <p>From there we build an impressive brand identity, delivering creative and targeted messaging to the right customers at the right time.</p>
+                    <p>We believe that effective marketing begins with a clear strategy and a deep understanding of the customer.  From there we build an impressive brand identity, delivering creative and targeted messaging to the right customers at the right time.</p>
                     
                     <Tagline centered />
                 </Hero>
@@ -102,6 +101,7 @@ const Hero = styled(Box)`
     h1, p {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 32px;
     }
 `
 

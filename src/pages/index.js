@@ -8,7 +8,7 @@ import Button from "../components/button/index"
 import Tagline from "../components/tagline"
 import CaseStudies from "../components/caseStudies"
 import WorkWithMitso from "../components/workWithMitso"
-import Thoughts from "../components/thoughts"
+import Thoughts from "../components/Thoughts"
 import Hero_Circle from "../images/backgrounds/hero-circle.svg"
 import {WHO_WE_ARE, CASE_STUDIES} from "../data"
 
@@ -72,7 +72,7 @@ class Index extends React.Component {
 
 				{/* Thoughts */}
 
-				<Thoughts />
+				<Thoughts homepage/>
 
 			</Layout>
 		)

@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
         ${GlobalHeading}
         font-size: 40px;
         line-height: 1.2;
-        max-width: 600px;
+        max-width: 700px;
 
         @media only screen and (min-width: 40em) {
             font-size: 50px;

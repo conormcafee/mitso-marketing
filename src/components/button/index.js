@@ -23,7 +23,7 @@ const Btn = styled.button`
     padding-bottom: 16px;
     padding-left: 24px;
     border-radius: 25px;
-    background-color: ${props => !props.back ? `rgb(111,216,186)` : `transparen`};
+    background-color: ${props => !props.back ? `rgb(111,216,186)` : `transparent`};
     background: ${props => !props.back ? `linear-gradient(90deg, rgba(111,216,186,1) 0%, rgba(100,208,177,1) 100%)` : `transparent`};
     border: 2px solid ${props => !props.back ? `transparent` : `${BLACK}`};
     font-family: ${FONT_BOLD};

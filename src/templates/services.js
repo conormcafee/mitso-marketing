@@ -26,44 +26,44 @@ const Template = (props) => {
   const { markdownRemark } = props.data
   const { frontmatter } = markdownRemark
   return (
-      <Layout>
-        <SEO title={frontmatter.title} />
-        <Container>
-            <Box px={[3,4]}>
-              <Box>
-                  <Title>{frontmatter.title}</Title>
-                  <Intro>{frontmatter.intro}</Intro>
-                  
-                  <Flex mx="auto" alignItems="center" justifyContent="space-between" my={[3,4]} css={{ maxWidth: '350px'}}>
-                    <Button onClick={() => props.getUrl('/what-we-offer')} reversed back>All Services</Button>
-                    <Button>Get in Touch</Button>
-                  </Flex>
-              </Box>
+    <Layout>
+      <SEO title={frontmatter.title} />
+      <Container>
+        <Box px={[3,4]}>
+          <Box>
+            <Title>{frontmatter.title}</Title>
+            <Intro>{frontmatter.intro}</Intro>
             
-              <Box px={[3,4]}>
-                <Statement statement={frontmatter.statement} />
-              </Box>
-            </Box>
+            <Flex mx="auto" alignItems="center" justifyContent="space-between" my={[3,4]} css={{ maxWidth: '350px'}}>
+              <Button onClick={() => props.getUrl('/what-we-offer')} reversed back>All Services</Button>
+              <Button>Get in Touch</Button>
+            </Flex>
+          </Box>
+        
+          <Box px={[3,4]}>
+            <Statement statement={frontmatter.statement} />
+          </Box>
+        </Box>
 
-            <Services 
-              title={frontmatter.title}
-              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus ante lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam eros, a volutpat urna commodo lobortis."
-              services={frontmatter.services}
-            />
+        <Services 
+          title={frontmatter.title}
+          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus ante lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam eros, a volutpat urna commodo lobortis."
+          services={frontmatter.services}
+        />
 
-            <Box px={[3,4]}>
-              <h2>{frontmatter.title} <SubHeading text="Latest Work" /></h2>
-            </Box>
-            
-            <CaseStudies data={CASE_STUDIES} my={3} />
+        <Box px={[3,4]}>
+          <h2>{frontmatter.title} <SubHeading text="Latest Work" /></h2>
+        </Box>
+        
+        <CaseStudies data={CASE_STUDIES} my={3} />
 
-            <Box py={5} />
-          
-        </Container>
-        <WorkWithMitso />
+        <Box py={5} />
+        
+      </Container>
+      <WorkWithMitso />
     </Layout>
-    )
-  }
+  )
+}
 
 export const pageQuery = graphql`
   query($path: String!) {

@@ -1,16 +1,16 @@
 import React from "react";
-import { navigate } from "gatsby";
 import styled from "styled-components"
 import SEO from "../../components/seo"
 import Layout from "../../components/layout"
 import {Flex,Box} from "@rebass/grid"
 import Container from "../../components/container"
 import WorkWithMitso from "../../components/workWithMitso"
-import Button from "../../components/button"
-import { BLACK } from "../../variables";
+import { BLACK } from "../../variables"
+import Tags from "../../components/Tags"
+import Share from "../../components/Share"
+import BackLink from "../../components/BackLink"
 
 const SubPage = () => {
-  const goTo = (path) => navigate(path)
   return (
     <Layout>
       <SEO title="Sub Page" />
@@ -18,22 +18,37 @@ const SubPage = () => {
         <Flex mb={5} px={[3,4]}>
           <Hero>
             <Title>New Sub Page</Title>
-            <Button onClick={() => goTo('/thoughts')} reversed back>Back to all Thoughts</Button>
-            <Box as="figure" mt={5}>
+
+            <Tags tags={['Blog', 'Post', 'Test', 'Testing']} />
+
+            <Flex alignItems="center" justifyContent="space-between" mt={5} mb={3}>
+              <BackLink url="/thoughts" title="Back to All Thoughts" />
+              <Share url="https://google.com" />
+            </Flex>
+            <Box as="figure">
               <img src="https://placehold.it/1400x600/FFEE93/FFEE93" alt="Sub Page" />
               <Caption as="figcaption" alignItems="center" justifyContent="space-between">
-                <p>by Maeve Finnegan</p>
-                <date>01st May 2019</date>
+                <h4>by Maeve Finnegan</h4>
+                <h4>1st May 2019</h4>
               </Caption>
             </Box>
           </Hero>
         </Flex>
-      
-        <Article as="article" px={[3,4]}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis urna non nisl ultrices condimentum. Nulla massa elit, sagittis et purus vitae, eleifend laoreet metus. In ut ex in massa lacinia dignissim ut ut nibh. Quisque et enim tempor, consectetur massa et, pellentesque turpis. Duis non accumsan sapien, vitae fringilla velit. Integer molestie ex in mauris malesuada vulputate eget quis velit. Ut rhoncus sodales mi, in laoreet ante rhoncus vel.</p>
-          <p>Donec fringilla tincidunt nibh. Maecenas quis eros ut ipsum accumsan efficitur. Maecenas eleifend magna mollis, laoreet magna sit amet, aliquam dolor. Etiam tincidunt metus enim, nec fermentum ligula hendrerit sed. Aenean pharetra pulvinar quam et mattis. Praesent mauris ex, consectetur sed feugiat eget, cursus porta nulla. In consectetur mauris in iaculis pulvinar.</p>
-          <p>Ut facilisis nunc tortor, sit amet laoreet odio aliquet et. Proin volutpat nec ante nec pellentesque. Fusce ullamcorper metus ligula, sed pellentesque nisi vulputate hendrerit. Integer sagittis lacus sit amet sem pretium dapibus. Fusce id tortor mauris. Fusce ornare feugiat lorem porttitor imperdiet. Nullam elementum risus nec sapien bibendum, in ornare dolor convallis. Mauris et facilisis enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec id lectus ornare, eleifend leo at, sollicitudin orci. Integer ac eleifend nisi. Duis scelerisque dictum felis, vitae blandit leo consequat eu. Mauris ac mollis orci.</p>
-        </Article>
+
+        <Box px={[3,4]}>
+          <Article as="article" mb={5}>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis urna non nisl ultrices condimentum. Nulla massa elit, sagittis et purus vitae, eleifend laoreet metus. In ut ex in massa lacinia dignissim ut ut nibh. Quisque et enim tempor, consectetur massa et, pellentesque turpis. Duis non accumsan sapien, vitae fringilla velit. Integer molestie ex in mauris malesuada vulputate eget quis velit. Ut rhoncus sodales mi, in laoreet ante rhoncus vel.</p>
+            <p>Donec fringilla tincidunt nibh. Maecenas quis eros ut ipsum accumsan efficitur. Maecenas eleifend magna mollis, laoreet magna sit amet, aliquam dolor. Etiam tincidunt metus enim, nec fermentum ligula hendrerit sed. Aenean pharetra pulvinar quam et mattis. Praesent mauris ex, consectetur sed feugiat eget, cursus porta nulla. In consectetur mauris in iaculis pulvinar.</p>
+            <h2>Sub Title</h2>
+            <p>Ut facilisis nunc tortor, sit amet laoreet odio aliquet et. Proin volutpat nec ante nec pellentesque. Fusce ullamcorper metus ligula, sed pellentesque nisi vulputate hendrerit. Integer sagittis lacus sit amet sem pretium dapibus. Fusce id tortor mauris. Fusce ornare feugiat lorem porttitor imperdiet. Nullam elementum risus nec sapien bibendum, in ornare dolor convallis. Mauris et facilisis enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec id lectus ornare, eleifend leo at, sollicitudin orci. Integer ac eleifend nisi. Duis scelerisque dictum felis, vitae blandit leo consequat eu. Mauris ac mollis orci.</p>
+            <p>Donec fringilla tincidunt nibh. Maecenas quis eros ut ipsum accumsan efficitur. Maecenas eleifend magna mollis, laoreet magna sit amet, aliquam dolor. Etiam tincidunt metus enim, nec fermentum ligula hendrerit sed. Aenean pharetra pulvinar quam et mattis. Praesent mauris ex, consectetur sed feugiat eget, cursus porta nulla. In consectetur mauris in iaculis pulvinar.</p>
+            <p>Ut facilisis nunc tortor, sit amet laoreet odio aliquet et. Proin volutpat nec ante nec pellentesque. Fusce ullamcorper metus ligula, sed pellentesque nisi vulputate hendrerit. Integer sagittis lacus sit amet sem pretium dapibus. Fusce id tortor mauris. Fusce ornare feugiat lorem porttitor imperdiet. Nullam elementum risus nec sapien bibendum, in ornare dolor convallis. Mauris et facilisis enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec id lectus ornare, eleifend leo at, sollicitudin orci. Integer ac eleifend nisi. Duis scelerisque dictum felis, vitae blandit leo consequat eu. Mauris ac mollis orci.</p>
+            <p>Donec fringilla tincidunt nibh. Maecenas quis eros ut ipsum accumsan efficitur. Maecenas eleifend magna mollis, laoreet magna sit amet, aliquam dolor. Etiam tincidunt metus enim, nec fermentum ligula hendrerit sed. Aenean pharetra pulvinar quam et mattis. Praesent mauris ex, consectetur sed feugiat eget, cursus porta nulla. In consectetur mauris in iaculis pulvinar.</p>
+          </Article>
+          <Box mx="auto" mb={5} css={{ maxWidth: '700px' }}>
+            <Share url="https://google.com" />
+          </Box>
+        </Box>
         <WorkWithMitso />
       </Container>
     </Layout>
@@ -58,7 +73,8 @@ const Title = styled.h1`
 
 const Article = styled(Box)`
   line-height: 1.6; 
-  p {
+
+  * {
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
@@ -69,8 +85,14 @@ const Article = styled(Box)`
     font-weight: bold;
     font-size: 20px;
   }
+
+  img {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 `
 
 const Caption = styled(Flex)`
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
 `

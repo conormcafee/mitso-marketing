@@ -5,7 +5,6 @@ import Button from "../../button"
 import {ACCENT} from "../../../variables"
 
 const ThoughtCard = ({
-    key,
     title,
     author,
     text,
@@ -15,7 +14,7 @@ const ThoughtCard = ({
     mt,
     goTo
 }) => (
-    <Box key={key} width={width} mt={mt} px={[3, 4]}>
+    <Box width={width} mt={mt} px={[3, 4]}>
         <Thought as="article">
             
             <figure>
@@ -24,7 +23,7 @@ const ThoughtCard = ({
                     <Title>{title}</Title>
                     <Author>by {author}</Author>
                     <p>{text}</p>
-                    <Button onClick={() => goTo('/thoughts/sub-page')}>Read Full Post</Button>
+                    <Button onClick={() => goTo(link)}>Read Full Post</Button>
                 </figcaption>
             </figure>
             

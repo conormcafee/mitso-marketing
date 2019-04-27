@@ -9,6 +9,7 @@ import { BLACK } from "../../variables"
 import Tags from "../../components/Tags"
 import Share from "../../components/Share"
 import BackLink from "../../components/BackLink"
+import Thoughts from "../../components/Thoughts"
 
 const SubPage = () => {
   return (
@@ -35,7 +36,7 @@ const SubPage = () => {
           </Hero>
         </Flex>
 
-        <Box px={[3,4]}>
+        <Box px={[3,4]} mb={5}>
           <Article as="article" mb={5}>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis urna non nisl ultrices condimentum. Nulla massa elit, sagittis et purus vitae, eleifend laoreet metus. In ut ex in massa lacinia dignissim ut ut nibh. Quisque et enim tempor, consectetur massa et, pellentesque turpis. Duis non accumsan sapien, vitae fringilla velit. Integer molestie ex in mauris malesuada vulputate eget quis velit. Ut rhoncus sodales mi, in laoreet ante rhoncus vel.</p>
             <p>Donec fringilla tincidunt nibh. Maecenas quis eros ut ipsum accumsan efficitur. Maecenas eleifend magna mollis, laoreet magna sit amet, aliquam dolor. Etiam tincidunt metus enim, nec fermentum ligula hendrerit sed. Aenean pharetra pulvinar quam et mattis. Praesent mauris ex, consectetur sed feugiat eget, cursus porta nulla. In consectetur mauris in iaculis pulvinar.</p>
@@ -48,6 +49,7 @@ const SubPage = () => {
           <Box mx="auto" mb={5} css={{ maxWidth: '700px' }}>
             <Share url="https://google.com" />
           </Box>
+          <Thoughts subPage/>
         </Box>
         <WorkWithMitso />
       </Container>

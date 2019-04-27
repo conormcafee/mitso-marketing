@@ -10,7 +10,7 @@ import Thought from "../Thoughts/components/Thought"
 class Thoughts extends React.Component {
     goTo = (data) => navigate(data)
     render() {
-        const { homepage } = this.props
+        const { homepage, subPage } = this.props
         
         const navyWidth = homepage ? [1, 1, 2/3] : [1]
         const blogWidth = homepage ? [1, 1, 1/2] : [1, 1, 1/2, 1/3]
@@ -30,7 +30,7 @@ class Thoughts extends React.Component {
 
                     <NavyBackground width={navyWidth} py={homepage ? [3, 3, 4] : 4}>
                         <Flex flexWrap={wrapping} px={[3]}>
-                            {thoughts.slice(0, homepage ? 2 : blogCount).map((thought, index) => (
+                            {thoughts.slice(0, homepage ? 2 : subPage? 3 : blogCount).map((thought, index) => (
                                 <Thought 
                                     key={index}
                                     title={thought.title}

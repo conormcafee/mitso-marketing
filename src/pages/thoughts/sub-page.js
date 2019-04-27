@@ -17,7 +17,7 @@ const SubPage = () => {
       <Container>
         <Flex mb={5} px={[3,4]}>
           <Hero>
-            <Title>Sub Page</Title>
+            <Title>New Sub Page</Title>
             <Button onClick={() => goTo('/thoughts')} reversed back>Back to all Thoughts</Button>
             <Box as="figure" mt={5}>
               <img src="https://placehold.it/1400x600/FFEE93/FFEE93" alt="Sub Page" />

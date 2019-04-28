@@ -9,10 +9,9 @@ import Tagline from "../components/tagline"
 import CaseStudies from "../components/caseStudies"
 import WorkWithMitso from "../components/workWithMitso"
 import Thoughts from "../components/Thoughts"
-import Hero_Circle from "../images/backgrounds/hero-circle.svg"
 import {WHO_WE_ARE, CASE_STUDIES} from "../data"
 
-import Test from "../images/backgrounds/test.jpg"
+import HomepageHero from "../images/homepage-hero.png"
 
 class Index extends React.Component {
 	render() {
@@ -20,14 +19,26 @@ class Index extends React.Component {
 			<Layout>
 				<SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 				<Container>
-					<Intro style={{ backgroundImage: `url(${Test})` }} as="section" alignItems={'center'} justifyContent={'space-between'}>	
-						<Box px={[3, 4]} mb={6}>
+					<Intro 
+						as="section" 
+						flexWrap={['wrap']}
+						alignItems={'center'} 
+						justifyContent={'space-between'}
+					>	
+						<Box 
+							px={[3, 4]} 
+							mb={6}
+							width={[1, 1/2]}
+						>
 							<h1>We deliver smart, tailored and targeted communications to help your business thrive</h1>
 							<Button>Work with MiTSO</Button>
 						</Box>
-						<Hero>
-							<HeroCircle src={Hero_Circle} alt="MiTSO Marketing" />
-							{/* <HeroImg Tag="div" fluid={imageData} backgroundColor={`#040e18`} /> */}
+						<Hero
+							as="figure"
+							px={[3, 4]}
+							width={[1, 1/2]}
+						>
+							<img src={HomepageHero} alt="Welcome to MiTSO" />
 						</Hero>
 					</Intro>
 				</Container>
@@ -93,25 +104,10 @@ const Intro = styled(Flex)`
     background-repeat: no-repeat;
 `;
 
-const Hero = styled.div`
+const Hero = styled(Box)`
 	position: relative;
-`;
 
-const HeroCircle = styled.img`
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 700px;
-	width: 700px;
+	@media only screen and (max-width: 600px) {
+		display: none;
+	}
 `;
-
-// const HeroImg = styled(BackgroundImage)`
-// 	height: 500px;
-// 	width: 500px;
-// 	border-radius: 100%;
-// 	border: 20px solid #ffffff;
-// 	position: relative;
-// 	z-index: 1;
-// `;

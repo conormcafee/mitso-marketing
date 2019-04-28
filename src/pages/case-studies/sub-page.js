@@ -31,12 +31,12 @@ const SubPage = () => {
           mb={3}
           px={[3,4]}
         >
-          <BackLink url="/case-studies" title="Back to All Case Studies" />
+          <BackLink url="/case-studies" title="All Case Studies" />
           <Share url="https://google.com" />
         </Flex>
 
         <Box as="figure">
-          <img src="https://placehold.it/2000x600/FFEE93/FFEE93" alt="Sub Page" />
+          <img src="https://placehold.it/2000x800/FFEE93/FFEE93" alt="Sub Page" />
         </Box>
 
         <Box px={[3,4]} mb={5}>

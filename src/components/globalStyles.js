@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.2;
         max-width: 700px;
 
-        @media only screen and (min-width: 40em) {
+        @media only screen and (min-width: 62.5em) {
             font-size: 50px;
         }
     }

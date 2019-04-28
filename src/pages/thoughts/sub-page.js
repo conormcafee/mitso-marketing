@@ -19,22 +19,33 @@ const SubPage = () => {
         <Flex mb={5} px={[3,4]}>
           <Hero>
             <Title>New Sub Page</Title>
-
             <Tags tags={['Blog', 'Post', 'Test', 'Testing']} />
-
-            <Flex alignItems="center" justifyContent="space-between" mt={5} mb={3}>
-              <BackLink url="/thoughts" title="Back to All Thoughts" />
-              <Share url="https://google.com" />
-            </Flex>
-            <Box as="figure">
-              <img src="https://placehold.it/1400x600/FFEE93/FFEE93" alt="Sub Page" />
-              <Caption as="figcaption" alignItems="center" justifyContent="space-between">
-                <h4>by Maeve Finnegan</h4>
-                <h4>1st May 2019</h4>
-              </Caption>
-            </Box>
           </Hero>
         </Flex>
+
+        <Flex 
+          alignItems="center" 
+          justifyContent="space-between" 
+          mt={5} 
+          mb={3}
+          px={[3,4]}
+        >
+          <BackLink url="/thoughts" title="Back to All Thoughts" />
+          <Share url="https://google.com" />
+        </Flex>
+
+        <Box as="figure">
+          <img src="https://placehold.it/2000x600/FFEE93/FFEE93" alt="Sub Page" />
+          <Caption 
+            as="figcaption" 
+            alignItems="center" 
+            justifyContent="space-between"
+            px={[3,4  ]}
+          >
+            <h4>by Maeve Finnegan</h4>
+            <h4>1st May 2019</h4>
+          </Caption>
+        </Box>
 
         <Box px={[3,4]} mb={5}>
           <Article as="article" mb={5}>

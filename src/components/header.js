@@ -67,7 +67,7 @@ const NAV_DATA = [
 	{ label: "Who We Are", url: "/who-we-are", type: 'link' },
 	{ label: "What We Offer", url: "/what-we-offer", type: 'link' },
 	{ label: "Thoughts", url: "/thoughts", type: 'link' },
-	{ label: "Case Studies", url: "/", type: 'link' },
+	{ label: "Case Studies", url: "/case-studies", type: 'link' },
 	{ label: "Work with MiTSO", url: "/", type: 'button' }
 ]
 

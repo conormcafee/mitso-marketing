@@ -11,6 +11,8 @@ import Share from "../../components/Share"
 import BackLink from "../../components/BackLink"
 import { FONT_BOLD } from "../../variables"
 import Statement from "../../components/Statement"
+import BackgroundImage from "../../components/BackgroundImage"
+import Image from "../../images/backgrounds/hero-dummy.jpg";
 
 const SubPage = () => {
   return (
@@ -35,11 +37,9 @@ const SubPage = () => {
           <Share url="https://google.com" />
         </Flex>
 
-        <Box as="figure">
-          <img src="https://placehold.it/2000x800/FFEE93/FFEE93" alt="Sub Page" />
-        </Box>
+        <BackgroundImage img={Image} aspectRatio />
 
-        <Box px={[3,4]} mb={5}>
+        <Box px={[3,4]} pt={5} mb={5}>
           <Article as="article" mb={5}>
             <p>Obelisk is a multinational construction client, headquartered in Dublin.  MiTSO wa approached to revamp the Obelisk brand and develop new digital channels for the company.</p>
             <p>Having met the senior team at Obelisk, it became clear that the company had huge ambitions and wanted to expand globally.</p>
@@ -48,7 +48,31 @@ const SubPage = () => {
 						
 						<h2>Heading</h2>
 						<p>We worked hard with the senior team, organising a number of workshops in order to find the correct balance between information the company wanted to.</p>
+          </Article>
+          
+          <Flex css={{ maxWidth: '1200px'}} mx="auto">
+            <Box width={[1, 1/2]}> 
+              <BackgroundImage 
+                img={Image} 
+                aspectRatio={false}
+                border
+              />
+            </Box>
+            <Flex flexDirection={'column'} width={[1, 1/2]}> 
+              <BackgroundImage 
+                img={Image} 
+                aspectRatio 
+                border
+              />
+              <BackgroundImage 
+                img={Image} 
+                aspectRatio 
+                border
+              />
+            </Flex>
+          </Flex> 
 
+          <Article as="article" mb={5}>
 						<h2>Sub Title</h2>
 						<p>Having met the senior team at Obelisk, it became clear that the company had huge ambitions and wanted to expand globally. We began (as we always do) by establishing a solid client relationship and understanding Obelisk’ customer base.</p> 
 						<p>We worked hard with the senior team, organising a number of workshops in order to find the correct balance between information the company.</p>

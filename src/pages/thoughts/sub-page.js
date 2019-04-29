@@ -10,6 +10,8 @@ import Tags from "../../components/Tags"
 import Share from "../../components/Share"
 import BackLink from "../../components/BackLink"
 import Thoughts from "../../components/Thoughts"
+import Image from "../../images/backgrounds/hero-dummy.jpg";
+import BackgroundImage from "../../components/BackgroundImage";
 
 const SubPage = () => {
   return (
@@ -30,14 +32,14 @@ const SubPage = () => {
           mb={3}
           px={[3,4]}
         >
-          <BackLink url="/thoughts" title="Back to All Thoughts" />
+          <BackLink url="/thoughts" title="All Thoughts" />
           <Share url="https://google.com" />
         </Flex>
 
-        <Box as="figure">
-          <img src="https://placehold.it/2000x600/FFEE93/FFEE93" alt="Sub Page" />
-          <Caption 
-            as="figcaption" 
+        <BackgroundImage img={Image} aspectRatio />
+
+        <Caption 
+            as="div" 
             alignItems="center" 
             justifyContent="space-between"
             px={[3,4  ]}
@@ -45,7 +47,6 @@ const SubPage = () => {
             <h4>by Maeve Finnegan</h4>
             <h4>1st May 2019</h4>
           </Caption>
-        </Box>
 
         <Box px={[3,4]} mb={5}>
           <Article as="article" mb={5}>

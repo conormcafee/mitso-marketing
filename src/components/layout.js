@@ -6,8 +6,9 @@ import Header from "./header";
 import Footer from "./footer";
 import { ThemeProvider } from "styled-components"
 import theme from "../theme"
+import DottedBackground from "../components/DottedBackground"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, dottedBackground }) => (
 		<StaticQuery
     		query={graphql`
       			query SiteTitleQuery {
@@ -25,6 +26,7 @@ const Layout = ({ children }) => (
 						<GlobalStyle />
 						<main>
 							<Header siteTitle={data.site.siteMetadata.title} />
+							{dottedBackground && <DottedBackground />}
 							{children}
 						</main>
 						<Footer />

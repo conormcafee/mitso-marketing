@@ -8,16 +8,12 @@ import TopImages from "../components/WhoWeAre/TopImages"
 import HowWeWork from "../components/WhoWeAre/HowWeWork"
 import WorkWithMitso from "../components/workWithMitso"
 import Team from "../components/team"
-import DottedBackground from "../components/DottedBackground"
 import {Heading02} from "../components/global/typography"
 
 const WhoWeAre = () => {
     return (
-        <Layout>
+        <Layout dottedBackground>
             <SEO title="Who We Are" />
-            
-            <DottedBackground />
-
             <Container>
                 <Box px={[3, 4]} mb={[3, 3, 3, 6]}>
                     <Title>We are a creative marketing consultancy.</Title>

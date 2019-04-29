@@ -6,13 +6,11 @@ import Layout from "../../components/layout"
 import Container from "../../components/container"
 import CaseStudies from "../../components/caseStudies"
 import WorkWithMitso from "../../components/workWithMitso"
-import DottedBackground from "../../components/DottedBackground"
 import { CASE_STUDIES } from "../../data"
 
 const ThoughtsIndex = () => (
-	<Layout>
+	<Layout dottedBackground>
 		<SEO title="Case Studies" />
-		<DottedBackground />
 		<Container>
 			<Box px={[3,4]} mb={5}>
 				<Hero>

@@ -12,7 +12,6 @@ import Statement from "../components/Statement"
 import Services from "../components/Services"
 import CaseStudies from "../components/caseStudies"
 import SubHeading from "../components/SubHeading"
-import DottedBackground from "../components/DottedBackground"
 
 import {CASE_STUDIES} from "../data"
 
@@ -27,9 +26,8 @@ const Template = (props) => {
   const { markdownRemark } = props.data
   const { frontmatter } = markdownRemark
   return (
-    <Layout>
+    <Layout dottedBackground>
       <SEO title={frontmatter.title} />
-      <DottedBackground />
       <Container>
         <Box px={[3,4]}>
           <Box>

@@ -13,13 +13,11 @@ import { FONT_BOLD } from "../../variables"
 import Statement from "../../components/Statement"
 import BackgroundImage from "../../components/BackgroundImage"
 import Image from "../../images/backgrounds/hero-dummy.jpg";
-import DottedBackground from "../../components/DottedBackground"
 
 const SubPage = () => {
   return (
-    <Layout>
+    <Layout dottedBackground>
       <SEO title="Case Studies Sub Page" />
-      <DottedBackground />
       <Container>
       <Flex mb={5} px={[3,4]}>
           <Hero>

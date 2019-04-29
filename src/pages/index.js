@@ -106,7 +106,6 @@ const Intro = styled(Flex)`
 
 const Hero = styled(Box)`
 	position: relative;
-
 	@media only screen and (max-width: 600px) {
 		display: none;
 	}

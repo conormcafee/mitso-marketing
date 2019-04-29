@@ -75,7 +75,7 @@ const Header = styled.header`
 	border-top: 5px solid ${ACCENT};
 	position: relative;
 	z-index: 10;
-	background: #ffffff;
+	background-color: transparent;
 `;
 
 const HeaderContainer = styled(Container)`

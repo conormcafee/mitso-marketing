@@ -12,15 +12,17 @@ import BackLink from "../../components/BackLink"
 import Thoughts from "../../components/Thoughts"
 import Image from "../../images/backgrounds/hero-dummy.jpg";
 import BackgroundImage from "../../components/BackgroundImage";
+import DottedBackground from "../../components/DottedBackground"
 
 const SubPage = () => {
   return (
     <Layout>
       <SEO title="Sub Page" />
+      <DottedBackground />
       <Container>
         <Flex mb={5} px={[3,4]}>
           <Hero>
-            <Title>New Sub Page</Title>
+            <Title>Blog Sub Page</Title>
             <Tags tags={['Blog', 'Post', 'Test', 'Testing']} />
           </Hero>
         </Flex>

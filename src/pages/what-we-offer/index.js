@@ -9,6 +9,7 @@ import Button from "../../components/button"
 import test from "../../images/test-blob.svg"
 import {Heading02} from "../../components/global/typography"
 import Tagline from "../../components/tagline"
+import DottedBackground from "../../components/DottedBackground"
 
 const navigatePage = (page) => navigate(page)
 
@@ -51,7 +52,7 @@ const WhatWeOffer = (props) => {
   return (
     <Layout>
       <SEO title="What We Offer" />
-
+      <DottedBackground />
       <Container>
         <Hero px={[3,4]} mx="auto" mb={[4,5]}>
           <h1>What We Offer</h1>

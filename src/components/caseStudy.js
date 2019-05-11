@@ -6,7 +6,9 @@ import Button from "../components/button";
 import SubHeading from "../components/SubHeading"
 
 const CaseStudy = (props) => {
-	const goTo = (path) => navigate(path)
+	const goTo = (slug) => navigate(slug)
+	const { title } = props.node.frontmatter
+	const { slug } = props.node.fields
 	return (
 		<Box 
 			as="article" 
@@ -16,11 +18,14 @@ const CaseStudy = (props) => {
 			mb={[5, 0]}
 		>
 			<Wrapper>
-				<img src="https://placehold.it/1000x700/FFEE93/FFEE93" alt={`${props.title}`} />
+				<img src="https://placehold.it/1000x700/FFEE93/FFEE93" alt={`${title}`} />
 				<Box px={4} pb={4}>
-					<Title mb={`0px`}>{props.title} <SubHeading text="Case Study" /></Title>
-					<p>{props.intro}</p>
-					<Button onClick={() => goTo('/case-studies/sub-page')}>Read Case Study</Button>
+					<Title mb={`0px`}>
+						<span>{title}</span>
+						<SubHeading text="Case Study" />
+					</Title>
+					<p>Intro to go here</p>
+					<Button onClick={() => goTo(slug)}>Read Case Study</Button>
 				</Box>
 			</Wrapper>
 		</Box>

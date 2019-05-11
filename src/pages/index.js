@@ -9,7 +9,7 @@ import Tagline from "../components/tagline"
 import CaseStudies from "../components/caseStudies"
 import WorkWithMitso from "../components/workWithMitso"
 import Thoughts from "../components/Thoughts"
-import {WHO_WE_ARE, CASE_STUDIES} from "../data"
+import { WHO_WE_ARE } from "../data"
 
 import HomepageHero from "../images/homepage-hero.png"
 
@@ -75,7 +75,7 @@ class Index extends React.Component {
 
 				{/* Case Studies */}
 
-				<CaseStudies data={CASE_STUDIES} moreCaseStudies />
+				<CaseStudies moreCaseStudies />
 
 				{/* Work with Mitso */}
 

@@ -6,9 +6,8 @@ import Layout from "../../components/layout"
 import Container from "../../components/container"
 import CaseStudies from "../../components/caseStudies"
 import WorkWithMitso from "../../components/workWithMitso"
-import { CASE_STUDIES } from "../../data"
 
-const ThoughtsIndex = () => (
+const CaseStudyIndex = ({moreCaseStudies}) => (
 	<Layout dottedBackground>
 		<SEO title="Case Studies" />
 		<Container>
@@ -17,13 +16,13 @@ const ThoughtsIndex = () => (
 						<Title>We let our work speak for itself</Title>
 				</Hero>
 			</Box>
-			<CaseStudies data={CASE_STUDIES} />
+			<CaseStudies moreCaseStudies={moreCaseStudies}/>
 			<WorkWithMitso />
 		</Container>
 	</Layout>
 )
 
-export default ThoughtsIndex
+export default CaseStudyIndex
 
 const Hero = styled(Box)`
   text-align: center;

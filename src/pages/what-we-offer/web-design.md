@@ -1,5 +1,4 @@
 ---
-path: "/what-we-offer/web-design"
 date: "2019-03-30"
 title: "Web Design"
 intro: "We cover all aspects of web design and development and drive traffic to your site via clever SEO strategies and social marketing campaigns."

@@ -1,5 +1,4 @@
 ---
-path: "/what-we-offer/digital-marketing"
 date: "2019-03-30"
 title: "Digital Marketing"
 intro: "Our digital marketing methods are innovative and anticipate the intent of your customers and search engines."

@@ -1,5 +1,4 @@
 ---
-path: "/what-we-offer/visual-communications"
 date: "2019-03-30"
 title: "Visual Communications"
 intro: "We work with clients to create visual communication designed to tell the story of your business or service offering in an engaging manner."

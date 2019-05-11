@@ -61,9 +61,11 @@ const footerQuery = graphql`
         allMarkdownRemark( filter: { frontmatter: { category: { eq: "Services" }} }) {
             edges {
                 node {
+                    fields {
+                        slug
+                    }
                     frontmatter {
                         title
-                        path
                         icon
                     }
                 }

@@ -6,7 +6,7 @@ import Container from "../components/container"
 import WorkWithMitso from "../components/workWithMitso"
 import { graphql } from "gatsby"
 
-const ThoughtsTemplate = (props) => {
+const CaseStudyTemplate = (props) => {
   return (
     <Template data={props.data} />
   )
@@ -31,7 +31,7 @@ const Template = (props) => {
   )
 }
 
-export default ThoughtsTemplate
+export default CaseStudyTemplate
 
 export const pageQuery = graphql`
   query($slug: String!) {

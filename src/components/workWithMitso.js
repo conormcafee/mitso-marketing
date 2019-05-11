@@ -47,7 +47,7 @@ const WorkWithMitso = (props) => {
                                     key={index} 
                                     index={index} 
                                     title={service.node.frontmatter.title}
-                                    url={service.node.frontmatter.path}
+                                    url={service.node.fields.slug}
                                     icon={Icon01}
                                 />
                             ))}    
@@ -66,9 +66,11 @@ const servicesQuery = graphql`
         allMarkdownRemark( filter: { frontmatter: { category: { eq: "Services" }} }) {
             edges {
                 node {
+                    fields {
+                        slug
+                    }
                     frontmatter {
                         title
-                        path
                         icon
                     }
                 }

@@ -1,5 +1,4 @@
 ---
-path: "/what-we-offer/graphic-design"
 date: "2019-03-30"
 title: "Graphic Design"
 intro: "Your brand is one of the key components of your business because it's what customers and clients will come to associate you with."

@@ -1,5 +1,4 @@
 ---
-path: "/what-we-offer/pr"
 date: "2019-03-30"
 title: "PR"
 intro: "Consumers and businesses want brands they know, like and trust. We believe it's important to protect your reputation as it is an organisation’s most precious asset."

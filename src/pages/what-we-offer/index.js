@@ -13,7 +13,8 @@ import Tagline from "../../components/tagline"
 const navigatePage = (page) => navigate(page)
 
 const Service = (props) => {
-  const { title, path, intro } = props.node.frontmatter
+  const { title, intro } = props.node.frontmatter
+  const { slug } = props.node.fields
   const { index } = props 
   const width = [1,1/2]
   const padding = [3,4]
@@ -40,7 +41,7 @@ const Service = (props) => {
       >
         <ServiceTitle>{title}</ServiceTitle>
           <p>{intro}</p>
-          <Button onClick={() => navigatePage(path)}>Find out More</Button>
+          <Button onClick={() => navigatePage(slug)}>Find out More</Button>
         </Box>
       </Flex>
   )
@@ -79,9 +80,11 @@ const services = graphql`
     allMarkdownRemark( filter: { frontmatter: { category: { eq: "Services" }} }) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             title
-            path
             icon
             intro
           }

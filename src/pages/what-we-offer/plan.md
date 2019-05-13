@@ -1,14 +1,13 @@
 ---
-date: "2019-03-30"
-title: "Plan"
-intro: "jfkgj"
-statement: "kjgkhjg"
-category: "Services"
-icon: 06
-services: 
-    - "Digital marketing strategy"
-    - "SEO"
-    - "PPC (Pay Per Click)"
-    - "Display advertising"
-    - "Social advertising"
+category: Services
+icon: 6
+date: 2019-05-12T23:00:00.000Z
+title: Plan
+intro: Coming Soon
+statement: Coming Soon
+listOfServices:
+  - Service: Business development
+  - Service: Market Research
+  - Service: Campaign Planning
 ---
+

@@ -11,7 +11,7 @@ collections:
     folder: src/pages/thoughts
     create: true
     fields:
+      - { name: category, label: Category, widget: hidden, default: "Blog" }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-      - { name: category, widget: hidden, default: "Blog" }

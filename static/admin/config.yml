@@ -1,30 +1,29 @@
 backend:
-  name: "git-gateway"
-  branch: "master"
-
-media_folder: "static/assets"
-public_folder: "assets"
-
+    name: git-gateway
+    branch: master
+media_folder: static/assets
+public_folder: assets
 collections:
-  - name: "thoughts"
-    label: "Thoughts"
-    folder: "src/pages/thoughts"
-    create: true
-    fields:
-      - { name: "category", label: "Category", widget: "hidden", default: "Blog" }
-      - { name: "date", label: "Date", widget: "date" }
-      - { name: "title", label: "Title" }
-      - { name: "body", label: "Body", widget: "markdown" }
-
-    - name: "services"
-      label: "Services"
-      folder: "src/pages/what-we-offer"
-      create: true
-      fields:
-        - { name: "category", label: "Category", widget: "hidden", default: "Services" }
-        - { name: "icon", label: "Icon", widget: "hidden", default: 06 }
-        - { name: "date", label: "Date", widget: "date" }
-        - { name: "title", label: "Title" }
-        - { name: "intro", label: "Intro", widget: "text" },
-        - { name: "statement", label: "Statement", widget: "text" },
-        - { name: "listOfServices", label: "Services", widget: "list", fields: - {label: "service", name: "Service", widget: "string"}}
+    -
+        name: thoughts
+        label: Thoughts
+        folder: src/pages/thoughts
+        create: true
+        fields:
+            - {name: category, label: Category, default: Blog, widget: hidden}
+            - {name: date, label: Date, widget: date}
+            - {name: title, label: Title}
+            - {name: body, label: Body, widget: markdown}
+    -
+        name: servicesGroup
+        label: Services
+        folder: src/pages/what-we-offer
+        create: true
+        fields:
+            - {name: category, label: Category, widget: hidden, default: Services}
+            - {name: icon, label: Icon, widget: hidden, default: 6}
+            - {name: date, label: Date, widget: date}
+            - {name: title, label: Title}
+            - {name: intro, label: Intro, widget: text}
+            - {name: statement, label: Statement, widget: text}
+            - {name: listOfServices, label: Services, widget: list, fields: [{label: service, name: Service, widget: string}]}

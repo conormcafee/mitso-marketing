@@ -72,7 +72,13 @@ export default (props) => (<StaticQuery query={thoughts} render={data => (<Thoug
 
 const thoughts = graphql`
   query {
-    allMarkdownRemark( filter: { frontmatter: { category: { eq: "Blog" }} }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: "Blog" }} },
+      sort: {
+        fields: [frontmatter___date]
+        order: DESC
+      }
+    ) {
       edges {
         node {
           fields {
@@ -80,6 +86,7 @@ const thoughts = graphql`
           }
           frontmatter {
             title
+            date
           }
         }
       }

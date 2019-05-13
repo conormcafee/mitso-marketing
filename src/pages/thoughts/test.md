@@ -1,4 +1,5 @@
 ---
+category: Blog
 date: 2019-05-13T18:17:59.603Z
 title: Test
 ---

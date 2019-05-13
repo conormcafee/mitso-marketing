@@ -1,17 +1,17 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: "git-gateway"
+  branch: "master"
 
-media_folder: static/assets
-public_folder: assets
+media_folder: "static/assets"
+public_folder: "assets"
 
 collections:
-  - name: thoughts
-    label: Thoughts
-    folder: src/pages/thoughts
+  - name: "thoughts"
+    label: "Thoughts"
+    folder: "src/pages/thoughts"
     create: true
     fields:
-      - { name: category, label: Category, widget: hidden, default: "Blog" }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: "category", label: "Category", widget: "hidden", default: "Blog" }
+      - { name: "date", label: "Date", widget: "date" }
+      - { name: "title", label: "Title" }
+      - { name: "body", label: "Body", widget: "markdown" }

@@ -48,7 +48,7 @@ const Template = (props) => {
         <Services 
           title={frontmatter.title}
           paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus ante lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam eros, a volutpat urna commodo lobortis."
-          services={frontmatter.services}
+          services={frontmatter.listOfServices}
         />
 
         <Box px={[3,4]}>
@@ -76,7 +76,9 @@ export const pageQuery = graphql`
         title
         intro
         statement
-        services
+        listOfServices {
+          Service
+        }
         category
       }
     }

@@ -18,7 +18,7 @@ const Services = ({title, paragraph, services}) => (
                     <ListItem as="li" key={Date.now()+index} width={[1, 1, 1/2]} px={[3,4]}>
                         <Flex alignItems="center" py={3}>
                             <Icon src={BulletPoint} alt="Bullet Point" />
-                            <Text>{item}</Text>
+                            <Text>{item.Service}</Text>
                         </Flex>
                     </ListItem>
                 ))}

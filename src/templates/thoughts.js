@@ -11,26 +11,38 @@ import Tags from "../components/Tags"
 import Share from "../components/Share"
 import BackLink from "../components/BackLink"
 import Thoughts from "../components/Thoughts"
-import Image from "../images/backgrounds/hero-dummy.jpg";
 import BackgroundImage from "../components/BackgroundImage";
+import Image from "../images/mitso-default.png";
 
 const ThoughtsTemplate = (props) => {
   return (
-    <Template data={props.data} />
+    <Template data={props.data} location={props.location} />
   )
 }
 
 const Template = (props) => {
   const { markdownRemark } = props.data
   const { frontmatter, html } = markdownRemark
+  const { title, tags, mainImage, date } = frontmatter
+  const { href } = props.location
+  
+  const getTags = (tags) => {
+    let data = []
+    tags !== null && tags.map(tag => data.push(tag.Tag))
+
+    if (data.length > 0) return (
+      <Tags tags={data} />
+    )
+  }
+
   return (
     <Layout dottedBackground>
       <SEO title={`${frontmatter.title} | Thoughts by `} />
       <Container>
         <Flex mb={5} px={[3,4]}>
             <Hero>
-              <Title>{frontmatter.title}</Title>
-              <Tags tags={['Blog', 'Post', 'Test', 'Testing']} />
+              <Title>{title}</Title>  
+              {getTags(tags)}
             </Hero>
           </Flex>
 
@@ -42,10 +54,13 @@ const Template = (props) => {
             px={[3,4]}
           >
             <BackLink url="/thoughts" title="All Thoughts" />
-            <Share url="https://google.com" />
+            <Share url={href} />
           </Flex>
 
-          <BackgroundImage img={Image} aspectRatio />
+          <BackgroundImage 
+            img={mainImage !== null ? mainImage : Image} 
+            aspectRatio 
+          />
 
           <Caption 
             as="div" 
@@ -54,18 +69,14 @@ const Template = (props) => {
             px={[3,4]}
           >
             <h4>by Maeve Finnegan</h4>
-            <h4>1st May 2019</h4>
+            <h4>{date}</h4>
           </Caption>
 
           <Box px={[3,4]} mb={5}>
-            <Box as="article" mb={5}>
-                <h1>{frontmatter.title}</h1>
-            </Box>
-            
             <Article dangerouslySetInnerHTML={{ __html: html }} />
             
             <Box mx="auto" mb={5} css={{ maxWidth: '700px' }}>
-              <Share url="https://google.com" />
+              <Share url={href} />
             </Box>
 
             <Thoughts subPage/>
@@ -87,7 +98,11 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        date
+        date(formatString: "Do MMMM YYYY")
+        mainImage
+        tags {
+          Tag
+        }
       }
     }
   }

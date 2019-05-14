@@ -12,7 +12,7 @@ const navigatePage = (page) => navigate(page)
 
 const Article = (props) => {
 	const { index, node } = props
-	const { title, mainImage, author } = node.frontmatter
+	const { title, mainImage, author, intro } = node.frontmatter
 	const { slug } = node.fields
 	const blogWidth = props.homepage ? [1, 1, 1/2] : [1, 1, 1/2, 1/3]
 	const marginTop = props.homepage ? [4, 4, 0] : 5
@@ -22,7 +22,7 @@ const Article = (props) => {
 			key={index}
 			title={title}
 			author={author !== null ? author : "MiTSO Marketing"}
-			text="Vestibulum sit amet orci ac massa mattis maximus in ornare lorem. Vivamus tempus porttitor efficitur. Vestibulum lacinia porttitor dapibus."
+			text={intro}
 			img={mainImage !== null ? mainImage : DefaultImage}
 			link={slug}
 			width={blogWidth}
@@ -89,6 +89,7 @@ const thoughts = graphql`
 					frontmatter {
 						title
 						author
+						intro
 						date
 						mainImage
 					}

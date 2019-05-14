@@ -1,6 +1,4 @@
 ### MiTSO Marketing Website
-
-## Stack
   - Github
   - Gatsby JS
   - React JS

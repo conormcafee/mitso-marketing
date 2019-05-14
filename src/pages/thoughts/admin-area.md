@@ -1,6 +1,7 @@
 ---
 category: Blog
 date: 2019-05-13T20:11:11.297Z
+author: Maeve Finnegan
 title: Admin Area
 tags:
   - Tag: Blog

@@ -5,6 +5,20 @@ media_folder: static/assets
 public_folder: assets
 collections:
     -
+        name: caseStudies
+        label: Case Studies
+        folder: src/pages/case-studies
+        create: true
+        fields:
+            - {name: category, label: Category, default: Case Study, widget: hidden}
+            - {name: date, label: Date, widget: date}
+            - {name: title, label: Title}
+            - {name: intro, label: Introduction, widget: text}
+            - {name: mainImage, label: Main Image, widget: image, default: /src/images/mitso-default.png}
+            - {name: body, label: Body, widget: markdown}
+            - {name: imageBlock, label: Image Block, widget: list, fields: [{label: image, name: Image, widget: image}]}
+            - {name: testimonial, label: Testimonial, widget: text}
+    -
         name: thoughts
         label: Thoughts
         folder: src/pages/thoughts

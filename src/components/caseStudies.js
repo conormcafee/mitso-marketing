@@ -95,6 +95,7 @@ const caseStudies = graphql`
 					}
 					frontmatter {
 						title
+						intro
 					}
 				}
 			}

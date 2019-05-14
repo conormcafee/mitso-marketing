@@ -7,7 +7,7 @@ import SubHeading from "../components/SubHeading"
 
 const CaseStudy = (props) => {
 	const goTo = (slug) => navigate(slug)
-	const { title } = props.node.frontmatter
+	const { title, intro } = props.node.frontmatter
 	const { slug } = props.node.fields
 	return (
 		<Box 
@@ -24,7 +24,7 @@ const CaseStudy = (props) => {
 						<span>{title}</span>
 						<SubHeading text="Case Study" />
 					</Title>
-					<p>Intro to go here</p>
+					<p>{intro}</p>
 					<Button onClick={() => goTo(slug)}>Read Case Study</Button>
 				</Box>
 			</Wrapper>

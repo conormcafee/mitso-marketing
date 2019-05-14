@@ -12,6 +12,7 @@ collections:
         fields:
             - {name: category, label: Category, default: Blog, widget: hidden}
             - {name: date, label: Date, widget: date}
+            - {name: author, label: Author, widget: string, default: Maeve Finnegan}
             - {name: title, label: Title}
             - {name: tags, label: Tags, widget: list, fields: [{label: tag, name: Tag, widget: string}]}
             - {name: mainImage, label: Main Image, widget: image, default: /src/images/mitso-default.png}

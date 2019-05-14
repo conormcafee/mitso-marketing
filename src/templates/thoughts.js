@@ -23,7 +23,7 @@ const ThoughtsTemplate = (props) => {
 const Template = (props) => {
   const { markdownRemark } = props.data
   const { frontmatter, html } = markdownRemark
-  const { title, tags, mainImage, date } = frontmatter
+  const { title, tags, mainImage, date, author } = frontmatter
   const { href } = props.location
   
   const getTags = (tags) => {
@@ -68,7 +68,7 @@ const Template = (props) => {
             justifyContent="space-between"
             px={[3,4]}
           >
-            <h4>by Maeve Finnegan</h4>
+            <h4>by {author !== null ? author : "MiTSO Marketing"}</h4>
             <h4>{date}</h4>
           </Caption>
 
@@ -98,6 +98,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        author
         date(formatString: "Do MMMM YYYY")
         mainImage
         tags {

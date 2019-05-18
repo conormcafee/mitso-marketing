@@ -41,7 +41,7 @@ const ListCaseStudies = props => {
         <CaseStudies
           as="section"
           flexWrap={["wrap", "wrap", "wrap", "nowrap"]}
-          my={props.my ? props.my : 6}
+          my={props.my ? props.my : 5}
         >
           {_renderCaseStudies(caseStudies)}
         </CaseStudies>

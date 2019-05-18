@@ -1,17 +1,18 @@
-import { css, createGlobalStyle } from 'styled-components';
-import {BLACK, BASE, FONT_BOLD, FONT_LIGHT} from "../variables";
+import { css, createGlobalStyle } from "styled-components"
+import { BLACK, BASE, FONT_BOLD, FONT_LIGHT } from "../variables"
 
 const GlobalHeading = css`
-    font-family: ${FONT_BOLD};
-    color: ${BLACK};
-    font-weight: 900;
-    margin-top: 1em;
-    margin-bottom: 1em;
-`;
+  font-family: ${FONT_BOLD};
+  color: ${BLACK};
+  font-weight: 900;
+  margin-top: 1em;
+  margin-bottom: 1em;
+`
 
 export const GlobalStyle = createGlobalStyle`
     body {
         overflow-x: hidden;
+        color: ${BASE};
         background: #fdfdfd;
     }
 
@@ -23,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 
     h1 {
         ${GlobalHeading}
-        font-size: 40px;
+        font-size: 32px;
         line-height: 1.2;
         max-width: 700px;
 
@@ -34,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
 
     h2 {
         ${GlobalHeading}
-        font-size: 35px;
+        font-size: 28px;
         line-height: 1.6;
         max-width: 600px;
     }
@@ -58,7 +59,6 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         max-width: 400px;
         line-height: 1.75;
-        color: ${BASE};
         margin-top: 1em;
         margin-bottom: 1em;
     }

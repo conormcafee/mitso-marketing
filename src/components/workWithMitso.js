@@ -35,18 +35,6 @@ const WorkWithMitso = props => {
     <Wrapper>
       <Container>
         <Flex py={5} flexWrap="wrap" alignItems="center">
-          <Box width={1} px={[3, 4]}>
-            <WorkBox
-              p={4}
-              flexDirection="column"
-              alignItems="center"
-              justifyContent="center"
-            >
-              <WorkTitle>Like our work?</WorkTitle>
-              <WorkText>Contact us today for a chat</WorkText>
-            </WorkBox>
-          </Box>
-
           <Box width={1} px={[3, 4]} mb={[3, 4]}>
             <WorkBox
               bg="#ffffff"
@@ -110,19 +98,6 @@ const servicesQuery = graphql`
 
 const Wrapper = styled.section`
   background-color: ${ACCENT};
-`
-
-const WorkTitle = styled.h2`
-  color: #ffffff;
-  margin-bottom: 0;
-  max-width: 300px;
-  text-align: center;
-`
-
-const WorkText = styled.p`
-  color: #ffffff;
-  margin-top: 0px;
-  margin-bottom: 0px;
 `
 
 const WorkBox = styled(Flex)`

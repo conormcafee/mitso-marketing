@@ -9,18 +9,14 @@ import { StaticQuery, graphql } from "gatsby"
 import { SECONDARY } from "../variables"
 
 const ListCaseStudies = props => {
-  const { data, moreCaseStudies } = props
+  const { data, moreCaseStudies, homepage } = props
   const caseStudies = data.allMarkdownRemark.edges
 
   const _renderCaseStudies = data => {
     return (
       <React.Fragment>
         {data.map((study, index) => (
-          <CaseStudy
-            {...study}
-            key={index}
-            marginTop={index !== 0 && index + 4}
-          />
+          <CaseStudy {...study} key={index} />
         ))}
       </React.Fragment>
     )
@@ -29,15 +25,18 @@ const ListCaseStudies = props => {
   return (
     <React.Fragment>
       <Container>
+        <Circle src={MitsoCircle} alt="Circle Page Styling" />
         <Flex justifyContent={["flex-start", "flex-start", "flex-end"]}>
-          <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
-            <h2>Our Work</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              aliquam malesuada libero, quis sodales lorem faucibus sit a
-            </p>
-            <Button>All Case Studies</Button>
-          </Box>
+          {homepage && (
+            <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
+              <h2>Our Work</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                aliquam malesuada libero, quis sodales lorem faucibus sit a
+              </p>
+              <Button>All Case Studies</Button>
+            </Box>
+          )}
         </Flex>
         <CaseStudies
           as="section"
@@ -46,7 +45,6 @@ const ListCaseStudies = props => {
         >
           {_renderCaseStudies(caseStudies)}
         </CaseStudies>
-        <Circle src={MitsoCircle} alt="Circle Page Styling" />
       </Container>
 
       <Container>
@@ -125,9 +123,7 @@ ListCaseStudies.defaultProps = {
 export default props => (
   <StaticQuery
     query={caseStudies}
-    render={data => (
-      <ListCaseStudies data={data} moreCaseStudies={props.moreCaseStudies} />
-    )}
+    render={data => <ListCaseStudies data={data} {...props} />}
   />
 )
 
@@ -158,9 +154,9 @@ const CaseStudies = styled(Flex)`
 const Circle = styled.img`
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   max-width: 100%;
-  transform: translate(-50%, 25%);
+  transform: translate(-25%, 10%);
 `
 
 const SmallLogo = styled.img`

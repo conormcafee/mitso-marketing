@@ -82,7 +82,7 @@ class Index extends React.Component {
 
         {/* Case Studies */}
 
-        <CaseStudies moreCaseStudies />
+        <CaseStudies homepage moreCaseStudies />
 
         {/* Work with Mitso */}
 

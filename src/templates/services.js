@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Flex, Box } from "@rebass/grid"
 import styled from "styled-components"
 import SEO from "../components/seo"
@@ -7,13 +8,13 @@ import Container from "../components/container"
 import { graphql, navigate } from "gatsby"
 import WorkWithMitso from "../components/workWithMitso"
 
-import Button from "../components/button"
 import Statement from "../components/Statement"
 import Services from "../components/Services"
-// import CaseStudies from "../components/caseStudies"
-import SubHeading from "../components/SubHeading"
 
-// import { CASE_STUDIES } from "../data"
+import HowWeWork from "../components/WhoWeAre/HowWeWork"
+
+import { BLACK, FONT_BOLD } from "../variables"
+import SubHeading from "../components/SubHeading"
 
 const ServicesTemplate = props => {
   const getUrl = data => navigate(data)
@@ -21,7 +22,7 @@ const ServicesTemplate = props => {
 }
 
 const Template = props => {
-  const { markdownRemark } = props.data
+  const { markdownRemark, allMarkdownRemark } = props.data
   const { frontmatter } = markdownRemark
   return (
     <Layout dottedBackground>
@@ -29,47 +30,57 @@ const Template = props => {
       <Container>
         <Box px={[3, 4]}>
           <Box>
-            <Title>{frontmatter.title}</Title>
-            <Intro>{frontmatter.intro}</Intro>
+            <Title>
+              {frontmatter.intro}
+              <SubHeading text={frontmatter.title} size="30px" mt="16px" />
+            </Title>
+          </Box>
 
-            <Flex
-              mx="auto"
-              alignItems="center"
-              justifyContent="space-between"
-              my={[3, 4]}
-              css={{ maxWidth: "350px" }}
-            >
-              <Button
-                onClick={() => props.getUrl("/what-we-offer")}
-                reversed
-                back
+          <SubNav
+            flexWrap="wrap"
+            alignItems="center"
+            justifyContent="flex-start"
+            my={5}
+          >
+            {allMarkdownRemark.edges.map((service, index) => (
+              <SubNavLink
+                to={service.node.fields.slug}
+                key={index}
+                activeStyle={{ backgroundColor: "#f6f6f6" }}
               >
-                All Services
-              </Button>
-              <Button>Get in Touch</Button>
-            </Flex>
-          </Box>
+                {service.node.frontmatter.title}
+              </SubNavLink>
+            ))}
+          </SubNav>
 
-          <Box px={[3, 4]}>
-            <Statement statement={frontmatter.statement} />
-          </Box>
+          <Flex flexWrap={["wrap", "nowrap"]} justifyContent="center">
+            <Box px={[3, 4]}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                faucibus ante lacinia, rhoncus nisi at, feugiat lacus. Donec ac
+                volutpat augue. Donec euismod nunc augue, iaculis fermentum
+                augue rutrum at. Morbi convallis quam eros, a volutpat urna
+                commodo lobortis.
+              </p>
+            </Box>
+            <Box px={[3, 4]}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                faucibus ante lacinia, rhoncus nisi at, feugiat lacus. Donec ac
+                volutpat augue. Donec euismod nunc augue, iaculis fermentum
+                augue rutrum at. Morbi convallis quam eros, a volutpat urna
+                commodo lobortis.
+              </p>
+            </Box>
+          </Flex>
+          <Statement statement={frontmatter.statement} />
+
+          <Services services={frontmatter.listOfServices} />
+
+          <Flex mb={5} alignItems="center" justifyContent="center">
+            <HowWeWork />
+          </Flex>
         </Box>
-
-        <Services
-          title={frontmatter.title}
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus ante lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam eros, a volutpat urna commodo lobortis."
-          services={frontmatter.listOfServices}
-        />
-
-        <Box px={[3, 4]}>
-          <h2>
-            {frontmatter.title} <SubHeading text="Latest Work" />
-          </h2>
-        </Box>
-
-        {/* <CaseStudies data={CASE_STUDIES} my={3} /> */}
-
-        <Box py={5} />
       </Container>
       <WorkWithMitso />
     </Layout>
@@ -78,6 +89,21 @@ const Template = props => {
 
 export const pageQuery = graphql`
   query($slug: String!) {
+    allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: "Services" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            icon
+          }
+        }
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       fields {
@@ -105,8 +131,58 @@ const Title = styled.h1`
   margin-bottom: 0;
 `
 
-const Intro = styled.p`
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+const SubNav = styled(Flex)`
+  border-top: 1px solid #e6e6e6;
+  border-right: 2px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 2px solid #e6e6e6;
+  border-radius: 7px;
+  overflow: hidden;
+`
+
+const SubNavLink = styled(Link)`
+  color: ${BLACK};
+  font-family: ${FONT_BOLD};
+  font-weight: 700;
+  text-decoration: none;
+  width: 50%;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+
+  &:hover {
+    background-color: #f6f6f6;
+  }
+
+  @media only screen and (max-width: 767px) {
+    &:nth-child(odd) {
+      border-right: 2px solid #e6e6e6;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 999px) {
+    width: calc(100% / 3);
+
+    &:nth-child(3n + 2) {
+      border-left: 2px solid #e6e6e6;
+      border-right: 2px solid #e6e6e6;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    width: auto;
+    flex: 1;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 20px;
+
+    &:not(:last-of-type) {
+      border-right: 2px solid #e6e6e6;
+    }
+  }
 `

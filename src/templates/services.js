@@ -31,7 +31,7 @@ const Template = props => {
         <Box px={[3, 4]}>
           <Box>
             <Title>
-              {frontmatter.intro}
+              We offer tailored services to reach your target audience
               <SubHeading text={frontmatter.title} size="30px" mt="16px" />
             </Title>
           </Box>

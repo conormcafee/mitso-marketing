@@ -17,6 +17,21 @@ const Layout = ({ children, dottedBackground }) => (
             title
           }
         }
+        allMarkdownRemark(
+          filter: { frontmatter: { category: { eq: "Services" } } }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                icon
+              }
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -25,7 +40,10 @@ const Layout = ({ children, dottedBackground }) => (
           <Normalize />
           <GlobalStyle />
           <main>
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <Header
+              siteTitle={data.site.siteMetadata.title}
+              services={data.allMarkdownRemark.edges}
+            />
             {dottedBackground && <DottedBackground />}
             {children}
           </main>

@@ -8,6 +8,33 @@ import Container from "../components/container"
 import { StaticQuery, graphql } from "gatsby"
 import { SECONDARY } from "../variables"
 
+import AT from "../images/logos/at-makeup.jpg"
+import CMD from "../images/logos/cmd.jpg"
+import DP from "../images/logos/dp-fitness.jpg"
+import RM from "../images/logos/robert-m.jpg"
+import ROS from "../images/logos/roswick.jpg"
+import ST from "../images/logos/sweeney-todd.jpg"
+import WC from "../images/logos/the-wheel-company.jpg"
+import TR from "../images/logos/treemetrics.jpg"
+
+const List01 = [
+  { company: "Ailin Traynor", logo: AT },
+  { company: "CMD", logo: CMD },
+  { company: "DP Fitness", logo: DP },
+]
+
+const List02 = [
+  { company: "Robert Mizzell", logo: RM },
+  { company: "Roswick", logo: ROS },
+  { company: "Sweeney Todd", logo: ST },
+]
+
+const List03 = [
+  { company: "The Wheel Company", logo: WC },
+  { company: "Treemetrics", logo: TR },
+  { company: "N/A", logo: "https://placehold.it/200x200/9CE9CF/9CE9CF" },
+]
+
 const ListCaseStudies = props => {
   const { data, moreCaseStudies, homepage } = props
   const caseStudies = data.allMarkdownRemark.edges
@@ -64,23 +91,15 @@ const ListCaseStudies = props => {
             </Box>
             <Box width={[1 / 2, 1 / 2, 1 / 3]} px={[3, 4]} mb={[4, 0]}>
               <Flex flexWrap="wrap">
-                {[0, 1, 2].map(index => (
+                {List01.map((item, index) => (
                   <Box key={index} width={1 / 3} mb={4} px={[2, 3]}>
-                    <SmallLogo
-                      key={index}
-                      src="https://placehold.it/200x200/9CE9CF/9CE9CF"
-                      alt="Logo"
-                    />
+                    <SmallLogo key={index} src={item.logo} alt={item.company} />
                   </Box>
                 ))}
 
-                {[3, 4, 5].map(index => (
+                {List02.map((item, index) => (
                   <Box key={index} width={1 / 3} px={[2, 3]}>
-                    <SmallLogo
-                      key={index}
-                      src="https://placehold.it/200x200/9CE9CF/9CE9CF"
-                      alt="Logo"
-                    />
+                    <SmallLogo key={index} src={item.logo} alt={item.company} />
                   </Box>
                 ))}
               </Flex>
@@ -88,13 +107,9 @@ const ListCaseStudies = props => {
 
             <Box width={[1 / 2, 1 / 2, 1 / 3]} px={[3, 4]} mb={[4, 0]}>
               <Flex flexWrap="wrap">
-                {[0, 1, 2].map(index => (
+                {List03.map((item, index) => (
                   <Box key={index} width={1 / 3} mb={4} px={[2, 3]}>
-                    <SmallLogo
-                      key={index}
-                      src="https://placehold.it/200x200/9CE9CF/9CE9CF"
-                      alt="Logo"
-                    />
+                    <SmallLogo key={index} src={item.logo} alt={item.company} />
                   </Box>
                 ))}
 

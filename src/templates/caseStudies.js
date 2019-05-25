@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import {Flex, Box} from "@rebass/grid"
+import { Flex, Box } from "@rebass/grid"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Container from "../components/container"
@@ -13,91 +13,83 @@ import BackLink from "../components/BackLink"
 import { FONT_BOLD } from "../variables"
 import Statement from "../components/Statement"
 import BackgroundImage from "../components/BackgroundImage"
-import DefaultImage from "../images/mitso-default.png";
+import DefaultImage from "../images/mitso-default.png"
+import { SingleImage, DoubleImage, TrioImage } from "../components/ImageBlock"
 
-const CaseStudyTemplate = (props) => {
-  return (
-    <Template data={props.data} location={props.location} />
-  )
-}
+const CaseStudyTemplate = props => (
+  <Template data={props.data} location={props.location} />
+)
 
-const Template = (props) => {
+const Template = props => {
   const { markdownRemark } = props.data
   const { frontmatter } = markdownRemark
   const { html } = markdownRemark
   const { title, mainImage, testimonial, imageBlock } = frontmatter
-  
-  const _renderImageBlock = (images) => {
-    if (images !== null) return (
-      <Flex css={{ maxWidth: '1200px'}} mx="auto">
-        {images.map((image, index) => (
-          <React.Fragment>
-            {index === 0 && 
-              <Box width={[1, 1/2]}> 
-                <BackgroundImage 
-                  img={image.Image} 
-                  aspectRatio={false}
-                  border
-                />
-              </Box>
-            }
-            <Flex flexDirection={'column'} width={[1, 1/2]}> 
-              {index === 1 &&
-                <BackgroundImage 
-                  img={image.Image} 
-                  aspectRatio 
-                  border
-                />
-              }
-              {index === 2 && 
-                <BackgroundImage 
-                  img={image.Image} 
-                  aspectRatio 
-                  border
-                />
-              }
-            </Flex>
-          </React.Fragment>
-        ))}
-      </Flex>
-    )
+
+  let images = []
+  imageBlock.map(item => images.push(item.Image))
+
+  const _renderImageBlock = images => {
+    let ib
+    switch (images.length) {
+      case 1:
+        ib = <SingleImage image={images[0]} />
+        break
+      case 2:
+        ib = <DoubleImage images={images} />
+        break
+      case 3:
+        ib = <TrioImage images={images} />
+        break
+      default:
+        ib = <p>Naffin'</p>
+        break
+    }
+    return ib
   }
 
   return (
     <Layout dottedBackground>
       <SEO title={title} />
       <Container>
-        <Flex mb={5} px={[3,4]}>
-            <Hero>
-              <Title>{title}</Title>
-              <Tags tags={['Case Study']} />
-            </Hero>
-          </Flex>
+        <Flex mb={5} px={[3, 4]}>
+          <Hero>
+            <Title>{title}</Title>
+            <Tags tags={["Case Study"]} />
+          </Hero>
+        </Flex>
 
-          <Flex 
-            alignItems="center" 
-            justifyContent="space-between" 
-            mt={5} 
-            mb={3}
-            px={[3,4]}
-          >
-            <BackLink url="/case-studies" title="All Case Studies" />
+        <Flex
+          alignItems="center"
+          justifyContent="space-between"
+          mt={5}
+          mb={3}
+          px={[3, 4]}
+        >
+          <BackLink url="/case-studies" title="All Case Studies" />
+          <Share url={props.location.href} />
+        </Flex>
+
+        <BackgroundImage
+          img={mainImage !== null ? mainImage : DefaultImage}
+          aspectRatio
+        />
+
+        <Box px={[3, 4]} pt={5} mb={5}>
+          <Article
+            as="article"
+            mb={5}
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+
+          {_renderImageBlock(images)}
+
+          <Statement statement={testimonial} />
+
+          <Box mx="auto" mb={5} css={{ maxWidth: "700px" }}>
             <Share url={props.location.href} />
-          </Flex>  
-
-          <BackgroundImage img={mainImage !== null ? mainImage : DefaultImage} aspectRatio />
-
-          <Box px={[3,4]} pt={5} mb={5}>
-            <Article as="article" mb={5} dangerouslySetInnerHTML={{ __html: html }} />
-
-            {_renderImageBlock(imageBlock)}
-
-            <Statement statement={testimonial} />
-
-            <Box mx="auto" mb={5} css={{ maxWidth: '700px' }}>
-              <Share url={props.location.href} />
-            </Box>
           </Box>
+        </Box>
         <WorkWithMitso />
       </Container>
     </Layout>
@@ -140,7 +132,7 @@ const Title = styled.h1`
 `
 
 const Article = styled(Box)`
-  line-height: 1.6; 
+  line-height: 1.6;
 
   * {
     margin-left: auto;
@@ -150,8 +142,8 @@ const Article = styled(Box)`
 
   p:first-of-type {
     color: ${BLACK};
-		font-family: ${FONT_BOLD};
-		font-weight: 900;
+    font-family: ${FONT_BOLD};
+    font-weight: 900;
     font-size: 20px;
   }
 

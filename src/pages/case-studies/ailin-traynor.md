@@ -6,6 +6,7 @@ intro: Introduction goes here
 mainImage: /assets/pexels-photo-914931.jpg
 imageBlock:
   - Image: /assets/d74827.png
+  - Image: /assets/hero.jpg
 testimonial: Testimonial here
 ---
 Body goes here

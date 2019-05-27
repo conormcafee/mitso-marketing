@@ -5,7 +5,7 @@ import CaseStudy from "./caseStudy"
 import MitsoCircle from "../images/backgrounds/mitso-circle.svg"
 import Button from "../components/button"
 import Container from "../components/container"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, navigate } from "gatsby"
 import { SECONDARY } from "../variables"
 
 import AT from "../images/logos/at-makeup.jpg"
@@ -61,7 +61,9 @@ const ListCaseStudies = props => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                 aliquam malesuada libero, quis sodales lorem faucibus sit a
               </p>
-              <Button>All Case Studies</Button>
+              <Button onClick={() => navigate("/case-studies")}>
+                All Case Studies
+              </Button>
             </Box>
           )}
         </Flex>
@@ -87,7 +89,9 @@ const ListCaseStudies = props => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                 aliquam malesuada libero, quis sodales lorem faucibus sit a
               </p>
-              <Button>All Case Studies</Button>
+              <Button onClick={() => navigate("/case-studies")}>
+                All Case Studies
+              </Button>
             </Box>
             <Box width={[1 / 2, 1 / 2, 1 / 3]} px={[3, 4]} mb={[4, 0]}>
               <Flex flexWrap="wrap">

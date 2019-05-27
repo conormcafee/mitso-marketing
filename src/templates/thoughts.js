@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import {Flex, Box} from "@rebass/grid"
+import { Flex, Box } from "@rebass/grid"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Container from "../components/container"
@@ -11,77 +11,75 @@ import Tags from "../components/Tags"
 import Share from "../components/Share"
 import BackLink from "../components/BackLink"
 import Thoughts from "../components/Thoughts"
-import BackgroundImage from "../components/BackgroundImage";
-import Image from "../images/mitso-default.png";
+import BackgroundImage from "../components/BackgroundImage"
+import Image from "../images/mitso-default.png"
 
-const ThoughtsTemplate = (props) => {
-  return (
-    <Template data={props.data} location={props.location} />
-  )
+const ThoughtsTemplate = props => {
+  return <Template data={props.data} location={props.location} />
 }
 
-const Template = (props) => {
+const Template = props => {
   const { markdownRemark } = props.data
   const { frontmatter, html } = markdownRemark
   const { title, tags, mainImage, date, author } = frontmatter
   const { href } = props.location
-  
-  const getTags = (tags) => {
+
+  const getTags = tags => {
     let data = []
     tags !== null && tags.map(tag => data.push(tag.Tag))
 
-    if (data.length > 0) return (
-      <Tags tags={data} />
-    )
+    if (data.length > 0) return <Tags tags={data} />
   }
 
   return (
     <Layout dottedBackground>
       <SEO title={`${frontmatter.title} | Thoughts by `} />
       <Container>
-        <Flex mb={5} px={[3,4]}>
-            <Hero>
-              <Title>{title}</Title>  
-              {getTags(tags)}
-            </Hero>
-          </Flex>
+        <Flex mb={5} px={[3, 4]}>
+          <Hero>
+            <Title>{title}</Title>
+            {getTags(tags)}
+          </Hero>
+        </Flex>
 
-          <Flex 
-            alignItems="center" 
-            justifyContent="space-between" 
-            mt={5} 
-            mb={3}
-            px={[3,4]}
-          >
-            <BackLink url="/thoughts" title="All Thoughts" />
+        <Flex
+          alignItems="center"
+          justifyContent="space-between"
+          mt={5}
+          mb={3}
+          px={[3, 4]}
+        >
+          <BackLink url="/thoughts" title="All Thoughts" />
+          <TopShare>
             <Share url={href} />
-          </Flex>
+          </TopShare>
+        </Flex>
 
-          <BackgroundImage 
-            img={mainImage !== null ? mainImage : Image} 
-            aspectRatio 
-          />
+        <BackgroundImage
+          img={mainImage !== null ? mainImage : Image}
+          aspectRatio
+        />
 
-          <Caption 
-            as="div" 
-            alignItems="center" 
-            justifyContent="space-between"
-            px={[3,4]}
-          >
-            <h4>by {author !== null ? author : "MiTSO Marketing"}</h4>
-            <h4>{date}</h4>
-          </Caption>
+        <Caption
+          as="div"
+          alignItems="center"
+          justifyContent="space-between"
+          px={[3, 4]}
+        >
+          <h4>by {author !== null ? author : "MiTSO Marketing"}</h4>
+          <h4>{date}</h4>
+        </Caption>
 
-          <Box px={[3,4]} mb={5}>
-            <Article dangerouslySetInnerHTML={{ __html: html }} />
-            
-            <Box mx="auto" mb={5} css={{ maxWidth: '700px' }}>
-              <Share url={href} />
-            </Box>
+        <Box px={[3, 4]} mb={5}>
+          <Article dangerouslySetInnerHTML={{ __html: html }} />
 
-            <Thoughts subPage/>
-          </Box>  
-        <WorkWithMitso />        
+          <Box mx="auto" mb={5} css={{ maxWidth: "700px" }}>
+            <Share url={href} />
+          </Box>
+
+          <Thoughts subPage />
+        </Box>
+        <WorkWithMitso />
       </Container>
     </Layout>
   )
@@ -124,7 +122,7 @@ const Title = styled.h1`
 `
 
 const Article = styled(Box)`
-  line-height: 1.6; 
+  line-height: 1.6;
 
   * {
     margin-left: auto;
@@ -147,4 +145,11 @@ const Article = styled(Box)`
 
 const Caption = styled(Flex)`
   border-bottom: 2px solid #e6e6e6;
+`
+
+const TopShare = styled(Box)`
+  display: none;
+  @media only screen and (min-width: 1000px) {
+    display: block;
+  }
 `

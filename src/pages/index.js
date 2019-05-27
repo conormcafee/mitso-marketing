@@ -1,4 +1,5 @@
 import React from "react"
+import { navigate } from "gatsby"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import SEO from "../components/seo"
@@ -12,7 +13,7 @@ import Dot from "../components/Dot"
 import { WHO_WE_ARE } from "../data"
 import { BLACK } from "../variables"
 
-import HomepageHero from "../images/homepage-hero.png"
+import HomepageHero from "../images/homepage-hero.jpg"
 
 class Index extends React.Component {
   render() {
@@ -58,7 +59,9 @@ class Index extends React.Component {
               justifyContent={["flex-start", "flex-start", "flex-end"]}
             >
               <WhoWeAreHeading>Who We Are</WhoWeAreHeading>
-              <Button>Learn More</Button>
+              <Button onClick={() => navigate("/who-we-are")}>
+                Learn More
+              </Button>
             </Flex>
             <WhoWeAre
               as="article"

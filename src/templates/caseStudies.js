@@ -14,7 +14,12 @@ import { FONT_BOLD } from "../variables"
 import Statement from "../components/Statement"
 import BackgroundImage from "../components/BackgroundImage"
 import DefaultImage from "../images/mitso-default.png"
-import { SingleImage, DoubleImage, TrioImage } from "../components/ImageBlock"
+import {
+  SingleImage,
+  DoubleImage,
+  TrioImage,
+  MultiImage,
+} from "../components/ImageBlock"
 
 const CaseStudyTemplate = props => (
   <Template data={props.data} location={props.location} />
@@ -42,7 +47,7 @@ const Template = props => {
         ib = <TrioImage images={images} />
         break
       default:
-        ib = <p>Naffin'</p>
+        ib = <MultiImage images={images} />
         break
     }
     return ib

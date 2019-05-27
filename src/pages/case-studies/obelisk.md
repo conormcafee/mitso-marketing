@@ -2,17 +2,18 @@
 category: Case Study
 date: 2019-05-14T20:14:44.037Z
 title: Obelisk
-intro: This is the introduction consectetur adipiscing elit. Phasellus sit amet arcu ipsum. Integer viverra ac elit non sodales. Praesent non eros et erat ullamcorper mattis. 
+intro: Obelisk is a multinational construction client, headquartered in Dublin.  MiTSO wa approached to revamp the Obelisk brand and develop new digital channels for the company.
 mainImage: /assets/pexels-photo-914931.jpg
 imageBlock:
   - Image: /assets/d74827.png
   - Image: /assets/pexels-photo-914931.jpg
   - Image: /assets/d74827.png
 testimonial: >-
-  Mauris ac lacus sit amet risus venenatis tincidunt vitae sit amet ligula. Ut
-  semper lacinia mi, sed ornare turpis pharetra id. Nullam sed congue justo, id
-  elementum massa. Morbi id gravida mauris.
+  We recommend MiTSO Marketing to everyone we get the chance to, absolute pleasure to work with
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet arcu ipsum. Integer viverra ac elit non sodales. Praesent non eros et erat ullamcorper mattis. 
 
-Nullam turpis arcu, gravida ac turpis eget, efficitur pulvinar urna. Pellentesque id commodo arcu, et maximus orci. Integer tortor libero, interdum sed erat ac, varius finibus urna. Nunc luctus viverra volutpat. Cras sem sem, pellentesque at aliquet eget, facilisis nec urna. Proin volutpat quis est vel consectetur. Mauris ac lacus sit amet risus venenatis tincidunt vitae sit amet ligula. Ut semper lacinia mi, sed ornare turpis pharetra id. Nullam sed congue justo, id elementum massa. Morbi id gravida mauris.
+Having met the senior team at Obelisk, it became clear that the company had huge ambitions and wanted to expand globally.
+
+We began (as we always do) by establishing a solid client relationship and understanding Obelisk’ customer base.
+
+We worked hard with the senior team, organising a number of workshops in order to find the correct balance between information the company wanted to promote vs. Information that was important to the client.

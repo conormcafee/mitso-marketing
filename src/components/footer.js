@@ -1,140 +1,89 @@
 import React from "react"
-import {StaticQuery, graphql} from "gatsby"
+import { Link } from "gatsby"
 import styled from "styled-components"
-import {Flex, Box} from "@rebass/grid"
+import { Flex } from "@rebass/grid"
 import Logo from "../images/mitso-logo.svg"
-import {ACCENT} from "../variables"
+import { FONT_BOLD, BLACK, ACCENT } from "../variables"
 
-const FooterWrapper = styled(Flex)`
-    width: 100%;
-    font-size: 14px;
-    border-bottom: 5px solid ${ACCENT};
+const Footer = ({ services }) => (
+  <Wrapper
+    flexDirection="column"
+    flexWrap="wrap"
+    alignItems={["flex-start", "flex-start", "center"]}
+    justifyContent={["flex-start", "flex-start", "center"]}
+    pt={5}
+    pb={3}
+    mt={3}
+  >
+    <Image src={Logo} alt="MiTSO Marketing" />
+    <Flex as="nav" flexWrap="wrap" mt={2}>
+      {QUICK_LINKS.map((item, index) => (
+        <FooterLink key={index} to={item.url}>
+          {item.title}
+        </FooterLink>
+      ))}
+    </Flex>
+    <Flex as="nav" flexWrap="wrap">
+      {services.map((item, index) => (
+        <FooterLink small key={index} to={item.node.fields.slug}>
+          {item.node.frontmatter.title}
+        </FooterLink>
+      ))}
+    </Flex>
+  </Wrapper>
+)
+
+export default Footer
+
+const Wrapper = styled(Flex)`
+  width: 100%;
+  font-size: 14px;
+  border-bottom: 5px solid ${ACCENT};
 `
 
-const Foot = styled(Flex)`
-    width: 100%;
+const FooterLink = styled(Link)`
+  display: inline-block;
+  font-family: ${FONT_BOLD};
+  color: ${BLACK};
+  font-size: ${props => (props.small ? `10px` : `16px`)};
+  padding: 16px;
+  text-decoration: none;
+
+  &:hover {
+    color: ${ACCENT};
+  }
+
+  @media only screen and (min-width: 768px) {
+    font-size: ${props => (props.small ? `14px` : `20px`)};
+  }
 `
 
-const FooterBox = (props) => {
-    return (
-        <Box width={[1, 1/3]}>
-            <h4>{props.title}</h4>
-            <ul>
-                {props.data.map((item, index) => (
-                    <li key={index}>{item.title}</li>
-                ))}
-            </ul>
-        </Box> 
-    )
-}
+const Image = styled.img`
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
 
-const Footer = () => {
-    return (
-        <FooterWrapper>
-            <Foot as="footer" flexWrap={['wrap', 'wrap', 'nowrap']} px={[3, 4]} mt={[0, 0, 5]} mb={4}>
-                <Box width={[1, 1, 1/3]} mt={[5, 5, 3]}>
-                    <img src={Logo} alt="MiTSO Marketing" />
-
-                    <address>
-                        <p>Address Line 01</p>
-                        <p>Address Line 02</p>
-                        <p>Address Line 03</p>
-                        <p>Newry</p>
-                        <p>Co. Armagh</p>
-                    </address>
-                </Box> 
-
-                <FooterBox title="Quick Links" data={QUICK_LINKS} /> 
-                
-                <FooterBox title="Case Studies" data={CASE_STUDIES} />
-
-                <FooterBox title="Services" data={SERVICES}/>
-            </Foot>
-        </FooterWrapper>
-    )
-}
-
-export default () => (<StaticQuery query={footerQuery} render={data=>(<Footer serivces={data} />)} />)
-
-const footerQuery = graphql`
-    query {
-        allMarkdownRemark( filter: { frontmatter: { category: { eq: "Services" }} }) {
-            edges {
-                node {
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        title
-                        icon
-                    }
-                }
-            }
-        }
-    }
+  @media only screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 
 const QUICK_LINKS = [
-    {
-        title: "Who We Are",
-        url: "/"
-    },
-    {
-        title: "Thoughts",
-        url: "/"
-    },
-    {
-        title: "Work with MiTSO",
-        url: "/"
-    },
-    {
-        title: "What We Offer",
-        url: "/"
-    },
-];
-
-const CASE_STUDIES = [
-    {
-        title: "Obelisk",
-        url: "/"
-    },
-    {
-        title: "E Stars",
-        url: "/"
-    },
-    {
-        title: "Allin Traynor",
-        url: "/"
-    },
-];
-
-const SERVICES = [
-    {
-        title: "Strategic Planning",
-        url: "/"
-    },
-    {
-        title: "Brand Development",
-        url: "/"
-    },
-    {
-        title: "Digital Marketing",
-        url: "/"
-    },
-    {
-        title: "Video",
-        url: "/"
-    },
-    {
-        title: "PR",
-        url: "/"
-    },
-    {
-        title: "Event Management",
-        url: "/"
-    },
-    {
-        title: "Web Development",
-        url: "/"
-    },
-];
+  {
+    title: "Who We Are",
+    url: "/who-we-are",
+  },
+  {
+    title: "Thoughts",
+    url: "/thoughts",
+  },
+  {
+    title: "Case Studies",
+    url: "/case-studies",
+  },
+  {
+    title: "Work with MiTSO",
+    url: "/",
+  },
+]

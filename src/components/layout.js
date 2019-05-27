@@ -47,7 +47,7 @@ const Layout = ({ children, dottedBackground }) => (
             {dottedBackground && <DottedBackground />}
             {children}
           </main>
-          <Footer />
+          <Footer services={data.allMarkdownRemark.edges} />
         </React.Fragment>
       </ThemeProvider>
     )}

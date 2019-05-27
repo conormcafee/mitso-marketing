@@ -40,6 +40,7 @@ const ListCaseStudies = props => {
   const caseStudies = data.allMarkdownRemark.edges
 
   const _renderCaseStudies = data => {
+    console.log(data)
     return (
       <React.Fragment>
         {data.map((study, index) => (
@@ -159,6 +160,7 @@ const caseStudies = graphql`
           frontmatter {
             title
             intro
+            mainImage
           }
         }
       }

@@ -7,15 +7,12 @@ import SubHeading from "../components/SubHeading"
 
 const CaseStudy = props => {
   const goTo = slug => navigate(slug)
-  const { title, intro } = props.node.frontmatter
+  const { title, intro, mainImage } = props.node.frontmatter
   const { slug } = props.node.fields
   return (
     <Box as="article" width={[1, 1, 1 / 2, 1 / 3]} px={[3, 4]} mb={[5, 0]}>
       <Wrapper>
-        <img
-          src="https://placehold.it/1000x700/FFEE93/FFEE93"
-          alt={`${title}`}
-        />
+        <img src={mainImage} alt={`${title}`} />
         <Box px={4} pb={4}>
           <Title mb={`0px`}>
             <span>{title}</span>

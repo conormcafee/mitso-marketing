@@ -1,11 +1,13 @@
 import React from "react"
-import { Box } from "@rebass/grid"
+import { Flex, Box } from "@rebass/grid"
 import BackgroundImage from "../BackgroundImage"
 
 const SingleImage = image => (
-  <Box width={[1, 1 / 2]}>
-    <BackgroundImage img={image.image} aspectRatio={false} border />
-  </Box>
+  <Flex alignItems="center" justifyContent="center">
+    <Box width={[1, 1 / 2]}>
+      <BackgroundImage img={image.image} aspectRatio border />
+    </Box>
+  </Flex>
 )
 
 export default SingleImage

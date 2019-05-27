@@ -2,15 +2,16 @@ import React from "react"
 import { Flex, Box } from "@rebass/grid"
 import BackgroundImage from "../BackgroundImage"
 
-const DoubleImage = images => (
+const TrioImage = images => (
   <Flex css={{ maxWidth: "1200px" }} mx="auto">
     <Box width={[1, 1 / 2]}>
-      <BackgroundImage img={images.images[0]} aspectRatio border />
+      <BackgroundImage img={images.images[0]} aspectRatio={false} border />
     </Box>
-    <Box width={[1, 1 / 2]}>
+    <Flex flexDirection={"column"} width={[1, 1 / 2]}>
       <BackgroundImage img={images.images[1]} aspectRatio border />
-    </Box>
+      <BackgroundImage img={images.images[2]} aspectRatio border />
+    </Flex>
   </Flex>
 )
 
-export default DoubleImage
+export default TrioImage

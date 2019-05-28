@@ -1,5 +1,8 @@
 ---
 category: Case Study
+seo:
+  seoDescription: Test description
+  seoTitle: Ailin Traynor SEO Title
 date: 2019-05-18T17:11:23.763Z
 title: Ailin Traynor
 intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum venenatis quam

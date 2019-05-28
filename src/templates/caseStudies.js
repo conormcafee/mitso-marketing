@@ -29,7 +29,9 @@ const Template = props => {
   const { markdownRemark } = props.data
   const { frontmatter } = markdownRemark
   const { html } = markdownRemark
-  const { title, mainImage, testimonial, imageBlock, text } = frontmatter
+  const { title, mainImage, testimonial, imageBlock, text, seo } = frontmatter
+
+  const { seoTitle, seoDescription } = seo
 
   let images = []
   imageBlock.map(item => images.push(item.Image))
@@ -55,7 +57,7 @@ const Template = props => {
 
   return (
     <Layout dottedBackground>
-      <SEO title={title} />
+      <SEO title={seoTitle ? seoTitle : title} description={seoDescription} />
       <Container>
         <Flex mb={5} px={[3, 4]}>
           <Hero>
@@ -117,6 +119,11 @@ export const pageQuery = graphql`
         slug
       }
       frontmatter {
+        seo {
+          seoTitle
+          seoDescription
+          seoImage
+        }
         title
         mainImage
         testimonial

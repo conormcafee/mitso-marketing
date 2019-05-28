@@ -10,6 +10,16 @@ collections:
     create: true
     fields:
       - { name: category, label: Category, default: Case Study, widget: hidden }
+      - { 
+        name: seo, 
+        label: SEO, 
+        widget: object,
+        fields: [
+          { label: SEO Title, name: seoTitle, widget: string, required: false},
+          { label: SEO Description, name: seoDescription, widget: text, required: false},
+          { label: SEO Image, name: seoImage, widget: image, required: false},
+          ]
+        }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: intro, label: Introduction, widget: text }

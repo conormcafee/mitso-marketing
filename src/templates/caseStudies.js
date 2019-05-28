@@ -29,7 +29,7 @@ const Template = props => {
   const { markdownRemark } = props.data
   const { frontmatter } = markdownRemark
   const { html } = markdownRemark
-  const { title, mainImage, testimonial, imageBlock } = frontmatter
+  const { title, mainImage, testimonial, imageBlock, text } = frontmatter
 
   let images = []
   imageBlock.map(item => images.push(item.Image))
@@ -88,6 +88,12 @@ const Template = props => {
           />
 
           {_renderImageBlock(images)}
+
+          <Article
+            as="article"
+            mb={5}
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
 
           <Statement statement={testimonial} />
 

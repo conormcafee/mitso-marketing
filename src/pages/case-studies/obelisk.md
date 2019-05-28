@@ -1,5 +1,7 @@
 ---
 category: Case Study
+seo:
+  seoTitle: Obelisk SEO Title
 date: 2019-05-14T20:14:44.037Z
 title: Obelisk
 intro: >-

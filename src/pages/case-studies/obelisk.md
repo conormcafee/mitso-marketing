@@ -11,6 +11,18 @@ imageBlock:
   - Image: /assets/d74827.png
   - Image: /assets/pexels-photo-914931.jpg
   - Image: /assets/d74827.png
+text: >-
+  Having met the senior team at Obelisk, it became clear that the company had
+  huge ambitions and wanted to expand globally.
+
+
+  We began (as we always do) by establishing a solid client relationship and
+  understanding Obelisk’ customer base.
+
+
+  We worked hard with the senior team, organising a number of workshops in order
+  to find the correct balance between information the company wanted to promote
+  vs. Information that was important to the client.
 testimonial: >-
   We recommend MiTSO Marketing to everyone we get the chance to, absolute
   pleasure to work with

@@ -4,15 +4,16 @@ import { Box } from "@rebass/grid"
 import styled from "styled-components"
 import Button from "../components/button"
 import SubHeading from "../components/SubHeading"
+import Image from "../components/Image/Image"
 
 const CaseStudy = props => {
   const goTo = slug => navigate(slug)
   const { title, intro, mainImage } = props.node.frontmatter
   const { slug } = props.node.fields
   return (
-    <Box as="article" width={[1, 1, 1 / 2, 1 / 3]} px={[3, 4]} mb={[5, 0]}>
+    <Box as="article" width={[1, 1, 1 / 2, 1 / 3]} px={[3, 4]} mb={[5, 5]}>
       <Wrapper>
-        <img src={mainImage} alt={`${title}`} />
+        <Image image={mainImage} />
         <Box px={4} pb={4}>
           <Title mb={`0px`}>
             <span>{title}</span>
@@ -36,10 +37,6 @@ const Wrapper = styled(Box)`
   border-radius: 8px;
   overflow: hidden;
   box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
-
-  img {
-    max-width: 100%;
-  }
 `
 
 const Title = styled.h2`

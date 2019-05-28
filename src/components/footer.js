@@ -25,7 +25,7 @@ const Footer = ({ services }) => (
     </Flex>
     <Flex as="nav" flexWrap="wrap">
       {services.map((item, index) => (
-        <FooterLink small key={index} to={item.node.fields.slug}>
+        <FooterLink small="true" key={index} to={item.node.fields.slug}>
           {item.node.frontmatter.title}
         </FooterLink>
       ))}

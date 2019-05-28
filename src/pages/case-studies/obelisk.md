@@ -1,6 +1,8 @@
 ---
 category: Case Study
 seo:
+  seoDescription: Test description
+  seoImage: /assets/obelisk-hero.jpg
   seoTitle: Obelisk SEO Title
 date: 2019-05-14T20:14:44.037Z
 title: Obelisk

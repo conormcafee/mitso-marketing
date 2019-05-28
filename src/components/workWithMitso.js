@@ -8,11 +8,11 @@ import Button from "../components/button"
 import Container from "../components/container"
 
 import Icon01 from "../images/icons/web-design.svg"
-// import Icon02 from "../images/icons/digital-marketing.svg"
-// import Icon03 from "../images/icons/social-media.svg"
-// import Icon04 from "../images/icons/visual.svg"
-// import Icon05 from "../images/icons/event-management.svg"
-// import Icon06 from "../images/icons/pr.svg"
+import Icon02 from "../images/icons/digital-marketing.svg"
+import Icon03 from "../images/icons/social-media.svg"
+import Icon04 from "../images/icons/visual.svg"
+import Icon05 from "../images/icons/event-management.svg"
+import Icon06 from "../images/icons/pr.svg"
 
 const Service = props => (
   <Flex width={[1 / 2, 1 / 3]} mb={4} alignItems="center">
@@ -28,6 +28,35 @@ const Service = props => (
     </ServiceLink>
   </Flex>
 )
+
+const IconPicker = number => {
+  let icon
+
+  switch (number) {
+    case 1:
+      icon = Icon01
+      break
+    case 2:
+      icon = Icon02
+      break
+    case 3:
+      icon = Icon03
+      break
+    case 4:
+      icon = Icon04
+      break
+    case 5:
+      icon = Icon05
+      break
+    case 6:
+      icon = Icon06
+      break
+    default:
+      icon = Icon01
+      break
+  }
+  return icon
+}
 
 const WorkWithMitso = props => {
   const services = props.data.allMarkdownRemark.edges
@@ -50,7 +79,7 @@ const WorkWithMitso = props => {
                   index={index}
                   title={service.node.frontmatter.title}
                   url={service.node.fields.slug}
-                  icon={Icon01}
+                  icon={IconPicker(service.node.frontmatter.icon)}
                 />
               ))}
             </WorkBox>

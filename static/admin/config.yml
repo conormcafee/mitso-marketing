@@ -7,9 +7,9 @@ collections:
   - name: homepage
     label: Homepage
     files: 
-      - label: "Hero"
-        name: "hero"
-        file: "src/singles/homepage/hero.md"
+      - label: Hero
+        name: hero
+        file: src/singles/homepage/hero.md
         fields:
           - {label: Title, name: title, widget: string}
   - name: caseStudies

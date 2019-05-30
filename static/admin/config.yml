@@ -4,6 +4,14 @@ backend:
 media_folder: static/assets
 public_folder: assets
 collections:
+  - name: homepage
+    label: Homepage
+    files: 
+      - label: "Hero"
+        name: "hero"
+        file: "src/singles/homepage/hero.md"
+        fields:
+          - {label: Title, name: title, widget: string}
   - name: caseStudies
     label: Case Studies
     folder: src/pages/case-studies

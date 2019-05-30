@@ -1,5 +1,9 @@
 ---
 category: Blog
+seo:
+  seoDescription: Updated Admin Description
+  seoImage: /assets/hero.jpg
+  seoTitle: Admin Title
 date: 2019-05-13T20:11:11.297Z
 author: Maeve Finnegan
 title: Admin Area
@@ -11,6 +15,7 @@ intro: >-
   tempus porttitor efficitur. Vestibulum lacinia porttitor dapibus.
 mainImage: /assets/pexels-photo-914931.jpg
 ---
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula metus vel lobortis vulputate. Duis eget enim id velit fermentum fermentum sed ac urna. Curabitur eleifend elit eget sagittis ornare. Donec ante ex, tincidunt laoreet erat id, feugiat semper lacus. Nam vel auctor enim. Sed cursus, massa pellentesque pharetra ultricies, nulla sapien fringilla risus, vel ullamcorper risus orci non justo. Vivamus vel interdum dolor. Fusce luctus tincidunt odio sed ultricies.
 
 Phasellus ex tellus, rhoncus sit amet sem quis, tincidunt accumsan ante. Nunc lacinia augue vitae eros mattis molestie. Quisque sed tincidunt nisi. Sed consequat eleifend sapien elementum porttitor. Mauris facilisis auctor nisl, a aliquet urna dignissim vel. Mauris euismod libero non auctor consectetur. Mauris eu luctus lacus, vitae commodo purus. Proin ut enim et felis pretium bibendum vel non eros. Maecenas porta iaculis lectus. Nunc tincidunt porttitor eleifend.

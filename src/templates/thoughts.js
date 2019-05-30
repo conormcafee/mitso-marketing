@@ -31,9 +31,15 @@ const Template = props => {
     if (data.length > 0) return <Tags tags={data} />
   }
 
+  console.log(frontmatter)
+
   return (
     <Layout dottedBackground>
-      <SEO title={`${frontmatter.title} | Thoughts by `} />
+      <SEO
+        title={frontmatter.seo.seoTitle}
+        description={frontmatter.seo.seoDescription}
+        image={frontmatter.seo.seoImage}
+      />
       <Container>
         <Flex mb={5} px={[3, 4]}>
           <Hero>
@@ -95,6 +101,11 @@ export const pageQuery = graphql`
         slug
       }
       frontmatter {
+        seo {
+          seoTitle
+          seoDescription
+          seoImage
+        }
         title
         author
         date(formatString: "Do MMMM YYYY")

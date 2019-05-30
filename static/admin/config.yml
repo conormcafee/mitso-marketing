@@ -43,6 +43,16 @@ collections:
     create: true
     fields:
       - { name: category, label: Category, default: Blog, widget: hidden }
+      - { 
+        name: seo, 
+        label: SEO, 
+        widget: object,
+        fields: [
+          { label: SEO Title, name: seoTitle, widget: string, required: false},
+          { label: SEO Description, name: seoDescription, widget: text, required: false},
+          { label: SEO Image, name: seoImage, widget: image, required: false},
+          ]
+        }
       - { name: date, label: Date, widget: date }
       - { name: author, label: Author, widget: string, default: Maeve Finnegan }
       - { name: title, label: Title }
@@ -66,6 +76,16 @@ collections:
     create: true
     fields:
       - { name: category, label: Category, widget: hidden, default: Services }
+      - { 
+        name: seo, 
+        label: SEO, 
+        widget: object,
+        fields: [
+          { label: SEO Title, name: seoTitle, widget: string, required: false},
+          { label: SEO Description, name: seoDescription, widget: text, required: false},
+          { label: SEO Image, name: seoImage, widget: image, required: false},
+          ]
+        }
       - { name: icon, label: Icon, widget: hidden, default: 6 }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }

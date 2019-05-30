@@ -31,7 +31,7 @@ const Template = props => {
   const { html } = markdownRemark
   const { title, mainImage, testimonial, imageBlock, text, seo } = frontmatter
 
-  const { seoTitle, seoDescription } = seo
+  const { seoTitle, seoDescription, seoImage } = seo
 
   let images = []
   imageBlock.map(item => images.push(item.Image))
@@ -57,7 +57,7 @@ const Template = props => {
 
   return (
     <Layout dottedBackground>
-      <SEO title={seoTitle ? seoTitle : title} description={seoDescription} />
+      <SEO title={seoTitle} description={seoDescription} image={seoImage} />
       <Container>
         <Flex mb={5} px={[3, 4]}>
           <Hero>

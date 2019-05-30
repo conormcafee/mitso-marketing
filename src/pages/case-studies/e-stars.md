@@ -1,8 +1,9 @@
 ---
 category: Case Study
 seo:
-  seoDescription: Test description
-  seoTitle: eStars Traynor SEO Title
+  seoDescription: EStars Description to go here
+  seoImage: /assets/hero.jpg
+  seoTitle: EStars Title
 date: 2019-05-18T17:10:07.925Z
 title: E Stars
 intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum venenatis quam

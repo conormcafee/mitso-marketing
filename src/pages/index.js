@@ -1,5 +1,5 @@
 import React from "react"
-import { navigate } from "gatsby"
+import { navigate, graphql } from "gatsby"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import SEO from "../components/seo"
@@ -15,91 +15,83 @@ import { BLACK } from "../variables"
 
 import HomepageHero from "../images/homepage-hero.jpg"
 
-class Index extends React.Component {
-  render() {
-    return (
-      <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <Container>
-          <Intro
-            as="section"
-            flexWrap={["wrap"]}
-            alignItems={"center"}
-            justifyContent={"space-between"}
-            mb={[5, 6]}
-          >
-            <Box px={[3, 4]} mb={6} width={[1, 1 / 2]}>
-              <h1>
-                We deliver smart, tailored and targeted communications to help
-                your business thrive
-              </h1>
-              <Button>Work with MiTSO</Button>
-            </Box>
-            <Hero as="figure" px={[3, 4]} width={[1, 1 / 2]}>
-              <img src={HomepageHero} alt="Welcome to MiTSO" />
-            </Hero>
-          </Intro>
-        </Container>
+export default ({ data }) => {
+  const { title } = data.file.childMarkdownRemark.frontmatter
+  return (
+    <Layout>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <Container>
+        <Intro
+          as="section"
+          flexWrap={["wrap"]}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+          mb={[5, 6]}
+        >
+          <Box px={[3, 4]} mb={6} width={[1, 1 / 2]}>
+            <h1>{title}</h1>
+            <Button>Work with MiTSO</Button>
+          </Box>
+          <Hero as="figure" px={[3, 4]} width={[1, 1 / 2]}>
+            <img src={HomepageHero} alt="Welcome to MiTSO" />
+          </Hero>
+        </Intro>
+      </Container>
 
-        {/* Who WE Are */}
-        <Container>
+      {/* Who WE Are */}
+      <Container>
+        <Flex
+          as="section"
+          flexWrap={["wrap", "wrap", "nowrap"]}
+          pb={6}
+          px={[3, 4]}
+        >
           <Flex
-            as="section"
-            flexWrap={["wrap", "wrap", "nowrap"]}
-            pb={6}
-            px={[3, 4]}
+            as="aside"
+            width={[1, 1, 1 / 4]}
+            pr={[3, 4]}
+            mb={3}
+            flexDirection="column"
+            alignItems="flex-start"
+            justifyContent={["flex-start", "flex-start", "flex-end"]}
           >
-            <Flex
-              as="aside"
-              width={[1, 1, 1 / 4]}
-              pr={[3, 4]}
-              mb={3}
-              flexDirection="column"
-              alignItems="flex-start"
-              justifyContent={["flex-start", "flex-start", "flex-end"]}
-            >
-              <WhoWeAreHeading>Who We Are</WhoWeAreHeading>
-              <Button onClick={() => navigate("/who-we-are")}>
-                Learn More
-              </Button>
-            </Flex>
-            <WhoWeAre
-              as="article"
-              flexWrap={["wrap", "wrap", "wrap"]}
-              width={[1, 1, 3 / 4]}
-              p={[3, 4]}
-              css={{ background: BLACK }}
-            >
-              {WHO_WE_ARE.map((block, index) => (
-                <Box width={["auto", 1 / 2]} px={[3, 4]} key={index}>
-                  <WhoWeAreSubHeading>
-                    {block.title}
-                    <Dot />
-                  </WhoWeAreSubHeading>
-                  <p>{block.text}</p>
-                </Box>
-              ))}
-            </WhoWeAre>
+            <WhoWeAreHeading>Who We Are</WhoWeAreHeading>
+            <Button onClick={() => navigate("/who-we-are")}>Learn More</Button>
           </Flex>
-        </Container>
+          <WhoWeAre
+            as="article"
+            flexWrap={["wrap", "wrap", "wrap"]}
+            width={[1, 1, 3 / 4]}
+            p={[3, 4]}
+            css={{ background: BLACK }}
+          >
+            {WHO_WE_ARE.map((block, index) => (
+              <Box width={["auto", 1 / 2]} px={[3, 4]} key={index}>
+                <WhoWeAreSubHeading>
+                  {block.title}
+                  <Dot />
+                </WhoWeAreSubHeading>
+                <p>{block.text}</p>
+              </Box>
+            ))}
+          </WhoWeAre>
+        </Flex>
+      </Container>
 
-        {/* Case Studies */}
+      {/* Case Studies */}
 
-        <CaseStudies homepage moreCaseStudies />
+      <CaseStudies homepage moreCaseStudies />
 
-        {/* Work with Mitso */}
+      {/* Work with Mitso */}
 
-        <WorkWithMitso />
+      <WorkWithMitso />
 
-        {/* Thoughts */}
+      {/* Thoughts */}
 
-        <Thoughts homepage />
-      </Layout>
-    )
-  }
+      <Thoughts homepage />
+    </Layout>
+  )
 }
-
-export default Index
 
 const WhoWeAreHeading = styled.h2`
   margin-bottom: 16px;
@@ -125,4 +117,15 @@ const WhoWeAre = styled(Flex)`
 
 const WhoWeAreSubHeading = styled.h3`
   color: #ffffff;
+`
+export const query = graphql`
+  query {
+    file(name: { eq: "hero" }) {
+      childMarkdownRemark {
+        frontmatter {
+          title
+        }
+      }
+    }
+  }
 `

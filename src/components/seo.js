@@ -24,8 +24,6 @@ const SEO = ({ title, description, image, pathname, article }) => (
         url: `${siteUrl}${pathname || "/"}`,
       }
 
-      console.log(seo)
-
       return (
         <>
           <Helmet title={seo.title}>

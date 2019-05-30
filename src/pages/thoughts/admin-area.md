@@ -1,9 +1,9 @@
 ---
 category: Blog
 seo:
-  seoDescription: Updated Admin Description
+  seoDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin
   seoImage: /assets/hero.jpg
-  seoTitle: Admin Title
+  seoTitle: Admin Area
 date: 2019-05-13T20:11:11.297Z
 author: Maeve Finnegan
 title: Admin Area

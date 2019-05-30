@@ -24,9 +24,12 @@ const ServicesTemplate = props => {
 const Template = props => {
   const { markdownRemark, allMarkdownRemark } = props.data
   const { frontmatter } = markdownRemark
+  const { seo } = frontmatter
+  const { seoTitle, seoDescription, seoImage } = seo
+
   return (
     <Layout dottedBackground>
-      <SEO title={frontmatter.title} />
+      <SEO title={seoTitle} description={seoDescription} image={seoImage} />
       <Container>
         <Box px={[3, 4]}>
           <Box>
@@ -110,6 +113,11 @@ export const pageQuery = graphql`
         slug
       }
       frontmatter {
+        seo {
+          seoTitle
+          seoDescription
+          seoImage
+        }
         title
         intro
         statement

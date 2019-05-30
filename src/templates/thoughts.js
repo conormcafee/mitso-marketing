@@ -21,8 +21,9 @@ const ThoughtsTemplate = props => {
 const Template = props => {
   const { markdownRemark } = props.data
   const { frontmatter, html } = markdownRemark
-  const { title, tags, mainImage, date, author } = frontmatter
+  const { title, tags, mainImage, date, author, seo } = frontmatter
   const { href } = props.location
+  const { seoTitle, seoDescription, seoImage } = seo
 
   const getTags = tags => {
     let data = []
@@ -31,15 +32,9 @@ const Template = props => {
     if (data.length > 0) return <Tags tags={data} />
   }
 
-  console.log(frontmatter)
-
   return (
     <Layout dottedBackground>
-      <SEO
-        title={frontmatter.seo.seoTitle}
-        description={frontmatter.seo.seoDescription}
-        image={frontmatter.seo.seoImage}
-      />
+      <SEO title={seoTitle} description={seoDescription} image={seoImage} />
       <Container>
         <Flex mb={5} px={[3, 4]}>
           <Hero>

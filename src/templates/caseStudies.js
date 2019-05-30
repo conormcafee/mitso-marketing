@@ -30,7 +30,6 @@ const Template = props => {
   const { frontmatter } = markdownRemark
   const { html } = markdownRemark
   const { title, mainImage, testimonial, imageBlock, text, seo } = frontmatter
-
   const { seoTitle, seoDescription, seoImage } = seo
 
   let images = []

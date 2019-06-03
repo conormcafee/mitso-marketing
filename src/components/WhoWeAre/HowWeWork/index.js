@@ -1,60 +1,47 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import { BLACK, SECONDARY } from "../../../variables"
 import QUOTE from "../../../images/icons/quote.svg"
 
-class HowWeWork extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      index: 0,
-    }
-  }
+export default () => {
+  const [slide, setSlide] = useState(0)
 
-  toggleStatus = data => this.setState({ index: data })
+  const toggleStatus = data => setSlide(data)
 
-  render() {
-    return (
-      <Box width={[1, 1 / 2, 2 / 3]} px={[3, 4]}>
-        <Wrapper>
-          <QuoteWrapper>
-            <Img src={QUOTE} alt="Quote" />
-          </QuoteWrapper>
+  return (
+    <Box width={[1, 1 / 2, 2 / 3]} px={[3, 4]}>
+      <Wrapper>
+        <QuoteWrapper>
+          <Img src={QUOTE} alt="Quote" />
+        </QuoteWrapper>
 
-          <ContentWrapper>
-            {data.map((item, index) => (
-              <Content
-                key={index}
-                index={index}
-                active={this.state.index === index}
+        <ContentWrapper>
+          {data.map((item, index) => (
+            <Content key={index} index={index} active={slide === index}>
+              <Title>{item.title}</Title>
+              <Text>{item.text}</Text>
+            </Content>
+          ))}
+        </ContentWrapper>
+
+        <Nav>
+          {data.map((item, index) => (
+            <li key={index}>
+              <Button
+                active={slide === index}
+                onClick={() => toggleStatus(index)}
+                type="button"
               >
-                <Title>{item.title}</Title>
-                <Text>{item.text}</Text>
-              </Content>
-            ))}
-          </ContentWrapper>
-
-          <Nav>
-            {data.map((item, index) => (
-              <li key={index}>
-                <Button
-                  active={this.state.index === index}
-                  onClick={() => this.toggleStatus(index)}
-                  type="button"
-                >
-                  {item.title}
-                </Button>
-              </li>
-            ))}
-          </Nav>
-        </Wrapper>
-      </Box>
-    )
-  }
+                {item.title}
+              </Button>
+            </li>
+          ))}
+        </Nav>
+      </Wrapper>
+    </Box>
+  )
 }
-
-export default HowWeWork
 
 const Wrapper = styled.div`
   background: ${SECONDARY};

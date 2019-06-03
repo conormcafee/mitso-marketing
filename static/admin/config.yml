@@ -12,6 +12,14 @@ collections:
         file: src/pages/singles/homepage/hero.md
         fields:
           - {label: Title, name: title, widget: string}
+      - label: Who We Are
+        name: whoWeAre
+        file: src/pages/singles/homepage/whoWeAre.md
+        fields:
+          - {label: Plan, name: plan, widget: text}
+          - {label: Promote, name: promote, widget: text}
+          - {label: Brand, name: brand, widget: text}
+          - {label: Review, name: review, widget: text}
   - name: caseStudies
     label: Case Studies
     folder: src/pages/case-studies

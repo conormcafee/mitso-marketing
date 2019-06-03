@@ -46,5 +46,5 @@ teamMember:
     where: >-
       I spent my undergraduate placement with Enterprise Rent-A-Car in Dublin Airport becoming the first intern in Ireland to achieve the Management Qualification Interview. Following my graduation from Business Management with a first class honours, I completed an internship with Allen & Overy in their Digital Marketing Team.
     why: >-
-      As Peter Drucker quotes, “The best way to predict the future is to create it”. Thus, no two days are the same in MiTSO as we design marketing campaigns for a diverse range of clients.
+      As Peter Drucker quotes, “The best way to predict the future is to create it”. Thus, no two days are the same in MiTSO as we design marketing campaigns for a diverse range of clients
 ---

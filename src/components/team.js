@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
+// import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import Container from "../components/container"
@@ -17,103 +18,88 @@ import MitsoCircle from "../images/backgrounds/mitso-circle.svg"
 
 import TeamMemberModal from "../components/teamMemberModal"
 
-const initialState = {
-  activeTeamMember: null,
-  imageSwap: null,
-}
+const Team = () => {
+  const [activeTeamMember, setActiveTeamMemeber] = useState(null)
+  const [imageSwap, setImageSwap] = useState(null)
 
-class Team extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { ...initialState }
-  }
+  const readMore = index =>
+    setActiveTeamMemeber(index === activeTeamMember ? null : index)
 
-  readMore = index =>
-    this.setState({
-      activeTeamMember: index === this.state.activeTeamMember ? null : index,
-    })
+  const closeModal = () => setActiveTeamMemeber(null)
+  const swapImageIn = index => setImageSwap(index)
+  const swapImageOut = () => setImageSwap(null)
 
-  closeModal = () => this.setState({ activeTeamMember: null })
+  return (
+    <React.Fragment>
+      <TeamWrapper mt={6}>
+        <Container>
+          <Box pt={[3, 4]} px={[3, 4]} mt={[3, 3, 3]}>
+            <h2>Meet our Team.</h2>
+          </Box>
+        </Container>
 
-  swapImageIn = index => this.setState({ imageSwap: index })
-
-  swapImageOut = () => this.setState({ imageSwap: null })
-
-  render() {
-    return (
-      <React.Fragment>
-        <TeamWrapper mt={6}>
+        <Flex>
           <Container>
-            <Box pt={[3, 4]} px={[3, 4]} mt={[3, 3, 3]}>
-              <h2>Meet our Team.</h2>
-            </Box>
-          </Container>
+            <Wrapper flexWrap={"wrap"}>
+              {team.map((member, index) => (
+                <Box
+                  key={index}
+                  width={[1, 1 / 2, 1 / 2, 1 / 3]}
+                  px={[3, 4]}
+                  mb={[5, 5, 5, 6]}
+                  mt={[index === 1 ? 5 : 0]}
+                >
+                  <Member>
+                    <Photo
+                      onClick={() => readMore(index)}
+                      onMouseOver={() => swapImageIn(index)}
+                      onMouseOut={() => swapImageOut()}
+                      src={
+                        imageSwap === null
+                          ? member.img
+                          : imageSwap === index
+                          ? member.imgSwap
+                          : member.img
+                      }
+                      alt={`${member.name}`}
+                    />
+                    <Box
+                      onClick={() => readMore(index)}
+                      py={[2, 3]}
+                      px={[3, 4]}
+                    >
+                      <Name>{member.name}</Name>
+                      <p>{member.what}</p>
+                    </Box>
 
-          <Flex>
-            <Container>
-              <Wrapper flexWrap={"wrap"}>
-                {team.map((member, index) => (
-                  <Box
-                    key={index}
-                    width={[1, 1 / 2, 1 / 2, 1 / 3]}
-                    px={[3, 4]}
-                    mb={[5, 5, 5, 6]}
-                    mt={[index === 1 ? 5 : 0]}
-                  >
-                    <Member>
-                      <Photo
-                        onClick={() => this.readMore(index)}
-                        onMouseOver={() => this.swapImageIn(index)}
-                        onMouseOut={() => this.swapImageOut()}
-                        src={
-                          this.state.imageSwap === null
-                            ? member.img
-                            : this.state.imageSwap === index
-                            ? member.imgSwap
-                            : member.img
-                        }
-                        alt={`${member.name}`}
-                      />
-                      <Box
-                        onClick={() => this.readMore(index)}
-                        py={[2, 3]}
-                        px={[3, 4]}
+                    <Footer as="footer" py={[2, 3]} px={[3, 4]}>
+                      <a
+                        href={member.linkedin}
+                        title={`Connect with ${member.name} on LinkedIn`}
+                        alt={`Connect with ${member.name} on LinkedIn`}
                       >
-                        <Name>{member.name}</Name>
-                        <p>{member.what}</p>
-                      </Box>
+                        <LinkedInIcon src={LinkedIn} alt="LinkedIn" />
+                      </a>
+                      <Button onClick={() => readMore(index)}>Read More</Button>
+                    </Footer>
+                  </Member>
+                </Box>
+              ))}
+            </Wrapper>
+          </Container>
+        </Flex>
 
-                      <Footer as="footer" py={[2, 3]} px={[3, 4]}>
-                        <a
-                          href={member.linkedin}
-                          title={`Connect with ${member.name} on LinkedIn`}
-                          alt={`Connect with ${member.name} on LinkedIn`}
-                        >
-                          <LinkedInIcon src={LinkedIn} alt="LinkedIn" />
-                        </a>
-                        <Button onClick={() => this.readMore(index)}>
-                          Read More
-                        </Button>
-                      </Footer>
-                    </Member>
-                  </Box>
-                ))}
-              </Wrapper>
-            </Container>
-          </Flex>
+        <Circle src={MitsoCircle} alt="MiTSO" />
+      </TeamWrapper>
 
-          <Circle src={MitsoCircle} alt="MiTSO" />
-        </TeamWrapper>
-
-        {this.state.activeTeamMember !== null && (
-          <TeamMemberModal
-            member={team[this.state.activeTeamMember]}
-            closeModal={this.closeModal}
-          />
-        )}
-      </React.Fragment>
-    )
-  }
+      {activeTeamMember !== null && (
+        <TeamMemberModal
+          member={team[activeTeamMember]}
+          closeModal={closeModal}
+        />
+      )}
+    </React.Fragment>
+  )
 }
 
 export default Team

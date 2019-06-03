@@ -16,7 +16,14 @@ import { BLACK } from "../variables"
 import HomepageHero from "../images/homepage-hero.jpg"
 
 export default ({ data }) => {
-  const { title } = data.file.childMarkdownRemark.frontmatter
+  console.log(data)
+  const {
+    title,
+    plan,
+    brand,
+    promote,
+    review,
+  } = data.file.childMarkdownRemark.frontmatter
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -124,6 +131,10 @@ export const query = graphql`
       childMarkdownRemark {
         frontmatter {
           title
+          plan
+          brand
+          promote
+          review
         }
       }
     }

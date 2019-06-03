@@ -1,4 +1,7 @@
 ---
+title: >-
+  We deliver smart, tailored and targeted communications to help your business
+  thrive.
 plan: >-
   We believe a strategic approach is essential and we work with you to develop
   sales and marketing strategies which help to focus your investment in the
@@ -13,4 +16,3 @@ review: >-
   We know how to reach - all to. We know that time and money is precious, which
   is why we consistently review and improve our campaigns and performance.
 ---
-

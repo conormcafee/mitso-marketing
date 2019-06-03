@@ -9,13 +9,9 @@ collections:
     files: 
       - label: Hero
         name: hero
-        file: src/pages/singles/homepage/hero.md
+        file: src/pages/singles/homepage.md
         fields:
           - {label: Title, name: title, widget: string}
-      - label: Who We Are
-        name: whoWeAre
-        file: src/pages/singles/homepage/whoWeAre.md
-        fields:
           - {label: Plan, name: plan, widget: text}
           - {label: Promote, name: promote, widget: text}
           - {label: Brand, name: brand, widget: text}

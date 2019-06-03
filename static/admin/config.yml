@@ -26,6 +26,24 @@ collections:
           - {label: Brand, name: brand, widget: text}
           - {label: Promote, name: promote, widget: text}
           - {label: Review, name: review, widget: text}
+  - name: whoWeAre
+    label: Who We Are
+    files: 
+      - label: Content
+        name: content
+        file: src/pages/singles/whoWeAre.md
+        fields:
+          - { 
+            name: seo, 
+            label: SEO, 
+            widget: object,
+            fields: [
+              { label: SEO Title, name: seoTitle, widget: string, required: false},
+              { label: SEO Description, name: seoDescription, widget: text, required: false},
+              { label: SEO Image, name: seoImage, widget: image, required: false},
+              ]
+            }
+          - {label: Title, name: title, widget: string}
   - name: caseStudies
     label: Case Studies
     files: 

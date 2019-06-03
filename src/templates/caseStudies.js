@@ -33,7 +33,7 @@ const Template = props => {
   const { seoTitle, seoDescription, seoImage } = seo
 
   let images = []
-  imageBlock.map(item => images.push(item.Image))
+  imageBlock && imageBlock.map(item => images.push(item.Image))
 
   const _renderImageBlock = images => {
     let ib

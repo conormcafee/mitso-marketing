@@ -9,7 +9,7 @@ collections:
     files: 
       - label: Content
         name: content
-        file: src/pages/singles/homepage.md
+        file: src/singles/homepage.md
         fields:
           - { 
             name: seo, 
@@ -31,7 +31,7 @@ collections:
     files: 
       - label: Content
         name: content
-        file: src/pages/singles/whoWeAre.md
+        file: src/singles/whoWeAre.md
         fields:
           - { 
             name: seo, 
@@ -49,7 +49,7 @@ collections:
     files: 
       - label: Content
         name: content
-        file: src/pages/singles/howWeWork.md
+        file: src/singles/howWeWork.md
         fields:
           - {label: Slide 01 Title, name: slide01title, widget: string}
           - {label: Slide 01 Text, name: slide01text, widget: string}
@@ -64,7 +64,7 @@ collections:
     files: 
       - label: Content
         name: content
-        file: src/pages/singles/caseStudies.md
+        file: src/singles/caseStudies.md
         fields:
           - { 
             name: seo, 
@@ -79,8 +79,8 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
           - {label: others, name: others, widget: text}
-  - name: caseStudy
-    label: Case Study
+  - name: projects
+    label: Projects
     folder: src/pages/case-studies
     create: true
     fields:
@@ -177,7 +177,7 @@ collections:
     files: 
       - label: Content
         name: content
-        file: src/pages/singles/team.md
+        file: src/singles/team.md
         fields:
           - {label: Title, name: title, widget: string}
           - {

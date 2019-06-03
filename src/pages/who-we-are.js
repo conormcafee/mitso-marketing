@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import Container from "../components/container"
@@ -8,14 +9,20 @@ import TopImages from "../components/WhoWeAre/TopImages"
 import HowWeWork from "../components/WhoWeAre/HowWeWork"
 import WorkWithMitso from "../components/workWithMitso"
 import Team from "../components/team"
+import Dot from "../components/Dot"
 
-const WhoWeAre = () => {
+export default ({ data }) => {
+  const { title, seo } = data.file.childMarkdownRemark.frontmatter
+  const { seoTitle, seoDescription, seoImage } = seo
   return (
     <Layout dottedBackground>
-      <SEO title="Who We Are" />
+      <SEO title={seoTitle} description={seoDescription} image={seoImage} />
       <Container>
         <Box px={[3, 4]} mb={[3, 3, 3, 6]}>
-          <Title>We are a creative marketing consultancy.</Title>
+          <Title>
+            {title}
+            <Dot />
+          </Title>
         </Box>
       </Container>
       <TopImages />
@@ -34,8 +41,6 @@ const WhoWeAre = () => {
   )
 }
 
-export default WhoWeAre
-
 const Title = styled.h1`
   @media only screen and (max-width: 40em) {
     font-size: 30px;
@@ -50,4 +55,21 @@ const Title = styled.h1`
 const HowWeWorkSection = styled(Flex)`
   position: relative;
   overflow: hidden;
+`
+
+export const query = graphql`
+  query {
+    file(name: { eq: "whoWeAre" }) {
+      childMarkdownRemark {
+        frontmatter {
+          title
+          seo {
+            seoTitle
+            seoDescription
+            seoImage
+          }
+        }
+      }
+    }
+  }
 `

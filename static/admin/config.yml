@@ -7,8 +7,8 @@ collections:
   - name: homepage
     label: Homepage
     files: 
-      - label: Hero
-        name: hero
+      - label: Content
+        name: content
         file: src/pages/singles/homepage.md
         fields:
           - {label: Title, name: title, widget: string}

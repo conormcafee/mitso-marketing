@@ -17,13 +17,7 @@ import HomepageHero from "../images/homepage-hero.jpg"
 
 export default ({ data }) => {
   console.log(data)
-  const {
-    title,
-    plan,
-    brand,
-    promote,
-    review,
-  } = data.file.childMarkdownRemark.frontmatter
+  const { title } = data.file.childMarkdownRemark.frontmatter
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -127,7 +121,7 @@ const WhoWeAreSubHeading = styled.h3`
 `
 export const query = graphql`
   query {
-    file(name: { eq: "hero" }) {
+    file(name: { eq: "homepage" }) {
       childMarkdownRemark {
         frontmatter {
           title

@@ -1,12 +1,42 @@
 import React, { useState } from "react"
+import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import { BLACK, SECONDARY } from "../../../variables"
 import QUOTE from "../../../images/icons/quote.svg"
 
-export default () => {
-  const [slide, setSlide] = useState(0)
+const HowWeWork = props => {
+  const {
+    slide01title,
+    slide01text,
+    slide02title,
+    slide02text,
+    slide03title,
+    slide03text,
+    slide04title,
+    slide04text,
+  } = props.data.file.childMarkdownRemark.frontmatter
 
+  const DATA = [
+    {
+      title: slide01title,
+      text: slide01text,
+    },
+    {
+      title: slide02title,
+      text: slide02text,
+    },
+    {
+      title: slide03title,
+      text: slide03text,
+    },
+    {
+      title: slide04title,
+      text: slide04text,
+    },
+  ]
+
+  const [slide, setSlide] = useState(0)
   const toggleStatus = data => setSlide(data)
 
   return (
@@ -17,7 +47,7 @@ export default () => {
         </QuoteWrapper>
 
         <ContentWrapper>
-          {data.map((item, index) => (
+          {DATA.map((item, index) => (
             <Content key={index} index={index} active={slide === index}>
               <Title>{item.title}</Title>
               <Text>{item.text}</Text>
@@ -26,7 +56,7 @@ export default () => {
         </ContentWrapper>
 
         <Nav>
-          {data.map((item, index) => (
+          {DATA.map((item, index) => (
             <li key={index}>
               <Button
                 active={slide === index}
@@ -42,6 +72,29 @@ export default () => {
     </Box>
   )
 }
+
+export default () => (
+  <StaticQuery query={query} render={data => <HowWeWork data={data} />} />
+)
+
+export const query = graphql`
+  query {
+    file(name: { eq: "howWeWork" }) {
+      childMarkdownRemark {
+        frontmatter {
+          slide01title
+          slide01text
+          slide02title
+          slide02text
+          slide03title
+          slide03text
+          slide04title
+          slide04text
+        }
+      }
+    }
+  }
+`
 
 const Wrapper = styled.div`
   background: ${SECONDARY};
@@ -130,29 +183,3 @@ const Button = styled.button`
     background-color: ${SECONDARY};
   }
 `
-
-const data = [
-  {
-    title: "We Bring Brands to Life",
-    text:
-      "Often what you think you need to invest in isn’t the most important thing for your business right now. We’ll keep you right, don’t worry!",
-  },
-
-  {
-    title: "We like simple",
-    text:
-      "We never over complicate, we get to the heart of the problem and solve it quickly. No acronyms or fancy business lingo, just solutions.",
-  },
-
-  {
-    title: "We’re results orientated",
-    text:
-      "We’re obsessed with results (our bad!) and its what drives us to be better each and every day.",
-  },
-
-  {
-    title: "We don’t do titles",
-    text:
-      "No matter where you sit in the boardroom, we treat everyone with the same respect because the best ideas come from the best minds and we love creativity, no matter where it comes from.",
-  },
-]

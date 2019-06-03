@@ -10,17 +10,43 @@ import CaseStudies from "../components/caseStudies"
 import WorkWithMitso from "../components/workWithMitso"
 import Thoughts from "../components/Thoughts"
 import Dot from "../components/Dot"
-import { WHO_WE_ARE } from "../data"
 import { BLACK } from "../variables"
 
 import HomepageHero from "../images/homepage-hero.jpg"
 
 export default ({ data }) => {
-  console.log(data)
-  const { title } = data.file.childMarkdownRemark.frontmatter
+  const {
+    title,
+    plan,
+    promote,
+    brand,
+    review,
+    seo,
+  } = data.file.childMarkdownRemark.frontmatter
+
+  const { seoTitle, seoDescription, seoImage } = seo
+
+  const WHO_WE_ARE = [
+    {
+      title: "We Plan",
+      text: plan,
+    },
+    {
+      title: "We Brand",
+      text: brand,
+    },
+    {
+      title: "We Promote",
+      text: promote,
+    },
+    {
+      title: "We Review",
+      text: review,
+    },
+  ]
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title={seoTitle} description={seoDescription} image={seoImage} />
       <Container>
         <Intro
           as="section"
@@ -129,6 +155,11 @@ export const query = graphql`
           brand
           promote
           review
+          seo {
+            seoTitle
+            seoDescription
+            seoImage
+          }
         }
       }
     }

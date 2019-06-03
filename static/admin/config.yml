@@ -11,13 +11,43 @@ collections:
         name: content
         file: src/pages/singles/homepage.md
         fields:
+          - { 
+            name: seo, 
+            label: SEO, 
+            widget: object,
+            fields: [
+              { label: SEO Title, name: seoTitle, widget: string, required: false},
+              { label: SEO Description, name: seoDescription, widget: text, required: false},
+              { label: SEO Image, name: seoImage, widget: image, required: false},
+              ]
+            }
           - {label: Title, name: title, widget: string}
           - {label: Plan, name: plan, widget: text}
-          - {label: Promote, name: promote, widget: text}
           - {label: Brand, name: brand, widget: text}
+          - {label: Promote, name: promote, widget: text}
           - {label: Review, name: review, widget: text}
   - name: caseStudies
     label: Case Studies
+    files: 
+      - label: Content
+        name: content
+        file: src/pages/singles/caseStudies.md
+        fields:
+          - { 
+            name: seo, 
+            label: SEO, 
+            widget: object,
+            fields: [
+              { label: SEO Title, name: seoTitle, widget: string, required: false},
+              { label: SEO Description, name: seoDescription, widget: text, required: false},
+              { label: SEO Image, name: seoImage, widget: image, required: false},
+              ]
+            }
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: text}
+          - {label: others, name: others, widget: text}
+  - name: caseStudy
+    label: Case Study
     folder: src/pages/case-studies
     create: true
     fields:

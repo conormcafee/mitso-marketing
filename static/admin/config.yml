@@ -172,3 +172,27 @@ collections:
           widget: list,
           fields: [{ label: service, name: Service, widget: string }],
         }
+  - name: teamMembers
+    label: Team Members
+    files: 
+      - label: Content
+        name: content
+        file: src/pages/singles/team.md
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {
+            name: teamMember,
+            label: Team Member,
+            widget: list,
+            fields: [
+              { label: Image, name: img, widget: image },
+              { label: Image on Hover, name: imgSwap, widget: image },
+              { label: Name, name: name, widget: string },
+              { label: What, name: what, widget: string },
+              { label: Where, name: where, widget: string },
+              { label: When, name: when, widget: string },
+              { label: Why, name: why, widget: string },
+              { label: Psst, name: psst, widget: string },
+              { label: LinkedIn, name: linkedin, widget: string },
+            ],
+          }

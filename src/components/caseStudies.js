@@ -39,6 +39,9 @@ const ListCaseStudies = props => {
   const { data, moreCaseStudies, homepage } = props
   const caseStudies = data.allMarkdownRemark.edges
 
+  const intro = data.file.childMarkdownRemark.frontmatter.intro
+  const others = data.file.childMarkdownRemark.frontmatter.others
+
   const _renderCaseStudies = data => {
     return (
       <React.Fragment>
@@ -57,10 +60,7 @@ const ListCaseStudies = props => {
           {homepage && (
             <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
               <h2>Our Work</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                aliquam malesuada libero, quis sodales lorem faucibus sit a
-              </p>
+              <p>{intro}</p>
               <Button onClick={() => navigate("/case-studies")}>
                 All Case Studies
               </Button>
@@ -85,10 +85,7 @@ const ListCaseStudies = props => {
           >
             <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
               <h3>Others We've Worked With</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                aliquam malesuada libero, quis sodales lorem faucibus sit a
-              </p>
+              <p>{others}</p>
               <Button onClick={() => navigate("/case-studies")}>
                 All Case Studies
               </Button>
@@ -161,6 +158,14 @@ const caseStudies = graphql`
             intro
             mainImage
           }
+        }
+      }
+    }
+    file(name: { eq: "caseStudies" }) {
+      childMarkdownRemark {
+        frontmatter {
+          intro
+          others
         }
       }
     }

@@ -44,6 +44,21 @@ collections:
               ]
             }
           - {label: Title, name: title, widget: string}
+  - name: howWeWork
+    label: How We Work
+    files: 
+      - label: Content
+        name: content
+        file: src/pages/singles/howWeWork.md
+        fields:
+          - {label: Slide 01 Title, name: slide01title, widget: string}
+          - {label: Slide 01 Text, name: slide01text, widget: string}
+          - {label: Slide 02 Title, name: slide02title, widget: string}
+          - {label: Slide 02 Text, name: slide02text, widget: string}
+          - {label: Slide 03 Title, name: slide03title, widget: string}
+          - {label: Slide 03 Text, name: slide03text, widget: string}
+          - {label: Slide 04 Title, name: slide04title, widget: string}
+          - {label: Slide 04 Text, name: slide04text, widget: string}
   - name: caseStudies
     label: Case Studies
     files: 

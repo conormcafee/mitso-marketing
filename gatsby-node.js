@@ -34,8 +34,12 @@ exports.createPages = ({ actions, graphql }) => {
       ) {
         edges {
           node {
+            fileAbsolutePath
             fields {
               slug
+            }
+            frontmatter {
+              category
             }
           }
         }
@@ -46,13 +50,25 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const postOrPage = result.data.allMarkdownRemark.edges.filter(
+      edge => edge.node.frontmatter.category !== "noPage"
+    )
+
+    // console.log(postOrPage.length)
+
+    // see https://github.com/robertcoopercode/gatsby-netlify-cms/blob/master/gatsby-node.js#L31
+
+    postOrPage.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: node.fields.slug.includes('what-we-offer') ? services : node.fields.slug.includes('thoughts') ? thoughts : caseStudies,
+        component: node.fields.slug.includes("what-we-offer")
+          ? services
+          : node.fields.slug.includes("thoughts")
+          ? thoughts
+          : caseStudies,
         context: {
           slug: node.fields.slug,
-        }
+        },
       })
     })
   })

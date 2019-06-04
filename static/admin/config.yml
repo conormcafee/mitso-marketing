@@ -11,6 +11,7 @@ collections:
         name: content
         file: site/content/homepage.md
         fields:
+          - { name: category, label: Category, widget: hidden, default: noPage }
           - { 
             name: seo, 
             label: SEO, 
@@ -33,6 +34,7 @@ collections:
         name: content
         file: site/content/whoWeAre.md
         fields:
+          - { name: category, label: Category, widget: hidden, default: noPage }
           - { 
             name: seo, 
             label: SEO, 
@@ -51,6 +53,7 @@ collections:
         name: content
         file: site/content/howWeWork.md
         fields:
+          - { name: category, label: Category, widget: hidden, default: noPage }
           - {label: Slide 01 Title, name: slide01title, widget: string}
           - {label: Slide 01 Text, name: slide01text, widget: string}
           - {label: Slide 02 Title, name: slide02title, widget: string}
@@ -66,6 +69,7 @@ collections:
         name: content
         file: site/content/caseStudies.md
         fields:
+          - { name: category, label: Category, widget: hidden, default: noPage }
           - { 
             name: seo, 
             label: SEO, 
@@ -179,6 +183,7 @@ collections:
         name: content
         file: site/content/team.md
         fields:
+          - { name: category, label: Category, default: noPage, widget: hidden }
           - {label: Title, name: title, widget: string}
           - {
             name: teamMember,

@@ -1,4 +1,5 @@
 ---
+category: noPage
 seo:
   seoTitle: Case Studies
 title: We let our work speak for itself

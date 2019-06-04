@@ -1,4 +1,5 @@
 ---
+category: noPage
 seo:
   seoDescription:
   seoImage:

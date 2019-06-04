@@ -1,4 +1,5 @@
 ---
+category: noPage
 title: Meet our Team
 teamMember:
   - img: /assets/maeve-standard.jpg

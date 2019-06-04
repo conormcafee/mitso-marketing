@@ -4,6 +4,72 @@ backend:
 media_folder: static/assets
 public_folder: assets
 collections:
+  - name: projects
+    label: Projects
+    folder: src/pages/case-studies
+    create: true
+    fields:
+      - { name: category, label: Category, default: Case Study, widget: hidden }
+      - { 
+        name: seo, 
+        label: SEO, 
+        widget: object,
+        fields: [
+          { label: SEO Title, name: seoTitle, widget: string, required: false},
+          { label: SEO Description, name: seoDescription, widget: text, required: false},
+          { label: SEO Image, name: seoImage, widget: image, required: false},
+          ]
+        }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: intro, label: Introduction, widget: text }
+      - {
+          name: mainImage,
+          label: Main Image,
+          widget: image,
+          default: /src/images/mitso-default.png,
+        }
+      - { name: body, label: Body, widget: markdown }
+      - {
+          name: imageBlock,
+          label: Image Block,
+          widget: list,
+          fields: [{ label: image, name: Image, widget: image }],
+        }
+      - { name: testimonial, label: Testimonial, widget: text }
+  - name: posts
+    label: Posts
+    folder: src/pages/thoughts
+    create: true
+    fields:
+      - { name: category, label: Category, default: Blog, widget: hidden }
+      - { 
+        name: seo, 
+        label: SEO, 
+        widget: object,
+        fields: [
+          { label: SEO Title, name: seoTitle, widget: string, required: false},
+          { label: SEO Description, name: seoDescription, widget: text, required: false},
+          { label: SEO Image, name: seoImage, widget: image, required: false},
+          ]
+        }
+      - { name: date, label: Date, widget: date }
+      - { name: author, label: Author, widget: string, default: Maeve Finnegan }
+      - { name: title, label: Title }
+      - {
+          name: tags,
+          label: Tags,
+          widget: list,
+          fields: [{ label: tag, name: Tag, widget: string }],
+        }
+      - { name: intro, label: Introduction, widget: string }
+      - {
+          name: mainImage,
+          label: Main Image,
+          widget: image,
+          default: /src/images/mitso-default.png,
+        }
+      - { name: body, label: Body, widget: markdown }
   - name: homepage
     label: Homepage
     files: 
@@ -62,6 +128,25 @@ collections:
           - {label: Slide 03 Text, name: slide03text, widget: string}
           - {label: Slide 04 Title, name: slide04title, widget: string}
           - {label: Slide 04 Text, name: slide04text, widget: string}
+  - name: thoughts
+    label: Thoughts
+    files: 
+      - label: Content
+        name: content
+        file: site/content/thoughts.md
+        fields:
+          - { name: category, label: Category, widget: hidden, default: noPage }
+          - { 
+            name: seo, 
+            label: SEO, 
+            widget: object,
+            fields: [
+              { label: SEO Title, name: seoTitle, widget: string, required: false},
+              { label: SEO Description, name: seoDescription, widget: text, required: false},
+              { label: SEO Image, name: seoImage, widget: image, required: false},
+              ]
+            }
+          - {label: Intro, name: intro, widget: string}
   - name: caseStudies
     label: Case Studies
     files: 
@@ -83,72 +168,6 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
           - {label: others, name: others, widget: text}
-  - name: projects
-    label: Projects
-    folder: src/pages/case-studies
-    create: true
-    fields:
-      - { name: category, label: Category, default: Case Study, widget: hidden }
-      - { 
-        name: seo, 
-        label: SEO, 
-        widget: object,
-        fields: [
-          { label: SEO Title, name: seoTitle, widget: string, required: false},
-          { label: SEO Description, name: seoDescription, widget: text, required: false},
-          { label: SEO Image, name: seoImage, widget: image, required: false},
-          ]
-        }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: intro, label: Introduction, widget: text }
-      - {
-          name: mainImage,
-          label: Main Image,
-          widget: image,
-          default: /src/images/mitso-default.png,
-        }
-      - { name: body, label: Body, widget: markdown }
-      - {
-          name: imageBlock,
-          label: Image Block,
-          widget: list,
-          fields: [{ label: image, name: Image, widget: image }],
-        }
-      - { name: testimonial, label: Testimonial, widget: text }
-  - name: thoughts
-    label: Thoughts
-    folder: src/pages/thoughts
-    create: true
-    fields:
-      - { name: category, label: Category, default: Blog, widget: hidden }
-      - { 
-        name: seo, 
-        label: SEO, 
-        widget: object,
-        fields: [
-          { label: SEO Title, name: seoTitle, widget: string, required: false},
-          { label: SEO Description, name: seoDescription, widget: text, required: false},
-          { label: SEO Image, name: seoImage, widget: image, required: false},
-          ]
-        }
-      - { name: date, label: Date, widget: date }
-      - { name: author, label: Author, widget: string, default: Maeve Finnegan }
-      - { name: title, label: Title }
-      - {
-          name: tags,
-          label: Tags,
-          widget: list,
-          fields: [{ label: tag, name: Tag, widget: string }],
-        }
-      - { name: intro, label: Introduction, widget: string }
-      - {
-          name: mainImage,
-          label: Main Image,
-          widget: image,
-          default: /src/images/mitso-default.png,
-        }
-      - { name: body, label: Body, widget: markdown }
   - name: servicesGroup
     label: Services
     folder: src/pages/what-we-offer

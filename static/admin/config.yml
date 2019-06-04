@@ -220,3 +220,23 @@ collections:
               { label: LinkedIn, name: linkedin, widget: string },
             ],
           }
+  - name: workWithMitso
+    label: Work with MiTSO
+    files: 
+      - label: Content
+        name: content
+        file: site/content/workWithMitso.md
+        fields:
+          - { name: category, label: Category, widget: hidden, default: noPage }
+          - { 
+            name: seo, 
+            label: SEO, 
+            widget: object,
+            fields: [
+              { label: SEO Title, name: seoTitle, widget: string, required: false},
+              { label: SEO Description, name: seoDescription, widget: text, required: false},
+              { label: SEO Image, name: seoImage, widget: image, required: false},
+              ]
+            }
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: text}

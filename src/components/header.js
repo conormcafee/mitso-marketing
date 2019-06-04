@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import Logo from "../images/mitso-logo.svg"
 import { ACCENT, BLACK, FONT_BOLD, SECONDARY } from "../variables"
 import Button from "../components/button"
@@ -21,7 +21,12 @@ const _Header = props => {
           </Link>
 
           <MobileActions alignItems="center" justifyContent="flex-end">
-            <MobileButton mobile={true}>Work with MiTSO</MobileButton>
+            <MobileButton
+              onClick={() => navigate("/work-with-mitso")}
+              mobile={true}
+            >
+              Work with MiTSO
+            </MobileButton>
 
             <MenuButton
               type="button"
@@ -69,7 +74,12 @@ const _Header = props => {
                         )}
                       </DropdownButton>
                     ) : (
-                      <MobileButton mobile={false}>{item.label}</MobileButton>
+                      <MobileButton
+                        onClick={() => navigate("/work-with-mitso")}
+                        mobile={false}
+                      >
+                        {item.label}
+                      </MobileButton>
                     )}
                   </React.Fragment>
                 )}
@@ -94,7 +104,12 @@ const NAV_DATA = [
   },
   { label: "Thoughts", url: "/thoughts", type: "link" },
   { label: "Case Studies", url: "/case-studies", type: "link" },
-  { label: "Work with MiTSO", url: "/", type: "button", dropdown: false },
+  {
+    label: "Work with MiTSO",
+    url: "/work-with-mitso",
+    type: "button",
+    dropdown: false,
+  },
 ]
 
 const Header = styled.header`

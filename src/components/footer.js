@@ -84,6 +84,6 @@ const QUICK_LINKS = [
   },
   {
     title: "Work with MiTSO",
-    url: "/",
+    url: "/work-with-mitso",
   },
 ]

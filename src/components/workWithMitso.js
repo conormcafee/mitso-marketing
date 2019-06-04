@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import { Flex, Box } from "@rebass/grid"
 import styled from "styled-components"
@@ -90,7 +90,9 @@ const WorkWithMitso = props => {
             justifyContent="center"
             width={1}
           >
-            <Button>Start Project</Button>
+            <Button onClick={() => navigate("/work-with-mitso")}>
+              Start Project
+            </Button>
           </Flex>
         </Flex>
       </Container>

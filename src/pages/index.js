@@ -57,7 +57,9 @@ export default ({ data }) => {
         >
           <Box px={[3, 4]} mb={6} width={[1, 1 / 2]}>
             <h1>{title}</h1>
-            <Button>Work with MiTSO</Button>
+            <Button onClick={() => navigate("/work-with-mitso")}>
+              Work with MiTSO
+            </Button>
           </Box>
           <Hero as="figure" px={[3, 4]} width={[1, 1 / 2]}>
             <img src={HomepageHero} alt="Welcome to MiTSO" />

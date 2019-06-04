@@ -239,4 +239,4 @@ collections:
               ]
             }
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: text}
+          - {label: Intro, name: intro, widget: text} 

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `MiTSO Markering`,
     description: `MiTSO Marketing Introduction`,
-    author: `@gatsbyjs`,
+    author: `@conormcafee`,
     url: `https://mitsomarketing.com`,
     image: "/static/assets/pexels-photo-914931.jpg",
     twitterUsername: "@conormcafee",

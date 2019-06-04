@@ -3,6 +3,9 @@ import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+import favicon16 from "../images/favicon-16x16.png"
+import favicon32 from "../images/favicon-32x32.png"
+
 const SEO = ({ title, description, image, pathname, article }) => (
   <StaticQuery
     query={query}
@@ -23,10 +26,25 @@ const SEO = ({ title, description, image, pathname, article }) => (
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || "/"}`,
       }
-
       return (
         <>
-          <Helmet title={seo.title}>
+          <Helmet
+            title={seo.title}
+            link={[
+              {
+                rel: "icon",
+                type: "image/png",
+                sizes: "16x16",
+                href: `${favicon16}`,
+              },
+              {
+                rel: "icon",
+                type: "image/png",
+                sizes: "32x32",
+                href: `${favicon32}`,
+              },
+            ]}
+          >
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             {seo.url && <meta property="og:url" content={seo.url} />}

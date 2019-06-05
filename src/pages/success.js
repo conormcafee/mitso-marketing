@@ -1,10 +1,30 @@
 import React from "react"
+import { navigate } from "gatsby"
+import { Flex } from "@rebass/grid"
+import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Container from "../components/container"
+import Button from "../components/button"
+
 export default () => (
   <Layout dottedBackground>
     <SEO title="Awesome, Thanks for getting in contact" />
-    <h2>You dropped me a new line</h2>
-    <h4>Congrats,i'll be sure to check it out when i can and add a reply</h4>
+    <Container>
+      <Wrapper
+        as="section"
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <h1>Thanks, you're message is on it's way</h1>
+        <Button onClick={() => navigate("/")}>Back to Homepage</Button>
+      </Wrapper>
+    </Container>
   </Layout>
 )
+
+const Wrapper = styled(Flex)`
+  height: calc(100vh - 133px);
+  text-align: center;
+`

@@ -2,17 +2,18 @@
 category: Case Study
 seo:
   seoDescription: EStars Description to go here
-  seoImage: /assets/hero.jpg
+  seoImage: /assets/e-stars.jpg
   seoTitle: EStars Title
 date: 2019-05-18T17:10:07.925Z
 title: E Stars
-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum venenatis quam
-mainImage: /assets/pexels-photo-914931.jpg
+intro: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum
+  venenatis quam
+mainImage: /assets/e-stars.jpg
 imageBlock:
-  - Image: /assets/d74827.png
-  - Image: /assets/hero.jpg
-  - Image: /assets/pexels-photo-914931.jpg
-  - Image: /assets/hero.jpg
+  - Image: /assets/e-stars-dundalk.jpg
+  - Image: /assets/e-stars-show.jpg
+  - Image: /assets/e-stars-stamford-bridge.jpg
 testimonial: Testimonial goes here
 ---
 

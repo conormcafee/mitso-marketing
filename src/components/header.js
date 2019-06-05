@@ -258,6 +258,7 @@ const MobileActions = styled(Flex)`
 `
 const DropdownButton = styled.button`
   border: none;
+  background-color: transparent;
   position: relative;
   color: ${BLACK};
   padding: 0;
@@ -267,7 +268,7 @@ const DropdownButton = styled.button`
   }
 
   &:hover {
-    color: ${BLACK};
+    color: ${ACCENT};
   }
 `
 

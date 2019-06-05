@@ -2,7 +2,7 @@
 category: Case Study
 seo:
   seoDescription: Updated Obelisk Description
-  seoImage: /assets/hero.jpg
+  seoImage: /assets/obelisk-01.jpg
   seoTitle: Obelisk SEO Title
 date: 2019-05-14T20:14:44.037Z
 title: Obelisk
@@ -10,11 +10,11 @@ intro: >-
   Obelisk is a multinational construction client, headquartered in Dublin. 
   MiTSO wa approached to revamp the Obelisk brand and develop new digital
   channels for the company.
-mainImage: /assets/obelisk-hero.jpg
+mainImage: /assets/obelisk-01.jpg
 imageBlock:
-  - Image: /assets/d74827.png
-  - Image: /assets/pexels-photo-914931.jpg
-  - Image: /assets/d74827.png
+  - Image: /assets/obelisk-02.jpg
+  - Image: /assets/obelisk-03.jpg
+  - Image: /assets/obelisk-04.jpg
 testimonial: >-
   We recommend MiTSO Marketing to everyone we get the chance to, absolute
   pleasure to work with

@@ -44,7 +44,6 @@ const Team = props => {
                   width={[1, 1 / 2, 1 / 2, 1 / 3]}
                   px={[3, 4]}
                   mb={[5, 5, 5, 6]}
-                  mt={[index === 1 ? 5 : 0]}
                 >
                   <Member>
                     <Photo

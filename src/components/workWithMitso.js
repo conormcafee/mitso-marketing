@@ -49,7 +49,7 @@ const WorkWithMitso = props => {
   return (
     <Box as="section" bg={BLACK} p={[3, 4]} mx={-2}>
       <Container>
-        <Flex flexWrap="wrap" alignItems="center">
+        <Flex flexWrap="wrap" alignItems="center" py={[3, 4]}>
           <Box width={[1, 1, 1 / 3]} order={[1, 1, 2]} px={[3, 4]} mb={[3, 4]}>
             <Box as="h2" color="white" mb={3}>
               Work with MiTSO
@@ -72,7 +72,7 @@ const WorkWithMitso = props => {
                   key={index}
                   title={service.node.frontmatter.title}
                   icon={IconPicker(service.node.frontmatter.icon)}
-                  url={service.node.fields.slu}
+                  url={service.node.fields.slug}
                 />
               ))}
             </WorkBox>

@@ -89,7 +89,12 @@ const ListCaseStudies = props => {
                 All Case Studies
               </Button>
             </Box>
-            <Box width={[1 / 2, 1 / 2, 1 / 3]} px={[3, 4]} mb={[4, 0]}>
+            <Box
+              width={[1 / 2, 1 / 2, 1 / 3]}
+              px={[3, 4]}
+              mt={[4, 0]}
+              mb={[4, 0]}
+            >
               <Flex flexWrap="wrap">
                 {List01.map((item, index) => (
                   <Box key={index} width={1 / 3} mb={4} px={[2, 3]}>
@@ -105,7 +110,12 @@ const ListCaseStudies = props => {
               </Flex>
             </Box>
 
-            <Box width={[1 / 2, 1 / 2, 1 / 3]} px={[3, 4]} mb={[4, 0]}>
+            <Box
+              width={[1 / 2, 1 / 2, 1 / 3]}
+              px={[3, 4]}
+              mt={[4, 0]}
+              mb={[4, 0]}
+            >
               <Flex flexWrap="wrap">
                 {List03.map((item, index) => (
                   <Box key={index} width={1 / 3} mb={4} px={[2, 3]}>

@@ -1,11 +1,12 @@
 import React from "react"
-import { Link, navigate } from "gatsby"
+import { navigate } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import { Flex, Box } from "@rebass/grid"
 import styled from "styled-components"
-import { ACCENT } from "../variables"
+import { BLACK } from "../variables"
 import Button from "../components/button"
 import Container from "../components/container"
+import { ServiceLink } from "./ServiceLink"
 
 import Icon01 from "../images/icons/web-design.svg"
 import Icon02 from "../images/icons/digital-marketing.svg"
@@ -13,21 +14,6 @@ import Icon03 from "../images/icons/social-media.svg"
 import Icon04 from "../images/icons/visual.svg"
 import Icon05 from "../images/icons/event-management.svg"
 import Icon06 from "../images/icons/pr.svg"
-
-const Service = props => (
-  <Flex width={[1 / 2, 1 / 3]} mb={4} alignItems="center">
-    <ServiceLink to={props.url}>
-      <Flex alignItems="center">
-        <Box width={1 / 4} mr={[3, 4]}>
-          <Icon src={props.icon} alt={`${props.title} Icon`} />
-        </Box>
-        <Box width={3 / 4}>
-          <Title>{props.title}</Title>
-        </Box>
-      </Flex>
-    </ServiceLink>
-  </Flex>
-)
 
 const IconPicker = number => {
   let icon
@@ -61,42 +47,39 @@ const IconPicker = number => {
 const WorkWithMitso = props => {
   const services = props.data.allMarkdownRemark.edges
   return (
-    <Wrapper>
+    <Box as="section" bg={BLACK} p={[3, 4]} mx={-2}>
       <Container>
-        <Flex py={5} flexWrap="wrap" alignItems="center">
-          <Box width={1} px={[3, 4]} mb={[3, 4]}>
-            <WorkBox
-              bg="#ffffff"
-              px={4}
-              pt={4}
-              flexWrap="wrap"
-              mx="auto"
-              css={{ maxWidth: "1000px" }}
-            >
+        <Flex flexWrap="wrap" alignItems="center">
+          <Box width={[1, 1, 1 / 3]} order={[1, 1, 2]} px={[3, 4]} mb={[3, 4]}>
+            <Box as="h2" color="white" mb={3}>
+              Work with MiTSO
+            </Box>
+            <Box as="p" color="white" mt={0} mb={4}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              bibendum mi in nisl pellentesque, et iaculis augue fringilla. Nam
+              viverra efficitur massa, sed viverra orci dapibus sed. Sed tempus
+              orci porttitor magna vulputate ornare eu nec justo. Morbi semper,
+              sem a lacinia vehicula,
+            </Box>
+            <Button onClick={() => navigate("/work-with-mitso")}>
+              Start Project
+            </Button>
+          </Box>
+          <Box width={[1, 1, 2 / 3]} order={[2, 2, 1]} px={2}>
+            <WorkBox flexWrap="wrap">
               {services.map((service, index) => (
-                <Service
+                <ServiceLink
                   key={index}
-                  index={index}
                   title={service.node.frontmatter.title}
-                  url={service.node.fields.slug}
                   icon={IconPicker(service.node.frontmatter.icon)}
+                  url={service.node.fields.slu}
                 />
               ))}
             </WorkBox>
           </Box>
-          <Flex
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-            width={1}
-          >
-            <Button onClick={() => navigate("/work-with-mitso")}>
-              Start Project
-            </Button>
-          </Flex>
         </Flex>
       </Container>
-    </Wrapper>
+    </Box>
   )
 }
 
@@ -127,10 +110,6 @@ const servicesQuery = graphql`
   }
 `
 
-const Wrapper = styled.section`
-  background-color: ${ACCENT};
-`
-
 const WorkBox = styled(Flex)`
   background-color: ${props => (props.bg ? `${props.bg}` : `transparent`)};
   border-radius: 8px;
@@ -142,20 +121,13 @@ const WorkBox = styled(Flex)`
   }
 `
 
-const Title = styled.h4`
-  margin-top: 0;
-  margin-bottom: 0;
-`
+// const ServiceLink = styled(Link)`
+//   width: 100%;
+//   padding: 24px;
+//   background: white;
+//   text-decoration: none;
 
-const Icon = styled.img`
-  height: 75px;
-  width: 75px;
-`
-const ServiceLink = styled(Link)`
-  width: 100%;
-  text-decoration: none;
-
-  &:hover ${Title} {
-    color: ${ACCENT};
-  }
-`
+//   &:hover ${Title} {
+//     color: ${ACCENT};
+//   }
+// `

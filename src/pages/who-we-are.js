@@ -53,7 +53,8 @@ export default ({ data }) => {
         <HowWeWorkSection
           flexWrap={["wrap", "wrap", "nowrap"]}
           justifyContent="center"
-          py={[3, 4]}
+          pt={[4, 5]}
+          pb={3}
         >
           <HowWeWork />
         </HowWeWorkSection>

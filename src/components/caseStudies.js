@@ -6,7 +6,6 @@ import MitsoCircle from "../images/backgrounds/mitso-circle.svg"
 import Button from "../components/button"
 import Container from "../components/container"
 import { StaticQuery, graphql, navigate } from "gatsby"
-import { SECONDARY } from "../variables"
 
 import AT from "../images/logos/at-makeup.jpg"
 import CMD from "../images/logos/cmd.jpg"
@@ -187,7 +186,8 @@ const Circle = styled.img`
 const SmallLogo = styled.img`
   max-width: 100%;
   border-radius: 100%;
-  border: 3px solid ${SECONDARY};
+  opacity: 0.75;
+  filter: grayscale(100%);
 `
 
 const MoreCaseStudies = styled(Flex)`

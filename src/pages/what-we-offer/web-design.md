@@ -14,4 +14,6 @@ listOfServices:
   - Service: Ecommerce
   - Service: SEO
   - Service: Content
+  - Service: Service 05
+  - Service: Service 06
 ---

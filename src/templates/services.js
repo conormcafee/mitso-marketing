@@ -11,8 +11,6 @@ import WorkWithMitso from "../components/workWithMitso"
 import Statement from "../components/Statement"
 import Services from "../components/Services"
 
-import HowWeWork from "../components/WhoWeAre/HowWeWork"
-
 import { BLACK, FONT_BOLD } from "../variables"
 import SubHeading from "../components/SubHeading"
 
@@ -79,10 +77,6 @@ const Template = props => {
           <Statement statement={frontmatter.statement} />
 
           <Services services={frontmatter.listOfServices} />
-
-          <Flex mb={5} alignItems="center" justifyContent="center">
-            <HowWeWork />
-          </Flex>
         </Box>
       </Container>
       <WorkWithMitso />

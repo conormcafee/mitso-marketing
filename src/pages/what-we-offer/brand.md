@@ -13,4 +13,7 @@ listOfServices:
   - Service: Brand development
   - Service: Packaging
   - Service: Logo Design
+  - Service: Service 04
+  - Service: Service 05
+  - Service: Service 06
 ---

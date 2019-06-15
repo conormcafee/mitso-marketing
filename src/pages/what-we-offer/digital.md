@@ -15,4 +15,5 @@ listOfServices:
   - Service: Social Media
   - Service: Email Marketing
   - Service: Analytics
+  - Service: Service 06
 ---

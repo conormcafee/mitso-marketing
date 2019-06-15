@@ -12,4 +12,8 @@ statement: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermen
 listOfServices:
   - Service: PR
   - Service: Event Management
+  - Service: Service 03
+  - Service: Service 04
+  - Service: Service 05
+  - Service: Service 06
 ---

@@ -12,4 +12,8 @@ statement: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermen
 listOfServices:
   - Service: Video
   - Service: Photography
+  - Service: Service 05
+  - Service: Service 04
+  - Service: Service 05
+  - Service: Service 06
 ---

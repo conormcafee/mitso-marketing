@@ -11,7 +11,7 @@ import WorkWithMitso from "../components/workWithMitso"
 import Statement from "../components/Statement"
 import Services from "../components/Services"
 
-import { BLACK, FONT_BOLD } from "../variables"
+import { FONT_BOLD, ACCENT, BASE } from "../variables"
 import SubHeading from "../components/SubHeading"
 
 const ServicesTemplate = props => {
@@ -47,7 +47,7 @@ const Template = props => {
               <SubNavLink
                 to={service.node.fields.slug}
                 key={index}
-                activeStyle={{ backgroundColor: "#f6f6f6" }}
+                activeStyle={{ color: "#ffffff", backgroundColor: ACCENT }}
               >
                 {service.node.frontmatter.title}
               </SubNavLink>
@@ -134,30 +134,31 @@ const Title = styled.h1`
 `
 
 const SubNav = styled(Flex)`
-  border-top: 1px solid #e6e6e6;
-  border-right: 2px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  border-left: 2px solid #e6e6e6;
+  /* border-top: 1px solid #e6e6e6; */
+  border-right: 1px solid #e6e6e6;
+  /* border-bottom: 1px solid #e6e6e6; */
+  border-left: 1px solid #e6e6e6;
   border-radius: 7px;
   overflow: hidden;
 `
 
 const SubNavLink = styled(Link)`
-  color: ${BLACK};
+  color: ${BASE};
   font-family: ${FONT_BOLD};
+  background-color: #f6f6f6;
   font-weight: 700;
   text-decoration: none;
   width: 50%;
-  padding-top: 16px;
+  padding-top: 8px;
   padding-right: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   padding-left: 16px;
   box-sizing: border-box;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 
   &:hover {
-    background-color: #f6f6f6;
+    background-color: ${ACCENT};
   }
 
   @media only screen and (max-width: 767px) {
@@ -170,8 +171,8 @@ const SubNavLink = styled(Link)`
     width: calc(100% / 3);
 
     &:nth-child(3n + 2) {
-      border-left: 2px solid #e6e6e6;
-      border-right: 2px solid #e6e6e6;
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
     }
   }
 
@@ -179,12 +180,12 @@ const SubNavLink = styled(Link)`
     width: auto;
     flex: 1;
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-size: 20px;
 
     &:not(:last-of-type) {
-      border-right: 2px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
     }
   }
 `

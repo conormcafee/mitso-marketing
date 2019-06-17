@@ -23,6 +23,7 @@ const Template = props => {
   const { markdownRemark, allMarkdownRemark } = props.data
   const { frontmatter } = markdownRemark
   const { seo } = frontmatter
+  const { text01, text02 } = frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
 
   return (
@@ -55,24 +56,16 @@ const Template = props => {
           </SubNav>
 
           <Flex flexWrap={["wrap", "nowrap"]} justifyContent="center">
-            <Box px={[3, 4]}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                faucibus ante lacinia, rhoncus nisi at, feugiat lacus. Donec ac
-                volutpat augue. Donec euismod nunc augue, iaculis fermentum
-                augue rutrum at. Morbi convallis quam eros, a volutpat urna
-                commodo lobortis.
-              </p>
-            </Box>
-            <Box px={[3, 4]}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                faucibus ante lacinia, rhoncus nisi at, feugiat lacus. Donec ac
-                volutpat augue. Donec euismod nunc augue, iaculis fermentum
-                augue rutrum at. Morbi convallis quam eros, a volutpat urna
-                commodo lobortis.
-              </p>
-            </Box>
+            {text01 && (
+              <Box px={[3, 4]}>
+                <p>{text01}</p>
+              </Box>
+            )}
+            {text02 && (
+              <Box px={[3, 4]}>
+                <p>{text02}</p>
+              </Box>
+            )}
           </Flex>
           <Statement statement={frontmatter.statement} />
 
@@ -114,6 +107,8 @@ export const pageQuery = graphql`
         }
         title
         intro
+        text01
+        text02
         statement
         listOfServices {
           Service

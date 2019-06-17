@@ -12,7 +12,12 @@ import Team from "../components/team"
 import Dot from "../components/Dot"
 
 export default ({ data }) => {
-  const { title, seo } = data.file.childMarkdownRemark.frontmatter
+  const {
+    title,
+    seo,
+    text01,
+    text02,
+  } = data.file.childMarkdownRemark.frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
   return (
     <Layout dottedBackground>
@@ -29,24 +34,16 @@ export default ({ data }) => {
       <TopImages />
 
       <Flex flexWrap={["wrap", "nowrap"]} justifyContent="center">
-        <Box px={[3, 4]}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            faucibus ante lacinia, rhoncus nisi at, feugiat lacus. Donec ac
-            volutpat augue. Donec euismod nunc augue, iaculis fermentum augue
-            rutrum at. Morbi convallis quam eros, a volutpat urna commodo
-            lobortis.
-          </p>
-        </Box>
-        <Box px={[3, 4]}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            faucibus ante lacinia, rhoncus nisi at, feugiat lacus. Donec ac
-            volutpat augue. Donec euismod nunc augue, iaculis fermentum augue
-            rutrum at. Morbi convallis quam eros, a volutpat urna commodo
-            lobortis.
-          </p>
-        </Box>
+        {text01 && (
+          <Box px={[3, 4]}>
+            <p>{text01}</p>
+          </Box>
+        )}
+        {text02 && (
+          <Box px={[3, 4]}>
+            <p>{text02}</p>
+          </Box>
+        )}
       </Flex>
 
       <Container>
@@ -86,6 +83,8 @@ export const query = graphql`
       childMarkdownRemark {
         frontmatter {
           title
+          text01
+          text02
           seo {
             seoTitle
             seoDescription

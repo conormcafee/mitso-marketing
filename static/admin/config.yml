@@ -101,6 +101,8 @@ collections:
         file: site/content/whoWeAre.md
         fields:
           - { name: category, label: Category, widget: hidden, default: noPage }
+          - { name: text01, label: Text 01, widget: text }
+          - { name: text02, label: Text 02, widget: text }
           - { 
             name: seo, 
             label: SEO, 

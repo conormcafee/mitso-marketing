@@ -76,9 +76,15 @@ const Template = props => {
       />
 
       <Container>
-        <Box px={[3, 4]}>
-          <Services services={frontmatter.listOfServices} />
-        </Box>
+        <Flex flexWrap="wrap" py={4}>
+          <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
+            <h3>{frontmatter.title} Services</h3>
+            <p>{frontmatter.serviceText}</p>
+          </Box>
+          <Box width={[1, 1, 2 / 3]} px={[3, 4]}>
+            <Services services={frontmatter.listOfServices} />
+          </Box>
+        </Flex>
       </Container>
       <WorkWithMitso />
     </Layout>
@@ -119,6 +125,7 @@ export const pageQuery = graphql`
         text02
         statement
         statementImage
+        serviceText
         listOfServices {
           Service
         }

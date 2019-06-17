@@ -199,6 +199,7 @@ collections:
           default: /src/images/mitso-default.png,
         }
       - { name: statement, label: Statement, widget: text }
+      - { name: serviceText, label: Service Text, widget: text }
       - {
           name: listOfServices,
           label: Services,

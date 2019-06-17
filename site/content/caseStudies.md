@@ -8,7 +8,8 @@ intro: >-
   impactful campaigns that achieve long-term results. We’re proud of what we
   have achieved, alongside our diverse range of clients. 
 others: >-
-  We offer digital marketing and digital strategy, brand development, event
-  management and lots of other services to a range of different industries.
+  We’re a one-stop shop for digital marketing, branding and other services and
+  we help clients, both large and small across a range of different industries
+  to achieve business goals.
 ---
 

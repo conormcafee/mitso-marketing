@@ -22,8 +22,7 @@ const ServicesTemplate = props => {
 const Template = props => {
   const { markdownRemark, allMarkdownRemark } = props.data
   const { frontmatter } = markdownRemark
-  const { seo } = frontmatter
-  const { text01, text02 } = frontmatter
+  const { text01, text02, statementImage, seo } = frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
 
   return (
@@ -70,7 +69,11 @@ const Template = props => {
         </Box>
       </Container>
 
-      <Statement isStatement statement={frontmatter.statement} />
+      <Statement
+        isStatement
+        statement={frontmatter.statement}
+        image={statementImage}
+      />
 
       <Container>
         <Box px={[3, 4]}>
@@ -115,6 +118,7 @@ export const pageQuery = graphql`
         text01
         text02
         statement
+        statementImage
         listOfServices {
           Service
         }

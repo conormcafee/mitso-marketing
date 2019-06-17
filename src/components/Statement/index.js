@@ -69,21 +69,34 @@ const Cirlces = styled(Flex)`
   top: 50px;
   left: -100px;
   transform: rotate(45deg);
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+  }
 `
 
 const Circle = styled(Box)`
   height: ${props => props.size};
   width: ${props => props.size};
   border-radius: ${props => props.size};
-  background: #ffffff;
+  background-color: #ffffff;
+  background-image: url(${props => props.bg});
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: rotate(-50deg);
   margin-right: 32px;
   opacity: ${props =>
-    props.opacity === "large" ? 1 : props.opacity === "medium" ? `0.5` : `0.1`};
+    props.opacity === "large" ? 1 : props.opacity === "medium" ? `0.8` : `0.4`};
 `
 
 const StatementBox = styled(Flex)`
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 1;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 `
 
 Statement.defaultProps = {

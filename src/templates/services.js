@@ -67,8 +67,13 @@ const Template = props => {
               </Box>
             )}
           </Flex>
-          <Statement statement={frontmatter.statement} />
+        </Box>
+      </Container>
 
+      <Statement isStatement statement={frontmatter.statement} />
+
+      <Container>
+        <Box px={[3, 4]}>
           <Services services={frontmatter.listOfServices} />
         </Box>
       </Container>

@@ -192,6 +192,12 @@ collections:
       - { name: intro, label: Intro, widget: text }
       - { name: text01, label: Text 01, widget: text }
       - { name: text02, label: Text 02, widget: text }
+      - {
+          name: statementImage,
+          label: Statement Image,
+          widget: image,
+          default: /src/images/mitso-default.png,
+        }
       - { name: statement, label: Statement, widget: text }
       - {
           name: listOfServices,

@@ -188,6 +188,8 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: intro, label: Intro, widget: text }
+      - { name: text01, label: Text 01, widget: text }
+      - { name: text02, label: Text 02, widget: text }
       - { name: statement, label: Statement, widget: text }
       - {
           name: listOfServices,

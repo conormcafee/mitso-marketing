@@ -5,7 +5,9 @@ date: 2019-06-17T10:14:19.445Z
 title: Robert Mizzell
 intro: >-
   Robert Mizzell is a popular country music star, hailing all the way from
-  Louisiana.
+  Louisiana. Robert has been belting out the tunes for over 20 years and has
+  toured the globe, claiming a whole host of accolades including many number one
+  hits. 
 mainImage: /assets/383fff21-1314-481c-bafc-599a7f212b79.jpeg
 imageBlock:
   - Image: /assets/383fff21-1314-481c-bafc-599a7f212b79.jpeg

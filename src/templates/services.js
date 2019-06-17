@@ -153,6 +153,7 @@ const SubNavLink = styled(Link)`
   border-bottom: 1px solid #e6e6e6;
 
   &:hover {
+    color: #ffffff;
     background-color: ${ACCENT};
   }
 

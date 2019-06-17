@@ -4,8 +4,9 @@ seo:
   seoTitle: Work with MiTSO
 title: Work with MiTSO
 intro: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis
-  accumsan cursus. Maecenas id nisi nunc. Duis suscipit ut purus a tristique.
-  Curabitur vulputate velit eget vehicula scelerisque
+  We love to help businesses like yours thrive and we’re extremely passionate
+  about what we do. If we sound like a good fit for your business, don’t be
+  shy...pick up the phone or send us a note and we’d be happy to here all about
+  your work.
 ---
 

@@ -24,9 +24,8 @@ testimonial: >-
   She is extremely efficient, focused and patient! She listens to what you need
   whilst also giving you direction and ideas. She delivered on everything we
   needed and more and we could not have achieved what we did without her. We
-  continue to use her company’s services.
-
-  I would highly recommend her and her team, you will not be disappointed
+  continue to use her company’s services. I would highly recommend her and her
+  team, you will not be disappointed Lisa Healy, HR Director, Obelisk.
 ---
 Obelisk is a multinational company delivering infrastructure solutions for the telecoms and power sectors in Ireland, UK and Africa. The company wanted to align its ambitions to grow with a brand refresh to present a new direction for the company.
 
@@ -48,6 +47,6 @@ We continue to work with Obelisk developing the brand further and providing web 
 
 * An impressive new brand identity and logo design
 * Four professional web optimised videos 
-* [**A responsive, mobile friendly website**](www.obelisk.com)****
+* [**A responsive, mobile friendly website**](www.obelisk.com)
 * A suite of professional photography across four departments
 * [**Branded e-book**](https://obelisk.com/ebook-april-2018/#p=1), letterheads, business cards, exhibition stands, posters, pull-ups and internal wall graphics

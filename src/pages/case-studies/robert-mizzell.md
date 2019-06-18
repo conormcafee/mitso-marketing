@@ -6,10 +6,11 @@ title: Robert Mizzell
 intro: >-
   Robert Mizzell is a popular country music star, hailing all the way from
   Louisiana. Robert wanted a fresh look and to improve fan engagement across
-  digital channels...
+  digital channels.
 mainImage: /assets/383fff21-1314-481c-bafc-599a7f212b79.jpeg
 imageBlock:
   - Image: /assets/383fff21-1314-481c-bafc-599a7f212b79.jpeg
+  - Image: /assets/26cb5011-c74e-4fdc-99cf-fd32f74256e4.jpeg
 testimonial: >-
   Maeve and the ladies at MiTSO are great to work with. We have been working
   with them for the last 5/6 months and have developed a great working

@@ -22,7 +22,7 @@ text02: >-
   lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec
   euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
   eros, a volutpat urna commodo lobortis.
-statementImage: /assets/st-web-design.png
+statementImage: /assets/st-web-jpg.jpg
 statement: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
   auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin

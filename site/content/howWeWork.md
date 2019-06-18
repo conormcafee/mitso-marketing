@@ -5,7 +5,7 @@ slide01text: >-
   Your brand is the core of your business and it is the starting point for all
   of our work. Whether you’re starting from scratch or improving your existing
   brand, we know how to put your business on the map.
-slide02title: We like simple
+slide02title: 'We like simple,'
 slide02text: >-
   We never over complicate, we get to the heart of the problem and solve it in
   the most cost effective and efficient way possible. No acronyms or fancy

@@ -48,6 +48,6 @@ We continue to work with Obelisk developing the brand further and providing web 
 
 * An impressive new brand identity and logo design
 * Four professional web optimised videos 
-* A responsive, mobile friendly website
+* [A responsive, mobile friendly website](www.obelisk.com)
 * A suite of professional photography across four departments
-* Branded letterheads, business cards, exhibition stands, posters, pull-ups and internal wall graphics
+* [Branded e-book](https://obelisk.com/ebook-april-2018/#p=1), letterheads, business cards, exhibition stands, posters, pull-ups and internal wall graphics

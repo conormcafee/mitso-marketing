@@ -22,7 +22,7 @@ text02: >-
   lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec
   euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
   eros, a volutpat urna commodo lobortis.
-statementImage: /assets/03208f38-8423-411f-87c9-5959db21d797.jpeg
+statementImage: /assets/rm-brand.jpg
 statement: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
   auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin

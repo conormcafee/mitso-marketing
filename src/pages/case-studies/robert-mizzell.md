@@ -9,7 +9,7 @@ intro: >-
   digital channels.
 mainImage: /assets/383fff21-1314-481c-bafc-599a7f212b79.jpeg
 imageBlock:
-  - Image: /assets/383fff21-1314-481c-bafc-599a7f212b79.jpeg
+  - Image: /assets/650aaf7c-a762-446e-aa7d-64c6b73b520b.jpeg
   - Image: /assets/26cb5011-c74e-4fdc-99cf-fd32f74256e4.jpeg
 testimonial: >-
   Maeve and the ladies at MiTSO are great to work with. We have been working

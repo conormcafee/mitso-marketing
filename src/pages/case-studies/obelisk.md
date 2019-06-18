@@ -7,9 +7,9 @@ seo:
 date: 2019-05-14T20:14:44.037Z
 title: Obelisk
 intro: >-
-  Obelisk is a multinational construction client, headquartered in Dublin. 
-  MiTSO wa approached to revamp the Obelisk brand and develop new digital
-  channels for the company.
+  Obelisk is a multinational construction firm, headquartered in Dublin. The
+  company wanted to refresh its brand and develop new digital channels and
+  content and a full suite of branded materials...
 mainImage: /assets/obelisk-01.jpg
 imageBlock:
   - Image: /assets/obelisk-02.jpg

@@ -8,8 +8,8 @@ date: 2019-05-18T17:10:07.925Z
 title: E Stars
 intro: >-
   EStars is an esports company offering grassroots esports tournaments across
-  the UK and Ireland. EStars most recent tournament, “EStars featuring Fortnite”
-  visited major tournaments across the UK and Ireland.
+  the UK and Ireland. EStars featuring Fortnite, the latest tournament visited
+  major sports stadiums over an 8 week period...
 mainImage: /assets/e-stars.jpg
 imageBlock:
   - Image: /assets/e-stars-dundalk.jpg

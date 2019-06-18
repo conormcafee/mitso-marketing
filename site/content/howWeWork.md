@@ -1,6 +1,6 @@
 ---
 category: noPage
-slide01title: We Bring Brands to Life
+slide01title: We bring brands to life
 slide01text: >-
   Your brand is the core of your business and it is the starting point for all
   of our work. Whether you’re starting from scratch or improving your existing

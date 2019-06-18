@@ -7,7 +7,7 @@ text01: >-
   enabling us to provide tailored and targeted communications to attract and
   retain business.
 text02: >-
-  Established in 2016, we have since expanded our our team of passionate, driven
+  Established in 2016, we have since expanded our team of passionate, driven
   marketing professionals to deliver an unparalleled service offering both
   locally and internationally. Our range of services includes website design,
   brand development, social media marketing, digital advertising and event

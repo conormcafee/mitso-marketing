@@ -12,7 +12,7 @@ text02: >-
   marketing professionals to provide an unparalleled service offering. We work
   with clients locally and globally, delivering a range of services including
   website design, brand development, social media marketing, digital advertising
-  and event management.
+  and event management. 
 seo:
   seoTitle: Who We Are
 title: We are a creative marketing consultancy

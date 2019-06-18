@@ -9,7 +9,7 @@ title: E Stars
 intro: >-
   EStars is an esports company offering grassroots esports tournaments across
   the UK and Ireland. We provided marketing and event management services for
-  its latest tournament EStars featuring Fortnite...
+  its latest tournament EStars featuring Fortnite.
 mainImage: /assets/e-stars.jpg
 imageBlock:
   - Image: /assets/e-stars-dundalk.jpg

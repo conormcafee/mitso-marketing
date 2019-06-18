@@ -5,8 +5,8 @@ date: 2019-06-17T10:14:19.445Z
 title: Robert Mizzell
 intro: >-
   Robert Mizzell is a popular country music star, hailing all the way from
-  Louisiana. Robert wanted a fresh look and to improve fan engagement from his
-  Irish fan base across digital channels.
+  Louisiana. Robert wanted a fresh look and to improve engagement with his Irish
+  fan base across all digital channels.
 mainImage: /assets/383fff21-1314-481c-bafc-599a7f212b79.jpeg
 imageBlock:
   - Image: /assets/650aaf7c-a762-446e-aa7d-64c6b73b520b.jpeg
@@ -26,3 +26,24 @@ testimonial: >-
   Robert Mizzell & the Country Kings
 ---
 Robert Mizzell is famous for his beautiful country vocals and yankee hits and he has been touring worldwide for over 20 years, claiming a whole host of accolades including many number one hits. His latest hit ”The Farmer” reached number one on iTunes and his popularity continues to grow in Ireland.
+
+# Brand development, social media management and e-marketing
+
+As with all of our clients, we start by getting to know our clients and gathering in-depth informaiotn on their ideal customer, or in this case fan. Robert is well established so we understood our role from the beginning was not primarily about brand awareness, growing his fanbase and allowing Robert’s personality to shine through.
+
+This wasn’t just any branding exercise, it was unique in that we needed to deliver something that would work both on smaller digital formats, whilst still being big and bold enough to create impact on stage. 
+
+We developed a number of concepts for Robert to choose from and wittled it down to two - in the end we developed something which we felt was modern, yet still authentic. 
+
+In parallel, we worked along with Robert’s management team to create and organise social content, with the aim of growing Robert’s social following and engagement rates. Live video content, vlogs, gig updates and asking fans for feedback in posts allowed us to start testing content and bringing his social channels to the next level. We also ran targeted Facebook ad campaigns for particular gigs or tours.
+
+To launch the brand, we also co-ordinated a live logo reveal from Robert’s stage, created new merchandise and ran a social competition to generate new email subscribers for a new monthly e-newsletter which features exclusive content.
+
+## Results
+
+* Authentic, impactful branding achieving stand out on stage
+* New revenue stream due to demand for new branded merchandise
+* A successful brand reveal which attracted X live views
+* % increase in following
+* % increase in engagement
+* 90,000 impressions and 5,000 link clicks for Robert’s UK Tour campaign

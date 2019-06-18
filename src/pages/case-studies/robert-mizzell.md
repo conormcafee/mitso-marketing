@@ -11,12 +11,12 @@ mainImage: /assets/383fff21-1314-481c-bafc-599a7f212b79.jpeg
 imageBlock:
   - Image: /assets/383fff21-1314-481c-bafc-599a7f212b79.jpeg
 testimonial: >-
-  Maeve & the ladies at MiTSO are great to work with. We have been working with
-  them for the last 5/6 months and have developed a great working relationship.
-  They are always at the end of the phone no matter what the request is and have
-  boasted our social media stats no end, not to forget totally revamping our
-  branding which was badly needed! We will always be very grateful to them and
-  look forward to many more months of working together.
+  Maeve and the ladies at MiTSO are great to work with. We have been working
+  with them for the last 5/6 months and have developed a great working
+  relationship. They are always at the end of the phone no matter what the
+  request is and have boasted our social media stats no end, not to forget
+  totally revamping our branding which was badly needed! We will always be very
+  grateful to them and look forward to many more months of working together.
    
   Thank you ladies and best wishes to MiTSO and continued success in the future.
    

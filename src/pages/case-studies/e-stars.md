@@ -19,9 +19,11 @@ testimonial: Testimonial goes here
 ---
 EStars featuring Fortnite, toured some of the biggest sports stadiums in the UK and Ireland from January to March 2019. Thousands of avid Fortnite fans and gaming enthusiasts took part in the hope of winning £25,000.
 
-# Our role
+# Esports marketing and event management  
 
-Our role was to generate hype around the tournament, sell tickets and further establish EStars as a global brand.
+We first began working with EStars in 2017 and provided marketing and event management services for its inaugural tournament, which culminated in the first ever major grassroots esports tournament in the 3 Arena, Dublin in May 2018.
+
+Following the success of this tournament, the company progressed and developed a new tournament featuring the widely popular game, Fortnite. Our role was to generate hype around the tournament, sell tickets and further establish EStars as a global brand.
 
 We conducted market research initially to understand the game and its players and developed a digital and PR campaign centred around raising brand awareness and converting to ticket sales.
 

@@ -5,8 +5,8 @@ text01: >-
   services, tailored to meet your needs. Unlike traditional agencies, we truly
   get to know your business and your customers and develop a tailored strategy
   to help you achieve your business objectives. We see ourselves as part of your
-  team, helping you establish a powerful brand identity and reaching more of the
-  right customers in the right way.
+  team, helping you establish an attractive brand identity and reaching more of
+  the right customers in the right way through powerful promotional campaigns. 
 text02: >-
   Established in 2016, we have since expanded our our team of passionate, driven
   marketing professionals to provide an unparalleled service offering. We work

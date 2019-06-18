@@ -17,7 +17,7 @@ slide03text: >-
 slide04title: We don’t do titles
 slide04text: >-
   No matter where you sit in the boardroom, we treat everyone with the same
-  respect because the best ideas come from the best minds and we love
+  respect because the best ideas come from the best minds and we welcome
   creativity, no matter where it comes from.
 ---
 

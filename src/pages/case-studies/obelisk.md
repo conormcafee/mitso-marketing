@@ -9,7 +9,7 @@ title: Obelisk
 intro: >-
   Obelisk is a multinational construction firm, headquartered in Dublin. The
   company wanted to refresh its brand and develop new digital channels and
-  content and a full suite of branded materials...
+  content and a full suite of branded materials.
 mainImage: /assets/obelisk-01.jpg
 imageBlock:
   - Image: /assets/obelisk-02.jpg
@@ -28,8 +28,26 @@ testimonial: >-
 
   I would highly recommend her and her team, you will not be disappointed.
 ---
-Having met the senior team at Obelisk, it became clear that the company had huge ambitions and wanted to expand globally.
+Obelisk is a multinational company delivering infrastructure solutions for the telecoms and power sectors in Ireland, UK and Africa. The company wanted to align its ambitions to grow with a brand refresh to present a new direction for the company.
 
-We began (as we always do) by establishing a solid client relationship and understanding Obelisk’ customer base.
+# Branding, graphic design, website development and videography
 
-We worked hard with the senior team, organising a number of workshops in order to find the correct balance between information the company wanted to promote vs. Information that was important to the client.
+We arranged initial workshops with the senior team at Obelisk to establish what was important to the company and what message they wanted to portray.
+
+The team were happy with the existing logo but we recommended modernising it and delivering a number of brand materials to compliment the brand.
+
+We spent time with the team agreeing website design and navigation - most importantly advising the team on how content should be arranged to reflect the organisational structure and ethos of the company.
+
+At MiTSO, we strongly recommend investing in professional visuals prior to launching any digital channels. We co-ordinated a number of photography and videography sessions, resulting in impressive imagery for online and offline use. 
+
+Working alongside Obelisk, we agreed on all of the material and brand assets required and delivered copywriting services, where needed. 
+
+We continue to work with Obelisk developing the brand further and providing web maintenance services on a monthly basis.
+
+## Results
+
+* An impressive new brand identity and logo design
+* Four professional web optimised videos 
+* A responsive, mobile friendly website
+* A suite of professional photography across four departments
+* Branded letterheads, business cards, exhibition stands, posters, pull-ups and internal wall graphics

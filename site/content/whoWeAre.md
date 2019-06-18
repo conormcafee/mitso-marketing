@@ -1,19 +1,16 @@
 ---
 category: noPage
 text01: >-
-  MiTSO is a marketing consultancy, a one-stop shop for digital and brand
-  services, tailored to meet your needs. Unlike traditional agencies, we truly
-  get to know your business and your customers and develop a tailored strategy
-  to help you achieve your business objectives. We see ourselves as part of your
-  team, helping you establish an attractive brand identity and reaching more of
-  the right customers in the right way through powerful promotional campaigns. 
+  MiTSO is a creative marketing consultancy - a one-stop shop for digital and
+  brand services. Unlike traditional agencies, we see ourselves as part of your
+  team and we’re dedicated to getting to know you and your customers better,
+  providing tailored and targeted communications to help your business thrive.
 text02: >-
   Established in 2016, we have since expanded our our team of passionate, driven
-  marketing professionals to provide an unparalleled service offering. We work
-  with clients locally and globally, delivering a range of services including
-  website design, brand development, social media marketing, digital advertising
-  and event management. We have also managed promotional campaigns and events
-  within the esports industry and continue to grow in this field.
+  marketing professionals to deliver an unparalleled service offering both
+  locally and internationally. Our range of services includes website design,
+  brand development, social media marketing, digital advertising and event
+  management. 
 seo:
   seoTitle: Who We Are
 title: We are a creative marketing consultancy

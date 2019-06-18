@@ -38,7 +38,7 @@ The team were happy with the existing logo but we recommended modernising it and
 
 We spent time with the team agreeing website design and navigation - most importantly advising the team on how content should be arranged to reflect the organisational structure and ethos of the company.
 
-At MiTSO, we strongly recommend investing in professional visuals prior to launching any digital channels. We co-ordinated a number of photography and videography sessions, resulting in impressive imagery for online and offline use. 
+At MiTSO, we strongly recommend investing in professional visuals prior to launching any digital channels. We co-ordinated a number of photography and videography sessions including drone filming, resulting in impressive imagery for online and offline use. 
 
 Working alongside Obelisk, we agreed on all of the material and brand assets required and delivered copywriting services, where needed. 
 

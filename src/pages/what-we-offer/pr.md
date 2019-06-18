@@ -22,7 +22,7 @@ text02: >-
   lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec
   euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
   eros, a volutpat urna commodo lobortis.
-statementImage: /assets/pr-cmd-web-.jpg
+statementImage: /assets/cmd-pr-ulster-tatler.jpg
 statement: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
   auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin

@@ -3,8 +3,7 @@ category: noPage
 slide01title: We bring brands to life
 slide01text: >-
   Your brand is the core of your business and it is the starting point for all
-  of our work - we build brands that are powerful and memorable to attract the
-  right customers.  
+  of our work - we build brands that are memorable and attract attention.  
 slide02title: 'We like simple,'
 slide02text: >-
   We never over complicate, we get to the heart of the problem and solve it in

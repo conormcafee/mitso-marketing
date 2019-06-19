@@ -24,8 +24,8 @@ text02: >-
   eros, a volutpat urna commodo lobortis.
 statementImage: /assets/ulster-tatler-cmd-for-web.jpg
 statement: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
-  auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin
+  PR is key to elevating your brand's reputation, gaining exposure among your
+  target audience and positioning your business within your wider industry
 serviceText: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam
   malesuada libero, quis sodales lorem

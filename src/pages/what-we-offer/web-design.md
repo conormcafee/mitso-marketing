@@ -23,11 +23,9 @@ text02: >-
   euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
   eros, a volutpat urna commodo lobortis.
 statementImage: /assets/st-web-jpg.jpg
-statement: >-
-  A professional website provides credibility and an online experience for your
-  customers
-
-  that continually drives traffic
+statement: >
+  A professional website enhances your brand's credibility by creating an
+  optimal online experience for consumers
 serviceText: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam
   malesuada libero, quis sodales lorem

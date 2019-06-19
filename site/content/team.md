@@ -52,20 +52,26 @@ teamMember:
     imgSwap: /assets/ciara-hover.jpg
     linkedin: 'https://www.linkedin.com/in/ciara-boylan'
     name: Ciara Boylan
-    psst: Psst...
+    psst: >-
+      Psst... Ciara is the first to lighten the mood if things get too serious!
+      What you also may not know about Ciara is that she was the first intern in
+      Enterprise Rent-A-Car Ireland to achieve the Management Qualification
+      Interview.
     what: >-
       I assist the team with enhancing clients’ marketing campaigns and
       coordinate internal marketing to increase online traffic and generate
       leads.
     when: >-
-      I joined MiTSO in March 2019 as a placement student. I am currently
+      I joined MiTSO in March 2019 as a placement student and I am currently
       studying MSc Marketing in Queen’s University Belfast.
     where: >-
       I spent my undergraduate placement with Enterprise Rent-A-Car in Dublin
-      Airport becoming the first intern in Ireland to achieve the Management
-      Qualification Interview. Following my graduation from Business Management
-      with a first class honours, I completed an internship with Allen & Overy
-      in their Digital Marketing Team.
-    why: I love marketing
+      Airport, focusing on providing a service for their VIP Emerald customers.
+      Following my graduation from Business Management with a first class
+      honours, I completed an internship with Allen & Overy in their Digital
+      Marketing Team.
+    why: >-
+      I enjoy providing clients with solutions, it improves their brand and
+      future prospects.
 ---
 

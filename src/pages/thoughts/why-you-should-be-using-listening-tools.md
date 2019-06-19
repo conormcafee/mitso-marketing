@@ -7,15 +7,10 @@ author: Roisin Watters
 title: 3 simple reasons you should be using social listening tools
 tags:
   - Tag: Listening tools
-intro: >-
-  Are your ears burning? They should be! If you have an online presence then you
-  should be undertaking social listening so you that you know what people are
-  saying about your brand, product or service on social and digital channels. 
+intro: Are your ears burning? They should be!
 mainImage: /assets/pexels-photo-914931.jpg
 ---
-Are your ears burning? They should be! If you have an online presence then you should be undertaking social listening so you that you know what people are saying about your brand, product or service on social and digital channels. 
-
-The benefits of Social Listening
+Are your ears burning? They should be! If you have an online presence then there are three simple reasons as to why you should be undertaking social listening.
 
 ## 1.	Understand brand position
 

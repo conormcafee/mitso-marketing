@@ -23,7 +23,7 @@ text02: >-
   euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
   eros, a volutpat urna commodo lobortis.
 statementImage: /assets/st-web-jpg.jpg
-statement: >
+statement: >-
   A professional website enhances your brand's credibility by creating an
   optimal online experience for consumers
 serviceText: >-

@@ -76,13 +76,13 @@ const Template = props => {
       />
 
       <Container>
-        <Flex flexWrap="wrap" py={4}>
-          <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
-            <h3>{frontmatter.title} Services</h3>
-            <p>{frontmatter.serviceText}</p>
-          </Box>
-          <Box width={[1, 1, 2 / 3]} px={[3, 4]}>
+        <Flex flexWrap="wrap" py={4} css={{ maxWidth: "1000px" }} mx="auto">
+          <Box order={[2, 2, 1]} width={[1, 1, 1 / 2]} px={[3, 4]}>
             <Services services={frontmatter.listOfServices} />
+          </Box>
+          <Box order={[1, 1, 2]} width={[1, 1, 1 / 2]} px={[3, 4]}>
+            <SubTitle>{frontmatter.title} Services</SubTitle>
+            <p>{frontmatter.serviceText}</p>
           </Box>
         </Flex>
       </Container>
@@ -143,11 +143,13 @@ const Title = styled.h1`
   margin-right: auto;
   margin-bottom: 0;
 `
+const SubTitle = styled.h3`
+  font-size: 26px;
+  margin-bottom: 0;
+`
 
 const SubNav = styled(Flex)`
-  /* border-top: 1px solid #e6e6e6; */
   border-right: 1px solid #e6e6e6;
-  /* border-bottom: 1px solid #e6e6e6; */
   border-left: 1px solid #e6e6e6;
   border-radius: 7px;
   overflow: hidden;

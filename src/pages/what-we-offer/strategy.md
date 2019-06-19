@@ -27,7 +27,7 @@ text02: >-
 statementImage: /assets/strategy-website.jpg
 statement: >-
   A solid strategy ensures you are utilising the correct channels to reach your
-  target audience and execute a successful campaign 
+  target audience and execute a successful campaign
 serviceText: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam
   malesuada libero, quis sodales lorem

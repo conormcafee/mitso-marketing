@@ -7,6 +7,7 @@ import Layout from "../../components/layout"
 import Container from "../../components/container"
 import CaseStudies from "../../components/caseStudies"
 import WorkWithMitso from "../../components/workWithMitso"
+import Dot from "../../components/Dot"
 
 export default ({ data }) => {
   const { title, seo } = data.file.childMarkdownRemark.frontmatter
@@ -19,7 +20,10 @@ export default ({ data }) => {
       <Container>
         <Box px={[3, 4]} mb={5}>
           <Hero>
-            <Title>{title}</Title>
+            <Title>
+              {title}
+              <Dot />
+            </Title>
           </Hero>
         </Box>
         <CaseStudies moreCaseStudies={true} />

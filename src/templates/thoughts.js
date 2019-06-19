@@ -13,6 +13,7 @@ import BackLink from "../components/BackLink"
 import Thoughts from "../components/Thoughts"
 import BackgroundImage from "../components/BackgroundImage"
 import Image from "../images/mitso-default.png"
+import Dot from "../components/Dot"
 
 const ThoughtsTemplate = props => {
   return <Template data={props.data} location={props.location} />
@@ -38,7 +39,10 @@ const Template = props => {
       <Container>
         <Flex mb={5} px={[3, 4]}>
           <Hero>
-            <Title>{title}</Title>
+            <Title>
+              {title}
+              <Dot />
+            </Title>
             {getTags(tags)}
           </Hero>
         </Flex>

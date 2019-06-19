@@ -13,6 +13,7 @@ import Services from "../components/Services"
 
 import { FONT_BOLD, ACCENT, BASE } from "../variables"
 import SubHeading from "../components/SubHeading"
+import Dot from "../components/Dot"
 
 const ServicesTemplate = props => {
   const getUrl = data => navigate(data)
@@ -33,6 +34,7 @@ const Template = props => {
           <Box>
             <Title>
               We offer tailored services to reach your target audience
+              <Dot />
               <SubHeading text={frontmatter.title} size="30px" mt="16px" />
             </Title>
           </Box>

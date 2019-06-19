@@ -24,8 +24,8 @@ text02: >-
   eros, a volutpat urna commodo lobortis.
 statementImage: /assets/ulster-tatler-cmd-for-web.jpg
 statement: >-
-  PR is key to elevating your brand's reputation, gaining exposure among your
-  target audience and positioning your business within your wider industry
+  PR is key to gaining exposure amongst your target audience and elevating your
+  brand's reputation
 serviceText: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam
   malesuada libero, quis sodales lorem

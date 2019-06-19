@@ -24,8 +24,8 @@ text02: >-
   eros, a volutpat urna commodo lobortis.
 statementImage: /assets/1bbacde6-1a3d-40d9-84b5-272d7b3179a4.jpeg
 statement: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
-  auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin
+  A digital presence is essential for targeting and engaging with your audience
+  to build long term relationships 
 serviceText: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam
   malesuada libero, quis sodales lorem

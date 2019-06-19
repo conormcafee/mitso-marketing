@@ -17,16 +17,17 @@ text01: >-
   We work with clients to get to the bottom of who you really are and what makes
   you different from your competitors and we build brands from the inside out.
 text02: >-
-  Brand development isn’t just a logo or providing fancy brand materials, it is
-  so much more. We create brands that are powerful enough to leverage social
-  media and technology to help your company accelerate in a digital landscape.
+  Brand development isn’t just a logo, it is so much more. We create brands that
+  are powerful and can leverage social media and technology to help your company
+  accelerate in a digital landscape.
 statementImage: /assets/rm-brands-.jpg
 statement: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
   auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin
 serviceText: >-
-  Once we have developed a brand strategy, we offer a range of bespoke services
-  to develop a new brand for your business.
+  First, we create a brand strategy based on your company ethos and customer.
+  Then, we offer a range of bespoke services to develop a new identity for your
+  business.
 listOfServices:
   - Service: Brand development
   - Service: Packaging

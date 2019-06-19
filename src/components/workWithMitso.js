@@ -44,8 +44,9 @@ const IconPicker = number => {
   return icon
 }
 
-const WorkWithMitso = props => {
-  const services = props.data.allMarkdownRemark.edges
+const WorkWithMitso = ({ data }) => {
+  const services = data.allMarkdownRemark.edges
+  const intro = data.file.childMarkdownRemark.frontmatter.intro
   return (
     <Box as="section" bg={BLACK} p={[3, 4]} mx={-2}>
       <Container>
@@ -55,11 +56,7 @@ const WorkWithMitso = props => {
               Work with MiTSO
             </Box>
             <Box as="p" color="white" mt={0} mb={4}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              bibendum mi in nisl pellentesque, et iaculis augue fringilla. Nam
-              viverra efficitur massa, sed viverra orci dapibus sed. Sed tempus
-              orci porttitor magna vulputate ornare eu nec justo. Morbi semper,
-              sem a lacinia vehicula,
+              {intro}
             </Box>
             <Button onClick={() => navigate("/work-with-mitso")}>
               Start Project
@@ -104,6 +101,13 @@ const servicesQuery = graphql`
             title
             icon
           }
+        }
+      }
+    }
+    file(name: { eq: "workWithMitso" }) {
+      childMarkdownRemark {
+        frontmatter {
+          intro
         }
       }
     }

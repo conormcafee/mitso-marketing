@@ -21,7 +21,7 @@ text02: >-
   are powerful and can leverage social media and technology to help your company
   accelerate in a digital landscape.
 statementImage: /assets/rm-brands-.jpg
-statement: 'Branding is the critical start point for creating a last impression. '
+statement: 'Branding is the critical start point for creating a lasting impression. '
 serviceText: >-
   First, we create a brand strategy based on your company ethos and customer.
   Then, we offer a range of bespoke services to develop a new identity for your

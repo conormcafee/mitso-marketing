@@ -24,7 +24,9 @@ statementImage: /assets/rm-brands-.jpg
 statement: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
   auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin
-serviceText: 'Our brand development services '
+serviceText: >-
+  Once we have developed a brand strategy, we offer a range of bespoke services
+  to develop a new brand for your business.
 listOfServices:
   - Service: Brand development
   - Service: Packaging

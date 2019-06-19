@@ -25,7 +25,7 @@ text02: >-
 statementImage: /assets/visual-web-ipad.jpg
 statement: >-
   Powerful imagery is fundamental to communicating your service offering across
-  brand assets 
+  brand assets
 serviceText: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam
   malesuada libero, quis sodales lorem

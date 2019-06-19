@@ -43,7 +43,7 @@ To launch the brand, we also co-ordinated a live logo reveal from Robert’s sta
 
 * Authentic, impactful branding achieving stand out on stage
 * New revenue stream due to demand for new branded merchandise
-* A successful brand reveal which attracted X live views
-* % increase in following
-* % increase in engagement
+* A successful brand reveal which attracted 6.7k live views
+* 392% increase in following across channels
+* 207% increase in engagement on Facebook
 * 90,000 impressions and 5,000 link clicks for Robert’s UK Tour campaign

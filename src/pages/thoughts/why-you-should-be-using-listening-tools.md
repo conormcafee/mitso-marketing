@@ -10,7 +10,7 @@ tags:
 intro: Are your ears burning? They should be!
 mainImage: /assets/listening.jpg
 ---
-If you have an online presence then there are three simple reasons as to why you should be undertaking social listening.
+Are your ears burning? They should be! If you have an online presence then there are three simple reasons as to why you should be undertaking social listening.
 
 ## 1.	Understand brand position
 
@@ -27,8 +27,6 @@ A great example is when Thea Chippendale from Lincoln, posted a tweet showing a 
 Her tweet went viral, and with more than 98,000 likes and 7,000 retweets it was soon discovered the dress was from major online fashion retailer, ASOS. 
 
 ASOS capitalised on the online buzz and got in touch with Thea asking if they could use her image for their product page. The result? Thousands of tweets praising the brand, an increase in web traffic and positive media coverage.
-
- 
 
 ![](/assets/asos.jpg)
 

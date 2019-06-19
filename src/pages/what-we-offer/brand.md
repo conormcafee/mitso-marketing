@@ -24,15 +24,13 @@ statementImage: /assets/rm-brands-.jpg
 statement: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
   auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin
-serviceText: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam
-  malesuada libero, quis sodales lorem faucibus sit a
+serviceText: 'Our brand development services '
 listOfServices:
   - Service: Brand development
   - Service: Packaging
   - Service: Logo Design
-  - Service: Service 04
-  - Service: Service 05
-  - Service: Service 06
+  - Service: Brand strategy
+  - Service: Graphic design
+  - Service: Online branding
 ---
 

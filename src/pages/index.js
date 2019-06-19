@@ -56,7 +56,10 @@ export default ({ data }) => {
           mb={[5, 6]}
         >
           <Box px={[3, 4]} mb={6} width={[1, 1 / 2]}>
-            <h1>{title}</h1>
+            <h1>
+              {title}
+              <Dot />
+            </h1>
             <Button onClick={() => navigate("/work-with-mitso")}>
               Work with MiTSO
             </Button>

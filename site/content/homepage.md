@@ -3,7 +3,7 @@ category: noPage
 seo: {}
 title: >-
   We deliver smart, tailored and targeted communications to help your business
-  thrive.
+  thrive
 plan: >-
   We believe a strategic approach is essential and we work with you to develop
   sales and marketing strategies which help to focus your investment in the
@@ -19,4 +19,3 @@ review: >-
   and improve our campaigns and performance to make sure you reach your target
   audience and fulfil your marketing objectives.
 ---
-

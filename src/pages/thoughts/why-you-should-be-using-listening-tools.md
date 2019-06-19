@@ -4,7 +4,7 @@ seo:
   seoTitle: ''
 date: 2019-06-17T10:33:51.367Z
 author: Roisin Watters
-title: 3 simple reasons you should be using social listening tools
+title: 3 reasons you should be using social listening tools
 tags:
   - Tag: Listening tools
 intro: Are your ears burning? They should be!

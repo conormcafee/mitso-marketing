@@ -15,7 +15,7 @@ const Statement = ({ isStatement, statement, image }) => {
   }
 
   return (
-    <Box px={isStatement && [3, 4]}>
+    <Box px={isStatement ? [3, 4] : 0}>
       <Wrapper
         fullWidth={isStatement ? `1200px` : `800px`}
         p={[3, 4]}

@@ -27,6 +27,7 @@ testimonial: >-
   continue to use her company’s services. I would highly recommend her and her
   team, you will not be disappointed Lisa Healy, HR Director, Obelisk.
 ---
+
 Obelisk is a multinational company delivering infrastructure solutions for the telecoms and power sectors in Ireland, UK and Africa. The company wanted to align its ambitions to grow with a brand refresh to present a new direction for the company.
 
 # Branding, graphic design, website development and videography
@@ -37,16 +38,16 @@ The team were happy with the existing logo but we recommended modernising it and
 
 We spent time with the team agreeing website design and navigation - most importantly advising the team on how content should be arranged to reflect the organisational structure and ethos of the company.
 
-At MiTSO, we strongly recommend investing in professional visuals prior to launching any digital channels. We co-ordinated a number of photography and videography sessions including drone filming, resulting in impressive imagery for online and offline use. 
+At MiTSO, we strongly recommend investing in professional visuals prior to launching any digital channels. We co-ordinated a number of photography and videography sessions including drone filming, resulting in impressive imagery for online and offline use.
 
-Working alongside Obelisk, we agreed on all of the material and brand assets required and delivered copywriting services, where needed. 
+Working alongside Obelisk, we agreed on all of the material and brand assets required and delivered copywriting services, where needed.
 
 We continue to work with Obelisk developing the brand further and providing web maintenance services on a monthly basis.
 
 ## Results
 
-* An impressive new brand identity and logo design
-* Four professional web optimised videos 
-* ****[**A responsive, mobile friendly website**](https://www.obelisk.com)****
-* A suite of professional photography across four departments
-* [**Branded e-book**](https://obelisk.com/ebook-april-2018/#p=1), letterheads, business cards, exhibition stands, posters, pull-ups and internal wall graphics
+- An impressive new brand identity and logo design
+- Four professional web optimised videos
+- [**A responsive, mobile friendly website**](https://www.obelisk.com)
+- A suite of professional photography across four departments
+- [**Branded e-book**](https://obelisk.com/ebook-april-2018/#p=1), letterheads, business cards, exhibition stands, posters, pull-ups and internal wall graphics

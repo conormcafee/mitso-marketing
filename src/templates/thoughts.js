@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import WorkWithMitso from "../components/workWithMitso"
-import { BLACK } from "../variables"
+import { BLACK, FONT_BOLD, ACCENT } from "../variables"
 import Tags from "../components/Tags"
 import Share from "../components/Share"
 import BackLink from "../components/BackLink"
@@ -150,6 +150,22 @@ const Article = styled(Box)`
     display: block;
     margin-top: 32px;
     margin-bottom: 32px;
+  }
+
+  a {
+    background: ${BLACK};
+    color: #ffffff;
+    font-family: ${FONT_BOLD};
+    font-weight: 900;
+    text-decoration: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    transition: background 150ms ease-in-out;
+
+    &:hover {
+      background: ${ACCENT};
+    }
   }
 `
 

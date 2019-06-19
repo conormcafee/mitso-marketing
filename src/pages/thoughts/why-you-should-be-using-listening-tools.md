@@ -8,7 +8,7 @@ title: 3 simple reasons you should be using social listening tools
 tags:
   - Tag: Listening tools
 intro: Are your ears burning? They should be!
-mainImage: /assets/pexels-photo-914931.jpg
+mainImage: /assets/listening.jpg
 ---
 If you have an online presence then there are three simple reasons as to why you should be undertaking social listening.
 
@@ -30,13 +30,21 @@ ASOS capitalised on the online buzz and got in touch with Thea asking if they co
 
  
 
+![](/assets/asos.jpg)
+
 Credit: @ASOS
 
 ## 3.	Spot Potential Risks
 
 We all know that comments online aren’t always positive and it only takes one poorly constructed response for a major brand to face backlash. Listening tools can help track any negative comments and assess any potential risks to brand reputation. 
 
-Whether or not you watch Game of Thrones we all heard about THAT coffee cup. Fans of the show were quick to point out the major blunder in the hit TV show’s final season and screenshots of the scene and memes poking fun at the mistake were quick to go viral. Rather than releasing a serious statement, HBO decided to make a light-hearted joke about the mistake reflective of the online conversation:
+Whether or not you watch Game of Thrones we all heard about THAT coffee cup. Fans of the show were quick to point out the major blunder in the hit TV show’s final season and screenshots of the scene and memes poking fun at the mistake were quick to go viral. 
+
+![](/assets/game-of-thrones-starbucks-coffee-cup.jpg)
+
+Credit @HBO
+
+Rather than releasing a serious statement, HBO decided to make a light-hearted joke about the mistake reflective of the online conversation:
 
 > “The latte that appeared in the episode was a mistake. Daenerys had ordered an herbal tea,”
 

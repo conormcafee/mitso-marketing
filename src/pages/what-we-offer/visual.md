@@ -24,8 +24,8 @@ text02: >-
   eros, a volutpat urna commodo lobortis.
 statementImage: /assets/visual-web-ipad.jpg
 statement: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
-  auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin
+  Powerful imagery is fundamental to communicating your service offering across
+  brand assets 
 serviceText: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam
   malesuada libero, quis sodales lorem

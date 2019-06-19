@@ -29,8 +29,8 @@ teamMember:
     name: Roisin Watters
     psst: Psst...
     what: >-
-      I work with clients to plan, develop and implement effective marketing
-      communication campaigns.
+      I work with our clients to plan, develop and implement effective marketing
+      communication campaigns in order to achieve business growth.
     when: >-
       I joined MiTSO in October 2018 shortly after graduating from Ulster
       University with a first class honors in Communication, Advertising and
@@ -47,9 +47,9 @@ teamMember:
     name: Ciara Boylan
     psst: Psst...
     what: >-
-      I assist the team with enhancing clients’ marketing campaigns. Alongside
-      this, I am creating a digital strategy for MiTSO including the development
-      of our new website.
+      I assist the team with enhancing clients’ marketing campaigns and
+      coordinate internal marketing to increase online traffic and generate
+      leads.
     when: >-
       I joined MiTSO in March 2019 as a placement student. I am currently
       studying MSc Marketing in Queen’s University Belfast.
@@ -59,9 +59,6 @@ teamMember:
       Qualification Interview. Following my graduation from Business Management
       with a first class honours, I completed an internship with Allen & Overy
       in their Digital Marketing Team.
-    why: >-
-      As Peter Drucker quotes, “The best way to predict the future is to create
-      it”. Thus, no two days are the same in MiTSO as we design marketing
-      campaigns for a diverse range of clients
+    why: I love marketing
 ---
 

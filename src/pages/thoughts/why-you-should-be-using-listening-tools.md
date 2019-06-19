@@ -56,3 +56,5 @@ The statement received a positive response online as the producers simply accept
 There are a wide range of social listening tools online, at MiTSO we use Hootsuite. It’s definitely one of the best allowing us to track keywords, key phrases, influencer conversations, and alerts us  any time on of our clients, their competitors or  industry keywords are mentioned.
 
 An alternative is Talkwalker, this website monitors Facebook, Twitter, LinkedIn, and Instagram across 150 million websites, as well as being able to assess key brand mentions and phrases.
+
+Want to learn more about how to manage your social channels and engage with your audience effectively? Contact us [here](https://www.mitsomarketing.com/work-with-mitso)

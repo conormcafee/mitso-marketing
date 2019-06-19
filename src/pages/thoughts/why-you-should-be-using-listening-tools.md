@@ -7,7 +7,10 @@ author: Roisin Watters
 title: 3 reasons you should be using social listening tools
 tags:
   - Tag: Listening tools
-intro: Are your ears burning? They should be!
+intro: >-
+  Are your ears burning? They should be! If you have an online presence then
+  there are three simple reasons as to why you should be undertaking social
+  listening.
 mainImage: /assets/listening.jpg
 ---
 Are your ears burning? They should be! If you have an online presence then there are three simple reasons as to why you should be undertaking social listening.

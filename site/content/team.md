@@ -7,8 +7,9 @@ teamMember:
     linkedin: 'https://www.linkedin.com/in/maeve-finnegan'
     name: Maeve Finnegan
     psst: >-
-      What you might not know is the Maeve toured the world as a professional
-      dancer with “Riverdance - The Show” for 4 years.
+      Psst... It's common knowledge that Maeve can't start her day without a
+      coffee. What you also may not know is the Maeve toured the world as a
+      professional dancer with “Riverdance - The Show” for 4 years.
     what: >-
       I develop strong relationships with each and every client and work with my
       team to help smash your business goals.
@@ -27,7 +28,10 @@ teamMember:
     imgSwap: /assets/roisin-hover.jpg
     linkedin: 'https://www.linkedin.com/in/roisin-watters-661a03a6/'
     name: Roisin Watters
-    psst: Psst...
+    psst: >-
+      Psst... Roisin's passport is always close to hand as she gets ready to hop
+      on another flight. What you also may not know about Roisin is that she has
+      8 All-Ireland medals for playing the accordion.
     what: >-
       I work with our clients to plan, develop and implement effective marketing
       communication campaigns in order to achieve business growth.
@@ -40,7 +44,10 @@ teamMember:
       EMEA Publicity Department on 20 high profile film releases. Following my
       placement I gained further experience in London with global advertising
       agency, Feref, in both PR and social media.
-    why: I love marketing
+    why: >-
+      I love that everyday at MiTSO is different and that I get the opportunity
+      to work with a wide variety of clients from country superstars to makeup
+      artists.
   - img: /assets/ciara-standard.jpg
     imgSwap: /assets/ciara-hover.jpg
     linkedin: 'https://www.linkedin.com/in/ciara-boylan'

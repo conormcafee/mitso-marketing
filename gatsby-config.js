@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `MiTSO Markering`,
+    title: `MiTSO Marketing`,
     description: `MiTSO Marketing Introduction`,
     author: `@conormcafee`,
     url: `https://mitsomarketing.com`,

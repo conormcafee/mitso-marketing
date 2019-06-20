@@ -263,6 +263,7 @@ collections:
           - { name: youtube, label: Youtube ID, widget: string }
           - { name: text01, label: Text 01, widget: text }
           - { name: text02, label: Text 02, widget: text }
+          - { name: mainImage, label: Main Image, widget: image }
           - { 
             name: seo, 
             label: SEO, 
@@ -283,3 +284,16 @@ collections:
           - { name: facebook, label: Facebook, widget: string }
           - { name: twitter, label: Twitter, widget: string }
           - { name: linkedin, label: LinkedIn, widget: string }
+  - name: logos
+    label: Logos
+    files: 
+      - label: Content
+        name: content
+        file: site/content/logos.md
+        fields:
+          - {
+          name: clientLogos,
+          label: Logos,
+          widget: list,
+          fields: [{ label: logo, name: Logo, widget: image }]
+        }

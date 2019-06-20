@@ -273,3 +273,13 @@ collections:
               { label: SEO Image, name: seoImage, widget: image, required: false},
               ]
             }
+  - name: socialMedia
+    label: Social Media
+    files: 
+      - label: Content
+        name: content
+        file: site/content/socialMedia.md
+        fields:
+          - { name: facebook, label: Facebook, widget: string }
+          - { name: twitter, label: Twitter, widget: string }
+          - { name: linkedin, label: LinkedIn, widget: string }

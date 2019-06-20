@@ -11,6 +11,7 @@ import WorkWithMitso from "../components/workWithMitso"
 import Thoughts from "../components/Thoughts"
 import Dot from "../components/Dot"
 import { BLACK } from "../variables"
+import MitsoCircle from "../images/backgrounds/mitso-circle.svg"
 
 import HomepageHero from "../images/homepage-hero.jpg"
 
@@ -55,7 +56,7 @@ export default ({ data }) => {
           justifyContent={"space-between"}
           mb={[5, 6]}
         >
-          <Box px={[3, 4]} mb={6} width={[1, 1 / 2]}>
+          <HeroContent px={[3, 4]} mb={6} width={[1, 1 / 2]}>
             <h1>
               {title}
               <Dot />
@@ -63,11 +64,12 @@ export default ({ data }) => {
             <Button onClick={() => navigate("/work-with-mitso")}>
               Work with MiTSO
             </Button>
-          </Box>
+          </HeroContent>
           <Hero as="figure" px={[3, 4]} width={[1, 1 / 2]}>
             <img src={HomepageHero} alt="Welcome to MiTSO" />
           </Hero>
         </Intro>
+        <Circle src={MitsoCircle} alt="Circle Page Stylinh" />
       </Container>
 
       {/* Who WE Are */}
@@ -150,6 +152,20 @@ const WhoWeAre = styled(Flex)`
 const WhoWeAreSubHeading = styled.h3`
   color: #ffffff;
 `
+
+const Circle = styled.img`
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  transform: translate(-50%, 50%);
+`
+
+const HeroContent = styled(Box)`
+  position: relative;
+  z-index: 1;
+`
+
 export const query = graphql`
   query {
     file(name: { eq: "homepage" }) {

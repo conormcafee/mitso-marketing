@@ -1,5 +1,5 @@
 ---
-category: noPage
 clientLogos:
-  - Logo: /assets/hero.jpg
+  - Logo: /assets/at-makeup.png
 ---
+

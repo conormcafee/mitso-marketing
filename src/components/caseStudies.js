@@ -41,15 +41,13 @@ const ListCaseStudies = props => {
   const intro = data.file.childMarkdownRemark.frontmatter.intro
   const others = data.file.childMarkdownRemark.frontmatter.others
 
-  const _renderCaseStudies = data => {
-    return (
-      <React.Fragment>
-        {data.map((study, index) => (
-          <CaseStudy {...study} key={index} />
-        ))}
-      </React.Fragment>
-    )
-  }
+  const _renderCaseStudies = (data, homepage) => (
+    <React.Fragment>
+      {data.slice(0, homepage ? 3 : data.length).map((study, index) => (
+        <CaseStudy {...study} key={index} />
+      ))}
+    </React.Fragment>
+  )
 
   return (
     <React.Fragment>
@@ -66,12 +64,8 @@ const ListCaseStudies = props => {
             </Box>
           )}
         </Flex>
-        <CaseStudies
-          as="section"
-          flexWrap={["wrap", "wrap", "wrap", "nowrap"]}
-          my={props.my ? props.my : 5}
-        >
-          {_renderCaseStudies(caseStudies)}
+        <CaseStudies as="section" flexWrap="wrap" my={props.my ? props.my : 5}>
+          {_renderCaseStudies(caseStudies, homepage)}
         </CaseStudies>
       </Container>
 

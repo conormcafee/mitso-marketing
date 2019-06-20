@@ -170,6 +170,12 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
           - {label: others, name: others, widget: text}
+          - {
+            name: clientLogos,
+            label: Logos,
+            widget: list,
+            fields: [{ label: logo, name: Logo, widget: image }]
+          }
   - name: servicesGroup
     label: Services
     folder: src/pages/what-we-offer
@@ -284,16 +290,3 @@ collections:
           - { name: facebook, label: Facebook, widget: string }
           - { name: twitter, label: Twitter, widget: string }
           - { name: linkedin, label: LinkedIn, widget: string }
-  - name: logos
-    label: Logos
-    files: 
-      - label: Content
-        name: content
-        file: site/content/logos.md
-        fields:
-          - {
-          name: clientLogos,
-          label: Logos,
-          widget: list,
-          fields: [{ label: logo, name: Logo, widget: image }]
-        }

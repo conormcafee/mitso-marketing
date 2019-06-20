@@ -7,39 +7,13 @@ import Button from "../components/button"
 import Container from "../components/container"
 import { StaticQuery, graphql, navigate } from "gatsby"
 
-import AT from "../images/logos/at-makeup.png"
-import CMD from "../images/logos/cmd.jpg"
-import DP from "../images/logos/dp-fitness.png"
-import RM from "../images/logos/robert-m.jpg"
-import ROS from "../images/logos/roswick.jpg"
-import ST from "../images/logos/sweeney-todd.png"
-import WC from "../images/logos/the-wheel-company.jpg"
-import TR from "../images/logos/treemetrics.jpg"
-
-const List01 = [
-  { company: "Ailin Traynor", logo: AT },
-  { company: "CMD", logo: CMD },
-  { company: "DP Fitness", logo: DP },
-]
-
-const List02 = [
-  { company: "Robert Mizzell", logo: RM },
-  { company: "Roswick", logo: ROS },
-  { company: "Sweeney Todd", logo: ST },
-]
-
-const List03 = [
-  { company: "The Wheel Company", logo: WC },
-  { company: "Treemetrics", logo: TR },
-  { company: "N/A", logo: "https://placehold.it/200x200/9CE9CF/9CE9CF" },
-]
-
 const ListCaseStudies = props => {
   const { data, moreCaseStudies, homepage } = props
   const caseStudies = data.allMarkdownRemark.edges
 
   const intro = data.file.childMarkdownRemark.frontmatter.intro
   const others = data.file.childMarkdownRemark.frontmatter.others
+  const clientLogos = data.file.childMarkdownRemark.frontmatter.clientLogos
 
   const _renderCaseStudies = (data, homepage) => (
     <React.Fragment>
@@ -83,47 +57,11 @@ const ListCaseStudies = props => {
                 All Case Studies
               </Button>
             </Box>
-            <Box
-              width={[1 / 2, 1 / 2, 1 / 3]}
-              px={[3, 4]}
-              mt={[4, 0]}
-              mb={[4, 0]}
-            >
+            <Box width={[1, 1, 2 / 3]} px={[3, 4]} mt={[4, 4, 0]} mb={[4, 0]}>
               <Flex flexWrap="wrap">
-                {List01.map((item, index) => (
-                  <Box key={index} width={1 / 3} mb={4} px={[2, 3]}>
-                    <SmallLogo key={index} src={item.logo} alt={item.company} />
-                  </Box>
-                ))}
-
-                {List02.map((item, index) => (
-                  <Box key={index} width={1 / 3} px={[2, 3]}>
-                    <SmallLogo key={index} src={item.logo} alt={item.company} />
-                  </Box>
-                ))}
-              </Flex>
-            </Box>
-
-            <Box
-              width={[1 / 2, 1 / 2, 1 / 3]}
-              px={[3, 4]}
-              mt={[4, 0]}
-              mb={[4, 0]}
-            >
-              <Flex flexWrap="wrap">
-                {List03.map((item, index) => (
-                  <Box key={index} width={1 / 3} mb={4} px={[2, 3]}>
-                    <SmallLogo key={index} src={item.logo} alt={item.company} />
-                  </Box>
-                ))}
-
-                {[3, 4, 5].map(index => (
-                  <Box key={index} width={1 / 3} px={[2, 3]}>
-                    <SmallLogo
-                      key={index}
-                      src="https://placehold.it/200x200/9CE9CF/9CE9CF"
-                      alt="Logo"
-                    />
+                {clientLogos.map((item, index) => (
+                  <Box key={index} width={[1 / 4, 1 / 6]} mb={4} px={[2, 3]}>
+                    <SmallLogo key={index} src={item.Logo} alt="Client Logo" />
                   </Box>
                 ))}
               </Flex>
@@ -169,6 +107,9 @@ const caseStudies = graphql`
         frontmatter {
           intro
           others
+          clientLogos {
+            Logo
+          }
         }
       }
     }

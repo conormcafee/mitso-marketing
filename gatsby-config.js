@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `MiTSO Marketing`,
-    description: `MiTSO Marketing Introduction`,
+    description: `We deliver smart, tailored and targeted communications to help your business thrive`,
     author: `@conormcafee`,
     url: `https://mitsomarketing.com`,
     image: "/static/assets/pexels-photo-914931.jpg",
-    twitterUsername: "@conormcafee",
+    twitterUsername: "@mitsomarketing",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

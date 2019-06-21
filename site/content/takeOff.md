@@ -1,12 +1,29 @@
 ---
 category: noPage
-seo:
-  seoTitle: Takeoff
 title: Takeoff
 youtube: QEj8bBHq4s4
-mainImage: /assets/obelisk-01.jpg
 text01: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a ligula sit amet tellus sollicitudin ornare in sit amet arcu. Vestibulum eget elit sit amet tortor placerat tincidunt. Mauris varius sapien eu nulla euismod, nec tristique lacus dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-text02: >-
-  Proin nec tellus consequat, ultrices massa sit amet, volutpat lectus. Curabitur placerat sapien diam, pulvinar elementum sapien tincidunt vel. Nunc mattis posuere nisi et rutrum. Mauris blandit quam ut felis fringilla, ac feugiat quam mollis. Donec vitae magna sit amet risus porta ultrices sit amet vel nisl. Integer a semper lectus, ut egestas nunc.
+  Welcome to MiTSO, a creative marketing consultancy based in Newry. We deliver
+  brand and digital services to local companies and work with global brands such
+  as Tesla, 3 and Manchester City F.C.
+
+
+  X brands and X digital campaigns, connecting you with the right customers at
+  the right time. 
+
+
+  Our clients benefit from our wealth of experience and refreshingly honest
+  approach. We keep things simple, we’re results focused and we’re ready to take
+  your business to new heights.
+text02: >
+  Feel free to browse our site or if you fancy entering our competition, fill in
+  your details below and we’ll keep you entertained with the latest insights and
+  campaigns from now on.
+
+
+  (Competition closes 8th July, 2019)
+mainImage: /assets/obelisk-01.jpg
+seo:
+  seoTitle: Takeoff
 ---
+

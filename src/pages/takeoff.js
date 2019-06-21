@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import Container from "../components/container"
@@ -12,7 +12,7 @@ import Play from "../images/icons/play-button.svg"
 import YouTube from "react-youtube"
 import Close from "../images/icons/close.svg"
 import MailchimpSubscribe from "react-mailchimp-subscribe"
-import { BLACK, SECONDARY, FONT_BOLD } from "../variables"
+import { BLACK, SECONDARY, FONT_BOLD, ACCENT } from "../variables"
 import Button from "../components/button"
 
 // https://github.com/react-ga/react-ga
@@ -30,6 +30,8 @@ const CustomForm = ({ status, message, onValidated }) => {
       LNAME: lname.value,
       MMERGE3: company.value,
     })
+
+  const [valid, setValid] = useState(false)
 
   return (
     <Form>
@@ -73,9 +75,21 @@ const CustomForm = ({ status, message, onValidated }) => {
         ref={node => (email = node)}
         type="email"
       />
-      <Box mt={4}>
-        <Button onClick={submit}>Sign Up to Mailing List</Button>
-      </Box>
+
+      <Flex alignItems="center" mt={4}>
+        <Tick valid={valid} onClick={() => setValid(!valid)} mr={3} />
+        <Text>
+          Please confirm you have read our{" "}
+          <TextLink to="/privacy-policy">Privacy Policy</TextLink> before
+          submitting your details
+        </Text>
+      </Flex>
+
+      {valid && (
+        <Box mt={4}>
+          <Button onClick={submit}>Sign Up to Mailing List</Button>
+        </Box>
+      )}
     </Form>
   )
 }
@@ -259,6 +273,31 @@ const Label = styled.label`
   line-height: 1.4;
   margin-top: 16px;
   margin-bottom: 16px;
+`
+
+const Tick = styled(Box)`
+  background: ${props => (props.valid ? `${ACCENT}` : `white`)};
+  height: 20px;
+  width: 20px;
+  border-radius: 7px;
+  border: 5px solid white;
+
+  &:hover {
+    cursor: pointer;
+  }
+`
+
+const Text = styled.p`
+  margin-top: 0;
+  margin-bottom: 0;
+`
+
+const TextLink = styled(Link)`
+  color: ${SECONDARY};
+
+  &:hover {
+    color: ${ACCENT};
+  }
 `
 
 export const query = graphql`

@@ -23,11 +23,15 @@ text02: >-
 statementImage: /assets/rm-brands-.jpg
 statement: >-
   Branding is the critical start point for communicating your identity and
-  creating a lasting impression
+  creating a lasting impression for your customers
 serviceText: >-
-  First, we create a brand strategy based on your company ethos and customer.
-  Then, we offer a range of bespoke services to develop a new identity for your
-  business.
+  Every company is entirely unique and we approach every project entirely
+  differently. It is this uniqueness that helps us to develop a brand strategy
+  alongside you. The fun really starts when we get creative, we brainstorm and
+  we deliver a visual representation of your business that will cut through the
+  noise and outshine your competitors. We continue to work with our clients
+  providing graphic design services and a number of brand materials that will
+  allow you to promote your business both online and offline.
 listOfServices:
   - Service: Brand development
   - Service: Packaging

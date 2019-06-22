@@ -13,28 +13,31 @@ intro: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
   auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin
 text01: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus ante
-  lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec
-  euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
-  eros, a volutpat urna commodo lobortis.
+  Digital. It’s in our DNA and it should be in yours. We exist now in a world
+  that is driven by digital media and technology. Your customers are online 24/7
+  and even the smallest, local businesses can grow globally. It’s our job to
+  help you do that.
 text02: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus ante
-  lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec
-  euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
-  eros, a volutpat urna commodo lobortis.
+  We understand that your customers are becoming more diverse both
+  demographically and geographically. As talented digital marketing experts, we
+  begin by delving deeper into your target audience and understanding how best
+  to reach them. Our digital campaigns are designed around the customer - get to
+  know them and they will get to know you.   
 statementImage: /assets/1bbacde6-1a3d-40d9-84b5-272d7b3179a4.jpeg
 statement: >-
   A digital presence is essential for targeting and engaging with your audience
-  to build long term relationships
+  and build long term relationships
 serviceText: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam
-  malesuada libero, quis sodales lorem
+  Our strategic approach ensures that digital activity is properly planned and
+  executed and our digital campaigns are built to achieve maximum return on
+  investment. We choose channels wisely and design content which resonates with
+  your target customer
 listOfServices:
   - Service: Digital Strategy
-  - Service: Advertising
-  - Service: Social Media
-  - Service: Email Marketing
-  - Service: Analytics
-  - Service: Service 06
+  - Service: Pay Per Click Advertising
+  - Service: Social Media Management
+  - Service: Social Media Advertising
+  - Service: Email marketing
+  - Service: Digital Analytics
 ---
 

@@ -25,12 +25,13 @@ text02: >-
 statementImage: /assets/1bbacde6-1a3d-40d9-84b5-272d7b3179a4.jpeg
 statement: >-
   A digital presence is essential for targeting and engaging with your audience
-  and build long term relationships
+  to build long term relationships
 serviceText: >-
   Our strategic approach ensures that digital activity is properly planned and
   executed and our digital campaigns are built to achieve maximum return on
-  investment. We choose channels wisely and design content which resonates with
-  your target customer
+  investment. We design content which resonates with your target customer and
+  choose channels wisely to attract, convert and retain customers from across
+  the globe.
 listOfServices:
   - Service: Digital Strategy
   - Service: Pay Per Click Advertising

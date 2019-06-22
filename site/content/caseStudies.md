@@ -15,9 +15,7 @@ clientLogos:
   - Logo: /assets/at-makeup.png
   - Logo: /assets/cmd.jpg
   - Logo: /assets/dp-fitness.png
-  - Logo: /assets/robert-m.jpg
   - Logo: /assets/roswick.jpg
-  - Logo: /assets/sweeney-todd.png
   - Logo: /assets/sweeney-todd.png
   - Logo: /assets/the-wheel-company.jpg
   - Logo: /assets/treemetrics.jpg

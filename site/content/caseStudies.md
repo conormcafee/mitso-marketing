@@ -20,5 +20,6 @@ clientLogos:
   - Logo: /assets/the-wheel-company.jpg
   - Logo: /assets/treemetrics.jpg
   - Logo: /assets/b8c3b59b-ffd2-4b37-8599-9205d231626c.jpeg
+  - Logo: /assets/a622156b-6609-4b6e-b38c-9de116343cd9.jpeg
 ---
 

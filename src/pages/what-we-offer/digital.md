@@ -19,10 +19,9 @@ text01: >-
   help you do that.
 text02: >-
   We understand that your customers are becoming more diverse both
-  demographically and geographically. As talented digital marketing experts, we
-  begin by delving deeper into your target audience and understanding how best
-  to reach them. Our digital campaigns are designed around the customer - get to
-  know them and they will get to know you.   
+  demographically and geographically. As talented digital marketing experts, our
+  digital campaigns are built around the customer - get to know them and they
+  will get to know you.   
 statementImage: /assets/1bbacde6-1a3d-40d9-84b5-272d7b3179a4.jpeg
 statement: >-
   A digital presence is essential for targeting and engaging with your audience

@@ -23,7 +23,7 @@ text02: >-
 statementImage: /assets/rm-brands-.jpg
 statement: >-
   Branding is the critical start point for communicating your identity and
-  creating a lasting impression on your customers
+  leaving a lasting impression on your customers
 serviceText: >-
   Every company is entirely unique and we approach every project entirely
   differently. It is this uniqueness that helps us to develop a brand strategy

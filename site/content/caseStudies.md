@@ -23,5 +23,6 @@ clientLogos:
   - Logo: /assets/136211b3-296b-46a7-987a-fc0c6222feea.jpeg
   - Logo: /assets/49cd52c8-d510-44f9-ab82-42e177f5a230.jpeg
   - Logo: /assets/98138e4c-858b-4bfa-be88-d85135b8adf6.jpeg
+  - Logo: /assets/057f5608-118e-415f-b1f2-5c1090744321.jpeg
 ---
 

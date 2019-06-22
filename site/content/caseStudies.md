@@ -21,6 +21,6 @@ clientLogos:
   - Logo: /assets/sweeney-todd.png
   - Logo: /assets/the-wheel-company.jpg
   - Logo: /assets/treemetrics.jpg
-  - Logo: /assets/6ca14171-8462-4981-82fe-7ed5c7a66d9d.png
+  - Logo: /assets/4a70ef72-8c4f-487e-870e-904f5b742568.jpeg
 ---
 

@@ -30,7 +30,10 @@ statement: >-
 serviceText: >-
   As part of our strategic services, we assess where your business is now, where
   you want to be and it’s our job to close the gap between the two - setting a
-  range of tactics and actions to fulfil SMART objectives. 
+  range of tactics and actions to drive business growth. It’s important to
+  assess your product and service offering as well as your online performance,
+  to look at competitor activity and to understand how your customers behave in
+  an online environment.   
 listOfServices:
   - Service: Business development
   - Service: Market Research

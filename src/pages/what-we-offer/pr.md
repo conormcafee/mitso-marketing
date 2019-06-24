@@ -25,7 +25,7 @@ text02: >-
 statementImage: /assets/ulster-t-new.jpg
 statement: >-
   PR is key to gaining exposure amongst your target audience and elevating your
-  brand's reputation
+  brand's reputation to build trust
 serviceText: >-
   If you’re serious about building a reputable brand, we have a range of PR
   services to help you with that including media relations, stakeholder

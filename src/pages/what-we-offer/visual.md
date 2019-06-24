@@ -19,24 +19,27 @@ text01: >-
   will be video by 2020 (Statista) - most likely because we don’t have time to
   read anymore.
 text02: >-
-  Powerful imagery and video is vital in helping to establish your brand and to
-  tell your story. We have some of the best creatives in the business producing
-  strong and impactful imagery that will differentiate you from competitions and
-  help customers to understand your value proposition. 
+  Powerful imagery and video is vital in helping to establish your brand and
+  capturing your customers attention. We have some of the best creatives in the
+  business producing strong and impactful video and imagery that will
+  differentiate you from competitions and help customers to understand your
+  value proposition in an instant. 
 statementImage: /assets/visual-web-ipad.jpg
 statement: >-
   Powerful visual is fundamental to communicating your service offering in a
   meaningful and memorable way
 serviceText: >-
-  We work hard to create something special - we’re perfectionists understand
-  where and when to place this material in front or your target audience through
-  targeted digital advertising and promotional campaigns.
+  We work hard to create something special and to use it wisely to attract sales
+  - we’re perfectionists at heart. As digital marketing experts, we understand
+  where and when to place visual in front or your target audience through
+  targeted digital advertising and promotional campaigns. From drone or animated
+  videos through to corporate photography and video marketing, we cover it all.
 listOfServices:
-  - Service: Video
-  - Service: Photography
-  - Service: Interview preparation and management
-  - Service: Service 04
-  - Service: Service 05
-  - Service: Service 06
+  - Service: Video Marketing
+  - Service: Professsional Photography
+  - Service: 'Interview preparation '
+  - Service: Video Production
+  - Service: Corporate Photography
+  - Service: Video Animation
 ---
 

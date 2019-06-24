@@ -38,8 +38,8 @@ listOfServices:
   - Service: Website Development
   - Service: Ecommerce
   - Service: SEO
-  - Service: Website design
+  - Service: Website Design
   - Service: Copywriting
-  - Service: User experience
+  - Service: User Experience
 ---
 

@@ -15,19 +15,23 @@ intro: >-
 text01: >-
   Customers will only buy from your business when they know you, like you and
   trust you. As digital marketing specialists, we plan and execute campaigns
-  that let people know about you. As creatives, we provide content that
-  encourages engagement and likeness for your brand.
+  that let people know about you. As creatives, we generate content that
+  encourages engagement and positive connections with your brand.
 text02: >-
   Trust however can only be earned through intelligent messaging and a
-  professional tone of voice, connecting you with your ideal audience. 
+  professional tone of voice. This is achieved through consistent communications
+  across all channels and a genuine effort to build a brand that has integrity
+  and a solid foundation upon which to grow.
 statementImage: /assets/ulster-t-new.jpg
 statement: >-
   PR is key to gaining exposure amongst your target audience and elevating your
   brand's reputation
 serviceText: >-
-  Refining your message and honing your tone of voice is one of the most
-  important elements of marketing. We build and protect your brand through
-  consistent image.
+  If you’re serious about building a reputable brand, we have a range of
+  services to help you with that including media relations, stakeholder
+  engagement and event management. We believe in taking the time and effort to
+  refine your message and hone your voice and then its time to build connections
+  and widen your reach within industry and your customer base.
 listOfServices:
   - Service: Media Relations
   - Service: Event Management

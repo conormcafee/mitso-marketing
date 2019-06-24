@@ -13,28 +13,27 @@ intro: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
   auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin
 text01: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus ante
-  lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec
-  euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
-  eros, a volutpat urna commodo lobortis.
+  Customers will only buy from your business when they know you, like you and
+  trust you. As digital marketing specialists, we plan and execute campaigns
+  that let people know about you. As creatives, we provide content that
+  encourages engagement and likeness for your brand.
 text02: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus ante
-  lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec
-  euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
-  eros, a volutpat urna commodo lobortis.
+  Trust however can only be earned through intelligent messaging and a
+  professional tone of voice, connecting you with your ideal audience. 
 statementImage: /assets/ulster-t-new.jpg
 statement: >-
   PR is key to gaining exposure amongst your target audience and elevating your
   brand's reputation
 serviceText: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam
-  malesuada libero, quis sodales lorem
+  Refining your message and honing your tone of voice is one of the most
+  important elements of marketing. We build and protect your brand through
+  consistent image.
 listOfServices:
-  - Service: PR
+  - Service: Media Relations
   - Service: Event Management
-  - Service: Service 03
-  - Service: Service 04
-  - Service: Service 05
-  - Service: Service 06
+  - Service: Corporate Communications
+  - Service: Interview Preparation
+  - Service: Stakeholder engagement
+  - Service: Guerilla Marketing
 ---
 

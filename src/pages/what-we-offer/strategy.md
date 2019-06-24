@@ -15,14 +15,17 @@ intro: >-
   euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
   eros, a volutpat urna commodo lobortis.
 text01: >-
-  We don’t spend a penny of your money until we properly assess your business
-  and your customers to understand some of the opportunities and obstacles that
-  exist. A digital strategy is essential in being able to focus your investment
-  in the right way and to set marketing objectives which are properly tracked.
+  Setting a digital strategy is essential in being able to focus your marketing
+  investment in the right way and to set objectives which are properly tracked.
+  Our promise is that we will always assess our clients business and customers
+  to understand some of the opportunities and obstacles that exist, prior to
+  spending any money.
 text02: >-
   Quite often, we uncover issues with your product or customer service delivery
   for example and we would always recommend tending to those issues first or at
-  least in parallel with any progression with digital marketing.
+  least in parallel with any digital progression. Often the smallest changes can
+  have the biggest impact but without intelligent, strategic thinking, your
+  investment will may be spread across the wrong digital or offline channels.
 statementImage: /assets/strategy-website.jpg
 statement: >-
   A solid strategy ensures you are utilising the correct channels to reach your
@@ -30,10 +33,11 @@ statement: >-
 serviceText: >-
   As part of our strategic services, we assess where your business is now, where
   you want to be and it’s our job to close the gap between the two - setting a
-  range of tactics and actions to drive business growth. It’s important to
-  assess your product and service offering as well as your online performance,
-  to look at competitor activity and to understand how your customers behave in
-  an online environment.   
+  range of digital and sales tactics and actions to drive business growth. It’s
+  important to assess your product and service offering as well as your online
+  performance, to look at competitor activity and to understand how your
+  customers behave in an online environment. We force you to assess your
+  business honestly and subjectively and we’re not shy about it.
 listOfServices:
   - Service: Business development
   - Service: Market Research

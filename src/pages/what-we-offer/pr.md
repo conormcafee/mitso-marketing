@@ -22,7 +22,7 @@ text02: >-
   lacinia, rhoncus nisi at, feugiat lacus. Donec ac volutpat augue. Donec
   euismod nunc augue, iaculis fermentum augue rutrum at. Morbi convallis quam
   eros, a volutpat urna commodo lobortis.
-statementImage: /assets/ulster-tatler-cmd-for-web.jpg
+statementImage: /assets/ulster-t-new.jpg
 statement: >-
   PR is key to gaining exposure amongst your target audience and elevating your
   brand's reputation

@@ -12,7 +12,7 @@ intro: >-
   relaunched and.
 mainImage: /assets/mitso-blog.jpg
 ---
-The new bolder, brighter look, a nod to our fresh approach and confidence, has been a long time in the making. We’ve been beavering away for months, sketching, strategising and simplying our company mission.
+The new bolder, brighter look, a nod to our fresh approach and confidence, has been a long time in the making. We’ve been beavering away for months, sketching, strategising and simplifying our company mission.
 
 In that time, we have also worked on some amazing global projects, expanded our team and we’ll be moving into a shiny new office very soon. 
 

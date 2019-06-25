@@ -54,8 +54,9 @@ text: >-
   testing purposes. 
 
 
-  We do not sell or share information with third parties. We may provide
-  non-personal data to third parties on an anonymised and aggregated basis.
+  We use named third-party service providers to process and store user data.
+  This includes MailChimp which we use to manage email marketing subscriber
+  lists and send promotional emails to our subscribers.  
 
 
   If you enter our competitions on social media, we may collect information

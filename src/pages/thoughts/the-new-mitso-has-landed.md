@@ -10,7 +10,7 @@ intro: >-
   The day has finally arrived - the new MiTSO has just landed. Complete with a
   new brand identity, website and digital makeover, the company has officially
   relaunched and.
-mainImage: /assets/db25f80c-9648-4429-a8c4-1eaf22b14bf3.jpeg
+mainImage: /assets/mitso-blog.jpg
 ---
 The new bolder, brighter look, a nod to our fresh approach and confidence, has been a long time in the making. We’ve been beavering away for months, sketching, strategising and simplying our company mission.
 

@@ -23,9 +23,9 @@ testimonial: >-
   intelligent, forward thinking company who I look forward to working with again
   soon Mags Byrne, Owner, First for EPlayers
 ---
-EStars featuring Fortnite, toured some of the biggest sports stadiums in the UK and Ireland from January to March 2019. Thousands of avid Fortnite fans and gaming enthusiasts took part in the hope of winning £25,000.
+EStars featuring Fortnite toured some of the biggest sports stadiums in the UK and Ireland from January to March 2019. Thousands of avid Fortnite fans and gaming enthusiasts took part in the hope of winning £25,000. [Watch here >>>](https://vimeo.com/328684967/33216b8ae1)
 
-# Esports marketing and event management  
+# Esports marketing and event management
 
 We first began working with EStars in 2017 and provided marketing and event management services for its inaugural tournament, which culminated in the first ever major grassroots esports tournament in the 3 Arena, Dublin in May 2018.
 
@@ -35,7 +35,7 @@ We conducted market research initially to understand the game and its players an
 
 For EStars, it was important to continually deliver engaging and attractive content. We provided graphic design and videography services, managing all social channels for the duration of the tournament.
 
-## Results: 
+## Results:
 
 * Over 6,000 tickets sold
 * 97% increase in website traffic

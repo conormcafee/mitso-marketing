@@ -9,9 +9,9 @@ text01: >-
 text02: >-
   Established in 2016, we have since expanded our team of passionate, driven
   marketing professionals to deliver an unparalleled service offering both
-  locally and internationally. Our range of services includes website design,
-  brand development, social media marketing, digital advertising and event
-  management. 
+  locally and internationally. Our unique service offering coupled with our
+  relentless pursuit for positive results makes us the perfect choice for all of
+  your marketing needs. 
 seo:
   seoTitle: Who We Are
 title: We are a creative marketing consultancy

@@ -13,16 +13,16 @@ intro: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
   auctor magna et laoreet. Morbi ultrices quam sed nisi porttitor sollicitudin
 text01: >-
-  A digital shopfront, store, information hub, online brochure...it has so many
-  names and yet only one sole purpose, to increase visibility and sales.
-  Whatever way you think of it, we can’t promise your business will survive
-  without one. 
+  As consumers adapt to changing digital technology, they expect that at the
+  very least your business has a digital presence. Approximately 97% of
+  consumers go online to find a local business and when they get there they
+  expect to be able to engage and transact with you on your digital platforms.
 text02: >-
   A website opens up a world of possibilities for your business and changes your
-  outlook. Once a small business can go global with the touch of a button. We
-  specialise in all areas - web design, web development, Ecommerce and other
-  digital marketing specialities which help to drive traffic to your site such
-  as SEO and digital advertising.
+  outlook. Once a small business can go global with the touch of a button and
+  this can be completely transformative. At MiTSO, we design and develop
+  websites that are simple, visually appealing and offer excellent user
+  navigation. 
 statementImage: /assets/st-web-jpg.jpg
 statement: >-
   A professional website enhances your brand's credibility by creating an
@@ -32,8 +32,8 @@ serviceText: >-
   range of website development services ensure that users can easily find you
   and easily find information, products or services you offer on your site. It
   sounds simple but really it takes digital marketing expertise and lots of
-  creative and analytics thinking to create something special and we’re here to
-  do just that.
+  creativity and analytical thinking to create something special and we’re here
+  to do just that.
 listOfServices:
   - Service: Website Development
   - Service: Ecommerce

@@ -22,10 +22,9 @@ text01: >-
   spending any money.
 text02: >-
   Quite often, we uncover issues with your product or customer service delivery
-  for example and we would always recommend tending to those issues first or at
-  least in parallel with any digital progression. Often the smallest changes can
-  have the biggest impact but without intelligent, strategic thinking, your
-  investment will may be spread across the wrong digital or offline channels.
+  and we always recommend tending to those first prior to any digital
+  progression. Without intelligent, strategic thinking, your investment will may
+  be spread across the wrong digital or offline channels.
 statementImage: /assets/strategy-website.jpg
 statement: >-
   A solid strategy ensures you are utilising the correct channels to reach your
@@ -36,8 +35,7 @@ serviceText: >-
   range of digital and sales tactics and actions to drive business growth. It’s
   important to assess your product and service offering as well as your online
   performance, to look at competitor activity and to understand how your
-  customers behave in an online environment. We force you to assess your
-  business honestly and subjectively and we’re not shy about it.
+  customers behave in an online environment. 
 listOfServices:
   - Service: Business development
   - Service: Market Research

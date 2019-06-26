@@ -9,9 +9,9 @@ text01: >-
 text02: >-
   Established in 2016, we have since expanded our team of passionate, driven
   marketing professionals to deliver an unparalleled service offering both
-  locally and internationally. Our unique service offering coupled with our
-  relentless pursuit for positive results makes us the perfect choice for all of
-  your marketing needs. 
+  locally and internationally. From global brands right down to small, rural
+  businesses, we relentlessly pursue results and excellent value for every
+  client we work with. 
 seo:
   seoTitle: Who We Are
 title: We are a creative marketing consultancy

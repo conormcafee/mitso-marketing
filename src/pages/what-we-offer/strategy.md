@@ -23,8 +23,8 @@ text01: >-
 text02: >-
   Quite often, we uncover issues with your product or customer service delivery
   and we always recommend tending to those first prior to any digital
-  progression. Without intelligent, strategic thinking, your investment will may
-  be spread across the wrong digital or offline channels.
+  progression. Without intelligent and strategic thinking, your investment will
+  may be spread across the wrong digital or offline channels.
 statementImage: /assets/strategy-website.jpg
 statement: >-
   A solid strategy ensures you are utilising the correct channels to reach your

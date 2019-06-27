@@ -12,7 +12,7 @@ intro: >-
   relaunched and.
 mainImage: /assets/mitso-blog.jpg
 ---
-The day has finally arrived - the new MiTSO has just landed. Complete with a new brand identity, website and digital makeover, the company has officially relaunched and.
+The day has finally arrived - the new MiTSO has just landed. Complete with a new brand identity, website and digital makeover, the company has officially relaunched.
 
 The new bolder, brighter look, a nod to our fresh approach and confidence, has been a long time in the making. We’ve been beavering away for months, sketching, strategising and simplifying our company mission.
 
@@ -26,6 +26,6 @@ Managing Director, Maeve Finnegan said: “Like any new startup, it’s a daunti
 
 Fast forward three years and we have built something I’m truly proud of. It is the perfect time for us to be relaunching the brand as we now have a great team of passionate marketing professionals and we know exactly who we are and where we’re going.
 
-We’ll continue to focus on domestic growth and will also work to secure more global contracts and high profile brand campaigns.”
+We’ll continue to focus on domestic growth and will also work to secure more global contracts and high profile campaigns. We’re a local company with global potential and now, we’re not shy about it.”
 
 To find out more about what we do, [visit our Services page](https://www.mitsomarketing.com/what-we-offer/brand/) or [Contact Us today](https://www.mitsomarketing.com/work-with-mitso) to arrange a free consultation.

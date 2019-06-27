@@ -8,7 +8,7 @@ intro: >-
   impactful campaigns that achieve long-term results. We are proud of what we
   have achieved, alongside our diverse range of clients.
 others: >-
-  We’re a one-stop shop for digital marketing, branding and other marketing and
+  We are a one-stop shop for digital marketing, branding and other marketing and
   business services. We help clients both large and small across a range of
   different industries, to achieve business goals.
 clientLogos:

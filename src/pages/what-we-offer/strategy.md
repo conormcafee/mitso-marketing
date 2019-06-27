@@ -17,7 +17,7 @@ intro: >-
 text01: >-
   Setting a digital strategy is essential in being able to focus your marketing
   investment in the right way and to set objectives which are properly tracked.
-  Our promise is that we will always assess our clients business and customers
+  Our promise is that we will always assess our client's business and customers
   to understand some of the opportunities and obstacles that exist, prior to
   spending any money.
 text02: >-

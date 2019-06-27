@@ -5,7 +5,7 @@ seo:
 title: We let our work speak for itself
 intro: >-
   We work with clients locally and globally, developing stand-out brands and
-  impactful campaigns that achieve long-term results. We’re proud of what we
+  impactful campaigns that achieve long-term results. We are proud of what we
   have achieved, alongside our diverse range of clients.
 others: >-
   We’re a one-stop shop for digital marketing, branding and other marketing and

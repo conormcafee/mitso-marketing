@@ -40,8 +40,8 @@ teamMember:
       University with a first class honors in Communication, Advertising and
       Marketing.
     where: >-
-      I spent my placement year working for Warner Bros. in London within the
-      EMEA Publicity Department on 20 high profile film releases. Following my
+      I spent my placement year working for Warner Bros, London, within the EMEA
+      Publicity Department on 20 high profile film releases. Following my
       placement I gained further experience in London with global advertising
       agency, Feref, in both PR and social media.
     why: >-

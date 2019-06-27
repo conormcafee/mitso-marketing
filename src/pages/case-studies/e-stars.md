@@ -5,7 +5,7 @@ seo:
   seoImage: /assets/e-stars.jpg
   seoTitle: EStars Title
 date: 2019-05-18T17:10:07.925Z
-title: E Stars
+title: EStars
 intro: >-
   EStars is an esports company offering grassroots esports tournaments across
   the UK and Ireland. We provided marketing and event management services for

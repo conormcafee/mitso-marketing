@@ -10,7 +10,7 @@ intro: >-
   The day has finally arrived - the new MiTSO has just landed. Complete with a
   new brand identity, website and digital makeover, the company has officially
   relaunched and.
-mainImage: /assets/mitso-blog.jpg
+mainImage: /assets/mitso-web.jpg
 ---
 The day has finally arrived - the new MiTSO has just landed. Complete with a new brand identity, website and digital makeover, the company has officially relaunched.
 

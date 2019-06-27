@@ -29,15 +29,15 @@ Robert Mizzell is famous for his beautiful country vocals and yankee hits and he
 
 # Brand development, social media management and e-marketing
 
-As with all of our clients, we start by getting to know our clients and gathering in-depth informaiotn on their ideal customer, or in this case fan. Robert is well established so we understood our role from the beginning was not primarily about brand awareness, growing his fanbase and allowing Robert’s personality to shine through.
+As with all of our clients, we start by getting to know our clients and gathering in-depth information on their ideal customer, or in this case, fan. Robert is well established so we understood our role from the beginning was not primarily about brand awareness, growing his fanbase and allowing Robert’s personality to shine through.
 
 This wasn’t just any branding exercise, it was unique in that we needed to deliver something that would work both on smaller digital formats, whilst still being big and bold enough to create impact on stage. 
 
-We developed a number of concepts for Robert to choose from and wittled it down to two - in the end we developed something which we felt was modern, yet still authentic. 
+We developed a number of concepts for Robert to choose from and whittled it down to two - in the end we developed something which we felt was modern, yet still authentic. 
 
 In parallel, we worked along with Robert’s management team to create and organise social content, with the aim of growing Robert’s social following and engagement rates. Live video content, vlogs, gig updates and asking fans for feedback in posts allowed us to start testing content and bringing his social channels to the next level. We also ran targeted Facebook ad campaigns for particular gigs or tours.
 
-To launch the brand, we also co-ordinated a live logo reveal from Robert’s stage, created new merchandise and ran a social competition to generate new email subscribers for a new monthly e-newsletter which features exclusive content.
+To launch the brand, we also co-ordinated a live logo reveal from Robert’s stage, created new merchandise and ran a social media competition to generate new email subscribers for a new monthly e-newsletter which features exclusive content.
 
 ## Results
 

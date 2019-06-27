@@ -30,8 +30,8 @@ serviceText: >-
   If you’re serious about building a reputable brand, we have a range of PR
   services to help you with that including media relations, stakeholder
   engagement and event management. We believe in taking the time and effort to
-  refine your message and hone your voice and then its time to build connections
-  and widen your reach within industry and your customer base.
+  refine your message and hone your voice and then it's time to build
+  connections and widen your reach within industry and your customer base.
 listOfServices:
   - Service: Media Relations
   - Service: Event Management

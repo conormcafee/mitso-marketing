@@ -33,7 +33,7 @@ teamMember:
       on another flight. What you also may not know about Roisin is that she has
       8 All-Ireland medals for playing the accordion.
     what: >-
-      I work with our clients to plan, develop and implement effective marketing
+      I work with clients to plan, develop and implement effective marketing
       communication campaigns in order to achieve business growth.
     when: >-
       I joined MiTSO in October 2018 shortly after graduating from Ulster

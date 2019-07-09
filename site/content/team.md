@@ -58,9 +58,8 @@ teamMember:
       Enterprise Rent-A-Car Ireland to achieve the Management Qualification
       Interview.
     what: >-
-      I assist the team with enhancing clients’ marketing campaigns and
-      coordinate internal marketing to increase online traffic and generate
-      leads.
+      I assist the team with coordinating and enhancing clients’ marketing
+      campaigns to increase online traffic and generate leads.
     when: >-
       I joined MiTSO in March 2019 as a placement student and I am currently
       studying MSc Marketing in Queen’s University Belfast.

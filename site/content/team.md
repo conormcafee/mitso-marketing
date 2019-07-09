@@ -12,7 +12,7 @@ teamMember:
       professional dancer with “Riverdance - The Show” for 4 years.
     what: >-
       I develop strong relationships with each and every client and work with my
-      team to help smash your business goals.
+      team to help you smash your business goals.
     when: >-
       I created MiTSO because I believed there was a gap in the market for
       marketing consultancies who could deliver one-to-one marketing support for

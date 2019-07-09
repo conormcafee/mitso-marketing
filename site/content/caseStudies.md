@@ -8,9 +8,9 @@ intro: >-
   impactful campaigns that achieve long-term results. We are proud of what we
   have achieved, alongside our diverse range of clients.
 others: >-
-  We are a one-stop shop for digital marketing, branding and other marketing and
-  business services. We help clients both large and small across a range of
-  different industries, to achieve business goals.
+  We are a one-stop shop for digital marketing, branding and business services.
+  We help clients both large and small across a range of different industries,
+  to achieve business goals.
 clientLogos:
   - Logo: /assets/at-makeup.png
   - Logo: /assets/cmd.jpg

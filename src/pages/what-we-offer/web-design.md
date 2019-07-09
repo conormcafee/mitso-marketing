@@ -18,10 +18,10 @@ text01: >-
   consumers go online to find a local business and when they get there they
   expect to be able to engage and transact with you on your digital platforms.
 text02: >-
-  A website opens up a world of possibilities for your business and changes your
-  outlook. Once a small business can go global with the touch of a button and
-  this can be completely transformative. At MiTSO, we design and develop
-  websites that are simple, visually appealing and offer excellent user
+  A website opens up a world of possibilities for your business. A small
+  business can go global with the touch of a button and this can be completely
+  transformative for the growth of your customer base. At MiTSO, we design and
+  develop websites that are simple, visually appealing and offer excellent user
   navigation. 
 statementImage: /assets/st-web-jpg.jpg
 statement: >-

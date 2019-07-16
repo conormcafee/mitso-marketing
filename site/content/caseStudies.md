@@ -1,7 +1,7 @@
 ---
 category: noPage
 seo:
-  seoTitle: Case Studies
+  seoTitle: Our Work
 title: We let our work speak for itself
 intro: >-
   We work with clients locally and globally, developing stand-out brands and
@@ -25,4 +25,3 @@ clientLogos:
   - Logo: /assets/98138e4c-858b-4bfa-be88-d85135b8adf6.jpeg
   - Logo: /assets/057f5608-118e-415f-b1f2-5c1090744321.jpeg
 ---
-

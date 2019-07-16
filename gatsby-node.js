@@ -74,17 +74,32 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-exports.onCreateWebpackConfig = ({ actions, stage }) => {
+exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+  const config = getConfig()
+
+  let newConfig = {
+    ...config,
+    module: {
+      ...config.module,
+      noParse: /(mapbox-gl)\.js$/,
+    },
+  }
+
   if (stage === "build-html") {
-    actions.setWebpackConfig({
+    newConfig = {
+      ...newConfig,
       module: {
+        ...newConfig.module,
         rules: [
+          ...newConfig.module.rules,
           {
-            test: /mapbox-gl/,
-            use: ["null-loader"],
+            test: /(mapbox-gl)\.js$/,
+            loader: "null-loader",
           },
         ],
       },
-    })
+    }
   }
+
+  actions.replaceWebpackConfig(newConfig)
 }

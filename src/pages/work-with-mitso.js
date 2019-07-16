@@ -11,13 +11,14 @@ import { BLACK, ACCENT, FONT_BOLD, WHITE } from "../variables"
 import ReactMapboxGl, { Marker } from "react-mapbox-gl"
 import MarkerIcon from "../images/icons/marker.svg"
 
+const Map = ReactMapboxGl({
+  accessToken:
+    "pk.eyJ1IjoiY29ub3JtY2FmZWUiLCJhIjoiY2p5NjV2dHl6MGR1MDNjbXZuODdqcmIyYSJ9.Fo-JM0lzBdG2SNRpzqpOkw",
+})
+
 export default ({ data }) => {
   const { title, intro, seo } = data.file.childMarkdownRemark.frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
-  const Map = ReactMapboxGl({
-    accessToken:
-      "pk.eyJ1IjoiY29ub3JtY2FmZWUiLCJhIjoiY2p5NjV2dHl6MGR1MDNjbXZuODdqcmIyYSJ9.Fo-JM0lzBdG2SNRpzqpOkw",
-  })
   return (
     <Layout dottedBackground>
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />

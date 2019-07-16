@@ -32,9 +32,7 @@ const ListCaseStudies = props => {
             <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
               <h2>Our Work</h2>
               <p>{intro}</p>
-              <Button onClick={() => navigate("/case-studies")}>
-                All Case Studies
-              </Button>
+              <Button onClick={() => navigate("/our-work")}>All Work</Button>
             </Box>
           )}
         </Flex>
@@ -53,9 +51,7 @@ const ListCaseStudies = props => {
             <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
               <h3>Others We've Worked With</h3>
               <p>{others}</p>
-              <Button onClick={() => navigate("/case-studies")}>
-                All Case Studies
-              </Button>
+              <Button onClick={() => navigate("/our-work")}>All Work</Button>
             </Box>
             <Box width={[1, 1, 2 / 3]} px={[3, 4]} mt={[4, 4, 0]} mb={[4, 0]}>
               <Flex flexWrap="wrap">

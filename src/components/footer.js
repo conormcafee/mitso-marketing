@@ -139,8 +139,8 @@ const QUICK_LINKS = [
     url: "/thoughts",
   },
   {
-    title: "Case Studies",
-    url: "/case-studies",
+    title: "Our Work",
+    url: "/our-work",
   },
   {
     title: "Work with MiTSO",

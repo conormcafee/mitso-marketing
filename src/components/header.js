@@ -103,7 +103,7 @@ const NAV_DATA = [
     dropdown: true,
   },
   { label: "Thoughts", url: "/thoughts", type: "link" },
-  { label: "Case Studies", url: "/case-studies", type: "link" },
+  { label: "Our Work", url: "/our-work", type: "link" },
   {
     label: "Work with MiTSO",
     url: "/work-with-mitso",

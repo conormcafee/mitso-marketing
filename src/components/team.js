@@ -25,7 +25,7 @@ const Team = props => {
 
   return (
     <React.Fragment>
-      <TeamWrapper mt={6}>
+      <TeamWrapper mt={props.noMargin ? 0 : 6}>
         <Container>
           <Box pt={[3, 4]} px={[3, 4]} mt={[3, 3, 3]}>
             <h2>
@@ -98,8 +98,11 @@ const Team = props => {
   )
 }
 
-export default () => (
-  <StaticQuery query={query} render={data => <Team data={data} />} />
+export default ({ noMargin }) => (
+  <StaticQuery
+    query={query}
+    render={data => <Team data={data} noMargin={noMargin} />}
+  />
 )
 
 export const query = graphql`

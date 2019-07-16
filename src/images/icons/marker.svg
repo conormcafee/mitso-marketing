@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="48px" viewBox="0 0 24 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>marker</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="marker" transform="translate(-21.000000, -13.000000)" fill="#3A405A">
+            <g transform="translate(32.361489, 35.102539) rotate(-320.000000) translate(-32.361489, -35.102539) translate(14.666016, 15.102539)">
+                <ellipse id="Oval" cx="11.9341564" cy="12.0987654" rx="11.9341564" ry="12.0987654"></ellipse>
+                <ellipse id="Oval-Copy" cx="24.4444444" cy="28.3127572" rx="5.67901235" ry="5.76131687"></ellipse>
+                <circle id="Oval-Copy-2" cx="32.4279835" cy="37.037037" r="2.96296296"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

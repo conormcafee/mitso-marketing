@@ -24,7 +24,7 @@ Social media can have an immense impact on a business, particularly when custome
 
 Here are some top tips from MiTSO on how to optimise your social media platforms:
 
-## **Optimise each social media profile** 
+## **Optimise each social media profile**
 
 Creating a standout profile on each channel will improve brand awareness and make it easier for people to know what you do. Be sure to specify your location, hours, the products or services you offer and any general information you think is relevant for your customer. 
 
@@ -34,17 +34,17 @@ Creating a standout profile on each channel will improve brand awareness and mak
 
 Consumers love nothing more than having a laugh on social media, providing quirky content ideas engages consumers and is sure to attract people to the business. 
 
-## **Use Social Media Advertisements** 
+## **Advertise** 
 
-It is important to understand the business objectives you are trying to achieve; this will help you develop targeted ad campaigns for specific celebrations such as Mother’s Day.  It requires minor investment however, it gains positive ROI.
+The recent change in the Facebook algorithm means it is much harder to achieve organic reach. We recommend setting aside a certain proportion of your budget to advertise  specific specific celebrations such as Mother’s Day via targeted campaigns. It requires minor investment however, it will have a positive long term impact by increasing revenue and attracting more followers. NB: Do not advertise on social media without setting SMART objectives first. 
 
-## **Request customer reviews** 
+## **Request customer reviews**
 
 Convincing customers to review your products will help increase brand awareness and engagement. For example, ask customers directly to review your restaurant, be sure to make it easy for them to leave a review and offer incentives for writing them. Remember to acknowledge the review and say thank you!
 
 ![](/assets/review-imageweb.jpg)
 
-## **Develop worthy photography and videography for social channels** 
+## **Develop worthy photography and videography for social channels**
 
 Facebook in particular guarantees higher engagement when high quality photos or videos are used, simple visual content attracts the eye and people are more likely to remember it than text. To ensure optimisation for the different platforms, make sure you are using the right image sizes for the various platforms. 
 

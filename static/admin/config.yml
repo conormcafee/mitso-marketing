@@ -26,8 +26,7 @@ collections:
       - {
           name: mainImage,
           label: Main Image,
-          widget: image,
-          default: /src/images/mitso-default.png,
+          widget: image
         }
       - { name: body, label: Body, widget: markdown }
       - {

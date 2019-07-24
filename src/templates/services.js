@@ -97,6 +97,7 @@ export const pageQuery = graphql`
   query($slug: String!) {
     allMarkdownRemark(
       filter: { frontmatter: { category: { eq: "Services" } } }
+      sort: { fields: [frontmatter___title], order: ASC }
     ) {
       edges {
         node {

@@ -7,7 +7,6 @@ import Layout from "../components/layout"
 import Container from "../components/container"
 import WorkWithMitso from "../components/workWithMitso"
 import Tags from "../components/Tags"
-import Share from "../components/Share"
 import { FONT_BOLD, BLACK, ACCENT } from "../variables"
 import Statement from "../components/Statement"
 import BackgroundImage from "../components/BackgroundImage"
@@ -84,10 +83,6 @@ const Template = props => {
           />
 
           {testimonial && <Statement statement={testimonial} />}
-
-          <Box mx="auto" mb={5} css={{ maxWidth: "700px" }}>
-            <Share url={props.location.href} />
-          </Box>
         </Box>
         <WorkWithMitso />
       </Container>

@@ -4,8 +4,8 @@ slide01title: We bring brands to life
 slide01text: >-
   Your brand is the core of your business and it is the starting point for all
   of our work - we build brands that are memorable and attract attention from
-  your ideal customer.  
-slide02title: 'We like simple,'
+  your ideal customer.
+slide02title: "We like simple"
 slide02text: >-
   We never over complicate, we get to the heart of the problem and solve it in
   the most cost effective and efficient way. No acronyms or fancy business
@@ -21,4 +21,3 @@ slide04text: >-
   respect because the best ideas come from the best minds and we welcome
   creativity, no matter where it comes from.
 ---
-

@@ -33,8 +33,6 @@ const Template = props => {
   let images = []
   imageBlock && imageBlock.map(item => images.push(item.Image))
 
-  console.log(testimonial)
-
   const _renderImageBlock = images => {
     let ib
     switch (images.length) {
@@ -85,7 +83,7 @@ const Template = props => {
             dangerouslySetInnerHTML={{ __html: text }}
           />
 
-          <Statement statement={testimonial} />
+          {testimonial && <Statement statement={testimonial} />}
 
           <Box mx="auto" mb={5} css={{ maxWidth: "700px" }}>
             <Share url={props.location.href} />

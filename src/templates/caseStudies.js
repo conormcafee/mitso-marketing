@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import WorkWithMitso from "../components/workWithMitso"
-import Tags from "../components/Tags"
 import { FONT_BOLD, BLACK, ACCENT } from "../variables"
 import Statement from "../components/Statement"
 import BackgroundImage from "../components/BackgroundImage"
@@ -58,7 +57,6 @@ const Template = props => {
         <Flex mb={5} px={[3, 4]}>
           <Hero>
             <Title>{title}</Title>
-            <Tags tags={["Case Study"]} />
           </Hero>
         </Flex>
 

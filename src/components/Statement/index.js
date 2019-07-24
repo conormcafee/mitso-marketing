@@ -57,8 +57,12 @@ const Text = styled.h3`
   margin-left: auto;
   margin-right: auto;
   color: white;
-  font-size: ${props => (props.isStatement ? `26px` : `20px`)};
+  font-size: 16px;
   line-height: 1.6;
+
+  @media only screen and (min-width: 768px) {
+    font-size: ${props => (props.isStatement ? `26px` : `20px`)};
+  }
 `
 
 const Dot = styled.span`

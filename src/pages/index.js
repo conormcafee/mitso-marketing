@@ -22,6 +22,7 @@ export default ({ data }) => {
     promote,
     brand,
     review,
+    thoughts,
     seo,
   } = data.file.childMarkdownRemark.frontmatter
 
@@ -122,7 +123,7 @@ export default ({ data }) => {
 
       {/* Thoughts */}
 
-      <Thoughts homepage />
+      <Thoughts homepage text={thoughts} />
     </Layout>
   )
 }
@@ -176,6 +177,7 @@ export const query = graphql`
           brand
           promote
           review
+          thoughts
           seo {
             seoTitle
             seoDescription

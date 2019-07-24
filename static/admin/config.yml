@@ -93,6 +93,7 @@ collections:
           - {label: Brand, name: brand, widget: text}
           - {label: Promote, name: promote, widget: text}
           - {label: Review, name: review, widget: text}
+          - {label: Thoughts, name: thoughts, widget: text}
   - name: whoWeAre
     label: Who We Are
     files: 

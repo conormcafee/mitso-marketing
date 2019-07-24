@@ -40,6 +40,7 @@ const Thoughts = props => {
   const navyWidth = homepage ? [1, 1, 2 / 3] : [1]
   const wrapping = homepage ? ["wrap", "wrap", "noWrap"] : "wrap"
   const blogCount = data.length
+  const thoughtsIntro = additional.text
 
   return (
     <Container>
@@ -50,13 +51,8 @@ const Thoughts = props => {
       >
         {homepage && (
           <Box width={[1, 1, 1 / 3]} mb={[5, 4, 0]} px={[3, 4]} pt={4}>
-            <h2>Thoughts</h2>
-            <p>
-              Take a look through our recents thoughts and ramblings. Along with
-              getting our thoughts out on this website, we are also active on
-              social media. Why don’t you give us a follow on your preferred
-              platform
-            </p>
+            <SubTitle>Thoughts</SubTitle>
+            <p>{thoughtsIntro}</p>
             <Button onClick={() => navigatePage("/thoughts")}>
               All Thoughts
             </Button>
@@ -118,4 +114,9 @@ const NavyBackground = styled(Box)`
   background-color: ${BLACK};
   border-radius: 8px;
   position: relative;
+`
+
+const SubTitle = styled.h2`
+  margin-top: 0;
+  margin-bottom: 0;
 `

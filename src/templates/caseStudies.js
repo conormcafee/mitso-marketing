@@ -33,6 +33,8 @@ const Template = props => {
   let images = []
   imageBlock && imageBlock.map(item => images.push(item.Image))
 
+  console.log(testimonial)
+
   const _renderImageBlock = images => {
     let ib
     switch (images.length) {

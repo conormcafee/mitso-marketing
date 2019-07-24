@@ -36,7 +36,7 @@ collections:
           widget: list,
           fields: [{ label: image, name: Image, widget: image }],
         }
-      - { name: testimonial, label: Testimonial, widget: text }
+      - { name: testimonial, label: Testimonial, widget: text, required: false }
   - name: posts
     label: Posts
     folder: src/pages/thoughts

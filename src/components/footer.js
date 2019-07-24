@@ -4,13 +4,13 @@ import styled from "styled-components"
 import { Flex } from "@rebass/grid"
 import Logo from "../images/mitso-logo.svg"
 import Facebook from "../images/icons/facebook.svg"
-import Twitter from "../images/icons/twitter.svg"
+import Instagram from "../images/icons/instagram.svg"
 import LinkedIn from "../images/icons/linkedin.svg"
 import { FONT_BOLD, BLACK, ACCENT } from "../variables"
 
 const Footer = ({ data, services }) => {
   const facebook = data.file.childMarkdownRemark.frontmatter.facebook
-  const twitter = data.file.childMarkdownRemark.frontmatter.twitter
+  const instagram = data.file.childMarkdownRemark.frontmatter.instagram
   const linkedin = data.file.childMarkdownRemark.frontmatter.linkedin
   return (
     <Wrapper
@@ -43,9 +43,9 @@ const Footer = ({ data, services }) => {
             <img src={Facebook} alt="Facebook" />
           </SocialLink>
         )}
-        {twitter && (
-          <SocialLink href={twitter} target="_blank">
-            <img src={Twitter} alt="Twitter" />
+        {instagram && (
+          <SocialLink href={instagram} target="_blank">
+            <img src={Instagram} alt="Instagram" />
           </SocialLink>
         )}
         {linkedin && (
@@ -71,7 +71,7 @@ const servicesQuery = graphql`
       childMarkdownRemark {
         frontmatter {
           facebook
-          twitter
+          instagram
           linkedin
         }
       }

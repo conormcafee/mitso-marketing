@@ -1,6 +1,6 @@
 ---
 category: noPage
 facebook: "https://facebook.com/mitsomarketing "
-twitter: "https://twitter.com/MiTSOMarketing"
+instagram: "https://www.instagram.com/mitsoltd/"
 linkedin: "https://www.linkedin.com/company/mitso"
 ---

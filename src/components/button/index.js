@@ -53,6 +53,11 @@ const Btn = styled.button`
   appearance: none;
   transition: background 150ms ease-in-out;
 
+  span {
+    transform: translateX(10px);
+    transition: transform 150ms ease-in-out;
+  }
+
   &:hover {
     cursor: pointer;
     background: ${props =>
@@ -62,15 +67,18 @@ const Btn = styled.button`
 
     img {
       transform: scale(1);
-      width: 10px;
+    }
+
+    span {
+      transform: translateX(0px);
     }
   }
 `
 
 const Icon = styled.img`
-  width: 0px;
+  width: 10px;
   transform: scale(0);
   margin-left: ${props => (props.reversed ? `0px` : `10px`)};
   margin-right: ${props => (props.reversed ? `10px` : `0px`)};
-  transition: transform 150ms ease-in-out, width 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 `

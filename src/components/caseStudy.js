@@ -9,7 +9,12 @@ const CaseStudy = props => {
   const { title, mainImage } = props.node.frontmatter
   const { slug } = props.node.fields
   return (
-    <Box as="article" width={[1, 1, 1 / 2, 1 / 3]} px={[0, 3, 4]} mb={[5, 5]}>
+    <Box
+      as="article"
+      width={[1, 1, 1 / 2, 1 / 3]}
+      px={[0, 3, 4]}
+      mb={[0, 5, 5]}
+    >
       <Link to={slug}>
         <Wrapper>
           <Image image={mainImage} />

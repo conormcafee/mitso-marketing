@@ -15,7 +15,7 @@ const ListCaseStudies = props => {
   const others = data.file.childMarkdownRemark.frontmatter.others
   const clientLogos = data.file.childMarkdownRemark.frontmatter.clientLogos
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const [windowWidth, setWindowWidth] = useState(0)
 
   const handleWindowResize = () => {
     setWindowWidth(window.innerWidth)

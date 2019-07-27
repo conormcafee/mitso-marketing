@@ -15,6 +15,8 @@ import Icon04 from "../images/icons/visual.svg"
 import Icon05 from "../images/icons/event-management.svg"
 import Icon06 from "../images/icons/pr.svg"
 
+import MitsoCircleWhite from "../images/icons/mitso-circle-white.svg"
+
 const IconPicker = number => {
   let icon
 
@@ -48,22 +50,21 @@ const WorkWithMitso = ({ data }) => {
   const services = data.allMarkdownRemark.edges
   const intro = data.file.childMarkdownRemark.frontmatter.intro
   return (
-    <Box as="section" bg={BLACK} p={[3, 4]} mx={-2}>
+    <Wrapper as="section" bg={BLACK} p={[3, 4]} mx={-2}>
       <Container>
-        <Flex flexWrap="wrap" alignItems="center" py={[3, 4]}>
-          <Box width={[1, 1, 1 / 3]} order={[1, 1, 2]} px={[3, 4]} mb={[3, 4]}>
-            <Box as="h2" color="white" mb={3}>
-              Work with MiTSO
-            </Box>
-            <Box as="p" color="white" mt={0} mb={4}>
-              {intro}
-            </Box>
-            <Button onClick={() => navigate("/work-with-mitso")}>
-              Start Project
-            </Button>
-          </Box>
-          <Box width={[1, 1, 2 / 3]} order={[2, 2, 1]} px={2}>
-            <WorkBox flexWrap="wrap">
+        <Flex
+          flexDirection="column"
+          flexWrap="wrap"
+          alignItems="center"
+          py={[3, 4]}
+        >
+          <Services width={[1, 1, 1, 3 / 4, 2 / 3]} px={2}>
+            <WorkBox
+              width={1}
+              flexWrap="wrap"
+              alignItems="center"
+              justifyContent="space-between"
+            >
               {services.map((service, index) => (
                 <ServiceLink
                   key={index}
@@ -73,10 +74,23 @@ const WorkWithMitso = ({ data }) => {
                 />
               ))}
             </WorkBox>
-          </Box>
+          </Services>
+
+          <WorkTextBox width={1} px={[3, 4]}>
+            <Box as="h2" color="white" mb={3}>
+              Work with MiTSO
+            </Box>
+            <Box as="p" color="white" mt={0} mb={4}>
+              {intro}
+            </Box>
+            <Button onClick={() => navigate("/work-with-mitso")}>
+              Start Project
+            </Button>
+          </WorkTextBox>
         </Flex>
       </Container>
-    </Box>
+      <WrapperBG src={MitsoCircleWhite} />
+    </Wrapper>
   )
 }
 
@@ -87,6 +101,44 @@ export default () => (
   />
 )
 
+const Wrapper = styled(Box)`
+  position: relative;
+`
+
+const WrapperBG = styled.img`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(25%, 25%);
+  max-height: 750px;
+`
+
+const Services = styled(Flex)`
+  background: white;
+  border-radius: 8px;
+  box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
+`
+
+const WorkTextBox = styled(Box)`
+  text-align: center;
+
+  h2,
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+`
+
+const WorkBox = styled(Flex)`
+  background-color: ${props => (props.bg ? `${props.bg}` : `transparent`)};
+  box-shadow: ${props =>
+    props.bg ? `-4px 6px 4px 0 rgba(0, 0, 0, 0.1)` : `none`};
+  overflow: hidden;
+
+  h3 {
+    text-align: center;
+  }
+`
 const servicesQuery = graphql`
   query {
     allMarkdownRemark(
@@ -113,25 +165,3 @@ const servicesQuery = graphql`
     }
   }
 `
-
-const WorkBox = styled(Flex)`
-  background-color: ${props => (props.bg ? `${props.bg}` : `transparent`)};
-  border-radius: 8px;
-  box-shadow: ${props =>
-    props.bg ? `-4px 6px 4px 0 rgba(0, 0, 0, 0.1)` : `none`};
-
-  h3 {
-    text-align: center;
-  }
-`
-
-// const ServiceLink = styled(Link)`
-//   width: 100%;
-//   padding: 24px;
-//   background: white;
-//   text-decoration: none;
-
-//   &:hover ${Title} {
-//     color: ${ACCENT};
-//   }
-// `

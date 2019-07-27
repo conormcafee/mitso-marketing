@@ -103,6 +103,7 @@ export default () => (
 
 const Wrapper = styled(Box)`
   position: relative;
+  overflow: hidden;
 `
 
 const WrapperBG = styled.img`

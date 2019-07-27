@@ -2,7 +2,7 @@ import React from "react"
 import { Box } from "@rebass/grid"
 import styled from "styled-components"
 
-const Image = ({ image }) => <Img image={image} />
+const Image = ({ image, pt }) => <Img pt={pt} image={image} />
 
 export default Image
 
@@ -11,5 +11,9 @@ const Img = styled(Box)`
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 120%;
+  padding-top: ${props => props.pt};
 `
+
+Image.defaultProps = {
+  pt: "120%",
+}

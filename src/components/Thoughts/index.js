@@ -46,11 +46,11 @@ const Thoughts = props => {
     <Container>
       <Flex
         flexWrap={["wrap", "wrap", "noWrap"]}
-        mt={homepage ? 6 : 5}
+        mt={homepage ? [0, 0, 6] : 5}
         as="section"
       >
         {homepage && (
-          <Box width={[1, 1, 1 / 3]} mb={[5, 4, 0]} px={[3, 4]} pt={4}>
+          <Box width={[1, 1, 1 / 3]} mb={4} px={[3, 4]} pt={4}>
             <SubTitle>Thoughts</SubTitle>
             <p>{thoughtsIntro}</p>
             <Button onClick={() => navigatePage("/thoughts")}>
@@ -60,7 +60,7 @@ const Thoughts = props => {
         )}
 
         <NavyBackground width={navyWidth} py={homepage ? [3, 3, 4] : 4}>
-          <Flex flexWrap={wrapping} px={[3]}>
+          <Flex flexWrap={wrapping} px={[0, 0, 3]}>
             {thoughts
               .slice(0, homepage ? 2 : subPage ? 3 : blogCount)
               .map((thought, index) => (
@@ -112,8 +112,12 @@ const thoughts = graphql`
 
 const NavyBackground = styled(Box)`
   background-color: ${BLACK};
-  border-radius: 8px;
   position: relative;
+
+  @media only screen and (min-width: 768px) {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
 `
 
 const SubTitle = styled.h2`

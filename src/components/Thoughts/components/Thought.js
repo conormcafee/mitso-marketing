@@ -9,7 +9,7 @@ const ThoughtCard = ({ title, author, text, img, link, width, mt, goTo }) => (
   <Box width={width} mt={mt} px={[3, 4]}>
     <Thought as="article">
       <figure>
-        <Image image={img} />
+        <Image image={img} pt="65.55%" />
         <figcaption>
           <Title>{title}</Title>
           <Author>by {author}</Author>

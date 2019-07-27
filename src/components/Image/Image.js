@@ -11,5 +11,5 @@ const Img = styled(Box)`
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 66.66%;
+  padding-top: 120%;
 `

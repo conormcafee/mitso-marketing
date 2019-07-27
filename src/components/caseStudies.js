@@ -30,13 +30,12 @@ const ListCaseStudies = props => {
         <Flex justifyContent={["flex-start", "flex-start", "flex-end"]}>
           {homepage && (
             <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
-              <h2>Our Work</h2>
+              <Heading>Our Work</Heading>
               <p>{intro}</p>
-              <Button onClick={() => navigate("/our-work")}>All Work</Button>
             </Box>
           )}
         </Flex>
-        <CaseStudies as="section" flexWrap="wrap" my={props.my ? props.my : 5}>
+        <CaseStudies as="section" flexWrap="wrap" my={props.my ? props.my : 3}>
           {_renderCaseStudies(caseStudies, homepage)}
         </CaseStudies>
       </Container>
@@ -49,7 +48,7 @@ const ListCaseStudies = props => {
             mb={6}
           >
             <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
-              <h3>Others We've Worked With</h3>
+              <Heading>Others We've Worked With</Heading>
               <p>{others}</p>
               <Button onClick={() => navigate("/our-work")}>All Work</Button>
             </Box>
@@ -134,4 +133,8 @@ const SmallLogo = styled.img`
 const MoreCaseStudies = styled(Flex)`
   position: relative;
   z-index: 1;
+`
+
+const Heading = styled.h2`
+  margin: 0;
 `

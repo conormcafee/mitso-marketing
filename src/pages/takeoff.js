@@ -221,7 +221,7 @@ const Modal = styled(Flex)`
   z-index: 100;
 `
 
-const CloseButton = styled(Button)`
+const CloseButton = styled.button`
   position: absolute;
   top: 20px;
   right: 20px;

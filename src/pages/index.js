@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import { navigate, graphql } from "gatsby"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
@@ -10,44 +10,30 @@ import CaseStudies from "../components/caseStudies"
 import WorkWithMitso from "../components/workWithMitso"
 import Thoughts from "../components/Thoughts"
 import Dot from "../components/Dot"
-import { BLACK } from "../variables"
-import MitsoCircle from "../images/backgrounds/mitso-circle.svg"
-
+import Tagline from "../components/tagline"
 import HomepageHero from "../images/homepage-hero.jpg"
+import Play from "../images/icons/play-button.svg"
+import Close from "../images/icons/close.svg"
+import YouTube from "react-youtube"
 
 export default ({ data }) => {
+  const [modal, setModal] = useState(false)
   const {
     title,
-    plan,
-    promote,
-    brand,
-    review,
+    youtube,
     thoughts,
     seo,
   } = data.file.childMarkdownRemark.frontmatter
-
   const { seoTitle, seoDescription, seoImage } = seo
-
-  const WHO_WE_ARE = [
-    {
-      title: "We Plan",
-      text: plan,
+  const opts = {
+    height: "390",
+    width: "640",
+    playerVars: {
+      autoplay: 1,
     },
-    {
-      title: "We Brand",
-      text: brand,
-    },
-    {
-      title: "We Promote",
-      text: promote,
-    },
-    {
-      title: "We Review",
-      text: review,
-    },
-  ]
+  }
   return (
-    <Layout>
+    <Layout dottedBackground>
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />
       <Container>
         <Intro
@@ -55,63 +41,27 @@ export default ({ data }) => {
           flexWrap={["wrap"]}
           alignItems={"center"}
           justifyContent={"space-between"}
-          mb={[5, 6]}
+          mb={[3, 4]}
         >
-          <HeroContent px={[3, 4]} mb={6} width={[1, 1 / 2]}>
+          <HeroContent px={[3, 4]} mb={[4, 6]} width={[1, 1 / 2]}>
             <h1>
               {title}
               <Dot />
             </h1>
-            <Button onClick={() => navigate("/work-with-mitso")}>
-              Work with MiTSO
-            </Button>
+            <Button onClick={() => navigate("/who-we-are")}>Who We Are</Button>
           </HeroContent>
           <Hero as="figure" px={[3, 4]} width={[1, 1 / 2]}>
             <img src={HomepageHero} alt="Welcome to MiTSO" />
+
+            <VideoButton onClick={() => setModal(!modal)}>
+              <img src={Play} alt="Play Video" />
+            </VideoButton>
           </Hero>
         </Intro>
-        <Circle src={MitsoCircle} alt="Circle Page Stylinh" />
       </Container>
 
       {/* Who WE Are */}
-      <Container>
-        <Flex
-          as="section"
-          flexWrap={["wrap", "wrap", "nowrap"]}
-          pb={6}
-          px={[3, 4]}
-        >
-          <Flex
-            as="aside"
-            width={[1, 1, 1 / 4]}
-            pr={[3, 4]}
-            mb={3}
-            flexDirection="column"
-            alignItems="flex-start"
-            justifyContent={["flex-start", "flex-start", "flex-end"]}
-          >
-            <WhoWeAreHeading>Who We Are</WhoWeAreHeading>
-            <Button onClick={() => navigate("/who-we-are")}>Learn More</Button>
-          </Flex>
-          <WhoWeAre
-            as="article"
-            flexWrap={["wrap", "wrap", "wrap"]}
-            width={[1, 1, 3 / 4]}
-            p={[3, 4]}
-            css={{ background: BLACK }}
-          >
-            {WHO_WE_ARE.map((block, index) => (
-              <Box width={["auto", 1 / 2]} px={[3, 4]} key={index}>
-                <WhoWeAreSubHeading>
-                  {block.title}
-                  <Dot />
-                </WhoWeAreSubHeading>
-                <p>{block.text}</p>
-              </Box>
-            ))}
-          </WhoWeAre>
-        </Flex>
-      </Container>
+      <Tagline />
 
       {/* Case Studies */}
 
@@ -124,12 +74,31 @@ export default ({ data }) => {
       {/* Thoughts */}
 
       <Thoughts homepage text={thoughts} />
+
+      {modal && (
+        <Modal alignItems="center" justifyContent="center">
+          <CloseButton onClick={() => setModal(!modal)}>
+            <img src={Close} alt="CLose" />
+          </CloseButton>
+          <YouTube videoId={youtube} opts={opts} />
+        </Modal>
+      )}
     </Layout>
   )
 }
 
-const WhoWeAreHeading = styled.h2`
-  margin-bottom: 16px;
+const pulse = keyframes`
+  0% {
+    transform: translateX(50%) translateY(50%) scale(1);
+  }
+
+  50% {
+     transform: translateX(50%) translateY(50%) scale(1.2);
+  }
+
+  100% {
+    transform: translateX(50%) translateY(50%) scale(1)
+  }
 `
 
 const Intro = styled(Flex)`
@@ -141,30 +110,50 @@ const Intro = styled(Flex)`
 
 const Hero = styled(Box)`
   position: relative;
-  @media only screen and (max-width: 600px) {
-    display: none;
-  }
 `
-const WhoWeAre = styled(Flex)`
-  color: #ffffff;
-  border-radius: 7px;
-`
-
-const WhoWeAreSubHeading = styled.h3`
-  color: #ffffff;
-`
-
-const Circle = styled.img`
-  position: absolute;
-  left: 0;
-  top: 0;
-  max-width: 100%;
-  transform: translate(-50%, 50%);
-`
-
 const HeroContent = styled(Box)`
   position: relative;
   z-index: 1;
+`
+
+const VideoButton = styled.button`
+  position: absolute;
+  appearance: none;
+  background: transparent;
+  border: none;
+  height: 150px;
+  width: 150px;
+  left: calc(50% - 150px);
+  top: calc(50% - 150px);
+  transform: translateX(50%) translateY(50%);
+  animation: ${pulse} 2000ms infinite ease-in-out;
+`
+
+const Modal = styled(Flex)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(58, 64, 90, 0.9);
+  z-index: 100;
+`
+
+const CloseButton = styled.button`
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    transform: scale(0.75);
+  }
 `
 
 export const query = graphql`
@@ -173,6 +162,7 @@ export const query = graphql`
       childMarkdownRemark {
         frontmatter {
           title
+          youtube
           plan
           brand
           promote

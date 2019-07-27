@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import CaseStudy from "./caseStudy"
@@ -14,6 +14,19 @@ const ListCaseStudies = props => {
   const intro = data.file.childMarkdownRemark.frontmatter.intro
   const others = data.file.childMarkdownRemark.frontmatter.others
   const clientLogos = data.file.childMarkdownRemark.frontmatter.clientLogos
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  const handleWindowResize = () => {
+    setWindowWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize)
+    return () => {
+      window.removeEventListener("resize", handleWindowResize)
+    }
+  })
 
   const _renderCaseStudies = (data, homepage) => (
     <React.Fragment>
@@ -50,9 +63,18 @@ const ListCaseStudies = props => {
             <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
               <Heading>Others We've Worked With</Heading>
               <p>{others}</p>
-              <Button onClick={() => navigate("/our-work")}>All Work</Button>
+              {windowWidth > 768 && (
+                <Button onClick={() => navigate("/our-work")}>
+                  View All Our Work
+                </Button>
+              )}
             </Box>
-            <Box width={[1, 1, 2 / 3]} px={[3, 4]} mt={[4, 4, 0]} mb={[4, 0]}>
+            <Box
+              width={[1, 1, 2 / 3]}
+              px={[3, 4]}
+              mt={[0, 0, 4, 0]}
+              mb={[4, 0]}
+            >
               <Flex flexWrap="wrap">
                 {clientLogos.map((item, index) => (
                   <Box key={index} width={[1 / 4, 1 / 6]} mb={4} px={[2, 3]}>
@@ -60,6 +82,12 @@ const ListCaseStudies = props => {
                   </Box>
                 ))}
               </Flex>
+
+              {windowWidth < 768 && (
+                <Button onClick={() => navigate("/our-work")}>
+                  View All Our Work
+                </Button>
+              )}
             </Box>
           </MoreCaseStudies>
         )}

@@ -46,7 +46,7 @@ const IconPicker = number => {
   return icon
 }
 
-const WorkWithMitso = ({ data }) => {
+const WorkWithMitso = ({ data, simple }) => {
   const services = data.allMarkdownRemark.edges
   const intro = data.file.childMarkdownRemark.frontmatter.intro
   return (
@@ -56,7 +56,7 @@ const WorkWithMitso = ({ data }) => {
           flexDirection="column"
           flexWrap="wrap"
           alignItems="center"
-          py={[3, 4]}
+          py={simple ? [1, 2] : [3, 4]}
         >
           <Services width={[1, 1, 1, 3 / 4, 2 / 3]} px={2}>
             <WorkBox
@@ -76,17 +76,19 @@ const WorkWithMitso = ({ data }) => {
             </WorkBox>
           </Services>
 
-          <WorkTextBox width={1} px={[3, 4]}>
-            <Box as="h2" color="white" mb={3}>
-              Work with MiTSO
-            </Box>
-            <Box as="p" color="white" mt={0} mb={4}>
-              {intro}
-            </Box>
-            <Button onClick={() => navigate("/work-with-mitso")}>
-              Start Project
-            </Button>
-          </WorkTextBox>
+          {!simple && (
+            <WorkTextBox width={1} px={[3, 4]}>
+              <Box as="h2" color="white" mb={3}>
+                Work with MiTSO
+              </Box>
+              <Box as="p" color="white" mt={0} mb={4}>
+                {intro}
+              </Box>
+              <Button onClick={() => navigate("/work-with-mitso")}>
+                Start Project
+              </Button>
+            </WorkTextBox>
+          )}
         </Flex>
       </Container>
       <WrapperBG src={MitsoCircleWhite} />
@@ -94,10 +96,10 @@ const WorkWithMitso = ({ data }) => {
   )
 }
 
-export default () => (
+export default props => (
   <StaticQuery
     query={servicesQuery}
-    render={data => <WorkWithMitso data={data} />}
+    render={data => <WorkWithMitso data={data} simple={props.simple} />}
   />
 )
 

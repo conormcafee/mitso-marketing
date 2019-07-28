@@ -5,7 +5,7 @@ import { Flex } from "@rebass/grid"
 import BulletPoint from "../../images/icons/bullet-point.svg"
 
 const Services = ({ services }) => (
-  <List as="ul" flexWrap="wrap" mb={5}>
+  <List as="ul" flexWrap="wrap" mt={0}>
     {services.map((item, index) => (
       <Flex as="li" width={[1, 1, 1 / 2]} key={Date.now() + index}>
         <Flex alignItems="center" py={3}>

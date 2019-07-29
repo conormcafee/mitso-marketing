@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components"
 import { BLACK, BASE, FONT_BOLD, FONT_LIGHT } from "../../variables"
 
+// Development
+
 const GlobalHeading = css`
   font-family: ${FONT_BOLD};
   color: ${props => (props.color ? props.color : `${BLACK}`)};

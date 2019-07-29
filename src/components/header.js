@@ -262,6 +262,7 @@ const DropdownButton = styled.button`
   position: relative;
   color: ${BLACK};
   padding: 0;
+  font-weight: 900;
 
   @media only screen and (max-width: 999px) {
     text-align: left;

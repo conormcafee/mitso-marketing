@@ -34,6 +34,7 @@ const Statement = ({ isStatement, statement, image }) => {
             {statement}
             <Dot>.</Dot>
           </Text>
+          <From>Conor McAfee, white.space</From>
         </StatementBox>
       </Wrapper>
     </Box>
@@ -59,6 +60,20 @@ const Text = styled.h3`
   color: white;
   font-size: 16px;
   line-height: 1.6;
+
+  @media only screen and (min-width: 768px) {
+    font-size: ${props => (props.isStatement ? `26px` : `20px`)};
+  }
+`
+
+const From = styled.h4`
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  color: ${SECONDARY};
 
   @media only screen and (min-width: 768px) {
     font-size: ${props => (props.isStatement ? `26px` : `20px`)};
@@ -95,7 +110,7 @@ const Circle = styled(Box)`
     props.opacity === "large" ? 1 : props.opacity === "medium" ? `0.8` : `0.4`};
 `
 
-const StatementBox = styled(Flex)`
+const StatementBox = styled(Box)`
   margin-left: auto;
   margin-right: auto;
   position: relative;

@@ -41,6 +41,7 @@ const Text = styled.span`
   font-family: ${FONT_BOLD};
   color: ${props => (props.yellow ? `${SECONDARY}` : `#ffffff`)};
   font-size: 20px;
+  font-weight: 900;
 
   @media only screen and (min-width: 768px) {
     font-size: 25px;

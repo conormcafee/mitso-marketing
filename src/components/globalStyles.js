@@ -10,6 +10,11 @@ const GlobalHeading = css`
 `
 
 export const GlobalStyle = createGlobalStyle`
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
     body {
         overflow-x: hidden;
         color: ${BASE};
@@ -18,25 +23,25 @@ export const GlobalStyle = createGlobalStyle`
 
     html {
         font-family: ${FONT_LIGHT};
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.75;
     }
 
     h1 {
         ${GlobalHeading}
         font-size: 32px;
-        line-height: 1.2;
+        line-height: 1.3;
         max-width: 700px;
 
         @media only screen and (min-width: 62.5em) {
-            font-size: 50px;
+            font-size: 40px;
         }
     }
 
     h2 {
         ${GlobalHeading}
         font-size: 28px;
-        line-height: 1.6;
+        line-height: 1.3;
         max-width: 600px;
     }
 
@@ -56,7 +61,7 @@ export const GlobalStyle = createGlobalStyle`
 
     p {
         font-family: ${FONT_LIGHT};
-        font-weight: 400;
+        font-weight: 300;
         max-width: 400px;
         line-height: 1.75;
         margin-top: 1em;

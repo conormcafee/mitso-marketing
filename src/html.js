@@ -7,9 +7,16 @@ export default function HTML(props) {
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        
-        <link href="https://fonts.googleapis.com/css?family=Lato|Nunito:900" rel="stylesheet" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        {/* <link href="https://fonts.googleapis.com/css?family=Lato|Nunito:900" rel="stylesheet" /> */}
+        <link
+          href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900&display=swap"
+          rel="stylesheet"
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

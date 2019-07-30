@@ -44,10 +44,10 @@ export default ({ data }) => {
           mb={[3, 4]}
         >
           <HeroContent px={[3, 4]} mb={[4, 6]} width={[1, 1 / 2]}>
-            <h1>
+            <HeroTitle>
               {title}
               <Dot />
-            </h1>
+            </HeroTitle>
             <Button onClick={() => navigate("/who-we-are")}>Who We Are</Button>
           </HeroContent>
           <Hero as="figure" px={[3, 4]} width={[1, 1 / 2]}>
@@ -114,6 +114,14 @@ const Hero = styled(Box)`
 const HeroContent = styled(Box)`
   position: relative;
   z-index: 1;
+`
+
+const HeroTitle = styled.h1`
+  font-size: 30px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 40px;
+  }
 `
 
 const VideoButton = styled.button`

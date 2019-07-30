@@ -42,10 +42,10 @@ const ListCaseStudies = props => {
         <Circle src={MitsoCircle} alt="Circle Page Styling" />
         <Flex justifyContent={["flex-start", "flex-start", "flex-end"]}>
           {homepage && (
-            <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
+            <CaseText width={[1, 1, 1 / 3]} px={[3, 4]}>
               <Heading>Our Work</Heading>
               <p>{intro}</p>
-            </Box>
+            </CaseText>
           )}
         </Flex>
         <CaseStudies as="section" flexWrap="wrap" my={props.my ? props.my : 3}>
@@ -62,15 +62,17 @@ const ListCaseStudies = props => {
             pt={[5, 5, 0]}
             pb={[3, 3, 0]}
           >
-            <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
+            <CaseText width={[1, 1, 1 / 3]} px={[3, 4]}>
               <Heading>Others We've Worked With</Heading>
+
               <p>{others}</p>
+
               {windowWidth > 768 && (
                 <Button onClick={() => navigate("/our-work")}>
                   View All Our Work
                 </Button>
               )}
-            </Box>
+            </CaseText>
             <Box
               width={[1, 1, 2 / 3]}
               px={[3, 4]}
@@ -164,5 +166,12 @@ const MoreCaseStudies = styled(Flex)`
 `
 
 const Heading = styled.h2`
+  font-size: 25px;
   margin: 0;
+`
+
+const CaseText = styled(Box)`
+  p {
+    margin-top: 0;
+  }
 `

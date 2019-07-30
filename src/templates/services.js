@@ -8,8 +8,9 @@ import { graphql, navigate } from "gatsby"
 
 import Statement from "../components/Statement"
 import Services from "../components/Services"
-import SubHeading from "../components/SubHeading"
-import Dot from "../components/Dot"
+
+import { HeroWithText } from "../components/HeroWithText"
+import { FONT_BOLD } from "../variables"
 
 const ServicesTemplate = props => {
   const getUrl = data => navigate(data)
@@ -19,47 +20,73 @@ const ServicesTemplate = props => {
 const Template = props => {
   const { markdownRemark } = props.data
   const { frontmatter } = markdownRemark
-  const { text01, text02, statementImage, seo } = frontmatter
+  const { text01, text02, seo } = frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
 
   return (
     <Layout dottedBackground>
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />
-      <Container>
-        <Box px={[3, 4]} mb={[3, 4]}>
-          <Box>
-            <Title>
-              We offer tailored services to reach your target audience
-              <Dot />
-              <SubHeading text={frontmatter.title} size="30px" mt="16px" />
-            </Title>
-          </Box>
-        </Box>
-      </Container>
+
+      <HeroWithText
+        title="We offer tailored services to reach your target audience"
+        subtitle={frontmatter.title}
+      />
 
       <Container>
-        <Box px={[3, 4]} mt={[4, 5]}>
-          <SubTitle>{frontmatter.title} Services</SubTitle>
-        </Box>
-
-        <Flex flexWrap="wrap">
-          <LongText width={[1, 1, 1 / 2]} px={[3, 4]}>
-            {text01 && <p>{text01}</p>}
-            {text02 && <p>{text02}</p>}
-            {frontmatter.serviceText && <p>{frontmatter.serviceText}</p>}
-          </LongText>
-
-          <Box width={[1, 1, 1 / 2]} px={[3, 4]}>
-            <Services services={frontmatter.listOfServices} />
-          </Box>
+        <Flex
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Flex
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
+            flexWrap="wrap"
+            py={[3, 4]}
+          >
+            <LongText width={[1, 1, 1 / 2]} px={[3, 4]}>
+              {text01 && <Bold>{text01}</Bold>}
+              {text02 && <p>{text02}</p>}
+              {frontmatter.serviceText && <p>{frontmatter.serviceText}</p>}
+            </LongText>
+          </Flex>
         </Flex>
       </Container>
 
-      <Statement
-        isStatement
-        statement={frontmatter.statement}
-        image={statementImage}
-      />
+      <ServiceIcons
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Box width={[1, 1, 1 / 2]} pt={[3]} px={[3, 4]}>
+          <Services services={frontmatter.listOfServices} />
+        </Box>
+      </ServiceIcons>
+
+      <Container>
+        <Flex
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+        >
+          {frontmatter.serviceText && (
+            <Flex
+              flexDirection="column"
+              alignItems="center"
+              justifyContent="center"
+              flexWrap="wrap"
+              pt={[3, 4]}
+            >
+              <LongText width={[1, 1, 1 / 2]} px={[3, 4]}>
+                <p>{frontmatter.serviceText}</p>
+              </LongText>
+            </Flex>
+          )}
+        </Flex>
+      </Container>
+
+      <Statement isStatement statement={frontmatter.statement} />
     </Layout>
   )
 }
@@ -111,19 +138,19 @@ export const pageQuery = graphql`
 
 export default ServicesTemplate
 
-const Title = styled.h1`
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-`
-const SubTitle = styled.h3`
-  font-size: 26px;
-  margin-bottom: 0;
-`
-
 const LongText = styled(Box)`
   p {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
+`
+
+const Bold = styled.p`
+  font-family: ${FONT_BOLD};
+  font-weight: 700;
+`
+
+const ServiceIcons = styled(Flex)`
+  background: #f6f6f6;
 `

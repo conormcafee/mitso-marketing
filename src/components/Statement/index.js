@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
-import { BLACK, SECONDARY } from "../../variables"
+import { BLACK, SECONDARY, ACCENT } from "../../variables"
 
 const Statement = ({ isStatement, statement, image }) => {
   const buildCircle = size => {
@@ -84,7 +84,7 @@ const Circle = styled(Box)`
   height: ${props => props.size};
   width: ${props => props.size};
   border-radius: ${props => props.size};
-  background-color: #ffffff;
+  background-color: ${ACCENT};
   background-image: url(${props => props.bg});
   background-size: cover;
   background-position: center center;

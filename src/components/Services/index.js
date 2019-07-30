@@ -20,12 +20,11 @@ const Services = ({ services }) => (
 export default Services
 
 const List = styled(Flex)`
-  background-color: white;
   border-radius: 8px;
 `
 
 const Icon = styled.img`
-  max-width: 50px;
+  max-width: 30px;
   height: auto;
 `
 
@@ -33,4 +32,5 @@ const Text = styled.h4`
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 32px;
+  font-size: 18px;
 `

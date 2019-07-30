@@ -4,7 +4,7 @@ import { BLACK, BASE, FONT_BOLD, FONT_LIGHT } from "../variables"
 const GlobalHeading = css`
   font-family: ${FONT_BOLD};
   color: ${BLACK};
-  font-weight: 900;
+  font-weight: 700;
   margin-top: 1em;
   margin-bottom: 1em;
 `

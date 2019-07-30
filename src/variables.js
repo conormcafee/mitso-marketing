@@ -7,5 +7,5 @@ export const BASE = "#8D8D92"
 export const BLACK = "#3A405A"
 export const WHITE = "#ffffff"
 
-export const FONT_BOLD = `'Montserrat', sans-serif`
-export const FONT_LIGHT = `'Montserrat', sans-serif`
+export const FONT_BOLD = `'Roboto', sans-serif`
+export const FONT_LIGHT = `'Roboto', sans-serif`

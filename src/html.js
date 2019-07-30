@@ -13,8 +13,12 @@ export default function HTML(props) {
         />
 
         {/* <link href="https://fonts.googleapis.com/css?family=Lato|Nunito:900" rel="stylesheet" /> */}
+        {/* <link
+          href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap"
+          rel="stylesheet"
+        /> */}
         <link
-          href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900&display=swap"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap"
           rel="stylesheet"
         />
         {props.headComponents}

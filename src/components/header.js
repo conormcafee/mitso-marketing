@@ -178,7 +178,7 @@ const Nav = styled.nav`
 
 const NavList = styled.ol`
   font-family: ${FONT_BOLD};
-  font-weight: 900;
+  font-weight: 700;
 
   list-style: none;
   padding-left: 0;
@@ -262,7 +262,7 @@ const DropdownButton = styled.button`
   position: relative;
   color: ${BLACK};
   padding: 0;
-  font-weight: 900;
+  font-weight: 700;
 
   @media only screen and (max-width: 999px) {
     text-align: left;

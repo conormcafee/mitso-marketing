@@ -268,7 +268,7 @@ const Input = styled.input`
 const Label = styled.label`
   display: block;
   font-family: ${FONT_BOLD};
-  font-weight: 900;
+  font-weight: 700;
   font-size: 22px;
   line-height: 1.4;
   margin-top: 16px;

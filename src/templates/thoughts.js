@@ -156,7 +156,7 @@ const Article = styled(Box)`
     background: ${BLACK};
     color: #ffffff;
     font-family: ${FONT_BOLD};
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: none;
     padding-left: 4px;
     padding-right: 4px;

@@ -48,7 +48,7 @@ const Btn = styled.button`
       : `transparent`};
   border: 2px solid ${props => (!props.back ? `transparent` : `${BLACK}`)};
   font-family: ${FONT_BOLD};
-  font-weight: 900;
+  font-weight: 700;
   color: ${props => (!props.back ? `#ffffff` : `${BLACK}`)};
   appearance: none;
   transition: background 150ms ease-in-out;

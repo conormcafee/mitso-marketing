@@ -148,7 +148,7 @@ const ContactList = styled(Flex)`
 
 const ListItem = styled(Box)`
   font-family: ${FONT_BOLD};
-  font-weight: 900;
+  font-weight: 700;
   font-size: 20px;
 
   span {

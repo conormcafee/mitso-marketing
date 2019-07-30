@@ -35,11 +35,11 @@ const Btn = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding-top: 16px;
-  padding-right: 24px;
-  padding-bottom: 16px;
-  padding-left: 24px;
-  border-radius: 25px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  border-radius: 8px;
   background-color: ${props =>
     !props.back ? `rgb(111,216,186)` : `transparent`};
   background: ${props =>

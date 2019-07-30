@@ -45,14 +45,10 @@ const CustomLink = styled(Link)`
 const Icon = styled.img`
   height: 44px;
   width: 44px;
-  @media only screen and (min-width: 768px) {
-    height: 75px;
-    width: 75px;
-  }
 `
 const Title = styled(Box)`
   font-family: ${FONT_BOLD};
-  color: ${BLACK};
+  color: #ffffff;
   font-size: 8px;
   text-align: center;
 

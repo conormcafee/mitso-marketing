@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import { graphql, navigate } from "gatsby"
-import WorkWithMitso from "../components/workWithMitso"
 
 import Statement from "../components/Statement"
 import Services from "../components/Services"
@@ -37,8 +36,6 @@ const Template = props => {
           </Box>
         </Box>
       </Container>
-
-      <WorkWithMitso simple />
 
       <Container>
         <Box px={[3, 4]} mt={[4, 5]}>

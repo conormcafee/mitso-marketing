@@ -156,8 +156,6 @@ const Circle = styled.img`
 const SmallLogo = styled.img`
   max-width: 100%;
   border-radius: 100%;
-  opacity: 0.75;
-  filter: grayscale(100%);
 `
 
 const MoreCaseStudies = styled(Flex)`

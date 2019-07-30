@@ -4,6 +4,7 @@ import { Flex, Box } from "@rebass/grid"
 import styled from "styled-components"
 import Image from "../components/Image/Image"
 import WhiteArrow from "../images/icons/right-arrow-white.svg"
+import { SECONDARY } from "../variables"
 
 const CaseStudy = props => {
   const { title, mainImage } = props.node.frontmatter
@@ -44,7 +45,7 @@ const Content = styled(Box)`
     rgba(58, 64, 90, 0) 0%,
     rgba(58, 64, 90, 0.5) 100%
   );
-  transition: background 150ms ease-in-out;
+  transition: background 150ms ease-in-out, height 150ms ease-in-out;
 `
 
 const Wrapper = styled(Box)`
@@ -56,12 +57,12 @@ const Wrapper = styled(Box)`
   box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
 
   &:hover ${Content} {
-    background: rgba(58, 64, 90, 1);
-    background: linear-gradient(
-      180deg,
-      rgba(58, 64, 90, 0) 0%,
-      rgba(58, 64, 90, 1) 100%
-    );
+    background: rgba(58, 64, 90, 0.8);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   @media only screen and (min-width: 640px) {
@@ -75,4 +76,12 @@ const Title = styled(Flex)`
   font-size: 20px;
   margin: 0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+  img {
+    margin-left: 20px;
+  }
+
+  &:hover {
+    color: ${SECONDARY};
+  }
 `

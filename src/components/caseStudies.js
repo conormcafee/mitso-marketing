@@ -58,7 +58,9 @@ const ListCaseStudies = props => {
           <MoreCaseStudies
             as="section"
             flexWrap={["wrap", "wrap", "nowrap"]}
-            mb={[3, 3, 6]}
+            mb={[3, 3, 5]}
+            pt={[5, 5, 0]}
+            pb={[3, 3, 0]}
           >
             <Box width={[1, 1, 1 / 3]} px={[3, 4]}>
               <Heading>Others We've Worked With</Heading>

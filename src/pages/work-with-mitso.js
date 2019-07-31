@@ -23,7 +23,7 @@ export default ({ data }) => {
     <Layout dottedBackground>
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />
       <Container>
-        <Box px={[3, 4]} mb={[3, 3, 3, 5]}>
+        <Box px={[3, 4]} mb={[3, 3, 3, 5]} width={[1, 1, 1 / 2]} mx="auto">
           <Title>
             {title}
             <Dot />

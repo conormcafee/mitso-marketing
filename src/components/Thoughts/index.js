@@ -53,7 +53,7 @@ const Thoughts = props => {
           </Box>
         )}
 
-        <NavyBackground isHomepage={homepage} width={navyWidth}>
+        <NavyBackground isHomepage={homepage} width={navyWidth} p={3}>
           <Flex flexWrap={wrapping}>
             {thoughts
               .slice(0, homepage ? 2 : subPage ? 3 : blogCount)
@@ -107,6 +107,8 @@ const thoughts = graphql`
 const NavyBackground = styled(Box)`
   background-color: ${ACCENT};
   position: relative;
+
+  border-radius: ${props => !props.isHomepage && "8px"};
 
   @media only screen and (min-width: 768px) {
     border-top-left-radius: 8px;

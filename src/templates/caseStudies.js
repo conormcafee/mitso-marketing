@@ -73,7 +73,7 @@ const Template = props => {
           image={mainImage !== null ? mainImage : DefaultImage}
           youtube={youtube !== null ? youtube : null}
           vimeo={vimeo !== null ? vimeo : null}
-          noText={vimeo === null && youtube === null}
+          noText={vimeo === "" && youtube === ""}
         />
 
         <Box px={[3, 4]} pt={4} mb={5}>

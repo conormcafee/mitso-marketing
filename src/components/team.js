@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import Container from "../components/container"
 import Dot from "../components/Dot"
-import { ACCENT, BLACK, FONT_BOLD } from "../variables"
+import { ACCENT } from "../variables"
 import LinkedIn from "../images/icons/linkedin.svg"
 import MitsoCircle from "../images/backgrounds/mitso-circle.svg"
 import TeamMemberModal from "../components/teamMemberModal"
@@ -25,7 +25,7 @@ const Team = props => {
 
   return (
     <React.Fragment>
-      <TeamWrapper mt={props.noMargin ? 0 : 6}>
+      <TeamWrapper>
         <Container>
           <Box pt={[3, 4]} px={[3, 4]} mt={[3, 3, 3]}>
             <h2>
@@ -59,16 +59,17 @@ const Team = props => {
                       }
                       alt={`${member.name}`}
                     />
-                    <Box
+                    <Flex
                       onClick={() => readMore(index)}
                       py={[2, 3]}
                       px={[3, 4]}
+                      alignItems="center"
+                      justifyContent="space-between"
                     >
-                      <Name>{member.name}</Name>
-                      <p>{member.what}</p>
-                    </Box>
-
-                    <Footer as="footer" py={[2, 3]} px={[3, 4]}>
+                      <Box>
+                        <Name>{member.name}</Name>
+                        <JobTitle>{member.jobTitle}</JobTitle>
+                      </Box>
                       <a
                         href={member.linkedin}
                         title={`Connect with ${member.name} on LinkedIn`}
@@ -76,8 +77,7 @@ const Team = props => {
                       >
                         <LinkedInIcon src={LinkedIn} alt="LinkedIn" />
                       </a>
-                      <Button onClick={() => readMore(index)}>Read More</Button>
-                    </Footer>
+                    </Flex>
                   </Member>
                 </Box>
               ))}
@@ -116,6 +116,7 @@ export const query = graphql`
             imgSwap
             name
             what
+            jobTitle
             where
             when
             why
@@ -166,25 +167,14 @@ const Photo = styled.img`
 const Name = styled.h3`
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 18px;
 `
 
-const Footer = styled(Box)`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 1px solid #e6e6e6;
-`
-
-const Button = styled.button`
-  background: transparent;
-  border: none;
-  color: ${BLACK};
-  padding: 0;
-  font-family: ${FONT_BOLD};
-
-  &:hover {
-    color: ${ACCENT};
-  }
+const JobTitle = styled.h4`
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: ${ACCENT};
 `
 
 const Circle = styled.img`

@@ -23,7 +23,7 @@ export default ({ data }) => {
     <Layout dottedBackground>
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />
       <Container>
-        <Box px={[3, 4]} mb={[3, 3, 3, 6]}>
+        <Box px={[3, 4]} mb={[3, 3, 3, 5]}>
           <Title>
             {title}
             <Dot />
@@ -35,13 +35,8 @@ export default ({ data }) => {
 
       <Flex flexWrap={["wrap", "nowrap"]} justifyContent="center">
         {text01 && (
-          <Box px={[3, 4]}>
+          <Box width={[1, 1, 1 / 2]} px={[3, 4]}>
             <p>{text01}</p>
-          </Box>
-        )}
-        {text02 && (
-          <Box px={[3, 4]}>
-            <p>{text02}</p>
           </Box>
         )}
       </Flex>
@@ -56,6 +51,15 @@ export default ({ data }) => {
           <HowWeWork />
         </HowWeWorkSection>
       </Container>
+
+      <Flex flexWrap={["wrap", "nowrap"]} mt={4} mb={5} justifyContent="center">
+        {text02 && (
+          <Box width={[1, 1, 1 / 2]} px={[3, 4]}>
+            <p>{text02}</p>
+          </Box>
+        )}
+      </Flex>
+
       <Team />
       <WorkWithMitso />
     </Layout>

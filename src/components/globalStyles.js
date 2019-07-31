@@ -62,7 +62,6 @@ export const GlobalStyle = createGlobalStyle`
     p {
         font-family: ${FONT_LIGHT};
         font-weight: 400;
-        max-width: 400px;
         line-height: 1.75;
         margin-top: 1em;
         margin-bottom: 1em;

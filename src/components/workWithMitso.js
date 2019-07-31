@@ -15,10 +15,10 @@ const WorkWithMitso = ({ data }) => {
     <Wrapper as="section" bg={BLACK} p={[3, 4]} mx={-2}>
       <Container>
         <WorkTextBox width={1} px={[3, 4]}>
-          <Box as="h2" color="white" mb={3}>
+          <Box as="h2" color="white" mb={2}>
             Work with MiTSO
           </Box>
-          <Box as="p" color="white" my={0}>
+          <Box as="p" width={[1, 1, 1 / 3]} color="white" my={0}>
             {intro}
           </Box>
         </WorkTextBox>

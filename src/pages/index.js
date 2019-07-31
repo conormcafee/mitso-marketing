@@ -73,7 +73,9 @@ export default ({ data }) => {
 
       {/* Thoughts */}
 
-      <Thoughts homepage text={thoughts} />
+      <Box mt={[4, 4, 5]}>
+        <Thoughts homepage text={thoughts} />
+      </Box>
 
       {modal && (
         <Modal alignItems="center" justifyContent="center">

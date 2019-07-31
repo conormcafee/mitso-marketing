@@ -15,7 +15,6 @@ const Article = props => {
   const { title, mainImage, author, intro } = node.frontmatter
   const { slug } = node.fields
   const blogWidth = props.homepage ? [1, 1, 1 / 2] : [1, 1, 1 / 2, 1 / 3]
-  const marginTop = props.homepage ? [4, 4, 0] : 5
 
   return (
     <Thought
@@ -26,7 +25,6 @@ const Article = props => {
       img={mainImage !== null ? mainImage : DefaultImage}
       link={slug}
       width={blogWidth}
-      mt={marginTop}
       goTo={navigatePage}
     />
   )
@@ -44,11 +42,7 @@ const Thoughts = props => {
 
   return (
     <Container>
-      <Flex
-        flexWrap={["wrap", "wrap", "noWrap"]}
-        mt={homepage ? [0, 0, 6] : 5}
-        as="section"
-      >
+      <Flex flexWrap={["wrap", "wrap", "noWrap"]} as="section">
         {homepage && (
           <Box width={[1, 1, 1 / 3]} mb={4} px={[3, 4]} pt={4}>
             <SubTitle>Thoughts</SubTitle>
@@ -59,8 +53,8 @@ const Thoughts = props => {
           </Box>
         )}
 
-        <NavyBackground width={navyWidth} py={homepage ? [3, 3, 4] : 4}>
-          <Flex flexWrap={wrapping} px={[0, 0, 3]}>
+        <NavyBackground isHomepage={homepage} width={navyWidth}>
+          <Flex flexWrap={wrapping}>
             {thoughts
               .slice(0, homepage ? 2 : subPage ? 3 : blogCount)
               .map((thought, index) => (
@@ -117,6 +111,8 @@ const NavyBackground = styled(Box)`
   @media only screen and (min-width: 768px) {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    border-top-right-radius: ${props => (props.isHomepage ? "0px" : "8px")};
+    border-bottom-right-radius: ${props => (props.isHomepage ? "0px" : "8px")};
   }
 `
 

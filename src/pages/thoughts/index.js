@@ -23,7 +23,7 @@ export default ({ data }) => {
               <Dot />
             </Title>
           </Hero>
-          <Box>
+          <Box mt={[4, 4, 5]}>
             <Thoughts hmepge={false} subPage={false} />
           </Box>
         </Box>

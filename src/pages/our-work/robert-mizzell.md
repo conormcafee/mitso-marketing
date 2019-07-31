@@ -12,8 +12,8 @@ imageBlock:
   - Image: /assets/650aaf7c-a762-446e-aa7d-64c6b73b520b.jpeg
   - Image: /assets/26cb5011-c74e-4fdc-99cf-fd32f74256e4.jpeg
   - Image: /assets/640dd5c1-09a6-4407-b4ab-f506ba425f0f.jpeg
-youtube:
-vimeo:
+youtube: ""
+vimeo: ""
 testimonial: >-
   Maeve and the ladies at MiTSO are great to work with. We have been working
   with them for the last 5/6 months and have developed a great working

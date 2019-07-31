@@ -76,11 +76,6 @@ const Template = props => {
           noText={vimeo === null && youtube === null}
         />
 
-        {/* <BackgroundImage
-          img={mainImage !== null ? mainImage : DefaultImage}
-          aspectRatio
-        /> */}
-
         <Box px={[3, 4]} pt={4} mb={5}>
           <Article
             as="article"

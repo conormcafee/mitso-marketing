@@ -15,8 +15,8 @@ imageBlock:
   - Image: /assets/obelisk-02.jpg
   - Image: /assets/obelisk-03.jpg
   - Image: /assets/obelisk-04.jpg
-youtube:
-vimeo:
+youtube: ""
+vimeo: ""
 testimonial: >-
   I was lucky enough to be given Mitso’s contact information when our company
   decided to undertake a complete rebranding exercise. From day 1 meeting Maeve

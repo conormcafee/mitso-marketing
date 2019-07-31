@@ -15,8 +15,8 @@ imageBlock:
   - Image: /assets/e-stars-dundalk.jpg
   - Image: /assets/e-stars-show.jpg
   - Image: /assets/e-stars-stamford-bridge.jpg
-youtube:
-vimeo:
+youtube: ""
+vimeo: ""
 testimonial: >-
   Maeve and the team at Mitso worked with EStars from the initial concept of
   running a large scale event, through to the management of ticketing,

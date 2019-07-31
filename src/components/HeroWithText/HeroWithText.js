@@ -5,12 +5,12 @@ import Play from "../../images/icons/play-button.svg"
 import DefaultImage from "../../images/pexels-photo-914931.jpg"
 import { SECONDARY } from "../../variables"
 
-const HeroWithText = ({ title, subtitle, video }) => (
+const HeroWithText = ({ title, subtitle, video, image }) => (
   <Relative
     as="section"
     alignItems="center"
     justifyContent="center"
-    bg={DefaultImage}
+    bg={image ? image : DefaultImage}
   >
     {video ? (
       <VideoButton>

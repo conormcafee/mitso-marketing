@@ -58,7 +58,7 @@ const WhatWeOffer = props => {
     <Layout dottedBackground>
       <SEO title="What We Offer" />
       <Container>
-        <Hero px={[3, 4]} mx="auto" mb={[4, 5]}>
+        <Hero px={[3, 4]} mx="auto" mb={[4, 5]} width={[1, 1, 1 / 2]}>
           <h1>What We Offer</h1>
           <p>
             We believe that effective marketing begins with a clear strategy and
@@ -66,8 +66,8 @@ const WhatWeOffer = props => {
             impressive brand identity, delivering creative and targeted
             messaging to the right customers at the right time.
           </p>
-          <Tagline centered />
         </Hero>
+        <Tagline centered />
       </Container>
 
       <Flex

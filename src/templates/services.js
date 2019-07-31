@@ -20,7 +20,7 @@ const ServicesTemplate = props => {
 const Template = props => {
   const { markdownRemark } = props.data
   const { frontmatter } = markdownRemark
-  const { text01, text02, seo } = frontmatter
+  const { text01, text02, seo, statementImage } = frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
 
   return (
@@ -28,6 +28,7 @@ const Template = props => {
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />
 
       <HeroWithText
+        image={statementImage}
         title="We offer tailored services to reach your target audience"
         subtitle={frontmatter.title}
       />

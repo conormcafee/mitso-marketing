@@ -4,7 +4,7 @@ seo: {}
 title: >-
   We deliver smart, tailored and targeted communications to help your business
   thrive
-youtube: hVQ1PvVJDm0
+youtube: UG0KSnZti_8
 plan: >-
   We believe a strategic approach is essential and we work with you to develop
   sales and marketing strategies which help to focus your investment in the
@@ -20,8 +20,8 @@ review: >-
   and improve our campaigns and performance to make sure you reach your target
   audience and fulfil your marketing objectives.
 thoughts: >-
-  Take a look through our recents thoughts and ramblings. Along with
-  getting our thoughts out on this website, we are also active on
-  social media. Why don’t you give us a follow on your preferred
-  platform
+  Take a look through our recents thoughts and ramblings. Along with getting our
+  thoughts out on this website, we are also active on social media. Why don’t
+  you give us a follow on your preferred platform
 ---
+

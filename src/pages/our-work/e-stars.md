@@ -15,6 +15,8 @@ imageBlock:
   - Image: /assets/e-stars-dundalk.jpg
   - Image: /assets/e-stars-show.jpg
   - Image: /assets/e-stars-stamford-bridge.jpg
+youtube:
+vimeo:
 testimonial: >-
   Maeve and the team at Mitso worked with EStars from the initial concept of
   running a large scale event, through to the management of ticketing,
@@ -23,6 +25,7 @@ testimonial: >-
   intelligent, forward thinking company who I look forward to working with again
   soon Mags Byrne, Owner, First for EPlayers
 ---
+
 EStars featuring Fortnite toured some of the biggest sports stadiums in the UK and Ireland from January to March 2019. Thousands of avid Fortnite fans and gaming enthusiasts took part in the hope of winning £25,000. [Watch here >>>](https://vimeo.com/328684967/33216b8ae1)
 
 # Esports marketing and event management
@@ -37,9 +40,9 @@ For EStars, it was important to continually deliver engaging and attractive cont
 
 ## Results:
 
-* Over 6,000 tickets sold
-* 97% increase in website traffic
-* 30% increase in social following across all channels
-* 30,000 video views on YouTube
-* Successful collaboration with Tesla and interest from other major global brands
-* Plans to take the tournament to Dubai and further afield
+- Over 6,000 tickets sold
+- 97% increase in website traffic
+- 30% increase in social following across all channels
+- 30,000 video views on YouTube
+- Successful collaboration with Tesla and interest from other major global brands
+- Plans to take the tournament to Dubai and further afield

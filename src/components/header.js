@@ -13,7 +13,7 @@ const _Header = props => {
   const [mobileNav, setMobileNav] = useState(false)
   const [dropdownNav, setDropdownNav] = useState(false)
   return (
-    <Header>
+    <Header activeDropdown={dropdownNav}>
       <HeaderContainer>
         <HeaderAside>
           <Link to="/">
@@ -113,10 +113,18 @@ const NAV_DATA = [
 ]
 
 const Header = styled.header`
-  border-top: 5px solid ${ACCENT};
   position: relative;
-  z-index: 10;
   background-color: transparent;
+  z-index: ${props => (props.activeDropdown ? `10` : `1`)};
+  &:before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background: ${ACCENT};
+    z-index: 10;
+  }
 `
 
 const HeaderContainer = styled(Container)`
@@ -166,13 +174,9 @@ const Nav = styled.nav`
     transform: ${props =>
       props.active ? `translateY(32px)` : `translateY(64px)`};
     transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
-    position: fixed;
-    top: 80px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: ${props => (props.active ? `100` : `-1`)};
+    height: ${props => (props.active ? `100vh` : `0px`)};
     visibility: ${props => (props.active ? `visible` : `hidden`)};
+    transition: height 150ms ease-in-out;
   }
 `
 

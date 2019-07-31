@@ -8,7 +8,6 @@ import Container from "../components/container"
 import WorkWithMitso from "../components/workWithMitso"
 import { FONT_BOLD, BLACK, ACCENT } from "../variables"
 import Statement from "../components/Statement"
-import BackgroundImage from "../components/BackgroundImage"
 import DefaultImage from "../images/mitso-default.png"
 import {
   SingleImage,
@@ -16,6 +15,7 @@ import {
   TrioImage,
   MultiImage,
 } from "../components/ImageBlock"
+import { HeroWithText } from "../components/HeroWithText"
 
 const CaseStudyTemplate = props => (
   <Template data={props.data} location={props.location} />
@@ -25,7 +25,16 @@ const Template = props => {
   const { markdownRemark } = props.data
   const { frontmatter } = markdownRemark
   const { html } = markdownRemark
-  const { title, mainImage, testimonial, imageBlock, text, seo } = frontmatter
+  const {
+    title,
+    mainImage,
+    testimonial,
+    imageBlock,
+    text,
+    seo,
+    youtube,
+    vimeo,
+  } = frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
 
   let images = []
@@ -60,12 +69,19 @@ const Template = props => {
           </Hero>
         </Flex>
 
-        <BackgroundImage
-          img={mainImage !== null ? mainImage : DefaultImage}
-          aspectRatio
+        <HeroWithText
+          image={mainImage !== null ? mainImage : DefaultImage}
+          youtube={youtube !== null ? youtube : null}
+          vimeo={vimeo !== null ? vimeo : null}
+          noText={vimeo === null && youtube === null}
         />
 
-        <Box px={[3, 4]} pt={5} mb={5}>
+        {/* <BackgroundImage
+          img={mainImage !== null ? mainImage : DefaultImage}
+          aspectRatio
+        /> */}
+
+        <Box px={[3, 4]} pt={4} mb={5}>
           <Article
             as="article"
             mb={5}
@@ -106,6 +122,8 @@ export const pageQuery = graphql`
         title
         mainImage
         testimonial
+        youtube
+        vimeo
         imageBlock {
           Image
         }

@@ -29,6 +29,8 @@ collections:
           widget: image,
           default: /src/images/mitso-default.png,
         }
+      - { label: Youtube, name: youtube, widget: string }
+      - { label: Vimeo, name: vimeo, widget: string }
       - { name: body, label: Body, widget: markdown }
       - {
           name: imageBlock,

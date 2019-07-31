@@ -1,29 +1,44 @@
-import React from "react"
+import React, { useState, Fragment } from "react"
 import { Flex, Box } from "@rebass/grid"
 import styled from "styled-components"
 import Play from "../../images/icons/play-button.svg"
 import DefaultImage from "../../images/pexels-photo-914931.jpg"
-import { SECONDARY } from "../../variables"
+import { SECONDARY, BLACK } from "../../variables"
+import { VideoModal } from "../VideoModal"
 
-const HeroWithText = ({ title, subtitle, video, image }) => (
-  <Relative
-    as="section"
-    alignItems="center"
-    justifyContent="center"
-    bg={image ? image : DefaultImage}
-  >
-    {video ? (
-      <VideoButton>
-        <img src={Play} alt="Play Video" />
-      </VideoButton>
-    ) : (
-      <TextBox width={1} px={[3, 4]} py={[5, 6]}>
-        <h1>{title}</h1>
-        {subtitle && <h2>{subtitle}</h2>}
-      </TextBox>
-    )}
-  </Relative>
-)
+const HeroWithText = ({ title, subtitle, youtube, vimeo, image, noText }) => {
+  const [active, setActive] = useState(false)
+  return (
+    <Fragment>
+      {active && (
+        <VideoModal
+          closeModal={() => setActive(!active)}
+          youtube={youtube}
+          vimeo={vimeo}
+        />
+      )}
+      <Relative
+        as="section"
+        alignItems="center"
+        justifyContent="center"
+        bg={image ? image : DefaultImage}
+        isVideo={youtube || vimeo}
+        noText={noText}
+      >
+        {youtube || vimeo ? (
+          <VideoButton onClick={() => setActive(!active)}>
+            <img src={Play} alt="Play Video" />
+          </VideoButton>
+        ) : (
+          <TextBox width={1} px={[3, 4]} py={[5, 6]}>
+            <h1>{title}</h1>
+            {subtitle && <h2>{subtitle}</h2>}
+          </TextBox>
+        )}
+      </Relative>
+    </Fragment>
+  )
+}
 
 export default HeroWithText
 
@@ -34,9 +49,10 @@ const Relative = styled(Flex)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  height: ${props => (props.noText || props.isVideo ? `600px` : `auto`)};
 
   &:before {
-    content: "";
+    content: ${props => (props.isVideo || props.noText ? `none` : `""`)};
     position: absolute;
     top: 0;
     left: 0;
@@ -47,12 +63,13 @@ const Relative = styled(Flex)`
 `
 
 const VideoButton = styled.button`
-  position: absolute;
   appearance: none;
   background: transparent;
   border: none;
   height: 150px;
   width: 150px;
+  background: ${BLACK};
+  border-radius: 150px;
 `
 
 const TextBox = styled(Box)`

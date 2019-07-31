@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@rebass/grid": "^6.0.0-7",
+    "@u-wave/react-vimeo": "^0.8.1",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.1.18",
     "gatsby-background-image": "^0.2.4",

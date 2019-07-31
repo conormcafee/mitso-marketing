@@ -8,12 +8,10 @@ import Container from "../components/container"
 import WorkWithMitso from "../components/workWithMitso"
 import { BLACK, FONT_BOLD, ACCENT } from "../variables"
 import Tags from "../components/Tags"
-import Share from "../components/Share"
-import BackLink from "../components/BackLink"
 import Thoughts from "../components/Thoughts"
-import BackgroundImage from "../components/BackgroundImage"
 import Image from "../images/mitso-default.png"
 import Dot from "../components/Dot"
+import { HeroWithText } from "../components/HeroWithText"
 
 const ThoughtsTemplate = props => {
   return <Template data={props.data} location={props.location} />
@@ -23,7 +21,6 @@ const Template = props => {
   const { markdownRemark } = props.data
   const { frontmatter, html } = markdownRemark
   const { title, tags, mainImage, date, author, seo } = frontmatter
-  const { href } = props.location
   const { seoTitle, seoDescription, seoImage } = seo
 
   const getTags = tags => {
@@ -47,23 +44,7 @@ const Template = props => {
           </Hero>
         </Flex>
 
-        <Flex
-          alignItems="center"
-          justifyContent="space-between"
-          mt={5}
-          mb={3}
-          px={[3, 4]}
-        >
-          <BackLink url="/thoughts" title="All Thoughts" />
-          <TopShare>
-            <Share url={href} />
-          </TopShare>
-        </Flex>
-
-        <BackgroundImage
-          img={mainImage !== null ? mainImage : Image}
-          aspectRatio
-        />
+        <HeroWithText image={mainImage !== null ? mainImage : Image} noText />
 
         <Caption
           as="div"
@@ -77,10 +58,6 @@ const Template = props => {
 
         <Box px={[3, 4]} mb={5}>
           <Article dangerouslySetInnerHTML={{ __html: html }} />
-
-          <Box mx="auto" mb={5} css={{ maxWidth: "700px" }}>
-            <Share url={href} />
-          </Box>
 
           <Thoughts subPage />
         </Box>
@@ -142,7 +119,8 @@ const Article = styled(Box)`
 
   p:first-of-type {
     color: ${BLACK};
-    font-weight: bold;
+    font-family: ${FONT_BOLD};
+    font-weight: 700;
     font-size: 20px;
   }
 
@@ -171,11 +149,4 @@ const Article = styled(Box)`
 
 const Caption = styled(Flex)`
   border-bottom: 2px solid #e6e6e6;
-`
-
-const TopShare = styled(Box)`
-  display: none;
-  @media only screen and (min-width: 1000px) {
-    display: block;
-  }
 `

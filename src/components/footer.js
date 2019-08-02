@@ -63,6 +63,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 }
 
 const Footer = ({ data, services }) => {
+  const [hidden] = useState(false)
   const facebook = data.file.childMarkdownRemark.frontmatter.facebook
   const instagram = data.file.childMarkdownRemark.frontmatter.instagram
   const linkedin = data.file.childMarkdownRemark.frontmatter.linkedin
@@ -115,7 +116,7 @@ const Footer = ({ data, services }) => {
         flexWrap="wrap"
         justifyContent={["flex-start", "flex-start", "flex-end"]}
       >
-        <Flex width={[1, 1, 1 / 2]} mx={[0, -4]}>
+        <Flex width={!hidden ? 1 : [1, 1, 1 / 2]} mx={[0, -4]}>
           <FooterLinks width={[1 / 2]} px={[0, 4]}>
             <SubTitle>Quick Links</SubTitle>
             {QUICK_LINKS.map((item, index) => (
@@ -133,19 +134,21 @@ const Footer = ({ data, services }) => {
             ))}
           </FooterLinks>
         </Flex>
-        <Box width={[1, 1, 1 / 2]} px={[0, 0, 4]}>
-          <SubTitle>Sign Up To MiTSO</SubTitle>
-          <MailchimpSubscribe
-            url={url}
-            render={({ subscribe, status, message }) => (
-              <CustomForm
-                status={status}
-                message={message}
-                onValidated={formData => subscribe(formData)}
-              />
-            )}
-          />
-        </Box>
+        {hidden && (
+          <Box width={[1, 1, 1 / 2]} px={[0, 0, 4]}>
+            <SubTitle>Sign Up To MiTSO</SubTitle>
+            <MailchimpSubscribe
+              url={url}
+              render={({ subscribe, status, message }) => (
+                <CustomForm
+                  status={status}
+                  message={message}
+                  onValidated={formData => subscribe(formData)}
+                />
+              )}
+            />
+          </Box>
+        )}
       </Flex>
     </Wrapper>
   )

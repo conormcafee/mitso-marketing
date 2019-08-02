@@ -1,58 +1,151 @@
-import React from "react"
+import React, { useState } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-import styled from "styled-components"
-import { Flex } from "@rebass/grid"
+import { Flex, Box } from "@rebass/grid"
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 import Logo from "../images/mitso-logo.svg"
 import Facebook from "../images/icons/facebook.svg"
 import Instagram from "../images/icons/instagram.svg"
 import LinkedIn from "../images/icons/linkedin.svg"
-import { FONT_BOLD, BLACK, ACCENT } from "../variables"
+import styled from "styled-components"
+import { ACCENT, PRIMARY, BLACK, FONT_BOLD } from "../variables"
+import Button from "../components/button"
+
+const CustomForm = ({ status, message, onValidated }) => {
+  let email, fname, lname, company
+  const submit = () =>
+    email &&
+    fname &&
+    lname &&
+    email.value.indexOf("@") > -1 &&
+    onValidated({
+      EMAIL: email.value,
+      FNAME: fname.value,
+      LNAME: lname.value,
+      MMERGE3: company.value,
+    })
+
+  const [valid, setValid] = useState(false)
+
+  return (
+    <div>
+      <Label>Name</Label>
+      <Input ref={node => (fname = node)} type="text" name="FNAME" />
+      <Label>Email</Label>
+      <Input ref={node => (email = node)} type="email" />
+
+      <Flex alignItems="center" mt={4}>
+        <Tick valid={valid} onClick={() => setValid(!valid)} mr={3} />
+        <Text>
+          Please confirm you have read our{" "}
+          <TextLink to="/privacy-policy">Privacy Policy</TextLink> before
+          submitting your details
+        </Text>
+      </Flex>
+
+      {valid && (
+        <Box mt={4}>
+          <Button onClick={submit}>Sign Up to Mailing List</Button>
+        </Box>
+      )}
+
+      {status === "sending" && <SubTitle>sending...</SubTitle>}
+      {status === "error" && (
+        <div
+          style={{ color: "red" }}
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      {status === "success" && (
+        <SubTitle dangerouslySetInnerHTML={{ __html: message }} />
+      )}
+    </div>
+  )
+}
 
 const Footer = ({ data, services }) => {
   const facebook = data.file.childMarkdownRemark.frontmatter.facebook
   const instagram = data.file.childMarkdownRemark.frontmatter.instagram
   const linkedin = data.file.childMarkdownRemark.frontmatter.linkedin
+  const url =
+    "https://mitsomarketing.us17.list-manage.com/subscribe/post?u=d2f46d55d2c60803a5f5ccc8b&amp;id=86370bb97b"
   return (
-    <Wrapper
-      flexDirection="column"
-      flexWrap="wrap"
-      alignItems={["flex-start", "flex-start", "center"]}
-      justifyContent={["flex-start", "flex-start", "center"]}
-      pt={5}
-      pb={3}
-      mt={3}
-    >
-      <Image src={Logo} alt="MiTSO Marketing" />
-      <Flex as="nav" flexWrap="wrap" mt={2}>
-        {QUICK_LINKS.map((item, index) => (
-          <FooterLink key={index} to={item.url}>
-            {item.title}
-          </FooterLink>
-        ))}
+    <Wrapper as="footer" flexWrap="wrap" px={[3, 4]} pb={[2, 3]} mt={[4, 5]}>
+      <Flex
+        width={[1, 1 / 3]}
+        order={[2, 1]}
+        justifyContent={["space-between"]}
+        flexDirection={["row", "column"]}
+        alignItems={["flex-end", "flex-start"]}
+        mt={[4, 0]}
+      >
+        <Box>
+          <img src={Logo} alt="MiTSO Marketing" />
+
+          <ul>
+            <li>MiTSO Marketing</li>
+            <li>41 Faughiletra Road</li>
+            <li>Newry</li>
+            <li>Co.Down</li>
+            <li>BT35 8JE</li>
+          </ul>
+        </Box>
+
+        <Flex alignItems="center" mt={5}>
+          {facebook && (
+            <SocialMediaLink href={facebook} target="_blank">
+              <img src={Facebook} alt="Facebook" />
+            </SocialMediaLink>
+          )}
+          {instagram && (
+            <SocialMediaLink href={instagram} target="_blank" hasMarginLeft>
+              <img src={Instagram} alt="Instagram" />
+            </SocialMediaLink>
+          )}
+          {linkedin && (
+            <SocialMediaLink href={linkedin} target="_blank" hasMarginLeft>
+              <img src={LinkedIn} alt="LinkedIn" />
+            </SocialMediaLink>
+          )}
+        </Flex>
       </Flex>
-      <Flex as="nav" flexWrap="wrap">
-        {services.services.map((item, index) => (
-          <FooterLink small="true" key={index} to={item.node.fields.slug}>
-            {item.node.frontmatter.title}
-          </FooterLink>
-        ))}
-      </Flex>
-      <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
-        {facebook && (
-          <SocialLink href={facebook} target="_blank">
-            <img src={Facebook} alt="Facebook" />
-          </SocialLink>
-        )}
-        {instagram && (
-          <SocialLink href={instagram} target="_blank">
-            <img src={Instagram} alt="Instagram" />
-          </SocialLink>
-        )}
-        {linkedin && (
-          <SocialLink href={linkedin} target="_blank">
-            <img src={LinkedIn} alt="LinkedIn" />
-          </SocialLink>
-        )}
+
+      <Flex
+        width={[1, 2 / 3]}
+        order={[1, 2]}
+        flexWrap="wrap"
+        justifyContent={["flex-start", "flex-start", "flex-end"]}
+      >
+        <Flex width={[1, 1, 1 / 2]} mx={[0, -4]}>
+          <FooterLinks width={[1 / 2]} px={[0, 4]}>
+            <SubTitle>Quick Links</SubTitle>
+            {QUICK_LINKS.map((item, index) => (
+              <Link key={index} to={item.url}>
+                {item.title}
+              </Link>
+            ))}
+          </FooterLinks>
+          <FooterLinks width={[1 / 2]} px={[0, 4]}>
+            <SubTitle>What We Offer</SubTitle>
+            {services.services.map((item, index) => (
+              <Link key={index} to={item.node.fields.slug}>
+                {item.node.frontmatter.title}
+              </Link>
+            ))}
+          </FooterLinks>
+        </Flex>
+        <Box width={[1, 1, 1 / 2]} px={[0, 0, 4]}>
+          <SubTitle>Sign Up To MiTSO</SubTitle>
+          <MailchimpSubscribe
+            url={url}
+            render={({ subscribe, status, message }) => (
+              <CustomForm
+                status={status}
+                message={message}
+                onValidated={formData => subscribe(formData)}
+              />
+            )}
+          />
+        </Box>
       </Flex>
     </Wrapper>
   )
@@ -80,52 +173,87 @@ const servicesQuery = graphql`
 `
 
 const Wrapper = styled(Flex)`
-  width: 100%;
   font-size: 14px;
   border-bottom: 5px solid ${ACCENT};
 `
 
-const FooterLink = styled(Link)`
-  display: inline-block;
-  font-family: ${FONT_BOLD};
-  color: ${BLACK};
-  font-size: ${props => (props.small ? `10px` : `16px`)};
-  padding: 16px;
-  text-decoration: none;
-
-  &:hover {
-    color: ${ACCENT};
-  }
-
-  @media only screen and (min-width: 768px) {
-    font-size: ${props => (props.small ? `14px` : `20px`)};
-  }
+const SubTitle = styled.h3`
+  font-size: 16px;
+  margin-bottom: 10px;
 `
-const SocialLink = styled.a`
-  display: inline-block;
-  font-family: ${FONT_BOLD};
-  color: ${BLACK};
-  font-size: ${props => (props.small ? `10px` : `16px`)};
-  padding: 16px;
-  text-decoration: none;
 
-  &:hover {
-    color: ${ACCENT};
-  }
+const SocialMediaLink = styled.a`
+  margin-left: ${props => props.hasMarginLeft && "15px"};
 
-  @media only screen and (min-width: 768px) {
-    font-size: ${props => (props.small ? `14px` : `20px`)};
+  img {
+    max-height: 25px;
   }
 `
 
-const Image = styled.img`
+const FooterLinks = styled(Box)`
+  a {
+    display: block;
+    color: ${PRIMARY};
+    text-decoration: none;
+
+    &:hover {
+      color: ${ACCENT};
+    }
+  }
+`
+
+const Input = styled.input`
+  min-height: 44px;
   display: block;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
   padding-left: 16px;
   padding-right: 16px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: ${BLACK};
 
-  @media only screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
+  &:focus {
+    outline: 0;
+    border: 2px solid ${ACCENT};
+    box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+`
+
+const Label = styled.label`
+  display: block;
+  font-family: ${FONT_BOLD};
+  color: ${BLACK};
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+`
+
+const Tick = styled(Box)`
+  background: ${props => (props.valid ? `${ACCENT}` : `white`)};
+  height: 20px;
+  width: 20px;
+  min-width: 20px;
+  border-radius: 20px;
+  border: 2px solid #e6e6e6;
+
+  &:hover {
+    cursor: pointer;
+  }
+`
+
+const Text = styled.p`
+  margin-top: 0;
+  margin-bottom: 0;
+`
+
+const TextLink = styled(Link)`
+  color: ${ACCENT};
+
+  &:hover {
+    color: ${BLACK};
   }
 `
 
@@ -133,6 +261,10 @@ const QUICK_LINKS = [
   {
     title: "Who We Are",
     url: "/who-we-are",
+  },
+  {
+    title: "What We Offer",
+    url: "/what-we-offer",
   },
   {
     title: "Thoughts",

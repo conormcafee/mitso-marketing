@@ -28,8 +28,18 @@ const CustomForm = ({ status, message, onValidated }) => {
 
   return (
     <div>
-      <Label>Name</Label>
-      <Input ref={node => (fname = node)} type="text" name="FNAME" />
+      <Flex mx={-3}>
+        <Box px={3}>
+          <Label>First Name</Label>
+          <Input ref={node => (fname = node)} type="text" name="FNAME" />
+        </Box>
+
+        <Box px={3}>
+          <Label>Last Name</Label>
+          <Input ref={node => (lname = node)} type="text" name="LNAME" />
+        </Box>
+      </Flex>
+
       <Label>Email</Label>
       <Input ref={node => (email = node)} type="email" />
 
@@ -63,7 +73,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 }
 
 const Footer = ({ data, services }) => {
-  const [hidden] = useState(false)
+  const [hidden] = useState(true)
   const facebook = data.file.childMarkdownRemark.frontmatter.facebook
   const instagram = data.file.childMarkdownRemark.frontmatter.instagram
   const linkedin = data.file.childMarkdownRemark.frontmatter.linkedin

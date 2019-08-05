@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, Fragment } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import { Flex, Box } from "@rebass/grid"
 import MailchimpSubscribe from "react-mailchimp-subscribe"
@@ -9,6 +9,7 @@ import LinkedIn from "../images/icons/linkedin.svg"
 import styled from "styled-components"
 import { ACCENT, PRIMARY, BLACK, FONT_BOLD } from "../variables"
 import Button from "../components/button"
+import { Modal } from "./Modal"
 
 const CustomForm = ({ status, message, onValidated }) => {
   let email, fname, lname, company
@@ -76,80 +77,96 @@ const CustomForm = ({ status, message, onValidated }) => {
 }
 
 const Footer = ({ data, services }) => {
-  const [hidden] = useState(true)
+  const [modal, setModal] = useState(false)
   const facebook = data.file.childMarkdownRemark.frontmatter.facebook
   const instagram = data.file.childMarkdownRemark.frontmatter.instagram
   const linkedin = data.file.childMarkdownRemark.frontmatter.linkedin
+  const mailingSignUp = data.file.childMarkdownRemark.frontmatter.mailingSignUp
   const url =
     "https://mitsomarketing.us17.list-manage.com/subscribe/post?u=d2f46d55d2c60803a5f5ccc8b&amp;id=86370bb97b"
   return (
-    <Wrapper as="footer" flexWrap="wrap" px={[3, 4]} pb={[2, 3]} mt={[4, 5]}>
-      <Flex
-        width={[1, 1 / 3]}
-        order={[2, 1]}
-        justifyContent={["space-between"]}
-        flexDirection={["row", "column"]}
-        alignItems={["flex-end", "flex-start"]}
-        mt={[4, 0]}
-      >
-        <Box>
-          <img src={Logo} alt="MiTSO Marketing" />
+    <Fragment>
+      <Wrapper as="footer" flexWrap="wrap" px={[3, 4]} pb={[2, 3]} mt={[4, 5]}>
+        <Flex
+          width={[1, 1 / 3]}
+          order={[2, 1]}
+          justifyContent={["space-between"]}
+          flexDirection={["row", "column"]}
+          alignItems={["flex-end", "flex-start"]}
+          mt={[4, 0]}
+        >
+          <Box>
+            <img src={Logo} alt="MiTSO Marketing" />
 
-          <ul>
-            <li>MiTSO Marketing</li>
-            <li>41 Faughiletra Road</li>
-            <li>Newry</li>
-            <li>Co.Down</li>
-            <li>BT35 8JE</li>
-          </ul>
-        </Box>
+            <ul>
+              <li>MiTSO Marketing</li>
+              <li>41 Faughiletra Road</li>
+              <li>Newry</li>
+              <li>Co.Down</li>
+              <li>BT35 8JE</li>
+            </ul>
+          </Box>
 
-        <Flex alignItems="center" mt={5}>
-          {facebook && (
-            <SocialMediaLink href={facebook} target="_blank">
-              <img src={Facebook} alt="Facebook" />
-            </SocialMediaLink>
-          )}
-          {instagram && (
-            <SocialMediaLink href={instagram} target="_blank" hasMarginLeft>
-              <img src={Instagram} alt="Instagram" />
-            </SocialMediaLink>
-          )}
-          {linkedin && (
-            <SocialMediaLink href={linkedin} target="_blank" hasMarginLeft>
-              <img src={LinkedIn} alt="LinkedIn" />
-            </SocialMediaLink>
-          )}
+          <Flex alignItems="center" mt={5}>
+            {facebook && (
+              <SocialMediaLink href={facebook} target="_blank">
+                <img src={Facebook} alt="Facebook" />
+              </SocialMediaLink>
+            )}
+            {instagram && (
+              <SocialMediaLink href={instagram} target="_blank" hasMarginLeft>
+                <img src={Instagram} alt="Instagram" />
+              </SocialMediaLink>
+            )}
+            {linkedin && (
+              <SocialMediaLink href={linkedin} target="_blank" hasMarginLeft>
+                <img src={LinkedIn} alt="LinkedIn" />
+              </SocialMediaLink>
+            )}
+          </Flex>
         </Flex>
-      </Flex>
 
-      <Flex
-        width={[1, 2 / 3]}
-        order={[1, 2]}
-        flexWrap="wrap"
-        justifyContent={["flex-start", "flex-start", "flex-end"]}
-      >
-        <Flex width={!hidden ? 1 : [1, 1, 1 / 2]} mx={[0, -4]}>
-          <FooterLinks width={[1 / 2]} px={[0, 4]}>
-            <SubTitle>Quick Links</SubTitle>
-            {QUICK_LINKS.map((item, index) => (
-              <Link key={index} to={item.url}>
-                {item.title}
-              </Link>
-            ))}
-          </FooterLinks>
-          <FooterLinks width={[1 / 2]} px={[0, 4]}>
-            <SubTitle>What We Offer</SubTitle>
-            {services.services.map((item, index) => (
-              <Link key={index} to={item.node.fields.slug}>
-                {item.node.frontmatter.title}
-              </Link>
-            ))}
-          </FooterLinks>
-        </Flex>
-        {hidden && (
+        <Flex
+          width={[1, 2 / 3]}
+          order={[1, 2]}
+          flexWrap="wrap"
+          justifyContent={["flex-start", "flex-start", "flex-end"]}
+        >
+          <Flex width={[1, 1, 1 / 2]} mx={[0, -4]}>
+            <FooterLinks width={[1 / 2]} px={[0, 4]}>
+              <SubTitle>Quick Links</SubTitle>
+              {QUICK_LINKS.map((item, index) => (
+                <Link key={index} to={item.url}>
+                  {item.title}
+                </Link>
+              ))}
+            </FooterLinks>
+            <FooterLinks width={[1 / 2]} px={[0, 4]}>
+              <SubTitle>What We Offer</SubTitle>
+              {services.services.map((item, index) => (
+                <Link key={index} to={item.node.fields.slug}>
+                  {item.node.frontmatter.title}
+                </Link>
+              ))}
+            </FooterLinks>
+          </Flex>
           <Box width={[1, 1, 1 / 2]} px={[0, 0, 4]}>
             <SubTitle>Sign Up To MiTSO</SubTitle>
+
+            <p>{mailingSignUp}</p>
+            <Button onClick={() => setModal(!modal)}>
+              Join our Mailing List
+            </Button>
+          </Box>
+        </Flex>
+      </Wrapper>
+
+      {modal && (
+        <Modal closeModal={() => setModal(!modal)}>
+          <Fragment>
+            <Box as="h2" color="white">
+              Sign Up to MiTSO
+            </Box>
             <MailchimpSubscribe
               url={url}
               render={({ subscribe, status, message }) => (
@@ -160,10 +177,10 @@ const Footer = ({ data, services }) => {
                 />
               )}
             />
-          </Box>
-        )}
-      </Flex>
-    </Wrapper>
+          </Fragment>
+        </Modal>
+      )}
+    </Fragment>
   )
 }
 
@@ -182,6 +199,7 @@ const servicesQuery = graphql`
           facebook
           instagram
           linkedin
+          mailingSignUp
         }
       }
     }
@@ -241,7 +259,7 @@ const Input = styled.input`
 const Label = styled.label`
   display: block;
   font-family: ${FONT_BOLD};
-  color: ${BLACK};
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 10px;

@@ -296,6 +296,7 @@ collections:
           - { name: facebook, label: Facebook, widget: string }
           - { name: instagram, label: Instagram, widget: string }
           - { name: linkedin, label: LinkedIn, widget: string }
+          - { name: mailingSignUp, label: Mailing Sign Up, widget: string }
   - name: privacyPolicy
     label: Privacy Policy
     files: 

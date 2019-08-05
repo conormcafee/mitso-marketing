@@ -39,6 +39,7 @@ collections:
           fields: [{ label: image, name: Image, widget: image }],
         }
       - { name: testimonial, label: Testimonial, widget: text, required: false }
+      - { name: testimonialFrom, label: Testimonial From, widget: string, required: false }
   - name: posts
     label: Posts
     folder: src/pages/thoughts

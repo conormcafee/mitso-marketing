@@ -27,7 +27,8 @@ testimonial: >-
   whilst also giving you direction and ideas. She delivered on everything we
   needed and more and we could not have achieved what we did without her. We
   continue to use her company’s services. I would highly recommend her and her
-  team, you will not be disappointed Lisa Healy, HR Director, Obelisk.
+  team, you will not be disappointed.
+testimonialFrom: "Lisa Healy, HR Director, Obelisk"
 ---
 
 Obelisk is a multinational company delivering infrastructure solutions for the telecoms and power sectors in Ireland, UK and Africa. The company wanted to align its ambitions to grow with a brand refresh to present a new direction for the company.

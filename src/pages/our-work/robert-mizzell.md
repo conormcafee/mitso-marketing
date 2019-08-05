@@ -21,11 +21,9 @@ testimonial: >-
   request is and have boasted our social media stats no end, not to forget
   totally revamping our branding which was badly needed! We will always be very
   grateful to them and look forward to many more months of working together.
-   
-  Thank you ladies and best wishes to MiTSO and continued success in the future.
-   
 
-  Robert Mizzell & the Country Kings
+  Thank you ladies and best wishes to MiTSO and continued success in the future.
+testimonialFrom: "Robert Mizzell & the Country Kings"
 ---
 
 Robert Mizzell is famous for his beautiful country vocals and yankee hits and he has been touring worldwide for over 20 years, claiming a whole host of accolades including many number one hits. His latest hit ”The Farmer” reached number one on iTunes and his popularity continues to grow in Ireland.

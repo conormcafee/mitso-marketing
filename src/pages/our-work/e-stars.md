@@ -23,7 +23,8 @@ testimonial: >-
   marketing, social media. Maeve and her team are professional and efficient and
   nothing is a problem with them. Mitso is very much “hands on” and an
   intelligent, forward thinking company who I look forward to working with again
-  soon Mags Byrne, Owner, First for EPlayers
+  soon
+testimonialFrom: "Mags Byrne, Owner, First for EPlayers"
 ---
 
 EStars featuring Fortnite toured some of the biggest sports stadiums in the UK and Ireland from January to March 2019. Thousands of avid Fortnite fans and gaming enthusiasts took part in the hope of winning £25,000. [Watch here >>>](https://vimeo.com/328684967/33216b8ae1)

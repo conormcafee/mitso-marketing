@@ -7,7 +7,6 @@ import Layout from "../components/layout"
 import Container from "../components/container"
 import WorkWithMitso from "../components/workWithMitso"
 import { FONT_BOLD, BLACK, ACCENT } from "../variables"
-import Statement from "../components/Statement"
 import DefaultImage from "../images/mitso-default.png"
 import {
   SingleImage,
@@ -16,6 +15,7 @@ import {
   MultiImage,
 } from "../components/ImageBlock"
 import { HeroWithText } from "../components/HeroWithText"
+import Quotes from ".././images/icons/quotes.svg"
 
 const CaseStudyTemplate = props => (
   <Template data={props.data} location={props.location} />
@@ -29,6 +29,7 @@ const Template = props => {
     title,
     mainImage,
     testimonial,
+    testimonialFrom,
     imageBlock,
     text,
     seo,
@@ -91,7 +92,19 @@ const Template = props => {
             dangerouslySetInnerHTML={{ __html: text }}
           />
 
-          {testimonial && <Statement statement={testimonial} />}
+          {testimonial && (
+            <Testimonial flexDirection="column" alignItems="flex-end">
+              <Flex
+                justifyContent="space-between"
+                alignItems="center"
+                width={1}
+              >
+                <h4>{testimonialFrom}</h4>
+                <img src={Quotes} alt="Quote Marks for Testimonial" />
+              </Flex>
+              <p>{testimonial}</p>
+            </Testimonial>
+          )}
         </Box>
         <WorkWithMitso />
       </Container>
@@ -117,6 +130,7 @@ export const pageQuery = graphql`
         title
         mainImage
         testimonial
+        testimonialFrom
         youtube
         vimeo
         imageBlock {
@@ -177,5 +191,18 @@ const Article = styled(Box)`
     &:hover {
       background: ${ACCENT};
     }
+  }
+`
+const Testimonial = styled(Flex)`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    max-height: 50px;
   }
 `

@@ -43,6 +43,9 @@ const CustomForm = ({ status, message, onValidated }) => {
       <Label>Email</Label>
       <Input ref={node => (email = node)} type="email" />
 
+      <Label>Company</Label>
+      <Input ref={node => (company = node)} type="text" name="MMERGE3" />
+
       <Flex alignItems="center" mt={4}>
         <Tick valid={valid} onClick={() => setValid(!valid)} mr={3} />
         <Text>

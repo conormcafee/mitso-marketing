@@ -3,7 +3,6 @@ import { Flex, Box } from "@rebass/grid"
 import BackgroundImage from "../BackgroundImage"
 
 const MultiImage = images => {
-  console.log(images)
   return (
     <Flex flexWrap="wrap" css={{ maxWidth: "1200px" }} mx="auto">
       {images.images.map((image, index) => (

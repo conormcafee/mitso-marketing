@@ -11,18 +11,19 @@ import Services from "../components/Services"
 
 import { HeroWithText } from "../components/HeroWithText"
 import { FONT_BOLD } from "../variables"
+import { PrevNext } from "../components/PrevNext"
 
 const ServicesTemplate = props => {
   const getUrl = data => navigate(data)
-  return <Template data={props.data} getUrl={getUrl} />
+  return <Template data={props.data} getUrl={getUrl} additionalData={props} />
 }
 
 const Template = props => {
   const { markdownRemark } = props.data
   const { frontmatter } = markdownRemark
-  const { text01, text02, seo, statementImage } = frontmatter
+  const { text01, text02, seo, statementImage, category } = frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
-
+  const { pageContext } = props.additionalData
   return (
     <Layout dottedBackground>
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />
@@ -88,6 +89,8 @@ const Template = props => {
       </Container>
 
       <Statement isStatement statement={frontmatter.statement} />
+
+      <PrevNext slug={pageContext.slug} category={category} />
     </Layout>
   )
 }

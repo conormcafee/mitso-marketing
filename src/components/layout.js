@@ -19,6 +19,7 @@ const Layout = ({ children, dottedBackground }) => (
         }
         allMarkdownRemark(
           filter: { frontmatter: { category: { eq: "Services" } } }
+          sort: { order: ASC, fields: [frontmatter___title] }
         ) {
           edges {
             node {

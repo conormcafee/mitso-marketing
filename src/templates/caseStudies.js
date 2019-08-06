@@ -16,9 +16,14 @@ import {
 } from "../components/ImageBlock"
 import { HeroWithText } from "../components/HeroWithText"
 import Quotes from ".././images/icons/quotes.svg"
+import { PrevNext } from "../components/PrevNext"
 
 const CaseStudyTemplate = props => (
-  <Template data={props.data} location={props.location} />
+  <Template
+    data={props.data}
+    location={props.location}
+    additionalData={props}
+  />
 )
 
 const Template = props => {
@@ -35,8 +40,10 @@ const Template = props => {
     seo,
     youtube,
     vimeo,
+    category,
   } = frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
+  const { pageContext } = props.additionalData
 
   let images = []
   imageBlock && imageBlock.map(item => images.push(item.Image))
@@ -107,6 +114,7 @@ const Template = props => {
           )}
         </Box>
         <WorkWithMitso />
+        <PrevNext slug={pageContext.slug} category={category} />
       </Container>
     </Layout>
   )
@@ -136,6 +144,7 @@ export const pageQuery = graphql`
         imageBlock {
           Image
         }
+        category
       }
     }
   }

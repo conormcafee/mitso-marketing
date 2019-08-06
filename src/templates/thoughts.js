@@ -14,7 +14,13 @@ import Dot from "../components/Dot"
 import { HeroWithText } from "../components/HeroWithText"
 
 const ThoughtsTemplate = props => {
-  return <Template data={props.data} location={props.location} />
+  return (
+    <Template
+      data={props.data}
+      location={props.location}
+      additionalData={props}
+    />
+  )
 }
 
 const Template = props => {
@@ -22,7 +28,6 @@ const Template = props => {
   const { frontmatter, html } = markdownRemark
   const { title, tags, mainImage, date, author, seo } = frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
-
   const getTags = tags => {
     let data = []
     tags !== null && tags.map(tag => data.push(tag.Tag))

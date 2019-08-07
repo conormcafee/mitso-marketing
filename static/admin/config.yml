@@ -33,6 +33,21 @@ collections:
       - { name: vimeo, label: Vimeo, widget: string, required: false }
       - { name: body, label: Body, widget: markdown }
       - {
+          name: results,
+          label: Results,
+          widget: list,
+          fields: [
+            { label: Text, name: text, widget: string },
+            { 
+              label: Icon, 
+              name: icon, 
+              widget: select,
+              options: ["website", "branding"]
+            }
+          ],
+          required: false
+        }
+      - {
           name: imageBlock,
           label: Image Block,
           widget: list,

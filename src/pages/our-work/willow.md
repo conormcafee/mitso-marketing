@@ -6,7 +6,7 @@ title: Willow
 intro: >-
   Willow is a designer dress hire service based in Newry, Co. Down passionate
   about sustainable fashion and making designer brands accessible for everyone. 
-mainImage: /assets/027-cara-s-photos-july-24-2019_.jpg
+mainImage: /assets/11.jpg
 youtube: N/A
 vimeo: N/A
 imageBlock:

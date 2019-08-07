@@ -22,11 +22,11 @@ The client was keen to create a brand that incorporated the leaves of a willow t
 
 The newly developed branding is at the heart of the website design from colour scheme to the subtle inclusion of the willow leaves. Willow is the first business of its kind in the Newry area so it was important to communicate how the service works in a clear and concise manner throughout the site. 
 
-User experience and navigation were reviewed throughout the website's development to ensure the brands, dresses and sizes available were easy for users to browse through. Additionally, knowing know how much ladies love browsing the latest fashion on their phones (ourselves included!) we ensured the website was responsive and fully optimised for mobile. The powerful visuals coupled with other simple design features make for a simple but stunning site.
+User experience and navigation were reviewed throughout the website's development to ensure the brands, dresses and sizes available were easy for users to browse. Additionally, knowing know how much ladies love browsing the latest fashion on their phones (ourselves included!) we ensured the website was responsive and fully optimised for mobile. The powerful visuals coupled with other simple design features make for a simple but stunning site.
 
 Photo/videography credit: [Ryan Dineen Photography](https://www.facebook.com/RyanDineenPhotography/)
 
 ## Results
 
 * Impressive new brand identity and logo design
-* Responsive website design
+* 5 week [website](https://www.willownewry.com/) turnaround

@@ -6,13 +6,22 @@ seo:
   seoTitle: Obelisk SEO Title
 date: 2019-05-14T20:14:44.037Z
 title: Obelisk
-intro: 'Branding, graphic design, website development and videography'
+intro: "Branding, graphic design, website development and videography"
 mainImage: /assets/obelisk-01.jpg
-youtube: ''
-vimeo: ''
+youtube: ""
+vimeo: ""
 results:
-  - icon: branding
+  - icon: visual
     text: An impressive new brand identify and logo design
+  - icon: website
+    text: A responsive, mobile friendly website
+    link: https://www.obelisk.com
+  - icon: video
+    text: Four professional web optimised videos
+    link: https://vimeo.com/250244058
+  - icon: visual
+    text: Branded e-book, letterheads, business cards, exhibition stands, posters, pull-ups and internal wall graphics
+    link: https://obelisk.com/ebook-april-2018/#p=1
 imageBlock:
   - Image: /assets/obelisk-02.jpg
   - Image: /assets/obelisk-03.jpg
@@ -28,7 +37,7 @@ testimonial: >-
   needed and more and we could not have achieved what we did without her. We
   continue to use her company’s services. I would highly recommend her and her
   team, you will not be disappointed.
-testimonialFrom: 'Lisa Healy, HR Director, Obelisk'
+testimonialFrom: "Lisa Healy, HR Director, Obelisk"
 ---
 
 Obelisk is a multinational company delivering infrastructure solutions for the telecoms and power sectors in Ireland, UK and Africa. The company wanted to align its ambitions to grow with a brand refresh to present a new direction for the company.
@@ -46,11 +55,3 @@ At MiTSO, we strongly recommend investing in professional visuals prior to launc
 Working alongside Obelisk, we agreed on all of the material and brand assets required and delivered copywriting services, where needed.
 
 We continue to work with Obelisk developing the brand and delivering campaigns which help to build its reputation.
-
-## Results
-
-- An impressive new brand identity and logo design
-- [Four professional web optimised videos](https://vimeo.com/250244058)
-- [**A responsive, mobile friendly website**](https://www.obelisk.com)
-- A suite of professional photography across four departments
-- [**Branded e-book**](https://obelisk.com/ebook-april-2018/#p=1), letterheads, business cards, exhibition stands, posters, pull-ups and internal wall graphics

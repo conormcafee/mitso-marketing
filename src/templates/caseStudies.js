@@ -16,6 +16,7 @@ import {
 } from "../components/ImageBlock"
 import { HeroWithText } from "../components/HeroWithText"
 import Quotes from ".././images/icons/quotes.svg"
+import { Results } from "../components/Results"
 import { PrevNext } from "../components/PrevNext"
 
 const CaseStudyTemplate = props => (
@@ -37,7 +38,7 @@ const Template = props => {
     testimonial,
     testimonialFrom,
     imageBlock,
-    text,
+    results,
     seo,
     youtube,
     vimeo,
@@ -86,21 +87,19 @@ const Template = props => {
           noText={vimeo === "" && youtube === ""}
         />
 
-        <Box px={[3, 4]} py={[3, 4]}>
+        <Box px={[3, 4]} pt={[3, 4]}>
           <Article
             as="article"
             mb={5}
             dangerouslySetInnerHTML={{ __html: html }}
           />
+        </Box>
 
-          {_renderImageBlock(images)}
+        {results && <Results data={results} />}
 
-          <Article
-            as="article"
-            mb={testimonial ? 5 : 0}
-            dangerouslySetInnerHTML={{ __html: text }}
-          />
+        {_renderImageBlock(images)}
 
+        <Box px={[3, 4]} py={[3, 4]}>
           {testimonial && (
             <Testimonial flexDirection="column" alignItems="flex-end">
               <Flex
@@ -146,6 +145,11 @@ export const pageQuery = graphql`
         testimonialFrom
         youtube
         vimeo
+        results {
+          icon
+          text
+          link
+        }
         imageBlock {
           Image
         }

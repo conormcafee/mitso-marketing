@@ -38,11 +38,12 @@ collections:
           widget: list,
           fields: [
             { label: Text, name: text, widget: string },
+            { label: Link, name: link, widget: string },
             { 
               label: Icon, 
               name: icon, 
               widget: select,
-              options: ["website", "branding"]
+              options: [ "collaboration", "global", "increase", "money", "photography", "social", "tickets", "video", "visual", "website" ]
             }
           ],
           required: false

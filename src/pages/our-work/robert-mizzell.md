@@ -11,6 +11,19 @@ imageBlock:
   - Image: /assets/640dd5c1-09a6-4407-b4ab-f506ba425f0f.jpeg
 youtube: ""
 vimeo: ""
+results:
+  - icon: visual
+    text: Authentic, impactful branding achieving stand out on stage
+  - icon: money
+    text: New revenue stream due to demand for new branded merchandise
+  - icon: video
+    text: A successful brand reveal which attracted 6.7k live views
+  - icon: social
+    text: 392% increase in following across channels
+  - icon: increase
+    text: 207% increase in engagement on Facebook
+  - icon: increase
+    text: 90,000 impressions and 5,000 link clicks for Robert’s UK Tour campaign
 testimonial: >-
   Maeve and the ladies at MiTSO are great to work with. We have been working
   with them for the last 5/6 months and have developed a great working
@@ -36,12 +49,3 @@ We developed a number of concepts for Robert to choose from and whittled it down
 In parallel, we worked along with Robert’s management team to create and organise social content, with the aim of growing Robert’s social following and engagement rates. Live video content, vlogs, gig updates and asking fans for feedback in posts allowed us to start testing content and bringing his social channels to the next level. We also ran targeted Facebook ad campaigns for particular gigs or tours.
 
 To launch the brand, we also co-ordinated a live logo reveal from Robert’s stage, created new merchandise and ran a social media competition to generate new email subscribers for a new monthly e-newsletter which features exclusive content.
-
-## Results
-
-- Authentic, impactful branding achieving stand out on stage
-- New revenue stream due to demand for new branded merchandise
-- A successful brand reveal which attracted 6.7k live views
-- 392% increase in following across channels
-- 207% increase in engagement on Facebook
-- 90,000 impressions and 5,000 link clicks for Robert’s UK Tour campaign

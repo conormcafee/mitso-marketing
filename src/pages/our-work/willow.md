@@ -11,6 +11,12 @@ imageBlock:
   - Image: /assets/027-cara-s-photos-july-24-2019_.jpg
   - Image: /assets/willow-logo.jpg
   - Image: /assets/037-cara-s-photos-july-28-2019_.jpg
+results:
+  - icon: visual
+    text: Impressive new brand identity and logo design
+  - icon: website
+    text: 5 week website turnaround
+    link: https://www.willownewry.com/
 ---
 
 Willow is a designer dress hire service based in Newry, Co. Down passionate about sustainable fashion and making designer brands accessible for everyone.
@@ -26,8 +32,3 @@ The newly developed branding is at the heart of the website design from colour s
 User experience and navigation were reviewed throughout the website's development to ensure the brands, dresses and sizes available were easy for users to browse. Additionally, knowing know how much ladies love browsing the latest fashion on their phones (ourselves included!) we ensured the website was responsive and fully optimised for mobile. The powerful visuals coupled with other simple design features make for a simple but stunning site.
 
 Photo/videography credit: [Ryan Dineen Photography](https://www.facebook.com/RyanDineenPhotography/)
-
-## Results
-
-- Impressive new brand identity and logo design
-- 5 week [website](https://www.willownewry.com/) turnaround

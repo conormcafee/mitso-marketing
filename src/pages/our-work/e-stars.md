@@ -12,7 +12,7 @@ intro: >-
   its latest tournament EStars featuring Fortnite.
 mainImage: /assets/e-stars.jpg
 youtube: .
-vimeo: 'https://vimeo.com/328684967/33216b8ae1'
+vimeo: 328684967/33216b8ae1
 imageBlock:
   - Image: /assets/e-stars-dundalk.jpg
   - Image: /assets/e-stars-show.jpg

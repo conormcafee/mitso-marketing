@@ -3,12 +3,10 @@ category: Case Study
 seo: {}
 date: 2019-08-07T09:31:57.031Z
 title: Willow
-intro: >-
-  Willow is a designer dress hire service based in Newry, Co. Down passionate
-  about sustainable fashion and making designer brands accessible for everyone.
+intro: Brand development, website design and website development
 mainImage: /assets/11.jpg
 youtube: vR8FbOR9mu4
-vimeo: N/A
+vimeo: ""
 imageBlock:
   - Image: /assets/027-cara-s-photos-july-24-2019_.jpg
   - Image: /assets/willow-logo.jpg

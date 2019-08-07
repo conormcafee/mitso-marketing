@@ -32,6 +32,7 @@ const Template = props => {
   const { html } = markdownRemark
   const {
     title,
+    intro,
     mainImage,
     testimonial,
     testimonialFrom,
@@ -71,9 +72,10 @@ const Template = props => {
     <Layout dottedBackground>
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />
       <Container>
-        <Flex mb={5} px={[3, 4]}>
+        <Flex px={[3, 4]} pb={[3, 4]}>
           <Hero>
             <Title>{title}</Title>
+            <SubTitle>{intro}</SubTitle>
           </Hero>
         </Flex>
 
@@ -84,7 +86,7 @@ const Template = props => {
           noText={vimeo === "" && youtube === ""}
         />
 
-        <Box px={[3, 4]} pt={4} mb={5}>
+        <Box px={[3, 4]} py={[3, 4]}>
           <Article
             as="article"
             mb={5}
@@ -113,8 +115,10 @@ const Template = props => {
             </Testimonial>
           )}
         </Box>
-        <WorkWithMitso />
+
         <PrevNext slug={pageContext.slug} category={category} />
+
+        <WorkWithMitso />
       </Container>
     </Layout>
   )
@@ -136,6 +140,7 @@ export const pageQuery = graphql`
           seoImage
         }
         title
+        intro
         mainImage
         testimonial
         testimonialFrom
@@ -161,7 +166,18 @@ const Title = styled.h1`
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
+`
+
+const SubTitle = styled.h2`
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 1.3;
+  color: ${ACCENT};
 `
 
 const Article = styled(Box)`
@@ -171,13 +187,6 @@ const Article = styled(Box)`
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
-  }
-
-  p:first-of-type {
-    color: ${BLACK};
-    font-family: ${FONT_BOLD};
-    font-weight: 900;
-    font-size: 20px;
   }
 
   img {
@@ -200,6 +209,18 @@ const Article = styled(Box)`
     &:hover {
       background: ${ACCENT};
     }
+  }
+
+  h1,
+  h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  h3,
+  h4 {
+    font-size: 18px;
+    line-height: 1.3;
   }
 `
 const Testimonial = styled(Flex)`

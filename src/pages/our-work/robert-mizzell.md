@@ -3,10 +3,7 @@ category: Case Study
 seo: {}
 date: 2019-06-17T10:14:19.445Z
 title: Robert Mizzell
-intro: >-
-  Robert Mizzell is a popular country music star, hailing all the way from
-  Louisiana. Robert wanted a fresh look and to improve engagement with his Irish
-  fan base across all digital channels.
+intro: Brand development, social media management and e-marketing
 mainImage: /assets/383fff21-1314-481c-bafc-599a7f212b79.jpeg
 imageBlock:
   - Image: /assets/650aaf7c-a762-446e-aa7d-64c6b73b520b.jpeg

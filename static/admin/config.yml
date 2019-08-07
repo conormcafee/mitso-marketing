@@ -21,16 +21,16 @@ collections:
           ]
         }
       - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: intro, label: Introduction, widget: text }
+      - { name: title, label: Title, widget: string, required: true }
+      - { name: intro, label: Introduction, widget: string, required: true }
       - {
           name: mainImage,
           label: Main Image,
           widget: image,
           default: /src/images/mitso-default.png,
         }
-      - { name: youtube, label: Youtube, widget: string }
-      - { name: vimeo, label: Vimeo, widget: string }
+      - { name: youtube, label: Youtube, widget: string, required: false }
+      - { name: vimeo, label: Vimeo, widget: string, required: false }
       - { name: body, label: Body, widget: markdown }
       - {
           name: imageBlock,

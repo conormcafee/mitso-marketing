@@ -97,7 +97,7 @@ const Template = props => {
 
           <Article
             as="article"
-            mb={5}
+            mb={testimonial ? 5 : 0}
             dangerouslySetInnerHTML={{ __html: text }}
           />
 

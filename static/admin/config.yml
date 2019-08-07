@@ -43,7 +43,7 @@ collections:
               label: Icon, 
               name: icon, 
               widget: select,
-              options: [ "collaboration", "global", "increase", "money", "photography", "social", "tickets", "video", "visual", "website" ]
+              options: [ collaboration, global, increase, money, photography, social, tickets, video, visual, website]
             }
           ],
           required: false

@@ -32,7 +32,7 @@ const PrevNext = props => {
           <Button
             type="previous"
             to={pages[activePage - 1].node.fields.slug}
-            hasNextAndPrev={prev && next}
+            hasnextandprev={prev && next ? "true" : "false"}
           >
             <SubHeading>Prev</SubHeading>
             <Title>{pages[activePage - 1].node.frontmatter.title}</Title>
@@ -42,7 +42,7 @@ const PrevNext = props => {
           <Button
             type="next"
             to={pages[activePage + 1].node.fields.slug}
-            hasNextAndPrev={prev && next}
+            hasnextandprev={prev && next ? "true" : "false"}
           >
             <SubHeading>Next</SubHeading>
             <Title>{pages[activePage + 1].node.frontmatter.title}</Title>
@@ -79,11 +79,15 @@ const Button = styled(Link)`
   text-align: center;
   padding: 20px;
   text-decoration: none;
-  width: ${props => (props.hasNextAndPrev ? "50%" : "100%")};
+  width: ${props => (props.hasnextandprev === "true" ? "50%" : "100%")};
   border-left: ${props =>
-    props.hasNextAndPrev && props.type === "next" && `1px solid #e8d98b`};
+    props.hasnextandprev === "true" &&
+    props.type === "next" &&
+    `1px solid #e8d98b`};
   border-right: ${props =>
-    props.hasNextAndPrev && props.type === "previous" && `1px solid #e8d98b`};
+    props.hasnextandprev === "true" &&
+    props.type === "previous" &&
+    `1px solid #e8d98b`};
 
   &:hover {
     background: #e8d98b;

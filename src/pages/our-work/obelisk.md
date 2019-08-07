@@ -6,21 +6,21 @@ seo:
   seoTitle: Obelisk SEO Title
 date: 2019-05-14T20:14:44.037Z
 title: Obelisk
-intro: 'Branding, graphic design, website development and videography'
+intro: "Branding, graphic design, website development and videography"
 mainImage: /assets/obelisk-01.jpg
-youtube: ''
-vimeo: ''
+youtube: ""
+vimeo: ""
 results:
-  - icon:  visual
+  - icon: visual
     text: An impressive new brand identify and logo design
-  - icon:  website
-    link: 'https://www.obelisk.com'
-    text: 'A responsive, mobile friendly website'
-  - icon:  video
-    link: 'https://vimeo.com/250244058'
+  - icon: website
+    link: "https://www.obelisk.com"
+    text: "A responsive, mobile friendly website"
+  - icon: video
+    link: "https://vimeo.com/250244058"
     text: Four professional web optimised videos
-  - icon:  visual
-    link: 'https://obelisk.com/ebook-april-2018/#p=1'
+  - icon: visual
+    link: "https://obelisk.com/ebook-april-2018/#p=1"
     text: >-
       Branded e-book, letterheads, business cards, exhibition stands, posters,
       pull-ups and internal wall graphics
@@ -39,7 +39,7 @@ testimonial: >-
   needed and more and we could not have achieved what we did without her. We
   continue to use her company’s services. I would highly recommend her and her
   team, you will not be disappointed.
-testimonialFrom: 'Lisa Healy, HR Director, Obelisk'
+testimonialFrom: "Lisa Healy, HR Director, Obelisk"
 ---
 
 Obelisk is a multinational company delivering infrastructure solutions for the telecoms and power sectors in Ireland, UK and Africa. The company wanted to align its ambitions to grow with a brand refresh to present a new direction for the company.

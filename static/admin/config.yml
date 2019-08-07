@@ -44,7 +44,7 @@ collections:
               name: icon, 
               widget: select,
               required: false,
-              options: [ collaboration, global, increase, money, photography, social, tickets, video, visual, website]
+              options: [collaboration,global,increase,money,photography,social,tickets,video,visual,website]
             }
           ],
           required: false

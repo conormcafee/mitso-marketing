@@ -4,9 +4,9 @@ title: Meet our Team
 teamMember:
   - img: /assets/maeve-standard.jpg
     imgSwap: /assets/maeve-hover.jpg
-    linkedin: "https://www.linkedin.com/in/maeve-finnegan"
-    name: Maeve Finnegan
     jobTitle: Managing Director
+    linkedin: 'https://www.linkedin.com/in/maeve-finnegan'
+    name: Maeve Finnegan
     psst: >-
       Psst... It's common knowledge that Maeve can't start her day without a
       coffee. What you also may not know is the Maeve toured the world as a
@@ -27,9 +27,9 @@ teamMember:
       deliver for them.
   - img: /assets/roisin-standard.jpg
     imgSwap: /assets/roisin-hover.jpg
-    linkedin: "https://www.linkedin.com/in/roisin-watters-661a03a6/"
+    jobTitle: Digital Marketing Executive
+    linkedin: 'https://www.linkedin.com/in/roisin-watters-661a03a6/'
     name: Roisin Watters
-    jobTitle: Marketing
     psst: >-
       Psst... Roisin's passport is always close to hand as she gets ready to hop
       on another flight. What you also may not know about Roisin is that she has
@@ -52,9 +52,9 @@ teamMember:
       artists.
   - img: /assets/ciara-standard.jpg
     imgSwap: /assets/ciara-hover.jpg
-    linkedin: "https://www.linkedin.com/in/ciara-boylan"
+    jobTitle: 'Marketing Executive '
+    linkedin: 'https://www.linkedin.com/in/ciara-boylan'
     name: Ciara Boylan
-    jobTitle: Marketing
     psst: >-
       Psst... Ciara is the first to lighten the mood if things get too serious!
       What you also may not know about Ciara is that she was the first intern in
@@ -76,3 +76,4 @@ teamMember:
       I enjoy providing clients with solutions, it improves their brand and
       future prospects.
 ---
+

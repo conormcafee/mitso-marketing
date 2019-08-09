@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Flex, Box } from "@rebass/grid"
 import Button from "../../components/button"
-import { ACCENT } from "../../variables"
+import { SECONDARY } from "../../variables"
 import Container from "../../components/container"
 import Thought from "../Thoughts/components/Thought"
 import { StaticQuery, graphql, navigate } from "gatsby"
@@ -105,7 +105,7 @@ const thoughts = graphql`
 `
 
 const NavyBackground = styled(Box)`
-  background-color: ${ACCENT};
+  background-color: ${SECONDARY};
   position: relative;
 
   border-radius: ${props => !props.isHomepage && "8px"};

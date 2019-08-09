@@ -9,15 +9,15 @@ mainImage: /assets/photo-12-02-2019-12-36-01-1-.jpg
 youtube: XWKV3871DHE
 results:
   - icon: social
-    text: '500 new social followers '
-  - icon: website
-    text: Top 6 on Google search rankings organically
-  - icon: social
     text: >-
       Post reach has increased by 317% and post engagement has increased by
       453%.
+  - icon: social
+    text: '500 new social media followers '
+  - icon: website
+    text: Top 6 on Google search rankings organically
 imageBlock:
-  - Image: /assets/sweeney-todd-brand-ideas.png
+  - Image: /assets/sweeney-todd-designs.png
   - Image: /assets/sweeney-todd-website.png
 testimonial: >-
   I'm an absolute dinosaur when it comes to social media! However after meeting
@@ -26,7 +26,7 @@ testimonial: >-
   is truly amazing and in a very short space of time has improved my business
   hugely. I couldn't recommend Maeve & her team at MiTSO enough. Thank you so
   much MiTSO!
-testimonialFrom: 'Sandra Hickey Owner of Sweeney Todd '
+testimonialFrom: 'Sandra Hickey, Owner of Sweeney Todd '
 ---
 We met with Sweeney Todd Barbers in Kilkenny for a consultation to assess where the business was and to understand the business objectives. It was clear that this was a thriving city centre business with a great reputation, but it had lost some of its sparkle and with little knowledge of how the world of digital really works, we wanted to take the girls on the journey with us and let them be part of the process rather than handing them a new brand and website and saying goodbye.
 

@@ -131,6 +131,7 @@ const Article = styled(Box)`
 
   img {
     display: block;
+    max-width: 100%;
     margin-top: 32px;
     margin-bottom: 32px;
   }

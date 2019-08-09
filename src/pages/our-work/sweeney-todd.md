@@ -17,7 +17,7 @@ results:
   - icon: website
     text: Top 6 on Google search rankings organically
 imageBlock:
-  - Image: /assets/st-brands.png
+  - Image: /assets/st-branding.png
   - Image: /assets/sweeney-todd-website.png
 testimonial: >-
   I'm an absolute dinosaur when it comes to social media! However after meeting

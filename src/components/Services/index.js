@@ -33,4 +33,5 @@ const Text = styled.h4`
   margin-bottom: 0;
   margin-left: 32px;
   font-size: 18px;
+  color: white;
 `

@@ -4,13 +4,13 @@ import styled from "styled-components"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Container from "../components/container"
-import { graphql, navigate } from "gatsby"
+import { graphql, navigate, Link } from "gatsby"
 
 import Statement from "../components/Statement"
 import Services from "../components/Services"
 
 import { HeroWithText } from "../components/HeroWithText"
-import { FONT_BOLD } from "../variables"
+import { FONT_BOLD, BLACK, ACCENT } from "../variables"
 
 const ServicesTemplate = props => {
   const getUrl = data => navigate(data)
@@ -18,10 +18,11 @@ const ServicesTemplate = props => {
 }
 
 const Template = props => {
-  const { markdownRemark } = props.data
+  const { markdownRemark, allMarkdownRemark } = props.data
   const { frontmatter } = markdownRemark
   const { text01, text02, seo, statementImage } = frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
+
   return (
     <Layout dottedBackground>
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />
@@ -31,6 +32,23 @@ const Template = props => {
         title="We offer tailored services to reach your target audience"
         subtitle={frontmatter.title}
       />
+
+      <OtherServices
+        flexWrap="wrap"
+        alignItems="center"
+        justifyContent={["flex-start", "center"]}
+        px={[2, 3]}
+        mt={3}
+      >
+        {allMarkdownRemark.edges.map((service, index) => (
+          <Flex px={2} py={2} alignItems="center" key={index}>
+            <Link to={service.node.fields.slug}>
+              {service.node.frontmatter.title}
+            </Link>
+            {index !== allMarkdownRemark.edges.length - 1 && <Sep />}
+          </Flex>
+        ))}
+      </OtherServices>
 
       <Container>
         <Flex
@@ -152,5 +170,36 @@ const Bold = styled.p`
 `
 
 const ServiceIcons = styled(Flex)`
-  background: #f6f6f6;
+  background: ${BLACK};
+`
+
+const OtherServices = styled(Flex)`
+  a {
+    font-family: ${FONT_BOLD};
+    font-weight: 700;
+    color: ${BLACK};
+    text-decoration: none;
+
+    &:hover {
+      color: ${ACCENT};
+    }
+
+    @media only screen and (max-width: 639px) {
+      border-bottom: 1px solid ${ACCENT};
+      font-size: 12px;
+    }
+  }
+`
+
+const Sep = styled(Box)`
+  display: none;
+  height: 20px;
+  width: 2px;
+  background: ${ACCENT};
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media only screen and (min-width: 640px) {
+    display: block;
+  }
 `

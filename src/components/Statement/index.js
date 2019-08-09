@@ -21,6 +21,7 @@ const Statement = ({ isStatement, statement, image }) => {
         p={[3, 4]}
         my={[4, 5]}
         mx="auto"
+        isStatement={isStatement}
       >
         {isStatement && (
           <Cirlces alignItems="center" justifyContent="center">
@@ -29,10 +30,10 @@ const Statement = ({ isStatement, statement, image }) => {
             <Circle size={buildCircle("small")} opacity="small" />
           </Cirlces>
         )}
-        <StatementBox>
+        <StatementBox isStatement={isStatement}>
           <Text isStatement={isStatement}>
             {statement}
-            <Dot>.</Dot>
+            <Dot isStatement={isStatement}>.</Dot>
           </Text>
         </StatementBox>
       </Wrapper>
@@ -46,7 +47,7 @@ const Wrapper = styled(Box)`
   position: relative;
   width: 100%;
   max-width: ${props => props.fullWidth};
-  background-color: ${BLACK};
+  background-color: ${props => (props.isStatement ? SECONDARY : BLACK)};
   box-shadow: -4px 6px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -56,7 +57,7 @@ const Text = styled.h3`
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: white;
+  color: ${props => (props.isStatement ? BLACK : "#ffffff")};
   font-size: 16px;
   line-height: 1.6;
 
@@ -66,7 +67,7 @@ const Text = styled.h3`
 `
 
 const Dot = styled.span`
-  color: ${SECONDARY};
+  color: ${props => (props.isStatement ? ACCENT : SECONDARY)};
 `
 const Cirlces = styled(Flex)`
   position: absolute;
@@ -100,7 +101,8 @@ const StatementBox = styled(Flex)`
   margin-right: auto;
   position: relative;
   z-index: 1;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: ${props =>
+    !props.isStatement && "1px 1px 1px rgba(0, 0, 0, 0.3)"};
 `
 
 Statement.defaultProps = {

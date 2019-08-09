@@ -23,8 +23,9 @@ testimonial: >-
   Maeve that has changed at the speed of light. Maeve has dragged me kicking and
   screaming into the 21st century but in the gentlest understanding way, Maeve
   is truly amazing and in a very short space of time has improved my business
-  hugely. I couldn't recommend Maeve & her team at MiTSO enough. Thank you so
-  much MiTSO!
+  hugely. I couldn't recommend Maeve & her team at MiTSO enough. 
+
+  Thank you so much MiTSO!
 testimonialFrom: 'Sandra Hickey, Owner of Sweeney Todd '
 ---
 We met with Sweeney Todd Barbers in Kilkenny for a consultation to assess where the business was and to understand the business objectives. It was clear that this was a thriving city centre business with a great reputation, but it had lost some of its sparkle and with little knowledge of how the world of digital really works, we wanted to take the girls on the journey with us and let them be part of the process rather than handing them a new brand and website and saying goodbye.

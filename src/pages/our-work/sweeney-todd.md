@@ -8,7 +8,7 @@ intro: 'Branding, website development and social media '
 mainImage: /assets/photo-12-02-2019-12-36-01-1-.jpg
 youtube: XWKV3871DHE
 results:
-  - icon: social
+  - icon: increase
     text: >-
       Post reach has increased by 317% and post engagement has increased by
       453%.

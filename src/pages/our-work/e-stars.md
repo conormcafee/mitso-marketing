@@ -8,19 +8,21 @@ date: 2019-05-18T17:10:07.925Z
 title: EStars
 intro: Esports marketing and event management
 mainImage: /assets/e-stars.jpg
-youtube:
-vimeo: 328684967/33216b8ae1
+youtube: v=5zwin_UBlW4
+vimeo: ''
 results:
   - icon: tickets
-    text: Over 6,000 tickets sold
+    text: 'Over 6,000 tickets sold'
   - icon: increase
     text: 97% increase in website traffic
   - icon: social
     text: 30% increase in social following across all channels
   - icon: video
-    text: 30,000 video views on YouTube
+    text: '30,000 video views on YouTube'
   - icon: collaboration
-    text: Successful collaboration with Tesla and interest from other major global brands
+    text: >-
+      Successful collaboration with Tesla and interest from other major global
+      brands
   - icon: global
     text: Plans to take the tournament to Dubai and further afield
 imageBlock:
@@ -34,7 +36,7 @@ testimonial: >-
   nothing is a problem with them. Mitso is very much “hands on” and an
   intelligent, forward thinking company who I look forward to working with again
   soon
-testimonialFrom: "Mags Byrne, Owner, First for EPlayers"
+testimonialFrom: 'Mags Byrne, Owner, First for EPlayers'
 ---
 
 EStars featuring Fortnite toured some of the biggest sports stadiums in the UK and Ireland from January to March 2019. Thousands of avid Fortnite fans and gaming enthusiasts took part in the hope of winning £25,000.

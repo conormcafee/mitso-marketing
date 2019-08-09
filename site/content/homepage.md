@@ -20,8 +20,7 @@ review: >-
   and improve our campaigns and performance to make sure you reach your target
   audience and fulfil your marketing objectives.
 thoughts: >-
-  Take a look through our recents thoughts and ramblings. Along with getting our
-  thoughts out on this website, we are also active on social media. Why don’t
-  you give us a follow on your preferred platform
+  Take a look through our recent thoughts and ramblings to stay up to date with
+  industry news and find out what the team at MiTSO are getting up to.
 ---
 

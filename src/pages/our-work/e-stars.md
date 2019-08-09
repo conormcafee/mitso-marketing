@@ -8,7 +8,7 @@ date: 2019-05-18T17:10:07.925Z
 title: EStars
 intro: Esports marketing and event management
 mainImage: /assets/e-stars.jpg
-youtube: v=5zwin_UBlW4
+youtube: 5zwin_UBlW4
 vimeo: ''
 results:
   - icon: tickets

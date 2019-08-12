@@ -77,9 +77,13 @@ const Results = ({ data }) => (
             <Flex flexDirection="column" mt={[3, 0]}>
               <Text>{result.text}</Text>
               {result.link && (
-                <a href={result.link} target="_blank" rel="noopener noreferrer">
+                <ExternalHref
+                  href={result.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={ExternalLink} alt={`Go to ${result.link}`} />
-                </a>
+                </ExternalHref>
               )}
             </Flex>
           </Flex>
@@ -121,5 +125,11 @@ const Text = styled.span`
   @media only screen and (min-width: 640px) {
     text-align: left;
     font-size: 16px;
+  }
+`
+
+const ExternalHref = styled.a`
+  @media only screen and (max-width: 640px) {
+    text-align: center;
   }
 `

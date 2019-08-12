@@ -36,7 +36,7 @@ const Template = props => {
       <OtherServices
         flexWrap="wrap"
         alignItems="center"
-        justifyContent={["flex-start", "center"]}
+        justifyContent="center"
         px={[2, 3]}
         mt={3}
       >
@@ -167,6 +167,7 @@ const LongText = styled(Box)`
 const Bold = styled.p`
   font-family: ${FONT_BOLD};
   font-weight: 700;
+  color: ${BLACK};
 `
 
 const ServiceIcons = styled(Flex)`

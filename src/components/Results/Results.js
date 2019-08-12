@@ -66,9 +66,15 @@ const Results = ({ data }) => (
     <Icons>
       <Flex flexWrap="wrap" justifyContent="center" pb={[3, 4]}>
         {data.map((result, index) => (
-          <Flex p={[3, 4]} alignItems="center" width={1 / 2} key={index}>
+          <Flex
+            flexDirection={["column", "row"]}
+            p={[3, 4]}
+            alignItems="center"
+            width={1 / 2}
+            key={index}
+          >
             {renderIcon(result.icon)}
-            <Flex flexDirection="column">
+            <Flex flexDirection="column" mt={[3, 0]}>
               <Text>{result.text}</Text>
               {result.link && (
                 <a href={result.link} target="_blank" rel="noopener noreferrer">
@@ -108,6 +114,12 @@ const Icon = styled.img`
 
 const Text = styled.span`
   max-width: 300px;
-  font-size: 16px;
+  text-align: center;
+  font-size: 12px;
   line-height: 1.4;
+
+  @media only screen and (min-width: 640px) {
+    text-align: left;
+    font-size: 16px;
+  }
 `

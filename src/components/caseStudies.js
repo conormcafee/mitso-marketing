@@ -8,8 +8,10 @@ import Container from "../components/container"
 import { StaticQuery, graphql, navigate } from "gatsby"
 
 const ListCaseStudies = props => {
-  const { data, moreCaseStudies, homepage } = props
+  const { data, moreCaseStudies, homepage, featured } = props
   const caseStudies = data.allMarkdownRemark.edges
+
+  const [featuredCaseStudies, setFeaturedCaseStudies] = useState([])
 
   const intro = data.file.childMarkdownRemark.frontmatter.intro
   const others = data.file.childMarkdownRemark.frontmatter.others
@@ -28,9 +30,30 @@ const ListCaseStudies = props => {
     }
   })
 
-  const _renderCaseStudies = (data, homepage) => (
+  useEffect(() => {
+    if (featured) {
+      const fcs = []
+      const getCaseStudy = (caseStudy, featuredCaseStudy) =>
+        caseStudy.node.frontmatter.title === featured[featuredCaseStudy]
+      caseStudies.map(
+        caseStudy =>
+          getCaseStudy(caseStudy, "caseStudy01") && fcs.push(caseStudy)
+      )
+      caseStudies.map(
+        caseStudy =>
+          getCaseStudy(caseStudy, "caseStudy02") && fcs.push(caseStudy)
+      )
+      caseStudies.map(
+        caseStudy =>
+          getCaseStudy(caseStudy, "caseStudy03") && fcs.push(caseStudy)
+      )
+      setFeaturedCaseStudies(fcs)
+    }
+  }, [])
+
+  const _renderCaseStudies = data => (
     <React.Fragment>
-      {data.slice(0, homepage ? 3 : data.length).map((study, index) => (
+      {data.map((study, index) => (
         <CaseStudy {...study} key={index} />
       ))}
     </React.Fragment>
@@ -49,7 +72,9 @@ const ListCaseStudies = props => {
           )}
         </Flex>
         <CaseStudies as="section" flexWrap="wrap" my={props.my ? props.my : 3}>
-          {_renderCaseStudies(caseStudies, homepage)}
+          {_renderCaseStudies(
+            featuredCaseStudies.length > 0 ? featuredCaseStudies : caseStudies
+          )}
         </CaseStudies>
       </Container>
 

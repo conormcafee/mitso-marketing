@@ -22,9 +22,11 @@ export default ({ data }) => {
     youtube,
     vimeo,
     thoughts,
+    featured,
     seo,
   } = data.file.childMarkdownRemark.frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
+
   return (
     <Layout dottedBackground>
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />
@@ -58,7 +60,7 @@ export default ({ data }) => {
 
       {/* Case Studies */}
 
-      <CaseStudies homepage moreCaseStudies />
+      <CaseStudies homepage moreCaseStudies featured={featured} />
 
       {/* Work with Mitso */}
 
@@ -153,6 +155,11 @@ export const query = graphql`
           promote
           review
           thoughts
+          featured {
+            caseStudy01
+            caseStudy02
+            caseStudy03
+          }
           seo {
             seoTitle
             seoDescription

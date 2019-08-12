@@ -115,7 +115,17 @@ collections:
           - {label: Brand, name: brand, widget: text}
           - {label: Promote, name: promote, widget: text}
           - {label: Review, name: review, widget: text}
-          - {label: Case Studies, name: caseStudies, widget: relation, collection: projects, searchFields: ["title"], valueField: "title", displayFields: ["title", "slug"]}
+          - {
+            label: Featured Case Studies, 
+            name: featured, 
+            widget: object,
+            required: true, 
+            fields: [
+              { label: Case Study 01, name: caseStudy01, widget: relation, collection: projects, searchFields: ["title"], valueField: "title", displayFields: ["title"]},
+              { label: Case Study 02, name: caseStudy02, widget: relation, collection: projects, searchFields: ["title"], valueField: "title", displayFields: ["title"]},
+              { label: Case Study 03, name: caseStudy03, widget: relation, collection: projects, searchFields: ["title"], valueField: "title", displayFields: ["title"]}
+              ]
+            }
           - {label: Thoughts, name: thoughts, widget: text}
   - name: whoWeAre
     label: Who We Are

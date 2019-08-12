@@ -109,7 +109,8 @@ collections:
               ]
             }
           - {label: Title, name: title, widget: string}
-          - {label: Youtube ID, name: youtube, widget: string }
+          - {label: Youtube ID, name: youtube, widget: string, required: false}
+          - {label: Vimeo ID, name: vimeo, widget: string, required: false}
           - {label: Plan, name: plan, widget: text}
           - {label: Brand, name: brand, widget: text}
           - {label: Promote, name: promote, widget: text}

@@ -13,25 +13,18 @@ import Dot from "../components/Dot"
 import Tagline from "../components/tagline"
 import HomepageHero from "../images/hero-image-transparent.png"
 import Play from "../images/icons/play-button.svg"
-import Close from "../images/icons/close.svg"
-import YouTube from "react-youtube"
+import { VideoModal } from "../components/VideoModal"
 
 export default ({ data }) => {
   const [modal, setModal] = useState(false)
   const {
     title,
     youtube,
+    vimeo,
     thoughts,
     seo,
   } = data.file.childMarkdownRemark.frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
-  const opts = {
-    height: "390",
-    width: "640",
-    playerVars: {
-      autoplay: 1,
-    },
-  }
   return (
     <Layout dottedBackground>
       <SEO title={seoTitle} description={seoDescription} image={seoImage} />
@@ -78,13 +71,21 @@ export default ({ data }) => {
       </Box>
 
       {modal && (
+        <VideoModal
+          closeModal={() => setModal(!modal)}
+          youtube={youtube}
+          vimeo={vimeo}
+        />
+      )}
+
+      {/* {modal && (
         <Modal alignItems="center" justifyContent="center">
           <CloseButton onClick={() => setModal(!modal)}>
             <img src={Close} alt="CLose" />
           </CloseButton>
           <YouTube videoId={youtube} opts={opts} />
         </Modal>
-      )}
+      )} */}
     </Layout>
   )
 }
@@ -139,33 +140,6 @@ const VideoButton = styled.button`
   animation: ${pulse} 2000ms infinite ease-in-out;
 `
 
-const Modal = styled(Flex)`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(58, 64, 90, 0.9);
-  z-index: 100;
-`
-
-const CloseButton = styled.button`
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: white;
-  height: 50px;
-  width: 50px;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    transform: scale(0.75);
-  }
-`
-
 export const query = graphql`
   query {
     file(name: { eq: "homepage" }) {
@@ -173,6 +147,7 @@ export const query = graphql`
         frontmatter {
           title
           youtube
+          vimeo
           plan
           brand
           promote

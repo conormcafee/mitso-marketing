@@ -19,7 +19,12 @@ review: >-
   We know that time and money is precious, which is why we consistently review
   and improve our campaigns and performance to make sure you reach your target
   audience and fulfil your marketing objectives.
+featured:
+  caseStudy01: Obelisk
+  caseStudy02: EStars
+  caseStudy03: Willow
 thoughts: >-
   Take a look through our recent thoughts and ramblings to stay up to date with
   industry news and find out what the team at MiTSO are getting up to.
 ---
+

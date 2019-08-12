@@ -121,9 +121,9 @@ collections:
             widget: object,
             required: true, 
             fields: [
-              { label: Case Study 01, name: caseStudy01, widget: relation, collection: projects, searchFields: ["title"], valueField: "title", displayFields: ["title"]},
-              { label: Case Study 02, name: caseStudy02, widget: relation, collection: projects, searchFields: ["title"], valueField: "title", displayFields: ["title"]},
-              { label: Case Study 03, name: caseStudy03, widget: relation, collection: projects, searchFields: ["title"], valueField: "title", displayFields: ["title"]}
+              { label: Case Study 01, name: caseStudy01, widget: relation, collection: projects, searchFields: ["title"], valueField: "title", displayFields: ["title"], required: true},
+              { label: Case Study 02, name: caseStudy02, widget: relation, collection: projects, searchFields: ["title"], valueField: "title", displayFields: ["title"], required: true},
+              { label: Case Study 03, name: caseStudy03, widget: relation, collection: projects, searchFields: ["title"], valueField: "title", displayFields: ["title"], required: true}
               ]
             }
           - {label: Thoughts, name: thoughts, widget: text}

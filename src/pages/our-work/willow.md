@@ -17,6 +17,16 @@ imageBlock:
   - Image: /assets/027-cara-s-photos-july-24-2019_.jpg
   - Image: /assets/willow-logo.jpg
   - Image: /assets/037-cara-s-photos-july-28-2019_.jpg
+testimonial: >-
+  I first approached MiTSO 5 weeks ago when I had a business idea that I wanted
+  to design a website for. Maeve and Roisin worked with me  providing innovative
+  ideas, strategic and general advice. They were both really helpful, positive,
+  approachable and professional in all our dealings. Most importantly they
+  shared my enthusiasm for the project and really went above and beyond to
+  deliver it. This has helped get my business off to the best start possible for
+  which I am so thankful. I would highly recommend approaching MiTSO for
+  marketing advice.
+testimonialFrom: 'Cara Heaney, Owner, Willow Designer Dress Hire'
 ---
 Willow is a designer dress hire service based in Newry, Co. Down passionate about sustainable fashion and making designer brands accessible for everyone.
 

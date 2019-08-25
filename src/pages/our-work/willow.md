@@ -3,7 +3,7 @@ category: Case Study
 seo: {}
 date: 2019-08-07T09:31:57.031Z
 title: Willow
-intro: 'Brand development, website design and website development'
+intro: Launching a sustainable fashion business
 mainImage: /assets/11.jpg
 youtube: vR8FbOR9mu4
 vimeo: ''

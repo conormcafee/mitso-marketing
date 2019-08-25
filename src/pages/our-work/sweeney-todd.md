@@ -4,7 +4,7 @@ seo:
   seoTitle: Sweeney Todd Kilkenny
 date: 2019-08-09T08:02:55.687Z
 title: Sweeney Todd
-intro: 'Branding, website development and social media '
+intro: A cut above the rest
 mainImage: /assets/photo-12-02-2019-12-36-01-1-.jpg
 youtube: XWKV3871DHE
 results:

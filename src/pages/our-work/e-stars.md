@@ -6,7 +6,7 @@ seo:
   seoTitle: EStars Title
 date: 2019-05-18T17:10:07.925Z
 title: EStars
-intro: Esports marketing and event management
+intro: 'Promoting a grassroots esports tournament '
 mainImage: /assets/e-stars.jpg
 youtube: 5zwin_UBlW4
 vimeo: ''

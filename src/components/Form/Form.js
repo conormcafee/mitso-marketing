@@ -12,7 +12,7 @@ const Form = () => (
     data-netlify="true"
     data-netlify-honeypot="bot-field"
   >
-    <input type="hidden" name="bot-field" />
+    <input type="hidden" name="form-name" value="contact" />
 
     <div>
       <Label htmlFor="name">Name</Label>
@@ -31,7 +31,6 @@ const Form = () => (
 
     <Box mt={4}>
       <Button type="submit">Send a Message</Button>
-      {/* <input type="submit" value="Drop a line" /> */}
     </Box>
   </Wrapper>
 )

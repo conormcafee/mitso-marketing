@@ -17,7 +17,7 @@ export default () => (
         alignItems="center"
         justifyContent="center"
       >
-        <h1>Thanks, you're message is on it's way</h1>
+        <h1>Thanks, your message is on it's way</h1>
         <Button onClick={() => navigate("/")}>Back to Homepage</Button>
       </Wrapper>
     </Container>

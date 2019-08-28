@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import WorkWithMitso from "../components/workWithMitso"
 import Dot from "../components/Dot"
+import Form from "../components/Form/Form"
 import { BLACK, ACCENT, FONT_BOLD, WHITE } from "../variables"
 import ReactMapboxGl, { Marker } from "react-mapbox-gl"
 import MarkerIcon from "../images/icons/marker.svg"
@@ -31,6 +32,13 @@ export default ({ data }) => {
           <SubTitle>{intro}</SubTitle>
         </Box>
       </Container>
+
+      <Container>
+        <Box px={[3, 4]} mb={[4, 5]}>
+          <Form />
+        </Box>
+      </Container>
+
       <Container>
         <Flex
           flexWrap="wrap"

@@ -315,6 +315,30 @@ collections:
               { label: SEO Image, name: seoImage, widget: image, required: false},
               ]
             }
+  - name: leadgen
+    label: Leadgen
+    files: 
+      - label: Content
+        name: content
+        file: site/content/leadGen.md
+        fields:
+          - { name: category, label: Category, widget: hidden, default: noPage }
+          - { name: title, label: Title, widget: string }
+          - { name: youtube, label: Youtube ID, widget: string }
+          - { name: text01, label: Text 01, widget: text }
+          - { name: text02, label: Text 02, widget: text }
+          - { name: mainImage, label: Main Image, widget: image }
+          - { name: formTitle, label: Form Title, widget: string }
+          - { 
+            name: seo, 
+            label: SEO, 
+            widget: object,
+            fields: [
+              { label: SEO Title, name: seoTitle, widget: string, required: false},
+              { label: SEO Description, name: seoDescription, widget: text, required: false},
+              { label: SEO Image, name: seoImage, widget: image, required: false},
+              ]
+            }
   - name: socialMedia
     label: Social Media
     files: 

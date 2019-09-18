@@ -17,7 +17,7 @@ import Button from "../components/button"
 
 // https://github.com/react-ga/react-ga
 
-const CustomForm = ({ status, message, onValidated }) => {
+const CustomForm = ({ title, status, message, onValidated }) => {
   let email, fname, lname, company
   const submit = () =>
     email &&
@@ -35,6 +35,8 @@ const CustomForm = ({ status, message, onValidated }) => {
 
   return (
     <Form>
+      <FormHeading>{title}</FormHeading>
+
       {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
       {status === "error" && (
         <div
@@ -105,8 +107,11 @@ export default ({ data }) => {
     mainImage,
     text01,
     text02,
+    formTitle,
   } = data.file.childMarkdownRemark.frontmatter
   const { seoTitle, seoDescription, seoImage } = seo
+
+  console.log(formTitle)
 
   const opts = {
     height: "390",
@@ -165,6 +170,7 @@ export default ({ data }) => {
             url={url}
             render={({ subscribe, status, message }) => (
               <CustomForm
+                title={formTitle}
                 status={status}
                 message={message}
                 onValidated={formData => subscribe(formData)}
@@ -249,6 +255,15 @@ const Form = styled.div`
   padding: 32px;
 `
 
+const FormHeading = styled.h3`
+  color: #ffffff;
+  margin-top: 0;
+  max-width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+`
+
 const Input = styled.input`
   min-height: 44px;
   display: block;
@@ -269,7 +284,7 @@ const Label = styled.label`
   display: block;
   font-family: ${FONT_BOLD};
   font-weight: 900;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.4;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -302,13 +317,14 @@ const TextLink = styled(Link)`
 
 export const query = graphql`
   query {
-    file(name: { eq: "takeOff" }) {
+    file(name: { eq: "leadGen" }) {
       childMarkdownRemark {
         frontmatter {
           title
           text01
           text02
           mainImage
+          formTitle
           youtube
           seo {
             seoTitle

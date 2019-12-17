@@ -30,6 +30,7 @@ testimonial: >-
   newspapers and social media. 
 
 
+
   In an ever changing political environment, they responded quickly and
   creatively to changes in the campaign requirements. Their strong understanding
   of social media allowed them to adapt and change the emphasis of the campaign

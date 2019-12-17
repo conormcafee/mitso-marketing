@@ -36,15 +36,15 @@ testimonial: >-
   campaign against all the targets and was delivered on time and within budget.
 testimonialFrom: 'Colm Shannon, Chief Executive Officer, Newry Chamber of Commerce & Trade.'
 ---
-Newry Chamber of Commerce and Trade is a voluntary organisation representing approximately 200 local businesses of varying sizes from all sectors in the Greater Newry Area. 
+[Newry Chamber of Commerce and Trade](https://newrychamber.com) is a voluntary organisation representing approximately 200 local businesses of varying sizes from all sectors in the Greater Newry Area. 
 
 # Social Media Advertising and PR
 
 Newry Chamber of Commerce and Trade approached us to promote business advice and support workshops to help get businesses Brexit Ready.
 
-We spent time intially with the team to develop graphics and editorial for six local newspapers to commence a 4-week campaign to advertise the free workshops for local businesses. 
+We initially spent time with the team to develop graphics and editorial for six local newspapers to commence a 4-week campaign to advertise the workshops for local businesses. 
 
-The main focus of the newspaper campaign was to increase awareness of the free workshops whilst discussing a different theme each week from industry leaders. 
+The main focus of the newspaper campaign was to increase awareness and signups of the free workshops. The editorial was adapted on a weekly basis to discuss different themes which was relevant to business owners. 
 
 Working alongside Newry Chamber, we focused on developing key messages which would be relevant to the unique challenges faced by border businesses. 
 

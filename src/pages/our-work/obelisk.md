@@ -3,7 +3,7 @@ category: Case Study
 seo:
   seoDescription: Updated Obelisk Description
   seoImage: /assets/obelisk-01.jpg
-  seoTitle: Obelisk SEO Title
+  seoTitle: 'Obelisk '
 date: 2019-05-14T20:14:44.037Z
 title: Obelisk
 intro: Rejuvenating a multinational construction firm

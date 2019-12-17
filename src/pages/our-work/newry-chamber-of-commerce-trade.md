@@ -19,8 +19,8 @@ results:
   - icon: website
     text: 81.7% of visitors on website during the campaign period were new
 imageBlock:
-  - Image: /assets/brand-awareness-instagram-square-image.jpg
   - Image: /assets/half-page-advert-democrat.png
+  - Image: /assets/brand-awareness-linkedin-single-image.jpg
 testimonial: >-
   The MITSO team were truly professional in the delivery of a high profile
   campaign for Newry Chamber of Commerce and Trade. The challenge was to deliver

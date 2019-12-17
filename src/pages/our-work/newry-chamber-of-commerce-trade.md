@@ -4,7 +4,7 @@ seo:
   seoDescription: ''
   seoTitle: Newry Chamber of Commerce & Trade
 date: 2019-11-27T15:13:58.612Z
-title: Newry Chamber of Commerce & Trade
+title: Newry Chamber of Commerce and Trade
 intro: 'Promoting a Brexit Ready Campaign '
 mainImage: /assets/71248123_2177616229206004_7687637455750561792_o.jpg
 results:
@@ -22,25 +22,24 @@ imageBlock:
   - Image: /assets/half-page-advert-democrat.png
   - Image: /assets/brand-awareness-linkedin-single-image.jpg
 testimonial: >-
-  The MITSO team were truly professional in the delivery of a high profile
+  The MiTSO team were truly professional in the delivery of a high profile
   campaign for Newry Chamber of Commerce and Trade. The challenge was to deliver
   a 4 week campaign in support of the Chamber’s Brexit advice campaign, across
   newspapers and social media. 
 
 
-
   In an ever changing political environment, they responded quickly and
   creatively to changes in the campaign requirements. Their strong understanding
   of social media allowed them to adapt and change the emphasis of the campaign
-  at short notice. Overall the MITSO team delivered a creative and focused
+  at short notice. Overall the MiTSO team delivered a creative and focused
   campaign against all the targets and was delivered on time and within budget.
 testimonialFrom: 'Colm Shannon, Chief Executive Officer, Newry Chamber of Commerce & Trade.'
 ---
-Newry Chamber of Commerce & Trade is a voluntary organisation representing approximately 200 local businesses of varying sizes from all sectors in the Greater Newry Area. 
+Newry Chamber of Commerce and Trade is a voluntary organisation representing approximately 200 local businesses of varying sizes from all sectors in the Greater Newry Area. 
 
 # Social Media Advertising and PR
 
-Newry Chamber of Commerce & Trade approached us to promote business advice and support workshops to help get businesses Brexit Ready.
+Newry Chamber of Commerce and Trade approached us to promote business advice and support workshops to help get businesses Brexit Ready.
 
 We spent time intially with the team to develop graphics and editorial for six local newspapers to commence a 4-week campaign to advertise the free workshops for local businesses. 
 

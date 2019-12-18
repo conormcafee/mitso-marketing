@@ -9,17 +9,19 @@ intro: 'Promoting a Brexit Ready Campaign '
 mainImage: /assets/71248123_2177616229206004_7687637455750561792_o.jpg
 results:
   - icon: visual
-    text: '170,000 estimated weekly newspaper readership '
+    text: '170,000 estimated impressions across six different publications'
   - icon: social
-    text: '202,000 Impressions on social media ads over 4 week period'
+    text: '202,000 Impressions generated via social media advertising'
   - icon: collaboration
     text: >-
       Continuous campaign optimisation to respond to changes in political
       environment 
   - icon: website
     text: 81.7% of visitors on website during the campaign period were new
+  - text: 'Ticket Sales '
+  - icon: website
+    text: '1,848 landing page views '
 imageBlock:
-  - Image: /assets/half-page-advert-democrat.png
   - Image: /assets/brand-awareness-linkedin-single-image.jpg
   - Image: /assets/customs-linkedin-single-image.jpg
 testimonial: >-
@@ -44,8 +46,10 @@ Newry Chamber of Commerce and Trade approached us to promote business advice and
 
 We initially spent time with the team to develop graphics and editorial for six local newspapers to commence a 4-week campaign to advertise the workshops for local businesses. 
 
-The main focus of the newspaper campaign was to increase awareness and signups of the free workshops. The editorial was adapted on a weekly basis to discuss different themes which was relevant to business owners. 
+The main focus of the PR and social media advertisitng campaign was to increase awareness and to convert businesses to sign up for free workshops. The editorial was adapted on a weekly basis to highlight different themes which were relevant to business owners. 
 
 Working alongside Newry Chamber, we focused on developing key messages which would be relevant to the unique challenges faced by border businesses. 
 
-Social Ads were initatied to support the offline promotional activity. As the political environment was changing on a daily basis, the social media campaigns were reguarly adapted and optimised to focus on key workshops that were relevant.
+Our social campaign ran across four platforms and complimented offline activity and we developed graphic material and were responsible for setting up and monitoring the campaign for its duration. 
+
+As the political environment was changing on a daily basis, we also reguarly adapted and optimised the campaign to shift the focus were necessary and help to encourage more signups.

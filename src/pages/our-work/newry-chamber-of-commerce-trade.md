@@ -10,17 +10,17 @@ mainImage: /assets/71248123_2177616229206004_7687637455750561792_o.jpg
 results:
   - icon: visual
     text: '170,000 estimated impressions across six different publications'
+  - icon: website
+    text: 81.7% of visitors on website during the campaign period were new
   - icon: social
     text: '202,000 Impressions generated via social media advertising'
+  - icon: website
+    text: '1,848 landing page views '
   - icon: collaboration
     text: >-
       Continuous campaign optimisation to respond to changes in political
       environment 
-  - icon: website
-    text: 81.7% of visitors on website during the campaign period were new
   - text: 'Ticket Sales '
-  - icon: website
-    text: '1,848 landing page views '
 imageBlock:
   - Image: /assets/brand-awareness-linkedin-single-image.jpg
   - Image: /assets/customs-linkedin-single-image.jpg

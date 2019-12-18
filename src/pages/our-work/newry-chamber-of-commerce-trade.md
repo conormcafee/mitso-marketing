@@ -23,6 +23,7 @@ results:
   - icon: tickets
     text: 'Ticket Sales '
 imageBlock:
+  - Image: /assets/managing-eu-workers-instagram-story.jpg
   - Image: /assets/brand-awareness-linkedin-single-image.jpg
   - Image: /assets/customs-linkedin-single-image.jpg
 testimonial: >-

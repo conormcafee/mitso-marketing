@@ -20,7 +20,8 @@ results:
     text: >-
       Continuous campaign optimisation to respond to changes in political
       environment 
-  - text: 'Ticket Sales '
+  - icon: tickets
+    text: 'Ticket Sales '
 imageBlock:
   - Image: /assets/brand-awareness-linkedin-single-image.jpg
   - Image: /assets/customs-linkedin-single-image.jpg

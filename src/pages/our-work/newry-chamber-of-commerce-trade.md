@@ -21,7 +21,7 @@ results:
       Continuous campaign optimisation to respond to changes in political
       environment 
   - icon: tickets
-    text: 'Ticket Sales '
+    text: 14 workshops fully booked
 imageBlock:
   - Image: /assets/managing-eu-workers-instagram-story.jpg
   - Image: /assets/brand-awareness-linkedin-single-image.jpg

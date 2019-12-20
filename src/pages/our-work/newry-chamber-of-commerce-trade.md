@@ -8,20 +8,20 @@ title: Newry Chamber of Commerce and Trade
 intro: 'Promoting a Brexit Ready Campaign '
 mainImage: /assets/71248123_2177616229206004_7687637455750561792_o.jpg
 results:
+  - icon: tickets
+    text: 14 workshops fully booked
+  - icon: social
+    text: '202,000 Impressions generated via social media advertising'
   - icon: visual
     text: '170,000 estimated impressions across six different publications'
   - icon: website
     text: 81.7% of visitors on website during the campaign period were new
-  - icon: social
-    text: '202,000 Impressions generated via social media advertising'
   - icon: website
     text: '1,848 landing page views '
   - icon: collaboration
     text: >-
       Continuous campaign optimisation to respond to changes in political
       environment 
-  - icon: tickets
-    text: 14 workshops fully booked
 imageBlock:
   - Image: /assets/managing-eu-workers-instagram-story.jpg
   - Image: /assets/brand-awareness-linkedin-single-image.jpg
@@ -52,6 +52,6 @@ The main focus of the PR and social media advertisitng campaign was to increase 
 
 Working alongside Newry Chamber, we focused on developing key messages which would be relevant to the unique challenges faced by border businesses. 
 
-Our social campaign ran across four platforms and complimented offline activity and we developed graphic material and were responsible for setting up and monitoring the campaign for its duration. 
+Our social campaign ran across four platforms, complimenting offline activity. We developed bespoke graphics for each platform and used sponsored ads, promoted posts and video ads to enhance awareness.
 
-As the political environment was changing on a daily basis, we also reguarly adapted and optimised the campaign to shift the focus were necessary and help to encourage more signups.
+As the political environment was changing on a daily basis, we also reguarly adapted and optimised the campaign to shift the focus were necessary, to encourage more signups and increase conversion rates.

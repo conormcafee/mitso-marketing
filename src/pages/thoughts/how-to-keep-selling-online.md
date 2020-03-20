@@ -1,7 +1,7 @@
 ---
 category: Blog
 seo:
-  seoImage: /assets/06efc73c-ee2b-40de-b760-75ef8198d88b.png
+  seoImage: ''
 date: 2020-03-20T17:02:16.027Z
 author: Maeve Finnegan
 title: How to keep selling online
@@ -17,7 +17,7 @@ intro: >-
   where we can and should give solid advice to businesses who have literally had
   to close up shop. Here are some top tips for businesses to continue selling
   online...
-mainImage: /assets/06efc73c-ee2b-40de-b760-75ef8198d88b.png
+mainImage: /assets/copy-of-twitter.png
 ---
 \- No online store? No worries. You can still set up a Facebook Shop, upload images, product descriptions and prices allowing customers to click “Message to Buy” instead of transacting online. This way, customers can still see your full product range and select what they want to enquire about. Tip: do not add non-physical products like gift vouchers as Facebook will decline those items.
 

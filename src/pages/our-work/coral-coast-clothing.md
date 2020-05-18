@@ -18,19 +18,20 @@ results:
     text: '3,110 landing page views'
   - icon: increase
     text: 486% increase in online traffic
+  - text: 659% increase in online sales
 imageBlock:
   - Image: /assets/1.png
   - Image: /assets/2.png
   - Image: /assets/3.png
 testimonial: >-
-  The team at MiTSO have helped us execute a number of campaigns which have
-  helped us boost our online sales dramatically. In addition to running
+  The team at MiTSO have helped us revamp our website and execute a number of
+  campaigns which boosted our online sales dramatically. In addition to running
   campaigns, the team are always on hand to provide advice and guidance about
   everything from email marketing to social media. We look forward to working
   with the team on upcoming campaigns. 
 testimonialFrom: 'Sam Outerbridge, Founder, Coral Coast'
 ---
-We first began working with Coral Coast at the end of 2019. The company was confident in their brand identity and their product range, but felt that this was not reflected in their online sales. 
+MiTSO first began working with Coral Coast at the end of 2019. The Bermudian menswear brand was confident in their brand identity and their product range, but felt that this was not reflected in their online sales. 
 
 # Website redevelopment and digital advertising
 

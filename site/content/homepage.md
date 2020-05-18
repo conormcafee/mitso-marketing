@@ -20,7 +20,7 @@ review: >-
   and improve our campaigns and performance to make sure you reach your target
   audience and fulfil your marketing objectives.
 featured:
-  caseStudy01: Obelisk
+  caseStudy01: Coral Coast Clothing
   caseStudy02: EStars
   caseStudy03: Willow
 thoughts: >-

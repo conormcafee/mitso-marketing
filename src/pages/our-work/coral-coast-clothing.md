@@ -4,8 +4,8 @@ seo: {}
 date: 2020-05-18T10:18:00.900Z
 title: Coral Coast Clothing
 intro: Promoting a luxury menswear brand
-mainImage: /assets/bda-short-6.jpg
-youtube: 'https://www.youtube.com/watch?v=1NSbpcuf1TQ'
+mainImage: /assets/hero-min.jpg
+youtube: v=1NSbpcuf1TQ
 results:
   - icon: video
     link: ''
@@ -19,9 +19,9 @@ results:
   - icon: increase
     text: 486% increase in online traffic
 imageBlock:
-  - Image: /assets/swim-trunk-1.jpg
-  - Image: /assets/dress-shirt-1.jpg
-  - Image: /assets/dress-shirt-6.jpg
+  - Image: /assets/1.png
+  - Image: /assets/2.png
+  - Image: /assets/3.png
 testimonial: >-
   The team at MiTSO have helped us execute a number of campaigns which have
   helped us boost our online sales dramatically. In addition to running

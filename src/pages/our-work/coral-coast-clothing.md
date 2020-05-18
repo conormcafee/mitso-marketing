@@ -5,7 +5,7 @@ date: 2020-05-18T10:18:00.900Z
 title: Coral Coast Clothing
 intro: Promoting a luxury menswear brand
 mainImage: /assets/hero-min.jpg
-youtube: 1NSbpcuf1TQ
+youtube: vJxPpIoTO3w
 results:
   - icon: video
     link: ''

@@ -20,7 +20,7 @@ results:
     text: 252 ad clicks
 imageBlock:
   - Image: /assets/facebook-gnosis-2nd-dec.png
-  - Image: /assets/23rd-twitter-gn.png
+  - Image: /assets/31st-gn-tw.png
   - Image: /assets/20th-gn-twitter.png
 testimonial: >-
   I chose MiTSO to launch my new business because everything we needed was

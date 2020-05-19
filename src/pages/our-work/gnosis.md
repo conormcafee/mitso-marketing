@@ -34,12 +34,13 @@ Gnosis opened it's offices on Front Street, Bermuda at the end of 2018 providing
 
 # Website development, social media management, digital advertising, graphic design and PR.
 
-MiTSO were tasked with redeveloping Gnosis' website to reflect their sector specialism and bespoke approach to IT contracts. We redeveloped the website with a focus on CRO (conversion rate optimisation), improved user navigation and lead generation.
+MiTSO were tasked with redeveloping Gnosis' website to reflect their sector specialism and bespoke approach to IT contracts. We redeveloped the website with a focus on CRO (conversion rate optimisation), improved user navigation and lead generation.
 
 Securing new clients was a key objective, therefore MiTSO carried out a number of lead gen tactics such as developing a useful downloadable cyber security checklist in line with new legislation in Bermuda to generate leads from perspective clients. 
 
-Following the launch of the website, MiTSO engaged with local press in Bermuda and secured an interview for Neil Lupsic, Gnosis CEO with leading Bermuda news outlet, [The Royal Gazette.](http://mobile.royalgazette.com/local-business/article/20190816/team-bring-innovation-to-managed-it-services&template=mobileart&template=mobileart)
+Following the launch of the website, MiTSO engaged with local press in Bermuda and secured an interview for Neil Lupsic, Gnosis CEO with leading Bermuda news outlet, [The Royal Gazette.
+](http://mobile.royalgazette.com/local-business/article/20190816/team-bring-innovation-to-managed-it-services&template=mobileart&template=mobileart)
 
-As Gnosis is a startup company, it was imperative for MiTSO to be able to create widespread brand awareness and drive traffic to the company website, once redevelopment was complete. A combination of Google Ad campaigns and LinkedIn campaigns were used to promote USPs such as flexible IT contracts and unique business' partnerships such as Gnosis partnership with [SALT](https://www.salt.ky/) to bring [Microsoft Azure Stack](https://azure.microsoft.com/en-us/) to Bermuda.
+As Gnosis is a startup company, it was imperative for MiTSO to be able to create widespread brand awareness and drive traffic to the company website, once redevelopment was complete. A combination of Google Ad campaigns and LinkedIn campaigns were used to promote USPs such as flexible IT contracts and unique business' partnerships such as Gnosis' partnership with [SALT](https://www.salt.ky/) to bring [Microsoft Azure Stack](https://azure.microsoft.com/en-us/) to Bermuda.
 
 In addition to creating and optimising profiles on Facebook, Twitter and LinkedIn, MiTSO optimised the company's Google My Business to enhance brand awareness for local search. We also created new profiles on local directories such as Bermuda YP and local.bermuda.com.

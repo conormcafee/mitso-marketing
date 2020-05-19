@@ -34,7 +34,7 @@ Gnosis opened it's offices on Front Street, Bermuda at the end of 2018 providing
 
 # Website development, social media management, digital advertising, graphic design and PR.
 
-MiTSO were tasked with redeveloping Gnosis' website to reflect their sector specialism and bespoke approach to IT contracts. We redeveloped the website with a focus on CRO (conversion rate optimisation), improved user navigation and lead generation.
+MiTSO were tasked with redeveloping Gnosis' [website](https://www.gnosis.bm/) to reflect their sector specialism and bespoke approach to IT contracts. We redeveloped the website with a focus on CRO (conversion rate optimisation), improved user navigation and lead generation.
 
 Securing new clients was a key objective, therefore MiTSO carried out a number of lead gen tactics such as developing a useful downloadable cyber security checklist in line with new legislation in Bermuda to generate leads from perspective clients. 
 

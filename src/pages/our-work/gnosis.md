@@ -4,7 +4,7 @@ seo: {}
 date: 2020-05-19T13:31:36.290Z
 title: 'Gnosis '
 intro: Launching a managed IT services company in Bermuda
-mainImage: /assets/_fri-13th-twitter-gn.png
+mainImage: /assets/_fri-13th-twitter-gn-1-.png
 results:
   - icon: increase
     text: '1,140% increase in unique visitors'

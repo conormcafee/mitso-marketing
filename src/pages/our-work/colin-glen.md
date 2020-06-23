@@ -4,7 +4,7 @@ seo: {}
 date: 2020-06-23T13:59:00.195Z
 title: 'Colin Glen '
 intro: Promoting Belfast's biggest outdoor leisure and activity centre
-mainImage: /assets/eosr6383.jpg
+mainImage: /assets/1dx_9787.jpg
 youtube: Q3yClInmFCw
 results:
   - icon: social

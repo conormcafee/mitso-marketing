@@ -5,6 +5,7 @@ date: 2020-06-23T13:59:00.195Z
 title: 'Colin Glen '
 intro: Promoting Belfast's biggest outdoor leisure and activity centre
 mainImage: /assets/eosr6383.jpg
+youtube: v=Q3yClInmFCw
 results:
   - icon: social
     text: '2,763,521 ad impressions'

@@ -3,7 +3,7 @@ category: Blog
 seo: {}
 date: 2020-06-29T15:31:02.614Z
 author: Maeve Finnegan
-title: Top 10 Marketing Tips for Businesses post COVID-19
+title: Top 10 marketing tips for businesses post-lockdown
 tags:
   - Tag: Covid-19
 intro: >-

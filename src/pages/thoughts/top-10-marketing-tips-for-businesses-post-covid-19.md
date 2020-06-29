@@ -11,10 +11,13 @@ intro: >-
   put together our top 10 marketing tips to help you prepare:
 mainImage: /assets/website.png
 ---
+We know that is a daunting time for businesses that are re-opening, so we've put together our top 10 marketing tips to help you prepare:
+
 1. There has never been a better time to make any changes to your business such as refreshing your brand/image or changing the way you operate. What does your product or service look like in the 'new normal'? Has your offering changed? Does your brand still effectively communicate what you do?
 2. Look to improve efficiency within your business and making it easier for customers to transact. You could introduce online booking, contactless payment, handling customer enquiries via WhatsApp etc.
 3. How is your business going to handle appointments? As a lot of businesses move towards bookings only, we recommend utilising tools such as your website, Google My Business or social media. 
-4. Now more than ever, it is important to have a Google My Business profile that is up to date with the latest information including opening hours, telephone numbers and how your business is currently operating. If you don't have a Google My Business profile, [click here](https://support.google.com/business/answer/6300717?hl=en-GB) to find out how to set yours up.
+4. Now more than ever, it is important to have a Google My Business profile that is up to date with the latest information including opening hours, telephone numbers and how your business is currently operating. 
+   If you don't have a Google My Business profile, [click here](https://support.google.com/business/answer/6300717?hl=en-GB) to find out how to set yours up.
 5. You may need to adjust your pricing due to additional equipment or measures you need to implement. Be sure to communicate this to your customers and explain why you have had to make any such adjustments.
 6. Be authentic on your social media channels. It is important to build trust with your audience and show the face behind your brand at this time. Maybe it's time to show your lovely face on screen and start speaking on camera? 
 7. Improve your online reviews strategy. Depending on your type of business this is a good time to refine your review strategy whether it is social media or Google reviews. Remember to draft a thoughtful template response to manage online reviews going forward. 

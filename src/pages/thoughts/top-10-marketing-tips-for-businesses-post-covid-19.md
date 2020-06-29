@@ -5,7 +5,7 @@ date: 2020-06-29T15:31:02.614Z
 author: Maeve Finnegan
 title: Top 10 marketing tips for businesses post-lockdown
 tags:
-  - Tag: Covid-19
+  - Tag: News
 intro: >-
   We know that is a daunting time for businesses that are re-opening, so we've
   put together our top 10 marketing tips to help you prepare:

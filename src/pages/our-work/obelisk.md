@@ -41,8 +41,7 @@ testimonial: >-
   team, you will not be disappointed.
 testimonialFrom: 'Lisa Healy, HR Director, Obelisk'
 ---
-
-Obelisk is a multinational company delivering infrastructure solutions for the telecoms and power sectors in Ireland, UK and Africa. The company wanted to align its ambitions to grow with a brand refresh to present a new direction for the company.
+[Obelisk](https://obelisk.com) is a multinational company delivering infrastructure solutions for the telecoms and power sectors in Ireland, UK and Africa. The company wanted to align its ambitions to grow with a brand refresh to present a new direction for the company.
 
 # Branding, graphic design, website development and videography
 

@@ -5,7 +5,7 @@ seo:
 date: 2020-08-12T15:37:17.519Z
 title: 'CWC Group '
 intro: Rebranding a family-owned healthcare leader.
-mainImage: /assets/screenshot-2020-08-12-at-16.42.19.png
+mainImage: /assets/1dx_5440.jpg
 results:
   - icon: visual
     text: Impressive brand identity and unique logo design

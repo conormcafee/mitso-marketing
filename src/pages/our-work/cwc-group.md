@@ -29,9 +29,9 @@ CWC Group’s mission of delivering safe and effective care through the promotio
 
 The newly developed brand is at the heart of the website design, from the colour scheme to the subtle inclusion of the icon throughout. 
 
-We also designed a set of brand guidelines for CWC Group to distribute throughout the group to ensure a consistent use of logos, typography and colours in all digital communications. MiTSO also designed a range of brand stationary for employees including bespoke letterheads for each home and an email signature. 
+We also designed a set of brand guidelines for CWC Group to distribute throughout the group to ensure a consistent use of logos, typography and colours in all digital communications. MiTSO also designed a range of brand stationery for employees including bespoke letterheads for each home and an email signature. 
 
-# **Website Development** 
+# **Website Development**
 
 To keep in line with CWC Group’s new branding, we wanted to deliver a website with a modern feel with that reflects their ethos. Our aim was to tell the story of CWC Group, allowing the user to fully understand the range of high-quality facilities they have, leading to improved brand loyalty. 
 

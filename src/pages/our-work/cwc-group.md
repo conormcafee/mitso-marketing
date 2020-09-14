@@ -23,7 +23,7 @@ testimonial: >-
   website and a range of branded stationery which has had a tremendous impact on
   our business. MiTSO went above and beyond throughout the project to ensure our
   patients were at the forefront of our vision. 
-testimonialFrom: 'Marie McGrady, CWC Group'
+testimonialFrom: 'Marie McGrady, Operations Manager, CWC Group'
 ---
 [CWC Group](www.cwcgroup.org) is a healthcare leader providing nursing, residential and disability care in picturesque locations throughout Northern Ireland.
 

@@ -18,6 +18,12 @@ results:
 imageBlock:
   - Image: /assets/screenshot-2020-08-12-at-16.42.19.png
   - Image: /assets/screenshot-2020-08-12-at-14.48.35.png
+testimonial: >-
+  The team at MiTSO have helped revamp our business, creating a new brand,
+  website and a range of branded stationery which has had a tremendous impact on
+  our business. MiTSO went above and beyond throughout the project to ensure our
+  patients were at the forefront of our vision. 
+testimonialFrom: 'Marie McGrady '
 ---
 [CWC Group](www.cwcgroup.org) is a healthcare leader providing nursing, residential and disability care in picturesque locations throughout Northern Ireland.
 

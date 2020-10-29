@@ -50,30 +50,25 @@ teamMember:
     why: >-
       I enjoy providing clients with solutions, it improves their brand and
       future prospects.
-  - img: /assets/roisin-standard.jpg
-    imgSwap: /assets/roisin-hover.jpg
-    jobTitle: Digital Marketing Executive
-    linkedin: 'https://www.linkedin.com/in/roisin-watters-661a03a6/'
-    name: Roisin Watters
-    psst: >-
-      Psst... Roisin's passport is always close to hand as she gets ready to hop
-      on another flight. What you also may not know about Roisin is that she has
-      8 All-Ireland medals for playing the accordion.
+  - img: /assets/whatsapp-image-2020-10-29-at-9.32.57-am.jpeg
+    imgSwap: /assets/whatsapp-image-2020-10-29-at-9.32.57-am.jpeg
+    jobTitle: Intern
+    linkedin: 'https://www.linkedin.com/in/natasha-neville-a3a9571b9/'
+    name: Natasha Neville
+    psst: Psst....
     what: >-
-      I work with clients to plan, develop and implement effective marketing
-      communication campaigns in order to achieve business growth.
+      I help the team with social media marketing, graphic design and creating
+      content for a range of clients.
     when: >-
-      I joined MiTSO in October 2018 shortly after graduating from Ulster
-      University with a first class honors in Communication, Advertising and
-      Marketing.
+      I joined MiTSO in September of 2020 as an Intern while studying in my
+      second year of Level 3 Business.
     where: >-
-      I spent my placement year working for Warner Bros, London, within the EMEA
-      Publicity Department on 20 high profile film releases. Following my
-      placement I gained further experience in London with global advertising
-      agency, Feref, in both PR and social media.
+      I study Business and Finance at the Southern Regional College with hopes
+      of continuing into the digital marketing field through University.
     why: >-
-      I love that everyday at MiTSO is different and that I get the opportunity
-      to work with a wide variety of clients from country superstars to makeup
-      artists.
+      I think it's vital for students to gain experience in careers they think
+      they'll be interested in as it provides an insight to the day to day
+      activities of the job which can only be gained through real world work
+      experience.
 ---
 

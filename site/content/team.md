@@ -25,31 +25,6 @@ teamMember:
     why: >-
       I‘m driven by the smile I see on my clients face each and every time we
       deliver for them.
-  - img: /assets/roisin-standard.jpg
-    imgSwap: /assets/roisin-hover.jpg
-    jobTitle: Digital Marketing Executive
-    linkedin: 'https://www.linkedin.com/in/roisin-watters-661a03a6/'
-    name: Roisin Watters
-    psst: >-
-      Psst... Roisin's passport is always close to hand as she gets ready to hop
-      on another flight. What you also may not know about Roisin is that she has
-      8 All-Ireland medals for playing the accordion.
-    what: >-
-      I work with clients to plan, develop and implement effective marketing
-      communication campaigns in order to achieve business growth.
-    when: >-
-      I joined MiTSO in October 2018 shortly after graduating from Ulster
-      University with a first class honors in Communication, Advertising and
-      Marketing.
-    where: >-
-      I spent my placement year working for Warner Bros, London, within the EMEA
-      Publicity Department on 20 high profile film releases. Following my
-      placement I gained further experience in London with global advertising
-      agency, Feref, in both PR and social media.
-    why: >-
-      I love that everyday at MiTSO is different and that I get the opportunity
-      to work with a wide variety of clients from country superstars to makeup
-      artists.
   - img: /assets/ciara-standard.jpg
     imgSwap: /assets/ciara-hover.jpg
     jobTitle: 'Digital Marketing Executive '
@@ -75,5 +50,30 @@ teamMember:
     why: >-
       I enjoy providing clients with solutions, it improves their brand and
       future prospects.
+  - img: /assets/roisin-standard.jpg
+    imgSwap: /assets/roisin-hover.jpg
+    jobTitle: Digital Marketing Executive
+    linkedin: 'https://www.linkedin.com/in/roisin-watters-661a03a6/'
+    name: Roisin Watters
+    psst: >-
+      Psst... Roisin's passport is always close to hand as she gets ready to hop
+      on another flight. What you also may not know about Roisin is that she has
+      8 All-Ireland medals for playing the accordion.
+    what: >-
+      I work with clients to plan, develop and implement effective marketing
+      communication campaigns in order to achieve business growth.
+    when: >-
+      I joined MiTSO in October 2018 shortly after graduating from Ulster
+      University with a first class honors in Communication, Advertising and
+      Marketing.
+    where: >-
+      I spent my placement year working for Warner Bros, London, within the EMEA
+      Publicity Department on 20 high profile film releases. Following my
+      placement I gained further experience in London with global advertising
+      agency, Feref, in both PR and social media.
+    why: >-
+      I love that everyday at MiTSO is different and that I get the opportunity
+      to work with a wide variety of clients from country superstars to makeup
+      artists.
 ---
 

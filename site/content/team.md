@@ -52,7 +52,7 @@ teamMember:
       artists.
   - img: /assets/ciara-standard.jpg
     imgSwap: /assets/ciara-hover.jpg
-    jobTitle: 'Marketing Executive '
+    jobTitle: 'Digital Marketing Executive '
     linkedin: 'https://www.linkedin.com/in/ciara-boylan'
     name: Ciara Boylan
     psst: >-

@@ -20,9 +20,9 @@ review: >-
   and improve our campaigns and performance to make sure you reach your target
   audience and fulfil your marketing objectives.
 featured:
-  caseStudy01: Coral Coast Clothing
-  caseStudy02: EStars
-  caseStudy03: Willow
+  caseStudy01: Feed My Lambs
+  caseStudy02: 'CWC Group '
+  caseStudy03: EStars
 thoughts: >-
   Take a look through our recent thoughts and ramblings to stay up to date with
   industry news and find out what the team at MiTSO are getting up to.

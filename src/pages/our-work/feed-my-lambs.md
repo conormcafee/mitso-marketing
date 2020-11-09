@@ -6,7 +6,7 @@ title: Feed My Lambs
 intro: >-
   Feed My Lambs Ministry is a charity which provides food, shelter and education
   to the children of Haiti.
-mainImage: /assets/f50938fa-69dd-4b95-8c31-069e793cb5d9.png
+mainImage: /assets/img_3079.jpg
 results:
   - icon: website
     text: Fully responsive website

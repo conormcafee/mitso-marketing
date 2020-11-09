@@ -12,8 +12,10 @@ results:
     text: Fully responsive website
   - icon: visual
     text: Refreshed brand identity
-  - icon: collaboration
+  - icon: social
     text: Content development
+  - icon: collaboration
+    text: Digital Training
 imageBlock:
   - Image: /assets/f50938fa-69dd-4b95-8c31-069e793cb5d9.png
 testimonial: >-

@@ -3,9 +3,7 @@ category: Case Study
 seo: {}
 date: 2020-11-05T22:07:07.572Z
 title: Feed My Lambs
-intro: >-
-  Feed My Lambs Ministry is a charity which provides food, shelter and education
-  to the children of Haiti.
+intro: Reimagining a Haiti based charity
 mainImage: /assets/img_3079.jpg
 results:
   - icon: website

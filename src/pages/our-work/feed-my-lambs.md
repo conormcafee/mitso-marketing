@@ -18,6 +18,7 @@ results:
     text: Digital Training
 imageBlock:
   - Image: /assets/f50938fa-69dd-4b95-8c31-069e793cb5d9.png
+  - Image: /assets/2-2.png
 testimonial: >-
   It was a real pleasure to work with MiTSO Marketing to develop a new website
   for Feed My Lambs Ministry in Haiti. Everyone I worked with was professional,

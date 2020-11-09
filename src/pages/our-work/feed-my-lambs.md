@@ -10,6 +10,10 @@ mainImage: /assets/f50938fa-69dd-4b95-8c31-069e793cb5d9.png
 results:
   - icon: website
     text: Fully responsive website
+  - icon: visual
+    text: Refreshed brand identity
+  - icon: collaboration
+    text: Content development
 imageBlock:
   - Image: /assets/f50938fa-69dd-4b95-8c31-069e793cb5d9.png
 testimonial: >-

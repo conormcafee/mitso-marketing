@@ -17,6 +17,8 @@ results:
 imageBlock:
   - Image: /assets/1-2.png
   - Image: /assets/img_2803.jpg
+  - Image: /assets/5a214916-ae54-4e08-8b68-a751f1de3aca.png
+  - Image: /assets/f55bce92-680f-45a5-912d-8d814059f911.png
 testimonial: >-
   It was a real pleasure to work with MiTSO Marketing to develop a new website
   for Feed My Lambs Ministry in Haiti. Everyone I worked with was professional,
@@ -27,12 +29,12 @@ testimonial: >-
   helping children in that very poor country.
 testimonialFrom: 'Diana Martin, Feed My Lambs'
 ---
-Feed My Lambs approached us to design and develop a new fully responsive website for the charity. Intiially, we worked with the charity to establish its requirements and to uncover some of the barriers for people donating or supporting the charity.
+Feed My Lambs is a Bermudian non-profit organisation which provides shelter, food and education to the children of Haiti. 
 
-Our focus was on providing information to help inform people about the work Feed My Lambs is involved in and to tell the story of the children of Haiti. 
+The charity approached us to design and develop a new fully responsive website and to remove some of the barriers for people donating or supporting the charity.
 
-We helped to develop key messages and to gather and organise information and visual content which had historically been stored in various locations. In addition, we helped to improve the brand identity, introducing vibrant colours and fonts.
+Our focus was on delivering a site which would primarily help to inform, to bring to light the great work Feed My Lambs does and to encourage support for the organisation.
 
-Copywriting was a key element, to reflect the fantastic work Feed My Lambs and to bring to light the reality of the dire conditions children in Haiti live in and tackle, on a daily basis.
+Key elements of the project included improved brand identity, repurposed visuals and copy and a streamlined donation process, making it much easier for people to make donations and express interest in volunteering.
 
-Most importantly, the website was designed to make it easy for people to make donations, sponsor children and to express interest in volunteering.
+Overall, this has been one of our most rewarding projects to date and we count ourselves lucky to be supporting such an amazing charity in its mission to protect children.

@@ -4,7 +4,7 @@ seo: {}
 date: 2020-11-05T22:07:07.572Z
 title: Feed My Lambs
 intro: Reimagining a Haiti based charity
-mainImage: /assets/img_3079.jpg
+mainImage: /assets/0df30931-fc29-486a-ba2a-bf3e3f00ee02.png
 results:
   - icon: website
     text: Fully responsive website
@@ -18,7 +18,7 @@ imageBlock:
   - Image: /assets/1-2.png
   - Image: /assets/img_2803.jpg
   - Image: /assets/5a214916-ae54-4e08-8b68-a751f1de3aca.png
-  - Image: /assets/f55bce92-680f-45a5-912d-8d814059f911.png
+  - Image: /assets/de99a590-2bee-42f7-a48a-b5e7b648b615.png
 testimonial: >-
   It was a real pleasure to work with MiTSO Marketing to develop a new website
   for Feed My Lambs Ministry in Haiti. Everyone I worked with was professional,

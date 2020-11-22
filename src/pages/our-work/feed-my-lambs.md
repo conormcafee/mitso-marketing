@@ -31,10 +31,12 @@ testimonialFrom: 'Diana Martin, Feed My Lambs'
 ---
 Feed My Lambs is a Bermudian non-profit organisation which provides shelter, food and education to the children of Haiti. 
 
-The charity approached us to design and develop a new fully responsive website and to remove some of the barriers for people donating or supporting the charity.
+The charity approached us to design and develop a new [fully responsive website](https://www.feedmylambsministry.org) and to remove some of the barriers for people donating or supporting the charity.
 
 Our focus was on delivering a site which would primarily help to inform, to bring to light the great work Feed My Lambs does and to encourage support for the organisation.
 
 Key elements of the project included improved brand identity, repurposed visuals and copy and a streamlined donation process, making it much easier for people to make donations and express interest in volunteering.
 
 Overall, this has been one of our most rewarding projects to date and we count ourselves lucky to be supporting such an amazing charity in its mission to protect children.
+
+[VIEW WEBSITE](https://www.feedmylambsministry.org)

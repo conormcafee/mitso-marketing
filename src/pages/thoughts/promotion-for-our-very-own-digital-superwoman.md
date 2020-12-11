@@ -25,9 +25,9 @@ Over that time, Ciara has displayed an immense talent for all aspects of digital
 
 There has been a huge demand for digital marketing services since Covid 19 gripped our lives in March 2020 and we have been innundated with requests for social media advertising, website development, SEO copywriting and managing the whole spectrum of digital for new and existing clients.
 
-Ciara has been instrumental in the delivery of these services, using her creative and analytical skills to create, implement, manage and monitor digital campaigns. Ciara has achieved massively positive results for our clients and that coupled with her profeissionalism and bubble personality has led to her building such a positive rapport with our clients.
+Ciara has been instrumental in the delivery of these services, using her creative and analytical skills to create, implement, manage and monitor digital campaigns. Ciara has achieved massively positive results for our clients and that coupled with her professionalism and bubble personality has led to her building such a positive rapport with our clients.
 
-Ciara has worked to devleop our own business in a number of areas including training and internal process development. As a result of her hard work and dedication, we are now ready to implement our growth plans in 2021 with two new roles in-house.
+Ciara has worked to devleop our own business in a number of areas including training and internal process development. As a result of her hard work and dedication, we are now ready to implement our growth plans in 2021 with two new in-house roles due to be advertised.
 
 Massive congratulations to Ciara and we can't wait to see you grow in your new role!
 

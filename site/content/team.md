@@ -50,25 +50,5 @@ teamMember:
     why: >-
       I enjoy providing clients with solutions, it improves their brand and
       future prospects.
-  - img: /assets/whatsapp-image-2020-10-29-at-9.32.57-am.jpeg
-    imgSwap: /assets/whatsapp-image-2020-10-29-at-9.32.57-am.jpeg
-    jobTitle: Intern
-    linkedin: 'https://www.linkedin.com/in/natasha-neville-a3a9571b9/'
-    name: Natasha Neville
-    psst: Psst....
-    what: >-
-      I help the team with social media marketing, graphic design and creating
-      content for a range of clients.
-    when: >-
-      I joined MiTSO in September of 2020 as an Intern while studying in my
-      second year of Level 3 Business.
-    where: >-
-      I study Business and Finance at the Southern Regional College with hopes
-      of continuing into the digital marketing field through University.
-    why: >-
-      I think it's vital for students to gain experience in careers they think
-      they'll be interested in as it provides an insight to the day to day
-      activities of the job which can only be gained through real world work
-      experience.
 ---
 

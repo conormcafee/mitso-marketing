@@ -53,4 +53,4 @@ Due to the current COVID 19 pandemic, we are currently working from home, and it
 
 **Apply Now** 
 
-To apply for the role, please forward a copy of your CV or share your LinkedIn profile with Maeve Finnegan (maeve@mitsomarketing.com). Closing date is **Monday 1st February at 5pm**.
+To apply for the role, please forward a copy of your CV or share your LinkedIn profile with Maeve Finnegan (<mailto:maeve@mitsomarketing.com>). Closing date is **Monday 1st February at 5pm**.

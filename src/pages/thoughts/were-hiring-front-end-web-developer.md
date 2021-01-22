@@ -9,7 +9,7 @@ tags:
 intro: >-
   MiTSO is seeking a super technical Front End Web Developer to build and
   maintain a range of digital products for our B2B and B2C clients. 
-mainImage: /src/images/mitso-default.png
+mainImage: /assets/we-re-hiring-.png
 ---
 **Front-End Web Developer** 
 

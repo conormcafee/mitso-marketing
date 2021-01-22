@@ -34,7 +34,7 @@ You will have sole responsibility for developing the front-end of a range of web
 **Requirements** 
 
 * A minimum 3 years experience in a similar role 
-* Strong knowledge of HTML, CSS, and jQuery 
+* Strong knowledge of HTML and CSS
 * Knowledge of JavaScript 
 * Custom Wordpress Theme Development and experience managing and maintaining secure Wordpress sites 
 * Solid commercial experience, delivering e-commerce solutions across a range of platforms including WooCommerce and Shopify 

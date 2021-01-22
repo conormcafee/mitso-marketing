@@ -1,6 +1,7 @@
 ---
 category: Blog
-seo: {}
+seo:
+  seoImage: /assets/1.png
 date: 2021-01-22T14:54:03.211Z
 author: Maeve Finnegan
 title: We're Hiring - Brand Communications Manager!
@@ -9,7 +10,7 @@ tags:
 intro: >-
   MiTSO is seeking a talented Brand Communications Manager to create and
   implement communication strategies for our clients. 
-mainImage: /assets/9c78e751-85df-492e-9e33-113701eeeacf.jpeg
+mainImage: /assets/1.png
 ---
 **Brand Communications Manager** 
 

@@ -38,7 +38,7 @@ You will have sole responsibility for developing the front-end of a range of web
 * Knowledge of JavaScript 
 * Custom Wordpress Theme Development and experience managing and maintaining secure Wordpress sites 
 * Solid commercial experience, delivering e-commerce solutions across a range of platforms including WooCommerce and Shopify 
-* CMS experience - We would currently use Craft CMS and WordPress but we would consider experience with any PHP based CMS 
+* CMS experience - we currently use Craft CMS and WordPress 
 * Deploying websites via FTP or CI/CD is a must 
 * Knowledge of Git (Version Control) 
 * Experience collaborating with UX/UI designers to produce beautiful, functional and accessible websites

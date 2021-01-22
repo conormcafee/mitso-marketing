@@ -29,7 +29,7 @@ We are seeking a highly motivated individual who can deliver both on-screen and 
 
 At MiTSO, we work collaboratively to deliver best in class product and performance across all facets of our business. You will be an integral part of our team and work together with our digital and marketing experts to provide high quality web solutions; from building e-commerce platforms through to beautifully designed websites for our clients both near and far. 
 
-You will have sole responsibility for developing the front-end of a range of websites and be able to take ideas from concept right through to final launch. You will work closely with our Digital Marketing Manager to manage new projects and also deliver ongoing maintenance and support for our existing products. You won’t be afraid to work with our team and give your trusted opinion to inform digital content and campaigns. 
+You will have sole responsibility for developing the front-end of a range of websites and be able to take ideas from concept right through to final launch. You will work closely with our Digital Marketing Manager to manage new projects and deliver ongoing maintenance and support for our existing products. You won’t be afraid to work with our team and give your trusted opinion to inform digital content and campaigns. 
 
 **Requirements** 
 
@@ -37,17 +37,13 @@ You will have sole responsibility for developing the front-end of a range of web
 * Strong knowledge of HTML, CSS, and jQuery 
 * Knowledge of JavaScript 
 * Custom Wordpress Theme Development and experience managing and maintaining secure Wordpress sites 
-* Solid commercial experience, delivering e-commerce solutions across a range of platforms including Woocommerce and Shopify 
+* Solid commercial experience, delivering e-commerce solutions across a range of platforms including WooCommerce and Shopify 
 * CMS experience - We would currently use Craft CMS and WordPress but we would consider experience with any PHP based CMS 
 * Deploying websites via FTP or CI/CD is a must 
 * Knowledge of Git (Version Control) 
 * Experience collaborating with UX/UI designers to produce beautiful, functional and accessible websites
 
 _Note:_ We regularly visit clients on site and therefore the successful candidate will need a full, clean driving license and have access to a car. 
-
-**What You’ll Do**
-
-At MiTSO, we work collaboratively to deliver best in class product and performance across all facets of our business. You will be an integral part of our team and work together with our digital and marketing experts to provide high-quality web solutions; from building e-commerce platforms through to beautifully designed websites for our clients both near and far. You will have sole responsibility for developing the front-end of a range of websites and be able to take ideas from concept right through to final launch. You will work closely with our Digital Marketing Manager to manage new projects and deliver ongoing maintenance and support for our existing products. You won’t be afraid to work with our team and give your trusted opinion to inform digital content and campaigns. 
 
 **\*\*COVID 19\*\*** 
 

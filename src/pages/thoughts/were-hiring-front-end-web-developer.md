@@ -45,6 +45,10 @@ You will have sole responsibility for developing the front-end of a range of web
 
 _Note:_ We regularly visit clients on site and therefore the successful candidate will need a full, clean driving license and have access to a car. 
 
+**What We Offer**
+
+We make every effort to ensure that MiTSO is always a fun place to work. We work hard, but we believe that working in an open, creative and enjoyable office environment helps us collectively to deliver for our clients. You will receive on-the-job training and we offer additional training where necessary to ensure our team are continually upskilling. We offer flexibility in our working week, as long as the job is done. Salary is negotiable for the role and will be based on previous experience.
+
 **\*\*COVID 19\*\*** 
 
 Due to the current COVID 19 pandemic, we are currently working from home, and it is expected that the role will initially require remote working until such times that we can return to the office.  

@@ -30,12 +30,14 @@ Instead of putting it off, we have been making small incremental changes to how 
 
 We have invested in new software, completed a brand refresh of internal client documentation, assessed our tender processes, kickstarted our own website refresh, planned our own training for the year, engaged with Invest NI regarding support for our growth plans and most excitingly we have started to look for new people! It is amazing what you can achieve when you simply make the time.
 
-2020 was by far our best year yet and I say that knowing how extremely fortunate we are. It was also the year I welcomed our second little bundle of joy and renovated our house so I am completely indebted to [Ciara](https://www.mitsomarketing.com/thoughts/promotion-for-our-very-own-digital-superwoman/), who single handed ran the business in my absence. I am also so grateful for the wonderful network of freelance designers and digital marketing gurus. Without you we would be nowhere - thank you all, you know who you are!
+2020 was by far our best year yet and I say that knowing how extremely fortunate we are. It was also the year I welcomed our second little bundle of joy and renovated our house so I am completely indebted to [Ciara](https://www.mitsomarketing.com/thoughts/promotion-for-our-very-own-digital-superwoman/), who single handed ran the business in my absence. I am also so grateful for the wonderful network of freelance designers and digital marketing gurus we work with. Without you we would be nowhere - thank you all, you know who you are!
 
 2021 is shaping up to be another super busy one for us here at MiTSO and now is the time to grow our own internal team. Our client base is growing in Bermuda, we‘re just about to implement our client media plan to launch [Ireland’s first Alpine Coaster](https://www.colinglen.org/product/colin-glen-coaster/) and we’re continuing to work with lots of new clients through our consultancy work for [InterTrade Ireland's Emerge programme](https://intertradeireland.com/covid-19-supports/e-merge) (if you haven't yet applied, definetly do!). 
 
 We will continue to be mindful of the many businesses who aren't so fortunate and we encourage any small local businesses to get in touch with any questions or just for advice or a chat. Our doors are always open!
 
 We hope 2021 is the year where we start to see the end of this nightmare and we continue to see businesses diversifying and embracing change. We certainly have lots to be thankful for and we're determined to make the most of the opportunities presented to us.
+
+Until our next blog...
 
 Maeve

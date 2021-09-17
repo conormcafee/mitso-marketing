@@ -9,7 +9,7 @@ tags: []
 intro: >-
   In March of this year, I joined the marvellous MiTSO team as Brand
   Communications Manager. 
-mainImage: /src/images/mitso-default.png
+mainImage: /assets/untitled-design-2.png
 ---
 In March of this year, I joined the marvellous MiTSO team as Brand Communications Manager. 
 

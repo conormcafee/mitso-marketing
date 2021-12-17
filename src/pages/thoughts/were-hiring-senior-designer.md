@@ -7,7 +7,7 @@ seo:
     for our expanding client base of national and international clients. Acting
     as our key point of contact for all things design, we need someone who can
     produce high impact, engaging content that will last a lifetime.
-  seoImage: /assets/twitter-1200-x-800-px-.png
+  seoImage: ''
   seoTitle: We're Hiring! Senior Designer
 date: 2021-12-17T09:57:03.442Z
 author: Maeve Finnegan

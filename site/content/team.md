@@ -26,7 +26,7 @@ teamMember:
       I‘m driven by the smile I see on my clients face each and every time we
       deliver for them.
   - img: /assets/ciara-standard.jpg
-    imgSwap: /assets/ciara-hover.jpg
+    imgSwap: /assets/ciara-standard.jpg
     jobTitle: 'Digital Marketing Manager '
     linkedin: 'https://www.linkedin.com/in/ciara-boylan'
     name: Ciara Boylan

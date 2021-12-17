@@ -27,7 +27,7 @@ teamMember:
       deliver for them.
   - img: /assets/ciara-standard.jpg
     imgSwap: /assets/ciara-hover.jpg
-    jobTitle: 'Digital Marketing Executive '
+    jobTitle: 'Digital Marketing Manager '
     linkedin: 'https://www.linkedin.com/in/ciara-boylan'
     name: Ciara Boylan
     psst: >-
@@ -50,5 +50,15 @@ teamMember:
     why: >-
       I enjoy providing clients with solutions, it improves their brand and
       future prospects.
+  - img: /assets/microsoftteams-image.png
+    imgSwap: /assets/microsoftteams-image.png
+    jobTitle: Brand Communications Manager
+    linkedin: 'https://www.linkedin.com/in/charlotte-o-neill-b4389895/'
+    name: Charlotte O'Neill
+    psst: X
+    what: X
+    when: X
+    where: X
+    why: X
 ---
 

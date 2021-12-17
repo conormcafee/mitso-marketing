@@ -55,10 +55,22 @@ teamMember:
     jobTitle: Brand Communications Manager
     linkedin: 'https://www.linkedin.com/in/charlotte-o-neill-b4389895/'
     name: Charlotte O'Neill
-    psst: X
-    what: X
-    when: X
-    where: X
-    why: X
+    psst: >-
+      Did you know? Charlotte is a music lover and you’ll always find her
+      listening to the latest album release on Spotify.
+    what: >-
+      I help clients to develop their brand identity and increase cross-channel
+      brand awareness including websites, social media, brand collateral and
+      paid and earned media opportunities.
+    when: >-
+      I joined MiTSO as Brand Communications Manager in 2021 and am passionate
+      about bringing a fresh perspective and helping clients to better
+      communicate with their target audiences.
+    where: >-
+      As a Communications, Advertising and Marketing alumni from Ulster
+      University, I have five years’ industry experience, having previously
+      worked for global brands such as The Walt Disney Company, Universal
+      Pictures, Amazon and Bushmills Irish Whiskey.
+    why: ' '
 ---
 

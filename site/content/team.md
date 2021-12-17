@@ -50,8 +50,8 @@ teamMember:
     why: >-
       I enjoy providing clients with solutions, it improves their brand and
       future prospects.
-  - img: /assets/microsoftteams-image.png
-    imgSwap: /assets/microsoftteams-image.png
+  - img: /assets/untitled-design-7.png
+    imgSwap: /assets/untitled-design-7.png
     jobTitle: Brand Communications Manager
     linkedin: 'https://www.linkedin.com/in/charlotte-o-neill-b4389895/'
     name: Charlotte O'Neill

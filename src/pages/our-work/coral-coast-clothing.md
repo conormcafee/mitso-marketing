@@ -20,9 +20,9 @@ results:
     text: 486% increase in online traffic
   - text: 659% increase in online sales
 imageBlock:
-  - Image: /assets/1.png
-  - Image: /assets/2.png
   - Image: /assets/3.png
+  - Image: /assets/2.png
+  - Image: /assets/bda-short-6.jpg
 testimonial: >-
   The team at MiTSO have helped us revamp our website and execute a number of
   campaigns which boosted our online sales dramatically. In addition to running
